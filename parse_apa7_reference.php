@@ -4,9 +4,9 @@
 //       AUTOR/EDITOR         //
 //----------------------------//  
 
-$author = '/^(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>([A-Za-z]\.\s)+)$/';
-$twoauthor = '/^(?P<apellidos1>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres1>([A-Za-z]\.\s?)+)(y\s(?P<apellidos2>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres2>([A-Za-z]\.\s?)+))$/';   
-$manyauthors = '/^(?P<autor>(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>[A-Za-z]\.\s,)+)+$/';
+$author = '/^(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>([A-Za-z]\.\s)+)/';
+$twoauthor = '/^(?P<apellidos1>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres1>([A-Za-z]\.\s?)+)(y\s(?P<apellidos2>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres2>([A-Za-z]\.\s?)+))/';   
+$manyauthors = '/^(?P<autor>(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>[A-Za-z]\.\s,)+)+/';
 
 //--------------------------------------------//
 //            DATE OF PUBLICATION             //
@@ -14,20 +14,26 @@ $manyauthors = '/^(?P<autor>(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<
 
 //Recupera el valor que va dentro de los parentesis que representan la fecha. No chequea que este mal o bien
 $daterecolector = '/\.\s\((?P<fecha>(?>(\d.[^)]*|s\.f\.[a-z]?)))/';
-    $edicion = "/(?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\sVol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?)/";
-    // 1ᵃ ed., Vol. 5 | 1ᵃ ed., Vol. III | 1ᵃ ed.
 
-$year = '/(?P<fecha>\d{4}(\/\d{4})?)/';
-// 2023 o 2023/2024
+$year = '/(?P<fecha>\d{4})/';
+// 2023 
+$periodyear = '/(?P<fecha>\d{4}(\/\d{4})?)/';
+// 2023/2024
 
-$datecomplete = '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})/'; 
+$espesificdate = '\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})';
+$datecomplete = '/(?P<fecha>'.$espesificdate.'/'; 
 // 15 de abril de 2024
 
-$periodday = '/(?P<fecha>\d{2}-\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})/';
-// 15-17 de abril de 2024
+// --- PERIODDAY --- //
+/* Fechas que solo son para congresos */
 
-$periodmonth = '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}-\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})/';
-// 31 de marzo-2 de abril de 2024
+    $periodday = '/(?P<fecha>\d{2}-'.$espesificdate.'/';
+    // 15-17 de abril de 2024
+
+    $periodmonth = '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}-'.$espesificdate.'/';
+    // 31 de marzo-2 de abril de 2024
+
+// -------------------//
 
 // Fecha de recuperacion
 $recoverydate = '/Recuperado el\s(?P<fecha>\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})\sde\s(?P<url>https?:\/\/[^\s]+)/';
@@ -83,12 +89,18 @@ $bookcomplete = '/^(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s]+\.)'.$concedicion.'\s(?P<edit
 //-----------CHAPTER-------------//
 
 // complete regex expression from charapter
-$chapter = '/^(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn.\s,(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?))\)\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/'
+$chapter = '/^(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn.\s,(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?))\)\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/';
 //falta autores
 
-// 2) Título de periódicos, boletines y revistas
-// 3) Título de libros e informes
 
+//-----------JOURNAL-------------//
+// NO ACEPTA PUNTOS EL TITULO. SOLO ACEPTA PUNTOS EN LA REVISTA.
+
+
+// No reconocer numero de articulo, solo pp.
+$journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-ÿ\s\:\.]+)\,\s(?P<nedicio>\d{1,3})\((?P<volumen>\d{1,3})\)\,\s(?P<paginas>(\d{1,4}-\d{1,4}))\./';
+// Estructura "Titulo articulo. Revista,10(20),10-20. url"
+//  
 
 
 
