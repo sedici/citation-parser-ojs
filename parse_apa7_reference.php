@@ -4,9 +4,47 @@
 //       AUTOR/EDITOR         //
 //----------------------------//  
 
-$author = '/^(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>([A-Za-z]\.\s)+)/';
-$twoauthor = '/^(?P<apellidos1>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres1>([A-Za-z]\.\s?)+)(y\s(?P<apellidos2>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres2>([A-Za-z]\.\s?)+))/';   
-$manyauthors = '/^(?P<autor>(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>[A-Za-z]\.\s,)+)+/';
+//------------  ELEMENTS OF AUTHORS ------------//
+
+
+$apellido = "(?P<apellido>\p{L}+(\s\p{L}+)*)";
+$nombre = "(?P<nombres>(\p{Lu}\.\s?)+)";
+
+$author = "(?P<author>".$apellido.", ".$nombre.")";
+//$author = '/^(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>([A-Za-z]\.\s)+)/';
+
+$authors = '/'.$author.'((?:,\s|y\s))?/';
+//$manyauthors = '/(?P<author>(?P<apellido>\p{L}+(\s\p{L}+)*), (?P<nombres>(\p{Lu}\.\s?)+))((?:,\s|y\s))?/';
+
+$lastauthor = '/'.'y\s'.$author.'/';
+// "y Garcias M."
+
+function get_authors($text) {
+    $apellido = "(?P<apellido>\p{L}+(\s\p{L}+)*)";
+    $nombre = "(?P<nombres>(\p{Lu}\.\s?)+)";
+    $author = "(?P<author>".$apellido.", ".$nombre.")";
+    $authors = '/'.$author.'((?:,\s|y\s))?/';
+
+    preg_match_all($authors, $text, $matches, PREG_SET_ORDER);
+
+    $authors_array = array();
+
+    foreach ($matches as $match) {
+        $apellido = $match['apellido'];
+        $nombres = $match['nombres'];
+        $author = $apellido . ", " . $nombres;
+        $authors_array[] = $author;
+    }
+
+    return $authors_array;
+}
+
+//------------    INSTITUTIONS   ------------//
+
+
+
+
+
 
 //--------------------------------------------//
 //            DATE OF PUBLICATION             //
@@ -102,6 +140,9 @@ $journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-�
 // Estructura "Titulo articulo. Revista,10(20),10-20. url"
 //  
 
+//-----------PAGINAS WEB-------------//
+
+
 
 
 //----------------------------//
@@ -109,19 +150,24 @@ $journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-�
 //----------------------------//
 
 /*
-$texto = "El Quijote. (1ᵃ ed., Vol. 4). Editorial Cátedra. https://google.com";
+$texto = "Thompson, V., Striemer, C., Reikoff, R., Gunter, R. y Campbell, J. (2003).";
 
-preg_match($bookurl, $texto, $coincidencias);
+preg_match_all($manyauthors, $texto, $matches, PREG_SET_ORDER);
 
-if (!empty($coincidencias)) {
-    echo "Título: " . $coincidencias['titulo'] . PHP_EOL;
-    echo "Edición: " . $coincidencias['edicion'] . PHP_EOL;
-    echo "Editorial: " . $coincidencias['editorial'] . PHP_EOL;
-    echo "Url: " . $coincidencias['url'] . PHP_EOL;
-} else {
-    echo "No se encontró ninguna coincidencia." . PHP_EOL;
+foreach ($matches as $match) {
+    echo "Apellido: " . $match['apellido'] . PHP_EOL;
+    echo "Nombres: " . $match['nombres'] . PHP_EOL;
+    echo "---------------------" . PHP_EOL;
 }
-*/
+*/ 
+
+
+
+$texto = "Thompson Thompson, V. F. H., Striemer, C., Reikoff, R., Gunter, R. y Campbell, J. L. J. (2003).";
+
+$authors_array = get_authors($texto);
+
+print_r($authors_array);
 
 
 ?>
