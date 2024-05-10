@@ -6,41 +6,33 @@
 
 //------------  ELEMENTS OF AUTHORS ------------//
 
-
+//$apellidocamelcase = "(?P<apellido>\p{Lu}\p{L}+(\s\p{Lu}\p{L}+)*)" 
 $apellido = "(?P<apellido>\p{L}+(\s\p{L}+)*)";
 $nombre = "(?P<nombres>(\p{Lu}\.\s?)+)";
 
-$author = "(?P<author>".$apellido.", ".$nombre.")";
-//$author = '/^(?P<apellidos>([A-Za-zÀ-ÿáéíóú]+\s?)+),\s(?P<nombres>([A-Za-z]\.\s)+)/';
+$role = "(?P<role>(\((Ed.|Coord.|Comp.)\)))?";  //Los roles deberian ser individuales 
+$roles = "(?P<roles>(\((Eds.|Coords.|Comps.)\)))?";   
 
-$authors = '/'.$author.'((?:,\s|y\s))?/';
-//$manyauthors = '/(?P<author>(?P<apellido>\p{L}+(\s\p{L}+)*), (?P<nombres>(\p{Lu}\.\s?)+))((?:,\s|y\s))?/';
+$author = "(?P<author>".$apellido.", ".$nombre." ".$role.")"; //Corregir los espacios
+$authors = '/'.$author.$roles.'((?:,\s|y\s))?/';
 
-$lastauthor = '/'.'y\s'.$author.'/';
-// "y Garcias M."
+//$authors-all = '/('.$author.'((?:,\s|y\s))?)+'.$roles.'/';
 
-function get_authors($text) {
-    $apellido = "(?P<apellido>\p{L}+(\s\p{L}+)*)";
-    $nombre = "(?P<nombres>(\p{Lu}\.\s?)+)";
-    $author = "(?P<author>".$apellido.", ".$nombre.")";
-    $authors = '/'.$author.'((?:,\s|y\s))?/';
+//preg_match_all 
+function get_authors($text,$regex) {
 
-    preg_match_all($authors, $text, $matches, PREG_SET_ORDER);
+    preg_match_all($regex, $text, $matches, PREG_SET_ORDER);
 
     $authors_array = array();
-
     foreach ($matches as $match) {
-        $apellido = $match['apellido'];
-        $nombres = $match['nombres'];
-        $author = $apellido . ", " . $nombres;
-        $authors_array[] = $author;
+        $authors_array[] = $match['author'];
     }
 
     return $authors_array;
 }
 
-//------------    INSTITUTIONS   ------------//
 
+//------------    INSTITUTIONS   ------------//
 
 
 
@@ -51,7 +43,7 @@ function get_authors($text) {
 //--------------------------------------------//
 
 //Recupera el valor que va dentro de los parentesis que representan la fecha. No chequea que este mal o bien
-$daterecolector = '/\.\s\((?P<fecha>(?>(\d.[^)]*|s\.f\.[a-z]?)))/';
+/*$daterecolector = '/\.\s\((?P<fecha>(?>(\d.[^)]*|s\.f\.[a-z]?)))/';*/
 
 $year = '/(?P<fecha>\d{4})/';
 // 2023 
@@ -100,12 +92,16 @@ $edicion = '/(?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\sVol\.\s(?P<volumen>(?:
 $edicioncomplete = '/(?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)/';
 // 1ᵃ ed., Vol. 4, pp. 1-1000
 
+//------------ URL ------------//
+
+$url = '(?P<url>https?:\/\/[^\s]+)';
+$opcionalurl = '(\s'. $url .')?/';
+
 $url = '/(?P<url>https?:\/\/[^\s]+)/';
 // https://google.com | http://wikipedia.com
 
-
-
 //--------------------------------------------------------------//
+
 
 
 
@@ -117,23 +113,33 @@ $book = '/^(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s\((?P<edicion>(?P<nedicion>[0-9
  
 // concatenated regex expression from book
 $edicion = '(?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\sVol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?)';
-$concedicion = '(\s\('.$edicion.'\)\.)?';
+$edicion_opcional = '(\s\('.$edicion.'\)\.)?';
 
-$url = '(?P<url>https?:\/\/[^\s]+)';
-$opcionalurl = '(\s'. $url .')?/';
 
-$bookcomplete = '/^(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s]+\.)'.$concedicion.'\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)'.$opcionalurl;
+$bookcomplete = '/^(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s]+\.)'.$edicion_opcional.'\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)'.$opcionalurl;
 
 //-----------CHAPTER-------------//
 
+
+//-----CHAPTER AUTHOR ------//
+
+$chapterauthor = "(?P<author>".$nombre."\s".$apellido." ".$role."((?:,\s|y\s))?)";
+$chapterauthors = 'En\s'.$chapterauthor.'+'.$roles;
+
+$chapteredicion = "(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.";
+$chapterbook = "(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s".$chapteredicion."\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$";
+//(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$
+
 // complete regex expression from charapter
-$chapter = '/^(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn.\s,(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?))\)\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/';
+$chaptercomplete = '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s((?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*) (?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y\s))?))+(?P<roles>(\((Eds.|Coords.|Comps.)\)))?(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?))\)\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/';
 //falta autores
 
+$chaptername = '(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)';
+$chapter = '/'.$chaptername.'\s'.$chapterauthors.$chapterbook.'/';
+//print($chapter); exit;
 
 //-----------JOURNAL-------------//
 // NO ACEPTA PUNTOS EL TITULO. SOLO ACEPTA PUNTOS EN LA REVISTA.
-
 
 // No reconocer numero de articulo, solo pp.
 $journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-ÿ\s\:\.]+)\,\s(?P<nedicio>\d{1,3})\((?P<volumen>\d{1,3})\)\,\s(?P<paginas>(\d{1,4}-\d{1,4}))\./';
@@ -149,25 +155,112 @@ $journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-�
 //           TESTS            //
 //----------------------------//
 
+
+$re = '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s(?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*) (?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y\s))?)+/';
+$str = 'Renteria Salazar, P. (2006). El comienzo de la renovación. En M. A. Flórez Góngora (Ed.), Bogotá Renovacion Urbana Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.';
+preg_match($re, $str, $matches, PREG_OFFSET_CAPTURE, 0);
+
+// Print the entire match result
+var_dump($matches);
+
+exit;
+
+
 /*
-$texto = "Thompson, V., Striemer, C., Reikoff, R., Gunter, R. y Campbell, J. (2003).";
+$textauthors = "Soler Maria, A. H., Rueda, O. y Morvillo, S. ()";
+$authors_array = get_authors($textauthors,$authors);
+print_r($authors_array);
+*/
 
-preg_match_all($manyauthors, $texto, $matches, PREG_SET_ORDER);
+function match_date_expression($text) {
+    $expressions = array(
+        '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})/' => 'datecomplete',
+        '/(?P<fecha>\d{2}-\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})/' => 'periodday',
+        '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}-\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})/' => 'periodmonth',
+        '/(?P<fecha>\d{4}\/\d{4})/' => 'periodyear',
+        '/(?P<fecha>\d{4})/' => 'year',
+    );
 
-foreach ($matches as $match) {
-    echo "Apellido: " . $match['apellido'] . PHP_EOL;
-    echo "Nombres: " . $match['nombres'] . PHP_EOL;
-    echo "---------------------" . PHP_EOL;
+    foreach ($expressions as $pattern => $name) {
+        if (preg_match($pattern, $text, $matches)) {
+            return array('expression' => $name, 'value' => $matches['fecha']);
+        }
+    }
+
+    return array('expression' => 'No match found', 'value' => '');
 }
-*/ 
+/*
+$text = "15 de abril de 2024";
+$result = match_date_expression($text);
 
+echo "Expresión que coincidió: " . $result['expression'] . "\n";
+echo "Valor capturado: " . $result['value']. "\n";
+*/
+function match_title_expression($text) {
+    $expressions = array(
+        '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s(?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*) (?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y\s))?)+(?P<roles>(\((Eds.|Coords.|Comps.)\)))?(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/' => 'chapter',
+        '/(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s\((?P<edicion>(?P<nedicion>[0-9]+ª)\sed\.(,\sVol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?)\)\.)?\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)/' => 'book',
+        '/(?P<journal>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-ÿ\s\:\.]+)\,\s(?P<nedicio>\d{1,3})\((?P<volumen>\d{1,3})\)\,\s(?P<paginas>(\d{1,4}-\d{1,4}))\./' => 'journal'
+    );
 
+    foreach ($expressions as $pattern => $name) {
+        if (preg_match($pattern, $text, $matches)) {
+            return array('expression' => $name, 'value' => $matches);
+        }
+    }
 
-$texto = "Thompson Thompson, V. F. H., Striemer, C., Reikoff, R., Gunter, R. y Campbell, J. L. J. (2003).";
+    return array('expression' => 'No match found', 'value' => '');
+}
 
-$authors_array = get_authors($texto);
+/*
+$book = "Apellido Autor, N. N. (1994). Título del trabajo. (3ª ed., Vol. 4). Editorial.";
+$jorunar = "Castañeda Naranjo, L. A. y Palacios Neri, J. (2015). Nanotecnología: fuente de nuevos paradigmas. Mundo Nano. Revista Interdisciplinaria en Nanociencias y Nanotecnología, 7(12), 45-49. https://doi.org/10.22201/ceiich.24485691e.2014.12.49710";
+$chapter = "Renteria Salazar, P. (2006). El comienzo de la renovación. En M. A. Flórez Góngora (Ed.), Bogotá: Renovacion Urbana, Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.s";
+
+$result = match_title_expression($book);
+
+echo "Expresión que coincidió: " . $result['expression'] . "\n";
+print_r($result['value']);
+echo "Titulo: " . $result['value']['book'] . "\n";
+echo "Edicion: " . $result['value']['edicion'] . "\n";
+echo "Editorial: " . $result['value']['editorial'] . "\n";
+*/
+
+//$reference = "Apellido Autor, N. N. (1994). Título del trabajo. (3ª ed., Vol. 4). Editorial.";
+//$reference = "Castaneda Naranjo, L. A. y Palacios Neri, J. (2015). Nanotecnología: fuente de nuevos paradigmas. Mundo Nano. Revista Interdisciplinaria en Nanociencias y Nanotecnología, 7(12), 45-49. https://doi.org/10.22201/ceiich.24485691e.2014.12.49710";
+$reference = 'Renteria Salazar, P. (2006). El comienzo de la renovacion. En M. A. Florez Góngora (Ed.), Bogota Renovacion Urbana Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.';
+$authors_array = get_authors($reference,$authors);
+$date = match_date_expression($reference);
+$title = match_title_expression($reference);
 
 print_r($authors_array);
+
+
+echo "Expresión que coincidió: " . $date['expression'] . "\n";
+echo "Fecha capturada: " . $date['value']. "\n";
+
+echo "Expresión que coincidió: " . $title['expression'] . "\n";
+if(strcmp($title['expression'],'book') == 0){
+
+    echo "Titulo: " . $title['value']['book'] . "\n";
+    echo "Edicion: " . $title['value']['edicion'] . "\n";
+    echo "Editorial: " . $title['value']['editorial'] . "\n";
+
+} 
+if (strcmp($title['expression'],'journal') == 0){
+
+    echo "journal: " . $title['value']['journal'] . "\n";
+    echo "revista: " . $title['value']['revista'] . "\n";
+    echo "nedicio: " . $title['value']['nedicio'] . "\n";
+    echo "volumen: " . $title['value']['volumen'] . "\n";
+    echo "paginas: " . $title['value']['paginas'] . "\n";
+
+}
+if (strcmp($title['expression'],'chapter') == 0){
+
+    echo "Es un capitulo de libro";
+
+}
 
 
 ?>

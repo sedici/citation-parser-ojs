@@ -25,3 +25,6 @@ Listado faltantes:
 | ------------- | ------------- | ------------- |------------- |------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+# Terea siendo relizada
+1. Charapte, autores. 
