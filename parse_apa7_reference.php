@@ -136,7 +136,20 @@ $chaptercomplete = '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s((?P<author>(?P<n
 
 $chaptername = '(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)';
 $chapter = '/'.$chaptername.'\s'.$chapterauthors.$chapterbook.'/';
+//NO ACEPTA ACENTOS//
+/*
+
+Partes del capitulo de libro:
+chapter
+book
+edicion
+editorial
+
+*/
+
+
 //print($chapter); exit;
+
 
 //-----------JOURNAL-------------//
 // NO ACEPTA PUNTOS EL TITULO. SOLO ACEPTA PUNTOS EN LA REVISTA.
@@ -154,16 +167,6 @@ $journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-�
 //----------------------------//
 //           TESTS            //
 //----------------------------//
-
-
-$re = '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s(?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*) (?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y\s))?)+/';
-$str = 'Renteria Salazar, P. (2006). El comienzo de la renovación. En M. A. Flórez Góngora (Ed.), Bogotá Renovacion Urbana Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.';
-preg_match($re, $str, $matches, PREG_OFFSET_CAPTURE, 0);
-
-// Print the entire match result
-var_dump($matches);
-
-exit;
 
 
 /*
@@ -189,13 +192,8 @@ function match_date_expression($text) {
 
     return array('expression' => 'No match found', 'value' => '');
 }
-/*
-$text = "15 de abril de 2024";
-$result = match_date_expression($text);
 
-echo "Expresión que coincidió: " . $result['expression'] . "\n";
-echo "Valor capturado: " . $result['value']. "\n";
-*/
+
 function match_title_expression($text) {
     $expressions = array(
         '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s(?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*) (?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y\s))?)+(?P<roles>(\((Eds.|Coords.|Comps.)\)))?(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/' => 'chapter',
@@ -212,23 +210,9 @@ function match_title_expression($text) {
     return array('expression' => 'No match found', 'value' => '');
 }
 
-/*
-$book = "Apellido Autor, N. N. (1994). Título del trabajo. (3ª ed., Vol. 4). Editorial.";
-$jorunar = "Castañeda Naranjo, L. A. y Palacios Neri, J. (2015). Nanotecnología: fuente de nuevos paradigmas. Mundo Nano. Revista Interdisciplinaria en Nanociencias y Nanotecnología, 7(12), 45-49. https://doi.org/10.22201/ceiich.24485691e.2014.12.49710";
-$chapter = "Renteria Salazar, P. (2006). El comienzo de la renovación. En M. A. Flórez Góngora (Ed.), Bogotá: Renovacion Urbana, Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.s";
-
-$result = match_title_expression($book);
-
-echo "Expresión que coincidió: " . $result['expression'] . "\n";
-print_r($result['value']);
-echo "Titulo: " . $result['value']['book'] . "\n";
-echo "Edicion: " . $result['value']['edicion'] . "\n";
-echo "Editorial: " . $result['value']['editorial'] . "\n";
-*/
-
 //$reference = "Apellido Autor, N. N. (1994). Título del trabajo. (3ª ed., Vol. 4). Editorial.";
 //$reference = "Castaneda Naranjo, L. A. y Palacios Neri, J. (2015). Nanotecnología: fuente de nuevos paradigmas. Mundo Nano. Revista Interdisciplinaria en Nanociencias y Nanotecnología, 7(12), 45-49. https://doi.org/10.22201/ceiich.24485691e.2014.12.49710";
-$reference = 'Renteria Salazar, P. (2006). El comienzo de la renovacion. En M. A. Florez Góngora (Ed.), Bogota Renovacion Urbana Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.';
+$reference = 'Renteria Salazar, P. (2006). El comienzo de la renovacion. En M. A. Florez Gongora (Ed.), Bogota Renovacion Urbana Renovacion Humana (pp. 80-100). Empresa De Renovacion Urbana.';
 $authors_array = get_authors($reference,$authors);
 $date = match_date_expression($reference);
 $title = match_title_expression($reference);
@@ -258,7 +242,12 @@ if (strcmp($title['expression'],'journal') == 0){
 }
 if (strcmp($title['expression'],'chapter') == 0){
 
-    echo "Es un capitulo de libro";
+    echo "chapter: " . $title['value']['chapter'] . "\n";
+    echo "book: " . $title['value']['book'] . "\n";
+    echo "edicion: " . $title['value']['edicion'] . "\n";
+    echo "editorial: " . $title['value']['editorial'] . "\n";
+
+    
 
 }
 

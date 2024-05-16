@@ -27,4 +27,6 @@ Listado faltantes:
 | Content Cell  | Content Cell  |
 
 # Terea siendo relizada
-1. Charapte, autores. 
+1. Charapte, autores. NO FUNCIONAN LOS ACENTOS.
+2. Tenemos que saber que hacemos cuando una referencia no conincide.
+3. 
