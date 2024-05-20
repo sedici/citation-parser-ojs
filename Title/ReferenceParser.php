@@ -12,23 +12,18 @@ class ReferenceParser {
         $this->strategy = $strategy;
     }
 
-    public function newStrategy($strategyText) {
-        switch ($this->type) {
-            case 'journal':
-                $this->setStrategy(new JournalStrategy()); 
-                break;
-            case 'book':
-                $this->setStrategy(new BookStrategy());
-                break;
-            case 'chapter':
-                $this->setStrategy(new CharapterStrategy());
-                break;
-            case 'congress':
-                $this->setStrategy(new CongressStrategy());
-                break;
+    public function setStrategyFromString($strategyText) {
+        $strategyClassName = ucfirst($this->type) . 'Strategy';
+        try {
+            if (!class_exists($strategyClassName)) {
+                throw new Exception("Strategy class $strategyClassName does not exist.");
+            }
+            $this->setStrategy(new $strategyClassName());
+        } catch (Exception $e) {
+            error_log($e->getMessage());
+            throw $e;
         }
-
-    }
+    }      
 
     public function parse($text) {
         return $this->strategy->parse($text);

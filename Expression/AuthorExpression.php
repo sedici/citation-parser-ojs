@@ -1,7 +1,8 @@
 <?php
-class AuthorExpression {
+include_once 'Expression.php';
+class AuthorExpression extends Expression {
     
-    public static function parse($text) {
+    public static function parse(string $text) {
         $apellido = "(?P<apellido>\p{L}+(\s\p{L}+)*)";
         $nombre = "(?P<nombres>(\p{Lu}\.\s?)+)";
 

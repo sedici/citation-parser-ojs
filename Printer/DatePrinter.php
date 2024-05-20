@@ -1,11 +1,9 @@
 <?php
-class DatePrinter {
-    public static function print($date){
-       null;
-    }
+include_once 'ReferencePrinter.php';
+class DatePrinter extends ReferencePrinter{
 
-    public static function getString($date){
+    public static function getReferenceString($reference): string{
         //'Apellido Autor, N. N. (10 de abril de 2023). Título del trabajo. (3ª ed., Vol. 4). Editorial.';
-        return '('.$date.'). ';
+        return '('.$reference.'). ';
     }
 }

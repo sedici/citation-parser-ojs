@@ -1,7 +1,7 @@
 <?php
 
 //----------------------------//
-//       AUTOR/EDITOR         //
+//           AUTHOR           //
 //----------------------------//  
 
 //------------  ELEMENTS OF AUTHORS ------------//
@@ -33,37 +33,28 @@ function get_authors($text,$regex) {
 
 
 //------------    INSTITUTIONS   ------------//
-
-
-
-
+/* falta definir la posibilidad de recibir una institusion */
 
 //--------------------------------------------//
 //            DATE OF PUBLICATION             //
 //--------------------------------------------//
 
-//Recupera el valor que va dentro de los parentesis que representan la fecha. No chequea que este mal o bien
+//Recupera el valor que va dentro de los parentesis que representan la fecha. No chequea si el valor ingresado es correcto
 /*$daterecolector = '/\.\s\((?P<fecha>(?>(\d.[^)]*|s\.f\.[a-z]?)))/';*/
 
-$year = '/(?P<fecha>\d{4})/';
-// 2023 
-$periodyear = '/(?P<fecha>\d{4}(\/\d{4})?)/';
-// 2023/2024
-
+$year = '/(?P<fecha>\d{4})/';// 2023 
+$periodyear = '/(?P<fecha>\d{4}(\/\d{4})?)/'; // 2023/2024
 $espesificdate = '\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})';
-$datecomplete = '/(?P<fecha>'.$espesificdate.'/'; 
-// 15 de abril de 2024
+$datecomplete = '/(?P<fecha>'.$espesificdate.'/';  // 15 de abril de 2024
 
-// --- PERIODDAY --- //
+//------------ PERIODDATE ------------//
 /* Fechas que solo son para congresos */
 
-    $periodday = '/(?P<fecha>\d{2}-'.$espesificdate.'/';
-    // 15-17 de abril de 2024
+$periodday = '/(?P<fecha>\d{2}-'.$espesificdate.'/';// 15-17 de abril de 2024
+$periodmonth = '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}-'.$espesificdate.'/';// 31 de marzo-2 de abril de 2024
 
-    $periodmonth = '/(?P<fecha>\d{2}\sde\s[a-z]{5,10}-'.$espesificdate.'/';
-    // 31 de marzo-2 de abril de 2024
-
-// -------------------//
+//------------ RECOVERYDATE ------------//
+/* Fechas que solo son para pagina web */
 
 // Fecha de recuperacion
 $recoverydate = '/Recuperado el\s(?P<fecha>\d{2}\sde\s[a-z]{5,10}\sde\s\d{4})\sde\s(?P<url>https?:\/\/[^\s]+)/';
@@ -120,44 +111,29 @@ $bookcomplete = '/^(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s]+\.)'.$edicion_opcional.'\s(?P
 
 //-----------CHAPTER-------------//
 
-
-//-----CHAPTER AUTHOR ------//
+/* annotations: 
+ -> NO ACEPTA ACENTOS.
+*/
 
 $chapterauthor = "(?P<author>".$nombre."\s".$apellido." ".$role."((?:,\s|y\s))?)";
 $chapterauthors = 'En\s'.$chapterauthor.'+'.$roles;
-
 $chapteredicion = "(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.";
 $chapterbook = "(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s".$chapteredicion."\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$";
-//(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$
-
-// complete regex expression from charapter
-$chaptercomplete = '/(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)\sEn\s((?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*) (?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y\s))?))+(?P<roles>(\((Eds.|Coords.|Comps.)\)))?(?P<book>[A-Z][A-Za-zÀ-ÿ\s]+)\s(\((?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?))\)\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)(\s(?P<url>https?:\/\/[^\s]+))?$/';
-//falta autores
-
 $chaptername = '(?P<chapter>[A-Z][A-Za-zÀ-ÿ\s]+\.)';
 $chapter = '/'.$chaptername.'\s'.$chapterauthors.$chapterbook.'/';
-//NO ACEPTA ACENTOS//
-/*
-
-Partes del capitulo de libro:
-chapter
-book
-edicion
-editorial
-
-*/
-
-
-//print($chapter); exit;
 
 
 //-----------JOURNAL-------------//
-// NO ACEPTA PUNTOS EL TITULO. SOLO ACEPTA PUNTOS EN LA REVISTA.
 
-// No reconocer numero de articulo, solo pp.
+/* annotations: 
+ -> NO ACEPTA PUNTOS EL TITULO. SOLO ACEPTA PUNTOS EN LA REVISTA..
+ -> NO RECONOCE NUMERO DE ARTICULO, SOLO "pp."
+*/
+
 $journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-ÿ\s\:\.]+)\,\s(?P<nedicio>\d{1,3})\((?P<volumen>\d{1,3})\)\,\s(?P<paginas>(\d{1,4}-\d{1,4}))\./';
-// Estructura "Titulo articulo. Revista,10(20),10-20. url"
-//  
+
+//--------------TESIS----------------//
+
 
 //-----------PAGINAS WEB-------------//
 

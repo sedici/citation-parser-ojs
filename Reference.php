@@ -3,6 +3,9 @@ include_once 'Expression/AuthorExpression.php';
 include_once 'Expression/DateExpression.php';
 include_once 'Expression/TitleExpression.php';
 include_once 'Printer/BookPrinter.php';
+include_once 'Printer/JournalPrinter.php';
+include_once 'Printer/ChapterPrinter.php';
+include_once 'Printer/CongressPrinter.php';
 include_once 'Printer/DatePrinter.php';
 include_once 'Printer/AuthorPrinter.php';
 
@@ -19,7 +22,7 @@ class Reference {
     public $date;
     public $dateType;
 
-    public function __construct($referenceText) {
+    public function __construct(string $referenceText) {
         $this->referenceText = $referenceText;
         $this->type = null;
         $this->parse();
@@ -51,66 +54,22 @@ class Reference {
 
     }
 
-    public function printer(){
+    public function print(){
         
         if($this->authorType == null) return;
         $printerClassName = ucfirst($this->authorType).'Printer';
-        $authorString = $printerClassName::getString($this->author);
+        $authorString = $printerClassName::getReferenceString($this->author);
 
         if($this->dateType == null) return;
         //$printerClassName = $this->dateType.'Printer';
         $printerClassName = 'DatePrinter';
-        $dateString = $printerClassName::getString($this->date);
+        $dateString = $printerClassName::getReferenceString($this->date);
         
         if($this->type == null) return;
-        $this->type = 'book';
         $printerClassName = ucfirst($this->type).'Printer';
-        $titleString = $printerClassName::getString($this->title);
-
+        $titleString = $printerClassName::getReferenceString($this->title);
 
         print($authorString.$dateString.$titleString);
-    }
-
-    public function toString(){
-        $this->printAuthor();
-        $this->printDate();
-        $this->printTitle();
-    }
-
-    public function printAuthor(){
-        print_r($this->author);
-    }
-
-    public function printDate(){
-        echo "Expresión que coincidió: " . $this->date['expression'] . "\n";
-        echo "Fecha capturada: " . $this->date['value']. "\n";
-    }
-
-    public function printTitle(){
-        if($this->title === null) return;
-        if(strcmp($this->title['expression'],'book') == 0){
-
-            echo "Titulo: " . $this->title['value']['book'] . "\n";
-            echo "Edicion: " . $this->title['value']['edicion'] . "\n";
-            echo "Editorial: " . $this->title['value']['editorial'] . "\n";
-        
-        } 
-        if (strcmp($this->title['expression'],'journal') == 0){
-        
-            echo "journal: " . $this->title['value']['journal'] . "\n";
-            echo "revista: " . $this->title['value']['revista'] . "\n";
-            echo "nedicio: " . $this->title['value']['nedicio'] . "\n";
-            echo "volumen: " . $this->title['value']['volumen'] . "\n";
-            echo "paginas: " . $this->title['value']['paginas'] . "\n";
-        
-        }
-        if (strcmp($this->title['expression'],'chapter') == 0){
-        
-            echo "chapter: " . $this->title['value']['chapter'] . "\n";
-            echo "book: " . $this->title['value']['book'] . "\n";
-            echo "edicion: " . $this->title['value']['edicion'] . "\n";
-            echo "editorial: " . $this->title['value']['editorial'] . "\n";
-        }
     }
 
     // Getter para author

@@ -2,10 +2,24 @@
 require_once 'Reference.php';
 
 // Supongamos que tienes una referencia bibliográfica
-$reference = 'Apellido Autor, N. N. (10 de abril de 2023). Título del trabajo. (3ª ed., Vol. 4). Editorial.';
+$book = 'Herrera Caceres, C. y Rosillo Penia, M. (2019). Confort y eficiencia energética en el diseño de edificaciones. Universidad del Valle.';
+$journal = 'Castakeda Naranjo, L. A. y Palacios Neri, J. (2015). Nanotecnología: fuente de nuevos paradigmas. Mundo Nano. Revista Interdisciplinaria en Nanociencias y Nanotecnología, 7(12), 45–49.';
+$charapter = 'Apellido, A. y Apellido, B. (2019). Título del capítulo. En N. Apellido (Ed.), Título del libro (pp. 19-21). Editorial.';
+
 
 // Crea una instancia de ReferenceParser con la estrategia seleccionada
-$referenceParser = new Reference($reference);
+$bookReference = new Reference($book);
+$bookReference->print();
+
+echo "\n";
+echo "\n";
+
+$jounralReference = new Reference($journal);
+$jounralReference->print();
 
 
-$referenceParser->printer();
+echo "\n";
+echo "\n";
+
+$charapterReference = new Reference($charapter);
+$charapterReference->print();

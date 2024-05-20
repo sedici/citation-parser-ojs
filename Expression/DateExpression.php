@@ -1,5 +1,6 @@
 <?php
-class DateExpression {
+include_once 'Expression.php';
+class DateExpression extends Expression {
     
     public static function parse($text) {
             
