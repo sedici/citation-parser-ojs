@@ -56,20 +56,18 @@ class Reference {
 
     public function print(){
         
-        if($this->authorType == null) return;
-        $printerClassName = ucfirst($this->authorType).'Printer';
-        $authorString = $printerClassName::getReferenceString($this->author);
 
         if($this->dateType == null) return;
-        //$printerClassName = $this->dateType.'Printer';
         $printerClassName = 'DatePrinter';
-        $dateString = $printerClassName::getReferenceString($this->date);
-        
+        $datePrinter = new DatePrinter($this->getDate()); 
+        $datePlanText = $datePrinter->toPlainText();
+
         if($this->type == null) return;
         $printerClassName = ucfirst($this->type).'Printer';
-        $titleString = $printerClassName::getReferenceString($this->title);
+        $titlePrinter = new $printerClassName($this->title); 
+        $titlePlanText = $titlePrinter->toPlainText();
 
-        print($authorString.$dateString.$titleString);
+        print($datePlanText.$titlePlanText);
     }
 
     // Getter para author

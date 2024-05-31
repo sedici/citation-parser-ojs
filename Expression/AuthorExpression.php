@@ -16,7 +16,11 @@ class AuthorExpression extends Expression {
 
         $authors_array = array();
         foreach ($matches as $match) {
-            $authors_array[] = $match['author'];
+            $authors_array[] = [
+                'apellido' => $match['apellido'],
+                'nombres' => $match['nombres'],
+                'role' => $match['role'] ?? '',
+            ];
         }
 
         //return $authors_array;

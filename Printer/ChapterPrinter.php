@@ -1,9 +1,25 @@
 <?php
-include_once 'ReferencePrinter.php';
-class ChapterPrinter extends ReferencePrinter{
+include_once 'TitlePrinter.php';
+class ChapterPrinter extends TitlePrinter{
     //IMCOMPLETO LA IMPRESION, FALTA LOS AUTORES.
 
-    public static function getReferenceString($reference): string{
-        return $reference['chapter'].' ('.$reference['book'].'). '.$reference['edicion'].'.'.$reference['editorial'].'.';
+    public function toPlainText(): string{
+        return $this->reference['chapter'].' ('.$this->reference['book'].'). '.$this->reference['edicion'].'.'.$this->reference['editorial'].'.';
+    }
+
+    public function getSource(){
+        return $this->getBook();
+    }
+
+    public function getBook(){
+        return $this->get('book');
+    }
+
+    public function getEdition(){
+        return $this->get('edicion');
+    }
+
+    public function getEditorial(){
+        return $this->get('editorial');
     }
 }

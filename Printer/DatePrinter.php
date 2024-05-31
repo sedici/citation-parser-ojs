@@ -1,9 +1,28 @@
 <?php
-include_once 'ReferencePrinter.php';
-class DatePrinter extends ReferencePrinter{
+include_once 'GenericPrinter.php';
+class DatePrinter extends GenericPrinter{
 
-    public static function getReferenceString($reference): string{
-        //'Apellido Autor, N. N. (10 de abril de 2023). Título del trabajo. (3ª ed., Vol. 4). Editorial.';
-        return '('.$reference.'). ';
+    public function toPlainText(): string{
+        return '('.$this->getDate().'). ';
     }
+
+    public function getYear(){ 
+        return $this->get('year');
+    }
+
+
+    public function getMonth(){ 
+        return $this->get('month');
+    }
+
+
+    public function getDay(){ 
+        return $this->get('day');
+    }
+
+
+    public function getDate(){ 
+        return $this->get('date');
+    }
+
 }
