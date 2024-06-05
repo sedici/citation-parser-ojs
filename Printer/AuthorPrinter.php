@@ -19,6 +19,27 @@ class AuthorPrinter extends GenericPrinter {
 
     public function createXMLElements(): array {
         $elements = [];
+
+        $authorElement = $this->dom->createElement('person-group');
+        $authorElement->setAttribute('person-group-type','author');
+        $elements[] = $authorElement;
+
+        $authores = [
+            ["nombre" => "Gabriel", "apellido" => "García Márquez"],
+            ["nombre" => "Isabel", "apellido" => "Allende"],
+            ["nombre" => "Jorge", "apellido" => "Luis Borges"],
+        ];
+        
+
+        foreach ($authores as $autor) {
+            $nameElement = $this->dom->createElement('name');
+            $surname = $this->dom->createElement('surname',$autor['apellido']);
+            $given_names = $this->dom->createElement('given-names',$autor['nombre']);
+            $nameElement->appendChild($surname);
+            $nameElement->appendChild($given_names);
+            $authorElement->appendChild($nameElement);
+        }
+        
         return $elements;
     }
 }

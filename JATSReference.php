@@ -24,7 +24,7 @@ class JATSReference {
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
 
-
+        $this->addAuthors();
         $this->addDate();
         $this->addTitle();
 
@@ -35,27 +35,14 @@ class JATSReference {
         return $this->dom->save('jats.xml');
     }
 
-    public function setAuthors($authores){
-        $authorElement = $this->dom->createElement('person-group');
-        $authorElement->setAttribute('person-group-type','author');
-        $this->element_citation->appendChild($authorElement);
-        
-        $authores = [
-            ["nombre" => "Gabriel", "apellido" => "García Márquez"],
-            ["nombre" => "Isabel", "apellido" => "Allende"],
-            ["nombre" => "Jorge", "apellido" => "Luis Borges"],
-        ];
-        
-
-        foreach ($authores as $autor) {
-            $nameElement = $this->dom->createElement('name');
-            $surname = $this->dom->createElement('surname',$autor['apellido']);
-            $given_names = $this->dom->createElement('given-names',$autor['nombre']);
-            $nameElement->appendChild($surname);
-            $nameElement->appendChild($given_names);
-            $authorElement->appendChild($nameElement);
+    public function addAuthors() {
+        // Devolver el XML como una cadena
+        $authorPrinter = new AuthorPrinter($this->reference->getAuthor(),$this->dom);
+        $elements = $authorPrinter->createXMLElements();
+        foreach ($elements as $element) {
+            $this->element_citation->appendChild($element);
         }
-        
+           
     }
 
     public function addDate() {
