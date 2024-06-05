@@ -59,19 +59,26 @@ class Reference {
 
         if($this->dateType == null) return;
         $printerClassName = 'DatePrinter';
-        $datePrinter = new DatePrinter($this->getDate()); 
+        $datePrinter = new DatePrinter($this->merge()); 
         $datePlanText = $datePrinter->toPlainText();
 
         if($this->type == null) return;
         $printerClassName = ucfirst($this->type).'Printer';
-        $titlePrinter = new $printerClassName($this->title); 
+        $titlePrinter = new $printerClassName($this->merge()); 
         $titlePlanText = $titlePrinter->toPlainText();
 
         print($datePlanText.$titlePlanText);
     }
 
     // Getter para author
-    public function getAuthor() {
+    public function merge(): array {
+        // Usando array_merge para combinar los arreglos
+        $combinedArray = array_merge($this->author, $this->title, $this->date);
+        return $combinedArray;
+    }
+
+    // Getter para author
+    public function getAuthor() {[];
         return $this->author;
     }
 

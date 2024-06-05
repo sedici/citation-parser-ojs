@@ -3,16 +3,12 @@
 include_once 'TitlePrinter.php';
 class JournalPrinter extends TitlePrinter{
 
-    public function getReferenceStringOld($reference): string{
-        return $reference['journal'].$reference['revista'].', '.$reference['nedicio'].'('.$reference['volumen'].'), '.$reference['paginas'].'.';
-    }
-
     public function toPlainText(): string{
         return $this->getTitle().$this->getJournal().', '.$this->getEdition().'('.$this->getVolume().'), '.$this->getPages().'.';
     }
 
     public function getJournal(): string{
-        return $this->get('journal');
+        return $this->get('revista');
     }
 
     public function getEdition(): string{
@@ -23,7 +19,7 @@ class JournalPrinter extends TitlePrinter{
         return $this->get('volumen');
     }
 
-    public function getPage(): string{
+    public function getPages(): string{
         return $this->get('paginas');
     }
 
@@ -35,18 +31,29 @@ class JournalPrinter extends TitlePrinter{
         return $this->getJournal();
     }
 
+    public function createXMLElements(): array {
+        $elements = [];
+        
+        $sourceElement = $this->createElement('source',$this->getSource());
+        $elements[] = $sourceElement;
+
+        $articleTitleElement = $this->createElement('article-title',$this->getTitle());
+        $elements[] = $articleTitleElement;
+
+        $volumeElement = $this->createElement('volume',$this->getVolume());
+        $elements[] = $volumeElement;
+
+        $editionElement = $this->createElement('issue',$this->getEdition());
+        $elements[] = $editionElement;
+
+        $fpageElement = $this->createElement('fpage',$this->getPages());
+        $elements[] = $fpageElement;
+
+        $lpageElement = $this->createElement('lpage',$this->getPages());
+        $elements[] = $lpageElement;
+
+        return $elements;
+    }
+
 
 }
-
-/*
-include_once 'ReferencePrinter.php';
-class JournalPrinter extends ReferencePrinter{
-
-    public static function getReferenceString($reference): string{
-        return $reference['journal'].$reference['revista'].', '.$reference['nedicio'].'('.$reference['volumen'].'), '.$reference['paginas'].'.';
-    }
-
-    public static function getSource($reference): string{
-        return $reference['revista'];
-    }
-}*/

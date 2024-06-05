@@ -4,11 +4,15 @@ class ChapterPrinter extends TitlePrinter{
     //IMCOMPLETO LA IMPRESION, FALTA LOS AUTORES.
 
     public function toPlainText(): string{
-        return $this->reference['chapter'].' ('.$this->reference['book'].'). '.$this->reference['edicion'].'.'.$this->reference['editorial'].'.';
+        return $this->getChapter().' ('.$this->getBook().'). '.$this->getEdition().'.'.$this->getEditorial().'.';
     }
 
     public function getSource(){
         return $this->getBook();
+    }
+
+    public function getChapter(){
+        return $this->getTitle();
     }
 
     public function getBook(){
@@ -21,5 +25,10 @@ class ChapterPrinter extends TitlePrinter{
 
     public function getEditorial(){
         return $this->get('editorial');
+    }
+
+    public function createXMLElements(): array {
+        $elements = [];
+        return $elements;
     }
 }

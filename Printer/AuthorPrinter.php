@@ -17,4 +17,8 @@ class AuthorPrinter extends GenericPrinter {
         return $result;
     }
 
+    public function createXMLElements(): array {
+        $elements = [];
+        return $elements;
+    }
 }

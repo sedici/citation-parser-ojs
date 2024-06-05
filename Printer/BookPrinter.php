@@ -29,4 +29,16 @@ class BookPrinter extends TitlePrinter{
     public function getEditorial(){
         return $this->get('editorial');
     }
+
+    public function createXMLElements(): array {
+        $elements = [];
+        
+        $sourceElement = $this->createElement('source',$this->getSource());
+        $elements[] = $sourceElement;
+
+        $publishernamElement = $this->createElement('publisher-name',$this->getEditorial());
+        $elements[] = $publishernamElement;
+        
+        return $elements;
+    }
 }

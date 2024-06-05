@@ -25,4 +25,26 @@ class DatePrinter extends GenericPrinter{
         return $this->get('date');
     }
 
+    public function createXMLElements(): array {
+        //$dateElement = $this->dom->createElement('date');
+        $elements = [];
+        
+        if ($date = $this->getDate()) {
+            $elements[] = $this->createElement('year', $date);
+        }
+
+        if ($year = $this->getYear()) {
+            $elements[] = $this->createElement('year', $year);
+        }
+
+        if ($month = $this->getMonth()) {
+            $elements[] = $this->createElement('month', $month);
+        }
+
+        if ($day = $this->getDay()) {
+            $elements[] = $this->createElement('day', $day);
+        }
+
+        return $elements;
+    }
 }
