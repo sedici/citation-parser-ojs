@@ -130,10 +130,11 @@ $chapter = '/'.$chaptername.'\s'.$chapterauthors.$chapterbook.'/';
  -> NO RECONOCE NUMERO DE ARTICULO, SOLO "pp."
 */
 
-$journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-ÿ\s\:\.]+)\,\s(?P<nedicio>\d{1,3})\((?P<volumen>\d{1,3})\)\,\s(?P<paginas>(\d{1,4}-\d{1,4}))\./';
+$journal = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\.\s(?P<revista>[A-Z][A-Za-zÀ-ÿ\s\:\.]+)\,\s(?P<nedicio>\d{1,3})\((?P<volumen>\d{1,3})\)\,\s(?P<paginas>((?P<fpage>\d{1,4})–(?P<lpage>\d{1,4})))\./';
 
 //--------------TESIS----------------//
 
+$thesis = '/(?P<titulo>[A-Z][A-Za-zÀ-ÿ\s\:]+)\s\[(?P<comment>[^\][]*)\].\s/';
 
 //-----------PAGINAS WEB-------------//
 
