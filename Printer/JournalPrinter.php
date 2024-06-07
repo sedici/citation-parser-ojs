@@ -23,6 +23,14 @@ class JournalPrinter extends TitlePrinter{
         return $this->get('paginas');
     }
 
+    public function getFPages(): string{
+        return $this->get('fpage');
+    }
+
+    public function getLPages(): string{
+        return $this->get('lpage');
+    }
+
     public function getArticleNumber(): string{
         return null;//
     }
@@ -46,10 +54,10 @@ class JournalPrinter extends TitlePrinter{
         $editionElement = $this->createElement('issue',$this->getEdition());
         $elements[] = $editionElement;
 
-        $fpageElement = $this->createElement('fpage',$this->getPages());
+        $fpageElement = $this->createElement('fpage',$this->getFPages());
         $elements[] = $fpageElement;
 
-        $lpageElement = $this->createElement('lpage',$this->getPages());
+        $lpageElement = $this->createElement('lpage',$this->getLPages());
         $elements[] = $lpageElement;
 
         return $elements;

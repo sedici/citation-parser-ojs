@@ -3,17 +3,18 @@ include_once 'GenericPrinter.php';
 class AuthorPrinter extends GenericPrinter {
 
     public function toPlainText(): string{
-        // Inicializamos una variable para almacenar la cadena resultante
-        $result = '';
-
-
-        // Iteramos sobre el array de autores
-        foreach ($this->reference as $index => $author) {
-            $result .= $author['nombre'];
-
+        $result = "";
+        if (isset($this->reference['authors'])) {
+            foreach ($this->reference['authors'] as $key => $author) {
+                $result .= "$key:\n";
+                $result .= "Apellido: " . $author['apellido'] . "\n";
+                $result .= "Nombres: " . $author['nombres'] . "\n";
+                $result .= "Role: " . $author['role'] . "\n";
+                $result .= "\n";
+            }
+        } else {
+            $result .= "No authors found.\n";
         }
-
-        // Imprimimos el resultado
         return $result;
     }
 
@@ -24,17 +25,12 @@ class AuthorPrinter extends GenericPrinter {
         $authorElement->setAttribute('person-group-type','author');
         $elements[] = $authorElement;
 
-        $authores = [
-            ["nombre" => "Gabriel", "apellido" => "García Márquez"],
-            ["nombre" => "Isabel", "apellido" => "Allende"],
-            ["nombre" => "Jorge", "apellido" => "Luis Borges"],
-        ];
-        
+        $authores = $this->reference['authors'];
 
         foreach ($authores as $autor) {
             $nameElement = $this->dom->createElement('name');
             $surname = $this->dom->createElement('surname',$autor['apellido']);
-            $given_names = $this->dom->createElement('given-names',$autor['nombre']);
+            $given_names = $this->dom->createElement('given-names',$autor['nombres']);
             $nameElement->appendChild($surname);
             $nameElement->appendChild($given_names);
             $authorElement->appendChild($nameElement);

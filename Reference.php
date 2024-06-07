@@ -8,6 +8,7 @@ include_once 'Printer/ChapterPrinter.php';
 include_once 'Printer/CongressPrinter.php';
 include_once 'Printer/DatePrinter.php';
 include_once 'Printer/AuthorPrinter.php';
+include_once 'Printer/ThesisPrinter.php';
 
 class Reference {
     private $referenceText;
@@ -44,7 +45,7 @@ class Reference {
         $titleExpression = TitleExpression::parse($this->referenceText);
         $this->title = $titleExpression['value'];
         $this->type = $titleExpression['expression'];
-        $this->TitleType = $titleExpression['expression'];
+        $this->titleType = $titleExpression['expression'];
     }
 
     private function parse() {

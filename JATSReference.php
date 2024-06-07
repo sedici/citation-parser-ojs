@@ -1,7 +1,7 @@
 <?php
 include_once 'Reference.php';
-
 class JATSReference {
+
     public $reference;
     public const JATS_REF_ID_PREFIX = 'parser_ref';
     private $dom;
@@ -19,7 +19,7 @@ class JATSReference {
         $this->dom->appendChild($this->ref);
 
         $this->element_citation = $this->dom->createElement('element_citation');
-        $this->element_citation->setAttribute('publication_type','journal');
+        $this->element_citation->setAttribute('publication_type',$this->reference->getTitleType());
         $this->mixed_citation = $this->dom->createElement('mixed_citation');
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
@@ -30,9 +30,9 @@ class JATSReference {
 
     }
 
-    public function getJatsXML() {
+    public function getJatsXML(string $rout = 'output.xml') {
         // Devolver el XML como una cadena
-        return $this->dom->save('jats.xml');
+        return $this->dom->save($rout);
     }
 
     public function addAuthors() {
@@ -57,11 +57,12 @@ class JATSReference {
 
     public function addTitle(){
 
-        /*if($typeTitle == null) return;
-        $printerClassName = ucfirst($type).'Printer';*/
+        $titleType = $this->reference->getTitleType(); 
+        if($titleType == null) return;
 
-        $bookPrinter = new JournalPrinter($this->reference->getTitle(), $this->dom);
-        $elements = $bookPrinter->createXMLElements();
+        $printerClassName = ucfirst($titleType).'Printer';
+        $printer = new $printerClassName($this->reference->getTitle(), $this->dom);
+        $elements = $printer->createXMLElements();
         foreach ($elements as $element) {
             $this->element_citation->appendChild($element);
         }
@@ -70,15 +71,4 @@ class JATSReference {
 
 
 }
-/*
-
-
-$journal = 'Castakeda Naranjo, L. A. y Palacios Neri, J. (2015). Nanotecnología: fuente de nuevos paradigmas. Mundo Nano. Revista Interdisciplinaria en Nanociencias y Nanotecnología, 7(12), 45–49.';
-$jounralReference = new Reference($journal);
-$jounralReference->print();*/
-// Ejemplo de uso
-/*
-$jatsReference = new JATSReference($jounralReference);
-$jatsReference->getJatsXML();
-*/
 ?>

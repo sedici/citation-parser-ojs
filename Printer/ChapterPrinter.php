@@ -29,6 +29,9 @@ class ChapterPrinter extends TitlePrinter{
 
     public function createXMLElements(): array {
         $elements = [];
+
+        $parttitleElement = $this->createElement('part-title',$this->getTitle());
+        $elements[] = $parttitleElement;
         
         $sourceElement = $this->createElement('source',$this->getSource());
         $elements[] = $sourceElement;

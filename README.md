@@ -30,3 +30,9 @@ Listado faltantes:
     a. Traducidos 
     b. Idioma original 
 6. Punteo general, como la aceptancion de ".", ":", ";". 
+
+
+
+JATS:
+1. Capitulo de libro: https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/part-title.html
+2. tesis: https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/part-title.html

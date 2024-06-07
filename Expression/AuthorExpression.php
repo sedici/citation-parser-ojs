@@ -15,12 +15,15 @@ class AuthorExpression extends Expression {
         preg_match_all($authors, $text, $matches, PREG_SET_ORDER);
 
         $authors_array = array();
+        $counter = 1;
+        
         foreach ($matches as $match) {
-            $authors_array[] = [
+            $authors_array['authors']['author' . $counter] = [
                 'apellido' => $match['apellido'],
                 'nombres' => $match['nombres'],
                 'role' => $match['role'] ?? '',
             ];
+            $counter++;
         }
 
         //return $authors_array;
