@@ -9,9 +9,9 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
-    public function __construct(Reference $reference) {
+    public function __construct(Reference $reference,\DOMDocument $dom = null) {
         $this->reference = $reference;
-        $this->dom = new DOMDocument('1.0', 'UTF-8');
+        $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
 
         // Crear el elemento raíz <ref> con el prefijo de ID
         $this->ref = $this->dom->createElement('ref');
@@ -27,6 +27,7 @@ class JATSReference {
         $this->addAuthors();
         $this->addDate();
         $this->addTitle();
+        $this->addURL();
 
     }
 
@@ -55,10 +56,33 @@ class JATSReference {
            
     }
 
+
+    public function addURL() {
+        // Devolver el XML como una cadena
+        $urlType = $this->reference->getURLType(); 
+        if ($urlType === null || trim($urlType) === "" || $urlType === "No match found") {
+            return;
+        }
+
+
+        $printerClassName = ucfirst($urlType).'Printer';
+        $printer = new $printerClassName($this->reference->getURL(), $this->dom);
+
+        $elements = $printer->createXMLElements();
+        foreach ($elements as $element) {
+            $this->element_citation->appendChild($element);
+        }
+           
+    }
+
     public function addTitle(){
 
         $titleType = $this->reference->getTitleType(); 
-        if($titleType == null) return;
+        if ($titleType === null || trim($titleType) === "" || $titleType === "No match found") {
+            $errorElement = $this->dom->createElement('comment', 'title no match found');
+            $this->element_citation->appendChild($errorElement);
+            return;
+        }
 
         $printerClassName = ucfirst($titleType).'Printer';
         $printer = new $printerClassName($this->reference->getTitle(), $this->dom);

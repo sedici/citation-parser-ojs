@@ -2,13 +2,17 @@
 include_once 'Expression/AuthorExpression.php';
 include_once 'Expression/DateExpression.php';
 include_once 'Expression/TitleExpression.php';
+include_once 'Expression/URLExpression.php';
 include_once 'Printer/BookPrinter.php';
 include_once 'Printer/JournalPrinter.php';
 include_once 'Printer/ChapterPrinter.php';
-include_once 'Printer/CongressPrinter.php';
+include_once 'Printer/CongresPrinter.php';
 include_once 'Printer/DatePrinter.php';
 include_once 'Printer/AuthorPrinter.php';
 include_once 'Printer/ThesisPrinter.php';
+include_once 'Printer/URLPrinter.php';
+include_once 'Printer/DOIPrinter.php';
+include_once 'Printer/HANDLEPrinter.php';
 
 class Reference {
     private $referenceText;
@@ -22,6 +26,9 @@ class Reference {
 
     public $date;
     public $dateType;
+
+    public $url;
+    public $urlType;
 
     public function __construct(string $referenceText) {
         $this->referenceText = $referenceText;
@@ -48,10 +55,17 @@ class Reference {
         $this->titleType = $titleExpression['expression'];
     }
 
+    private function parseURL() {
+        $URLExpression = URLExpression::parse($this->referenceText);
+        $this->url = $URLExpression['value'];
+        $this->urlType = $URLExpression['expression'];
+    }
+
     private function parse() {
         $this->parseAuthor();
         $this->parseDate();
         $this->parseTitle();
+        $this->parseURL();
 
     }
 
@@ -74,7 +88,7 @@ class Reference {
     // Getter para author
     public function merge(): array {
         // Usando array_merge para combinar los arreglos
-        $combinedArray = array_merge($this->author, $this->title, $this->date);
+        $combinedArray = array_merge($this->author, $this->title, $this->date, $this->url);
         return $combinedArray;
     }
 
@@ -106,6 +120,16 @@ class Reference {
     // Getter para dateType
     public function getDateType() {
         return $this->dateType;
+    }
+
+    // Getter para date
+    public function getURL() {
+        return $this->url;
+    }
+
+    // Getter para dateType
+    public function getURLType() {
+        return $this->urlType;
     }
 
     private function determineType() {
