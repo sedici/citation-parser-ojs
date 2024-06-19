@@ -26,7 +26,10 @@ class DatePrinter extends GenericPrinter{
             'noviembre' => 11,
             'diciembre' => 12
         );
-        return $months[$this->get('month')];
+        if($month = $this->get('month')){
+            return $months[$month];
+        }
+        else return false;
     }
 
 
