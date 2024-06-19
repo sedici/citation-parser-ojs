@@ -18,8 +18,6 @@ Desarrollar un sistema de análisis y extracción de información de referencias
 
 1. ¿Como resolver el camelcase de las editoriales y las revistas?
 2. ¿Como generaliza?
-3. Tenemos que saber que hacemos cuando una referencia no conincide.
-4. Tenemo que separar las paginas entre first y last. Tanto para imprimir como para el JATS
 5. Congresos y tesisnas
 
 
@@ -36,3 +34,14 @@ Listado faltantes:
 JATS:
 1. Capitulo de libro: https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/part-title.html
 2. tesis: https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/part-title.html
+
+
+Regex:
+Title
+1. agregamos numero, - y mayusculas el titulo
+
+Jounal
+1. nedicion y volumen opciones
+2. fpage y lpage opciones
+3. unmero romano al nedicion
+4. - al titulo
