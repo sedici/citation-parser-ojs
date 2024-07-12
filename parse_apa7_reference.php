@@ -73,6 +73,8 @@ La información de título se refiere al título de la obra que se cita. Podemos
 
 */
 
+$title = '/(?P<title>[A-Z0-9][0-9A-Za-zÀ-ÿ\s\:\,\;\-]+\.)/'; 
+
 //------------ELEMENTS OF BIBLIOGRAPHIC REFERENCES ------------//
 
 // Capturar la edicion para LIBRO o capitulo de libro (para el capitulo faltaria las paginas)
@@ -88,7 +90,8 @@ $edicioncomplete = '/(?P<edicion>(?P<nedicion>[0-9]+ᵃ)\sed\.(,\s)?(Vol\.\s(?P<
 $url = '(?P<url>https?:\/\/[^\s]+)';
 $opcionalurl = '(\s'. $url .')?/';
 
-$url = '/(?P<url>https?:\/\/[^\s]+)/';
+$url = '/(?P<url>https?:\/\/[^\s]+)/'; 
+$doi = '/(?P<doi>https?:\/\/doi.org\/[^\s]+)$/';
 // https://google.com | http://wikipedia.com
 
 //--------------------------------------------------------------//

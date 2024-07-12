@@ -33,6 +33,8 @@ class JATSReference {
 
     public function getJatsXML(string $rout = 'output.xml') {
         // Devolver el XML como una cadena
+        $this->dom->preserveWhiteSpace = false; // Opcional, para evitar espacios en blanco innecesarios
+        $this->dom->formatOutput = true; // Activar la salida formateada
         return $this->dom->save($rout);
     }
 
@@ -64,7 +66,6 @@ class JATSReference {
             return;
         }
 
-
         $printerClassName = ucfirst($urlType).'Printer';
         $printer = new $printerClassName($this->reference->getURL(), $this->dom);
 
@@ -79,8 +80,8 @@ class JATSReference {
 
         $titleType = $this->reference->getTitleType(); 
         if ($titleType === null || trim($titleType) === "" || $titleType === "No match found") {
-            $errorElement = $this->dom->createElement('comment', 'title no match found');
-            $this->element_citation->appendChild($errorElement);
+            $errorComment = $this->dom->createComment('Error: Failed to parse the title information. Please review.');
+            $this->element_citation->appendChild($errorComment);
             return;
         }
 

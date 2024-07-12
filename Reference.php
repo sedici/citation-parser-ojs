@@ -6,7 +6,7 @@ include_once 'Expression/URLExpression.php';
 include_once 'Printer/BookPrinter.php';
 include_once 'Printer/JournalPrinter.php';
 include_once 'Printer/ChapterPrinter.php';
-include_once 'Printer/CongresPrinter.php';
+include_once 'Printer/CongressPrinter.php';
 include_once 'Printer/DatePrinter.php';
 include_once 'Printer/AuthorPrinter.php';
 include_once 'Printer/ThesisPrinter.php';
@@ -67,22 +67,6 @@ class Reference {
         $this->parseTitle();
         $this->parseURL();
 
-    }
-
-    public function print(){
-        
-
-        if($this->dateType == null) return;
-        $printerClassName = 'DatePrinter';
-        $datePrinter = new DatePrinter($this->merge()); 
-        $datePlanText = $datePrinter->toPlainText();
-
-        if($this->type == null) return;
-        $printerClassName = ucfirst($this->type).'Printer';
-        $titlePrinter = new $printerClassName($this->merge()); 
-        $titlePlanText = $titlePrinter->toPlainText();
-
-        print($datePlanText.$titlePlanText);
     }
 
     // Getter para author
