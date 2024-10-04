@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model type="application/xml-dtd" href="http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article xmlns:ali="http://www.niso.org/schemas/ali/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" dtd-version="1.1d3" specific-use="Marcalyc 1.2" article-type="research-article" xml:lang="es">
+<front>
+<journal-meta>
+<journal-id journal-id-type="redalyc">5116</journal-id>
+<journal-title-group>
+<journal-title specific-use="original" xml:lang="es">Ciencias Administrativas</journal-title>
+<abbrev-journal-title abbrev-type="publisher" xml:lang="es">CADM</abbrev-journal-title>
+</journal-title-group>
+<issn pub-type="epub">2314-3738</issn>
+<publisher>
+<publisher-name>Universidad Nacional de La Plata</publisher-name>
+<publisher-loc>
+<country>Argentina</country>
+<email>revistacadm@econo.unlp.edu.ar</email>
+</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="art-access-id" specific-use="redalyc">511674246003</article-id>
+<article-id pub-id-type="doi">https://doi.org/10.24215/23143738e120</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Artículo científico</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title xml:lang="es">LA GESTIÓN AMBIENTAL EN LA PYME DE LA CIUDAD DE MÉXICO</article-title>
+<trans-title-group>
+<trans-title xml:lang="en">Environmental Management in SMEsin Mexico City</trans-title>
+</trans-title-group>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="no">
+<contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-3297-1157</contrib-id>
+<name name-style="western">
+<surname>Saavedra García</surname>
+<given-names>María Luisa</given-names>
+</name>
+<xref ref-type="aff" rid="aff1"/>
+<email>maluisasaavedra@yahoo.com</email>
+</contrib>
+<contrib contrib-type="author" corresp="no">
+<contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-8562-0222</contrib-id>
+<name name-style="western">
+<surname>Tapia Sánchez</surname>
+<given-names>Blanca</given-names>
+</name>
+<xref ref-type="aff" rid="aff2"/>
+<email>btapia@fca.unam.mx</email>
+</contrib>
+<contrib contrib-type="author" corresp="no">
+<name name-style="western">
+<surname>Aguilar Anaya</surname>
+<given-names>María de los Ángeles</given-names>
+</name>
+<xref ref-type="aff" rid="aff3"/>
+<email>maguilara@fca.unam.mx</email>
+</contrib>
+</contrib-group>
+<aff id="aff1">
+<institution content-type="original">Facultad de Contaduría y Administración, Universidad Nacional Autónoma de México</institution>
+<institution content-type="orgname">Facultad de Contaduría y Administración, Universidad Nacional Autónoma de México</institution>
+<country country="MX">México</country>
+</aff>
+<aff id="aff2">
+<institution content-type="original">Facultad de Contaduría y Administración, Universidad Nacional Autónoma de México</institution>
+<institution content-type="orgname">Facultad de Contaduría y Administración, Universidad Nacional Autónoma de México</institution>
+<country country="MX">México</country>
+</aff>
+<aff id="aff3">
+<institution content-type="original">Facultad de Contaduría y Administración, Universidad Nacional Autónoma de México</institution>
+<institution content-type="orgname">Facultad de Contaduría y Administración, Universidad Nacional Autónoma de México</institution>
+<country country="MX">México</country>
+</aff>
+<pub-date pub-type="epub-ppub">
+<season>Julio-Diciembre</season>
+<year>2023</year>
+</pub-date>
+<issue>22</issue>
+<history>
+<date date-type="received" publication-format="dd mes yyyy">
+<day>07</day>
+<month>04</month>
+<year>2022</year>
+</date>
+<date date-type="accepted" publication-format="dd mes yyyy">
+<day>27</day>
+<month>06</month>
+<year>2022</year>
+</date>
+<date date-type="pub" publication-format="dd mes yyyy">
+<day>31</day>
+<month>03</month>
+<year>2023</year>
+</date>
+</history>
+<permissions>
+<ali:free_to_read/>
+<license xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+<ali:license_ref>https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref>
+<license-p>Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial-SinDerivar 4.0 Internacional.</license-p>
+</license>
+</permissions>
+<abstract xml:lang="es">
+<title>Resumen</title>
+<p>El objetivo de esta investigación fue la identificación de las prácticas ambientales en las pymes de la Ciudad de México, así como la relación de estas prácticas con las características de las empresas y los empresarios. Se recolectaron los datos por medio de una encuesta estructurada y descriptiva, sobre una muestra de 300 empresas voluntarias. Los principales hallazgos permitieron determinar que las prácticas de gestión ambiental de mayor uso son el diseño de planta y la eficiencia en el uso de insumos y materias primas se confirma así la existencia de relación entre el sector industrial y el diseño de sus plantas de producción, así como el consumo de energía, agua y materias primas, y la implementación de políticas sobre el manejo de residuos, sus certificaciones y/o capacitaciones. También, se confirma la existencia de una relación importante entre el nivel educativo de los empresarios y la presencia de certificaciones dentro de la empresa.</p>
+</abstract>
+<trans-abstract xml:lang="en">
+<title>Abstract</title>
+<p>The objective of this study was the identification of environmental practices in SMEs in Mexico City, as well as the relationship between these practices and the companies and entrepreneurs´characteristics. The data was collected through a structured and descriptive survey, on a sample of 300 voluntary companies. The main findings made it possible to determine that the most widely used environmental management practices are plant design and efficiency in the use of inputs and raw materials. This confirms the existence of a relationship between the industrial sector and the design of its production plants, as well as the consumption of energy, water, raw materials, implementation of policies on waste management, their certifications and/or training. Also, it ratifies the existence of an important relationship between the entrepreneurs´educational level and the presence of certifications within the company.</p>
+</trans-abstract>
+<kwd-group xml:lang="es">
+<title>Palabras clave</title>
+<kwd>certificación</kwd>
+<kwd>gestión ambiental</kwd>
+<kwd>PyME</kwd>
+</kwd-group>
+<kwd-group xml:lang="en">
+<title>Keywords</title>
+<kwd>Certification</kwd>
+<kwd>Environmental management</kwd>
+<kwd>SMEs</kwd>
+</kwd-group>
+<counts>
+<fig-count count="0"/>
+<table-count count="3"/>
+<equation-count count="0"/>
+<ref-count count="28"/>
+</counts>
+<custom-meta-group>
+<custom-meta>
+<meta-name>Clasificación JEL</meta-name>
+<meta-value>K23, L23, Q56</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec>
+<title>
+<bold>Introducción</bold>
+</title>
+<p>Las empresas son afectadas por diversos factores referentes a su entorno, tal es el caso de los factores ambientales y su impacto en la demanda de los productos y/o servicios, además, del factor tecnológico, por su relación con la innovación. Por este motivo es de suma importancia que se realice el análisis de las acciones tomadas por parte de los empresarios en estos temas. Sin embargo, EaP GREEN (<xref ref-type="bibr" rid="redalyc_511674246003_ref4">2015</xref>) refiere que las pymes carecen en gran medida de conciencia de sus impactos ambientales, así como de la comprensión de que un mayor desempeño ambiental puede ser una ventaja competitiva, mostrando una capacidad limitada para interpretar y responder a incentivos que fomenten el cuidado ambiental. Si bien la huella ambiental individual de las pymes puede ser baja, su impacto en conjunto excede el de las grandes empresas (<xref ref-type="bibr" rid="redalyc_511674246003_ref3">Denegrí de Dios y Peña Salmón, 2011</xref>). Los sectores clave en los que tienen un impacto medioambiental particularmente significativo incluyen la ganadería, la construcción y la industria de la transformación. Sin embargo, el tema ambiental para las pymes ha sido considerado un obstáculo para su desarrollo, puesto que la implementación de prácticas de gestión ambiental incrementa sus costos, disminuye la posibilidad de invertir en cuestiones de mejoras productivas y, por ende, las pymes se encuentran en un escenario de desventaja frente a otros competidores (<xref ref-type="bibr" rid="redalyc_511674246003_ref21">Sepúlveda, 2005</xref>).</p>
+<p>Por lo anterior, resulta importante realizar esta investigación que tiene como fin responder a las preguntas ¿cuáles son las prácticas de gestión ambiental más comunes realizadas por las pymes en la Ciudad de México? y ¿cuál es su relación con las diferentes características presentes en las empresas y los empresarios?</p>
+</sec>
+<sec>
+<title>
+<bold>Marco Teórico</bold>
+</title>
+<sec>
+<title>
+<bold>La Gestión Ambiental en las pymes</bold>
+</title>
+<p>La gestión de políticas ambientales en México ha sufrido grandes avances a lo largo de la última década, especialmente en la generación e implementación de políticas que han permitido mejorar la administración en materia ambiental y <italic>
+<underline>crear</underline>
+</italic> diferentes organismos especializados en el tema Sin embargo, la problemática consiste en que se formulan límites, pero no se cuenta con un sistema de monitoreo que permita medir e incentivar mejoras continuas para la obtención de resultados óptimos o, en su caso, la implementación de sanciones (<xref ref-type="bibr" rid="redalyc_511674246003_ref1">Araya, 2003</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref26">Vera y Martínez, 2020</xref>).  En el sector de las pymes se emplea un método indirecto que permite identificar el porcentaje de emisión de contaminantes; sin embargo, únicamente es empleado por empresas que pertenecen a los sectores identificados como altamente contaminantes (<xref ref-type="bibr" rid="redalyc_511674246003_ref1">Araya, 2003</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref12">Navarro, 2019</xref>).</p>
+<p>Araya (<xref ref-type="bibr" rid="redalyc_511674246003_ref1">2003</xref>) señala que para las pymes no ha sido fácil adoptar estas políticas dado que acarrean costos altos, principalmente en los instrumentos necesarios para el control ambiental. A esto se une el hecho que muchos empresarios no perciben la importancia de los problemas ambientales o la necesidad de actuar de una manera ambientalmente responsable, e ignoran el impacto para su negocio (<xref ref-type="bibr" rid="redalyc_511674246003_ref28">Walker et al., 2008</xref>). Algunos tienen una falta general de conocimiento sobre cuestiones ambientales, sostenibilidad o prácticas específicas que pueden implementar, y temen hacer las cosas mal, carecen de comprensión tanto de los problemas y riesgos ambientales como de los beneficios potenciales de las mejoras ambientales, así como de la experiencia y la confianza para hacer algo distinto a su actividad principal, puesto que la mayoría de ellos son buenos negociadores, pero administradores deficientes. Además, perciben que su negocio no tiene un impacto en el medioambiente o consideran que el impacto es muy pequeño, además de no percibir beneficios en el corto plazo.</p>
+<p>En México las empresas grandes y medianas cuentan con recursos y perciben que es beneficioso la autoregulación ambiental, no así la industria pequeña y micro, la cual presenta un gran rezago en este rubro, debido a la falta de tecnología adecuada, recursos financieros, humanos y bajo cumplimiento de la legislación. Además, no existe conciencia sobre la importancia en el cuidado del medioambiente, la escasez de recursos naturales, el ruido, la generación de residuos y la contaminación tanto del aire como del agua (<xref ref-type="bibr" rid="redalyc_511674246003_ref17">Saavedra et al., 2012</xref>).</p>
+<p>Estudios antecedentes realizados sobre la gestión ambiental en la pymes (<xref ref-type="bibr" rid="redalyc_511674246003_ref2">Bercovich y López, 2005</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref5">Fernández Viñé et al., 2009</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref7">González Ordóñez, 2017</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref8">González Ordóñez, 2019</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref9">González Ordóñez et al., 2018</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref11">Janovitz Klappe et al., 2002</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref13">Ojeda y Mul, 2015</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref25">Van Hoof y Thiell 2015</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref16">Rubio Calduch, 2015</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref23">Tagle, 2010</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref24">Torres y Hofman, 1990</xref>) muestran que las decisiones tomadas por las organizaciones para generar acciones positivas sobre el cuidado del medio ambiente provienen de presiones tanto del entorno interno como del externo en el que se desempeñan las empresas. Una de las principales razones por las cuales se promueve la implementación de este tipo de acciones radica en la necesidad de generar un impacto en la imagen corporativa en diferentes ámbitos, sector industrial, comunidad o en el entorno en general, así como en la necesidad de generar ventajas competitivas importantes. Además, las pymes abarcan cerca del 98% de las empresas en la Ciudad de México, por lo que son consideradas como la mayor fuente de contaminación, pero con la gran desventaja de no ser capaces de entender su impacto y mucho menos tener los recursos económicos necesarios para atacar este problema.</p>
+<p>Rubio Calduch (<xref ref-type="bibr" rid="redalyc_511674246003_ref16">2015</xref>) esquematiza la necesidad de atender esta problemática señalando que</p>
+<p>
+<disp-quote>
+<p>El progresivo crecimiento de las ciudades, el desarrollo de la industrialización, y en definitiva la civilización actual, provocan sobre el entorno natural una serie de procesos negativos encaminados hacia un deterioro y desequilibrio ecológico que, de no tomar las debidas medidas a tiempo puede resultar irreversible.</p>
+<p>La industrialización es un factor decisivo que actúa sobre el medio físico: las emisiones contaminantes a la atmósfera, los vertidos a ríos y mares, la producción de residuos, etc., conllevan unas consecuencias sobre el medio ambiente que deben contemplarse para minimizar su efecto negativo sobre el mismo . . .La identificación de los aspectos medioambientales y la evaluación de los efectos asociados a una actividad empresarial o industrial, es fundamental para conocer el impacto medioambiental que generan las actividades, productos o servicios, y poder establecer unos objetivos y metas medioambientales. (p. 2)</p>
+</disp-quote>
+</p>
+<p>En las últimas dos décadas, algunas pymes se han dedicado a realizar inversiones para mejorar su productividad, ya sea a través de la introducción de nuevos productos y/o servicios en el mercado, mejorar la calidad de lo que ofrecen o incluso generar acciones que les permitan ofrecer un precio mucho más competitivo (<xref ref-type="bibr" rid="redalyc_511674246003_ref11">Janovitz Klappe et al., 2002</xref>). Sin embargo, es evidente que aún falta mucho por hacer en este rubro, pues Ojeda y Mul (<xref ref-type="bibr" rid="redalyc_511674246003_ref13">2015</xref>) encontraron que cerca del 70% de los empresarios no consideran la gestión ambiental en la instalación y mantenimiento de sus equipos.</p>
+<p>Este es un tema preocupante dado que, como sostienen Janovitz Klappe et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref11">2002</xref>), en el largo plazo es necesario considerar la prevención y reducción de actividades contaminantes, para mejorar las prácticas ambientales, así como para mejorar la productividad y reducir los costos, ya sea de insumos, recursos humanos o en generación de valor para los clientes. Un sector industrial orientado hacia el fortalecimiento del medio ambiente es capaz de impulsar acciones que permitan generar un cambio en las políticas corporativas bajo lineamientos nacionales e internacionales, en el desarrollo e implementación de tecnología de última generación, así como una disminución en la presión de un cambio por parte de los consumidores para combatir los impactos medioambientales que aquejan a la población.</p>
+<p>Por este motivo, las empresas, independientemente de su magnitud, deberían ser capaces de cumplir con las políticas medioambientales vigentes, a nivel nacional e internacional. Algunas se han enfocado en generar acciones a fin de incorporar los criterios de eficiencia ecológica en los procesos productivos, como lo es la Producción Limpia (PL). Las políticas ambientales deberán estar encaminadas a la promoción de este enfoque e integrar acciones que permitan mejorar y alcanzar los objetivos en común, es decir, mejorar la productividad, impulsar la competitividad empresarial y generar un crecimiento sustentable (<xref ref-type="bibr" rid="redalyc_511674246003_ref14">Ortiz et al., 2013</xref>).</p>
+<p>Para estar en condiciones de adoptar la normatividad ambiental, Starkey (<xref ref-type="bibr" rid="redalyc_511674246003_ref22">1998</xref>) señala que las pymes necesitan cuatro tipos de información:</p>
+<p>
+<list list-type="bullet">
+<list-item>
+<p>Ayuda y orientación sobre problemas ambientales, concernientes al cumplimiento de la normatividad y sus soluciones;</p>
+</list-item>
+<list-item>
+<p>Herramientas para una mejor gestión ambiental (y administración general);</p>
+</list-item>
+<list-item>
+<p>Casos de éxito específicos de su sector;</p>
+</list-item>
+<list-item>
+<p>Tendencias y escenarios sobre oportunidades futuras de mercado.</p>
+</list-item>
+</list>
+</p>
+</sec>
+<sec>
+<title>
+<bold>Prácticas de Gestión Ambiental en las pymes</bold>
+</title>
+<p>Según Bercovich y López (<xref ref-type="bibr" rid="redalyc_511674246003_ref2">2005</xref>), la implementación de prácticas y herramientas tecnológicas de producción limpia ha representado un escenario benéfico, tanto para las empresas (reducción de costos) como para el medio ambiente. Por esta razón, se hace necesario que las pymes incorporen una cultura medioambiental donde se genere una concientización del problema que impulse acciones de mejora continua, implementando capacitaciones y asistencia técnica, y estableciendo manuales de políticas medioambientales (<xref ref-type="bibr" rid="redalyc_511674246003_ref16">Rubio Calduch, 2015</xref>).</p>
+<p>Bercovich y López (<xref ref-type="bibr" rid="redalyc_511674246003_ref2">2005</xref>) encontraron en sus estudios en Argentina que las industrias pequeñas realizan diversas actividades respecto a la implementación de tecnología referente a la generación de una “producción limpia”, plasmando diversos esfuerzos en la mejora de la eficiencia respecto al uso de sus recursos (materia prima y humanos), acciones de reciclado, reducción en el uso de procesos altamente contaminantes, etc., especificando que todas estas mejoras se deben a que existe una legislación local enfocada en la prevención de problemas medioambientales. A pesar de que las acciones implementadas se centran en la reducción de costos, mayores inversiones y adopción de nuevas tecnologías, existen barreras  para adoptar estas medidas, las cuales se encuentran estrechamente relacionadas con los factores que aquejan el entorno, como es el caso de la desinformación, las trabas para obtener financiamiento y la informalidad laboral (<xref ref-type="bibr" rid="redalyc_511674246003_ref2">Bercovich y López, 2005</xref>).</p>
+<p>Entre los trabajos empíricos referentes a la gestión ambiental en las pymes se encuentra el de Vives (<xref ref-type="bibr" rid="redalyc_511674246003_ref27">2006</xref>). En una muestra de 1.330 pymes de 8 países de Latinoamérica (Argentina, Brasil, Chile, Colombia, El Salvador, México, Perú y Venezuela) analizó el compromiso con el que cuentan las empresas en materia medioambiental. Demostró que solo un 14,5% de las micro y pequeñas empresas cuentan con un alto compromiso, respecto al 28% de las empresas de tamaño mediano. Además, encontró que más del 50% de las pymes no llevan a cabo actividades de responsabilidad medioambiental y, en caso de implementarlas, se centran únicamente en la mejora en la eficiencia del uso de energía, prácticas de reciclaje y tratamiento de residuos, señalando que entre los principales problemas para la implementación de políticas de gestión medioambiental se encuentran la falta de recursos y capacitación, así como una percepción nula del impacto que dichas empresas producen en el medio ambiente.</p>
+<p>Por su parte, Fernández Viñé et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref5">2009</xref>) realizaron una investigación con una muestra de 54 pymes del sector industrial para determinar el grado de eficiencia ecológica y medioambiental adoptado en sus procesos productivos. Se encontró que este tipo de prácticas han permitido generar un ahorro en los costos de operación gracias a diversas acciones, principalmente en el reciclaje y la reutilización de materiales. Sin embargo, no cuentan con políticas y/o estrategias claramente establecidas respecto a la gestión medioambiental. Los autores concluyeron que las pymes únicamente implementan este tipo de acciones con el fin de cumplir las regulaciones establecidas por sus respectivos gobiernos y por la reducción en sus costos de producción. Como consecuencia, no todas las pymes cumplen con el nivel mínimo exigido por la legislación en materia medioambiental. Muchas de ellas realizan acciones a nivel de prevención, pero ninguna ha llevado a cabo las acciones necesarias para que se considere como una empresa de “Ecodiseño”.</p>
+<p>En otra investigación acerca de las pymes industriales en México, Saavedra et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref19">2012</xref>) encontraron que el 89% no realiza procedimientos de impacto sobre el medioambiente, el 94% no cuenta con un programa de control y administración ambiental, solo el 0,9% cuenta con productos certificados con el ISO 14000, no planifican metas de reducción de desechos, uso de productos químicos y emisiones de aire y ruido, únicamente tienen metas restrictivas en el consumo energético en forma parcial llegando al 32%, debido al alto costo de este servicio. Los resultados de este análisis muestran que los empresarios no han tomado conciencia de la importancia de su participación en el cuidado del medioambiente y de contar con una industria sustentable, que les permita la permanencia en el largo plazo.</p>
+<p>Así también, en Venezuela se realizó un análisis con una muestra de 75 pymes pertenecientes al sector industrial, en donde se encontró que 73% de ellas no cuentan con los requisitos necesarios que son considerados en el conjunto de variables pertenecientes a la gestión del medio ambiente, es decir, no cuentan con planificación, generación, verificación y actuación en materia medioambiental (<xref ref-type="bibr" rid="redalyc_511674246003_ref14">Ortiz et al., 2013</xref>).</p>
+<p>El estudio desarrollado por Saavedra et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref18">2014</xref>) en la Ciudad de México presentó como resultado que, en el factor de “Gestión ambiental”, las pymes del sector industrial apenas alcanzó el 45% de adopción de prácticas medioambientales, en el sector comercio alcanzó tan sólo el 35% y en el sector servicios solo fue del 37%, mostrando así que los empresarios no cuentan con los conocimientos necesarios respecto a políticas y regulaciones ambientales, recursos financieros suficientes o el capital humano adecuado.</p>
+<p>Sánchez et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref20">2014</xref>) refieren que ante las exigencias de las regulaciones medioambientales y de la sociedad las empresas deberán responder adoptando políticas ambientales, para lo cual deberán transformar sus productos, sistemas de producción y prácticas de gestión con el fin de minimizar el impacto ambiental. En una muestra de 201 pymes de Gran Canaria, España, encontraron que la cuarta parte de los empresarios contaban con título universitario, más del 90% contaban con experiencia laboral, con referencia a sus empresas el 82,5% estaban constituidas como personas. Encontraron también que las pymes desarrollan la intención de participar en acciones que minimicen sus impactos ambientales cuando perciben la importancia de cumplir con las normas sociales; así también se comprobó que la actitud hacia la adopción de políticas ambientales es más favorable cuando el propietario de la empresa es una mujer, y cuando la empresa es de mayor tamaño.</p>
+<p>En Moldova, EaP GREEN (<xref ref-type="bibr" rid="redalyc_511674246003_ref4">2015</xref>) estudiaron una muestra de 400 pymes de las cuales 77% eran microempresas, 20% eran pequeñas y sólo 3% eran medianas. Encontraron que solo un 40% se sujetan a las normas medioambientales, pues el medio por el cual se enteraron de los requerimientos medioambientales fue a través de las visitas de inspectores (60%), lo que implica que las empresas implementan políticas ambientales cuando son requeridas por la autoridad; las razones para no adoptar las disposiciones medioambientales son las siguientes: reglas muy estrictas, costos de implementación que exceden a los beneficios, falta de recursos financieros, falta de información acerca de las opciones para la implementación y no es prioridad para la empresa. Consecuentemente solo el 4,3% de las pymes cuentan con la certificación ISO 14001, aunque el 30% ha adoptado algún estándar nacional ambiental, principalmente por la demanda de clientes y proveedores (42%), para mejorar la imagen de la empresa (32%) y como herramienta para mejorar el desempeño (40%). Las que no han realizado certificaciones medioambientales señalan como barreras principales que no las solicitan los clientes y proveedores (49%), falta de información acerca de las certificaciones y sus beneficios (34%) y altos costos de implementación (28%).</p>
+<p>Las acciones de eficiencia ambiental implementadas por las pymes de Moldova fueron las siguientes: ahorros en agua (57%), energía (67%), materia prima (38%), minimización de desperdicios y reciclaje (38%). Entre las principales razones para la implementación de estas acciones se encontraron cambios en los precios de la energía y la materia prima (67%), creación de una ventaja competitiva u oportunidad de negocios (40%), que el cuidado medioambiental es una estrategia de las empresas líderes (24%), incentivos fiscales y/o financieros (16%) (<xref ref-type="bibr" rid="redalyc_511674246003_ref4">EaP GREEN, 2015</xref>).</p>
+<p>Así también, las pymes centran sus esfuerzos en la optimización de su consumo de servicios básicos (luz y agua, principalmente), así como de la utilización de sus materias primas contaminantes, confirmando que existe una relación altamente positiva entre las ventajas competitivas de las empresas y la implementación de políticas de gestión ambiental (<xref ref-type="bibr" rid="redalyc_511674246003_ref13">Ojeda y Mul, 2015</xref>).</p>
+<p>Por último, Saavedra García y Camarena Adame (<xref ref-type="bibr" rid="redalyc_511674246003_ref19">2017</xref>) revelaron que el 50% de las pymes no cuentan con una política ambiental y el 43% no implementan estrategias para la protección del medio ambiente, siendo que la mayor incidencia de este factor se encuentra relacionado con la competitividad sobre todo de las pymes industriales.</p>
+</sec>
+</sec>
+<sec>
+<title>
+<bold>Método</bold>
+</title>
+<p>El alcance es descriptivo y correlacional, se recolectaron datos a través de la aplicación de un cuestionario directo estructurado de manera personal a una muestra de 300 empresarios de la Ciudad de México, pertenecientes al sector industrial, comercial y de servicios. En el cuestionario para la recolección de los datos, se incorporaron las características del empresario y de la empresa, así como las variables de gestión ambiental. A continuación, se presenta la <xref ref-type="table" rid="gt1">Tabla 1</xref>, en la cual se indican las variables e indicadores del cuestionario.</p>
+<p>
+<table-wrap id="gt1">
+<label>Tabla 1</label>
+<caption>
+<title>Instrumento para la recolección de datos</title>
+</caption>
+<alt-text>Tabla 1 Instrumento para la recolección de datos</alt-text>
+<graphic xlink:href="511674246003_gt2.png" position="anchor" orientation="portrait"/>
+</table-wrap>
+</p>
+<p>Para validar el instrumento, se calculó el Alfa de Cronbach con un 95% de confiabilidad, dando como resultado un valor de 0,78, el cual se considera aceptable. Los datos fueron recolectados a través de un trabajo de campo y procesados con el programa estadístico SPSS PC para Windows versión 20; posteriormente se realizó un análisis descriptivo para caracterizar a las empresas y empresarios, así como para identificar las prácticas de gestión ambiental. También se realizó un análisis correlacional para establecer una relación entre las variables de estudio de gestión ambiental y las características de los empresarios y empresas.</p>
+</sec>
+<sec>
+<title>
+<bold>Resultados</bold>
+</title>
+<sec>
+<title>
+<bold>Características de los Empresarios </bold>
+</title>
+<p>El 38,7% cuenta con un nivel máximo de estudios medio superior (preparatoria), el 38% está en el nivel superior (licenciatura), mientras que un 3,7% con estudios de maestría y solamente 0,7% doctorado. Lo anterior muestra que los empresarios de la Ciudad de México cuentan con una preparación relativamente alta (<xref ref-type="bibr" rid="redalyc_511674246003_ref18">Saavedra, 2014</xref>).</p>
+<p>Respecto al área de estudios, ciencias sociales es la que más predomina, con un 65% de los encuestados, seguida de humanidades y artes (16%), mientras que ciencias biológicas y de la salud únicamente cuentan con un 6,3%. Lo anterior ha permitido concluir por qué la mayor parte de las empresas del estado se han concentrado en el sector comercial y de servicios.</p>
+<p>En cuanto al rango de edad, el 39% pertenece al rango de entre los 40 a 59 años, 29% se encuentra entre los 30 a 39 años, un 21% entre los 20 a 29 años, reforzando la idea de que la mitad de los empresarios no sobrepasan los 40 años de edad. Por otra parte, el 66% pertenece al sexo masculino, mientras que el 34% son al sexo femenino.</p>
+</sec>
+<sec>
+<title>
+<bold>Características de las empresas </bold>
+</title>
+<p>Respecto a las características de las empresas, el 61% pertenece al sector terciario (servicios), el 32% al comercial y el 7% a la industria, coincidiendo con la proporción presentada por INEGI (<xref ref-type="bibr" rid="redalyc_511674246003_ref10">2019</xref>). Asimismo, el 62% de los empresarios trabajan bajo un régimen de persona física con actividad empresarial y el restante bajo el régimen de sociedades mercantiles; estos últimos datos representan una gran desventaja para los empresarios, toda vez que las fuentes de financiamiento se ven limitadas por no estar constituidos como sociedades mercantiles. El 45% son empresas de tipo familiar mientras que el 55% no lo son, rompiendo el paradigma de considerar familiares a todas las pymes. Respecto a su tamaño, el 74% de las empresas eran de tamaño micro, el 23% pequeñas y sólo 3% de tamaño mediano, siendo coincidente con la estratificación mostrada por el censo económico de INEGI (<xref ref-type="bibr" rid="redalyc_511674246003_ref10">2019</xref>).</p>
+</sec>
+<sec>
+<title>
+<bold>Gestión Ambiental</bold>
+</title>
+<p>La mayoría de los empresarios entrevistados (76,3%) señalan que sí tuvieron en cuenta las regulaciones ambientales y el bienestar de los trabajadores al momento de diseñar la planta, mientras que casi una cuarta parte no lo consideró (23,7%). Este hecho estaría poniendo en riesgo su estabilidad en el largo plazo dado que la exigencia de cumplir con las regulaciones ambientales es cada vez más imperativa (<xref ref-type="bibr" rid="redalyc_511674246003_ref6">Fresner, 2010</xref>).</p>
+<p>En lo que se refiere al conocimiento de normas ambientales, una gran parte de los empresarios manifiestan conocerlas (76,7%); sin embargo, casi una cuarta parte las desconoce (23,3%), por lo que tampoco las estaría aplicando, poniéndose en desventaja con sus competidores.</p>
+<p>Menos de la mitad de los empresarios (45%) toman en cuenta las normas ambientales al desarrollar nuevos productos o servicios o al introducir cambios en la infraestructura. Esto quiere decir que, aunque los empresarios conocen las normas ambientales, encuentran dificultades para adoptarlas, entre las que se encuentran la falta de capacidad técnica, conocimientos y financiamiento (<xref ref-type="bibr" rid="redalyc_511674246003_ref21">Sepúlveda, 2005</xref>, <xref ref-type="bibr" rid="redalyc_511674246003_ref28">Walker et al., 2008</xref>).</p>
+<p>Cerca del 75% de los empresarios mencionaron que han buscado optimizar el consumo de energía, agua y materias primas altamente contaminantes a través de la mejora e innovación en sus procesos productivos, acciones de reciclaje, utilización de nuevos insumos, mantenimiento de prevención y el uso de tecnologías de alto valor. Por ser procedimientos menos costosos para las pymes, con lo que persiguen principalmente disminuir sus costos (<xref ref-type="bibr" rid="redalyc_511674246003_ref2">Bercovich y López, 2005</xref>; <xref ref-type="bibr" rid="redalyc_511674246003_ref11">Janovitz Klappe et al., 2002</xref>; Ojeda y López, 2015; <xref ref-type="bibr" rid="redalyc_511674246003_ref19">Saavedra García y Camarena Adame, 2017</xref>).</p>
+<p>Más de la mitad de las empresas no cuenta con ninguna política de tratamiento de residuos (52,3%), mientras que sólo el 26,3% la tiene para residuos contaminantes, coincidiendo este hallazgo con lo encontrado por Fernández Viñé et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref5">2009</xref>), Saavedra et al. (<xref ref-type="bibr" rid="redalyc_511674246003_ref17">2012</xref>) y Saavedra García y Camarena Adame (<xref ref-type="bibr" rid="redalyc_511674246003_ref19">2017</xref>), lo que resulta preocupante pues están expuestas a multas y sanciones por parte de las autoridades.</p>
+<p>Sólo el 6% cuenta con alguna certificación ISO de la serie 9000, coincidiendo con los hallazgos realizados por EaP GREEN (<xref ref-type="bibr" rid="redalyc_511674246003_ref4">2015</xref>), mientras que el 29,7% cuenta con otro tipo de certificación y el 60,3% no cuenta con ninguna certificación de calidad, siendo que Rubio Bañón y Aragón (<xref ref-type="bibr" rid="redalyc_511674246003_ref15">2008</xref>) refieren que la calidad es un recurso estratégico para las pymes, lo que implica la desventaja que tienen estas pymes por falta de una adopción formal de prácticas de gestión ambiental.</p>
+<p>Menos de la mitad de los empresarios reconocen que necesitan capacitación en temas medioambientales (44,7%), mientras que refieren que no lo necesitan el 55,3%. Esto que implica que la mayoría de los empresarios no reconoce la necesidad de implementar prácticas medioambientales, ni lo considera prioridad en su empresa (<xref ref-type="bibr" rid="redalyc_511674246003_ref4">EaP GREEN, 2015</xref>).</p>
+</sec>
+<sec>
+<title>
+<bold>Relación de las Características de la Empresa y las Prácticas de Gestión Ambiental</bold>
+</title>
+<p>Se realizó la prueba de hipótesis aplicando el método de chi cuadrado con 95% de confiabilidad y 5% de error estándar, por lo que se rechaza Ho<sub>1</sub> si p&gt; 0,05.</p>
+<p>
+<bold>Ho<sub>1</sub>:</bold> No existe relación entre las características de la empresa y las prácticas de gestión ambiental.</p>
+<p>De acuerdo con los resultados (<xref ref-type="table" rid="gt2">Tabla 2</xref>), existe relación entre el sector y el diseño de planta. Observando la tabla de contingencia se encuentra que los empresarios del sector industrial son los que principalmente toman en cuenta las regulaciones ambientales al momento de diseñar la planta; así también, se encuentra que existe relación entre el consumo de energía, agua y materias primas contaminantes, las políticas de tratamiento de residuos, la certificación con las que cuenta y la capacitación en contaminación y medio ambiente y el sector, siendo el sector industrial donde predomina esta relación. No se encontró relación entre el sector y el conocimiento de las normas ambientales y el desarrollo de nuevos productos y servicios; eso tal vez se debe a que el empresario está preocupado en el día a día de su empresa, lo que le impide informarse de las normas y regulaciones ambientales.</p>
+<p>En lo que se refiere a la antigüedad de la empresa y su relación con las normas ambientales no se encontró relación alguna, lo que estaría indicando que la antigüedad no influye en la adopción y conocimientos de aspectos ambientales en la empresa. En cuanto a la relación con la personalidad jurídica de la empresa, esta se encuentra relacionada con el diseño de la planta de acuerdo a regulaciones ambientales y con el conocimiento de normas ambientales, siendo las empresas que operan como persona moral o sociedad mercantil las que muestran una relación significativa con estas variables, debido a que visualizan un horizonte de permanencia en el largo plazo (<xref ref-type="bibr" rid="redalyc_511674246003_ref6">Fresner, 2010</xref>). No se encontró relación entre la personalidad jurídica y las demás variables de gestión ambiental. De acuerdo con los resultados se rechaza parcialmente la hipótesis nula Ho<sub>1, </sub>y se concluye que existe relación entre el sector, la personalidad jurídica y algunas prácticas de gestión ambiental.</p>
+<p>
+<table-wrap id="gt2">
+<label>Tabla 2</label>
+<caption>
+<title>Relación entre las características de la empresa y las prácticas de gestión ambiental (Valor p)</title>
+</caption>
+<alt-text>Tabla 2 Relación entre las características de la empresa y las prácticas de gestión ambiental (Valor p)</alt-text>
+<graphic xlink:href="511674246003_gt3.png" position="anchor" orientation="portrait"/>
+<attrib>Nota: Se rechaza Ho si<italic> p</italic> &gt; 0,05</attrib>
+</table-wrap>
+</p>
+</sec>
+<sec>
+<title>
+<bold>Relación de las Características del Empresario y las Prácticas de Gestión ambiental</bold>
+</title>
+<p>Se realizó la prueba de hipótesis aplicando el método de chi cuadrado con 95% de confiabilidad y 5% de error estándar, por lo que se rechaza Ho<sub>2</sub> si p&gt; 0,05.</p>
+<p>
+<bold>Ho<sub>2</sub>:</bold> No existe relación entre las características del empresario y las prácticas de gestión ambiental.</p>
+<p>De acuerdo con los resultados (<xref ref-type="table" rid="gt3">Tabla 3</xref>), el nivel de estudios se encuentra relacionado con las certificaciones ambientales, la tabla de contingencia permite saber que cuando más alto es el nivel de estudios del empresario, mayor es la probabilidad de que las empresas cuenten con certificaciones ambientales, lo que estaría indicando que cuando más conocimientos posee el empresario mayor es la probabilidad de que adopte las prácticas de gestión ambiental. La edad del empresario se encuentra relacionada con las certificaciones ambientales: los empresarios más jóvenes estarían más preocupados por este aspecto. El sexo no se encuentra relacionado con las variables ambientales, lo que indicaría que, independientemente de que el empresario sea hombre o mujer, los resultados respecto a la adopción de variables ambientales no varían. La experiencia se encuentra relacionada con el conocimiento de normas ambientales, el consumo de energía, agua y materias primas y la política del tratamiento de residuos, observándose que son los empresarios de mayor experiencia los que cuidan estos aspectos en sus empresas, lo cual se debería a que cuentan con mayor conocimiento de la operación de su empresa y de las exigencias del mercado.</p>
+<p>Con base en los resultados anteriores, se rechaza parcialmente la hipótesis nula Ho<sub>2, </sub>y se concluye que el nivel de estudios, la edad y la experiencia se encuentran relacionados con algunas prácticas de la gestión ambiental.</p>
+<p>
+<table-wrap id="gt3">
+<label>Tabla 3</label>
+<caption>
+<title>Relación entre las características del empresario y las prácticas de gestión ambiental (Valor<italic> p</italic>)</title>
+</caption>
+<alt-text>Tabla 3 Relación entre las características del empresario y las prácticas de gestión ambiental (Valor p)</alt-text>
+<graphic xlink:href="511674246003_gt4.png" position="anchor" orientation="portrait"/>
+<attrib>Nota: Se rechaza Ho si p &gt; 0,05</attrib>
+</table-wrap>
+</p>
+</sec>
+</sec>
+<sec>
+<title>
+<bold>Conclusiones</bold>
+</title>
+<p>La gestión ambiental aún es un tema pendiente para las pymes en México, pues aun cuando una proporción alta de empresarios manifestó que conoce la normatividad industrial,  ha realizado el diseño de la planta de acuerdo con ella, busca la optimización en el consumo de insumos y materia prima al diseñar nuevos productos o servicios, solo la mitad de estos consideran las normas ambientales y poco menos de la mitad cuentan con políticas de manejo de residuos, y reconocen que necesitan capacitación en temas ambientales. Todo esto trae como consecuencia el bajo porcentaje de empresas (6%) que cuentan con alguna certificación ambiental. Estos resultados se deberían a las barreras que encuentran las pymes para implementar un sistema de gestión ambiental, tales como falta de recursos, falta de conocimientos y la percepción de que sus empresas al ser pequeñas no impactan en el medioambiente.</p>
+<p>Las empresas que se encuentran en el sector industrial, y las que funcionan como sociedad mercantil, son las que principalmente toman en cuenta las regulaciones ambientales en el diseño de la planta, buscan la eficiencia en el consumo de insumos y materias primas, cuentan con políticas de tratamiento de residuos, se esfuerzan por contar con certificaciones y capacitación medioambiental, dado que es en este sector donde las exigencias son más elevadas.</p>
+<p>Por último, los empresarios más jóvenes y los que cuentan con un nivel de estudios más elevados, son los que más se preocupan por contar con certificaciones ambientales, mientras que los que cuentan con mayor experiencia son los que muestran más conocimientos de las normas ambientales, buscan optimizar el consumo de insumos y materias primas y establecen políticas de tratamiento de residuos, lo cual se debería a que la experiencia y el conocimiento les permite contar con mayor conocimiento de sus procesos, productos y mercado.</p>
+<p>El principal aporte de este trabajo consiste en su contribución a la temática de las pymes y su relación con la gestión ambiental, la cual ha sido poco estudiada en el contexto mexicano. Entre las limitaciones de este estudio se tiene que no es posible generalizar los hallazgos a todas las pymes de la Ciudad de México, dado que el muestreo fue de sujetos voluntarios y no probabilístico.</p>
+<p>Con base en los hallazgos, se recomienda implementar programas de capacitación y asesoría en este tópico, sobre todo a los empresarios pymes del sector industrial, para que, desde el diseño de la planta, selección de materiales y elección de los procesos y técnicas de producción, el empresario tenga conocimiento de las normas ambientales.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<title>
+<bold>Referencias </bold>
+</title>
+<ref id="redalyc_511674246003_ref1">
+<mixed-citation>Araya, U. (2003). <italic>Análisis comparativo de las necesidades ambientales de las PYME en   Chile, Colombia y México.</italic> Naciones Unidas-Cepal. <ext-link ext-link-type="uri" xlink:href="https://www.cepal.org/es/publicaciones/5775-analisis-comparativo-necesidades-ambientales-pyme-chile-colombia-mexico">https://www.cepal.org/es/publicaciones/5775-analisis-comparativo-necesidades-ambientales-pyme-chile-colombia-mexico</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Araya</surname>
+<given-names>U.</given-names>
+</name>
+</person-group>
+<source>Análisis comparativo de las necesidades ambientales de las PYME en Chile Colombia y México</source>
+<year>2003</year>
+<publisher-name>Naciones Unidas-Cepal</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://www.cepal.org/es/publicaciones/5775-analisis-comparativo-necesidades-ambientales-pyme-chile-colombia-mexico">https://www.cepal.org/es/publicaciones/5775-analisis-comparativo-necesidades-ambientales-pyme-chile-colombia-mexico</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref2">
+<mixed-citation>Bercovich, N. y López, A. (2005). <italic>Políticas para mejorar la gestión ambiental en las pymes argentinas y promover su oferta de bienes y servicios ambientales</italic>. Naciones Unidas Cepal: Serie Desarrollo y Medio Ambiente N° 96. <ext-link ext-link-type="uri" xlink:href="https://www.cepal.org/es/publicaciones/5632-politicas-mejorar-la-gestion-ambiental-pymes-argentinas-promover-su-oferta-bienes">https://www.cepal.org/es/publicaciones/5632-politicas-mejorar-la-gestion-ambiental-pymes-argentinas-promover-su-oferta-bienes</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Bercovich</surname>
+<given-names>N.</given-names>
+</name>
+<name>
+<surname>López</surname>
+<given-names>A.</given-names>
+</name>
+</person-group>
+<source>Políticas para mejorar la gestión ambiental en las pymes argentinas y promover su oferta de bienes y servicios ambientales</source>
+<year>2005</year>
+<issue>96</issue>
+<publisher-name>Naciones Unidas Cepal</publisher-name>
+<comment>https://www.cepal.org/es/publicaciones/5632-politicas-mejorar-la-gestion-ambiental-pymes-argentinas-promover-su-oferta-bienes</comment>
+<series>Serie Desarrollo y Medio Ambiente</series>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref3">
+<mixed-citation>Denegrí de Dios, F. M. y Peña Salmón, C. A. (2011). Identificación de perfiles ambientales en la Pyme a través de la auditoría ambiental. <italic>Contaduría y Administración,</italic> (235), 195-215.  <ext-link ext-link-type="uri" xlink:href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0186-10422011000300010&amp;lng=es&amp;tlng=es">http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0186-10422011000300010&amp;lng=es&amp;tlng=es</ext-link>.</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Denegrí de Dios</surname>
+<given-names>F. M.</given-names>
+</name>
+<name>
+<surname>Peña Salmón</surname>
+<given-names>C. A.</given-names>
+</name>
+</person-group>
+<article-title>Identificación de perfiles ambientales en la Pyme a través de la auditoría ambiental</article-title>
+<source>Contaduría y Administración</source>
+<year>2011</year>
+<issue>235</issue>
+<fpage>195</fpage>
+<lpage>215</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0186-10422011000300010&amp;lng=es&amp;tlng=es">http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0186-10422011000300010&amp;lng=es&amp;tlng=es</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref4">
+<mixed-citation>EaP GREEN (2015). <italic>Promoting better environmental performance of SMEs Moldova.</italic>  OECD, UNECE, UNEP and UNIDO. <ext-link ext-link-type="uri" xlink:href="https://www.oecd.org/environment/outreach/Binder%20English.pdf">https://www.oecd.org/environment/outreach/Binder%20English.pdf</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<collab>EaP GREEN</collab>
+</person-group>
+<source>Promoting better environmental performance of SMEs Moldova</source>
+<year>2015</year>
+<publisher-name>. OECD, UNECE, UNEP and UNIDO</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://www.oecd.org/environment/outreach/Binder%20English.pdf">https://www.oecd.org/environment/outreach/Binder%20English.pdf</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref5">
+<mixed-citation>Fernández Viñé, M., Gómez Navarro, T.  y Capuz Rizo, S. (2009). Diagnóstico de la implantación de la ecoeficiencia en las pequeñas y medianas industrias venezolanas. <italic>Anales de la Universidad Metropolitana, 9</italic>(2), 119-136. <ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=3624022">https://dialnet.unirioja.es/servlet/articulo?codigo=3624022</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Fernández Viñé</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Gómez Navarro</surname>
+<given-names>T.</given-names>
+</name>
+<name>
+<surname>Capuz Rizo</surname>
+<given-names>S.</given-names>
+</name>
+</person-group>
+<article-title>Diagnóstico de la implantación de la ecoeficiencia en las pequeñas y medianas industrias venezolanas</article-title>
+<source>Anales de la Universidad Metropolitana</source>
+<year>2009</year>
+<volume>9</volume>
+<issue>2</issue>
+<fpage>119</fpage>
+<lpage>136</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=3624022">https://dialnet.unirioja.es/servlet/articulo?codigo=3624022</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref6">
+<mixed-citation>Fresner, J. (2010). PRE-SME – <italic>Promoting Resource Efficiency in Small &amp; Medium Sized. Enterprises Industrial training handbook</italic>. UNIDO, United Nations Environment Programme. <ext-link ext-link-type="uri" xlink:href="https://wedocs.unep.org/handle/20.500.11822/33337?show=full">https://wedocs.unep.org/handle/20.500.11822/33337?show=full</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Fresner</surname>
+<given-names>J.</given-names>
+</name>
+</person-group>
+<source>Promoting Resource Efficiency in Small &amp; Medium Sized Enterprises Industrial training handbook</source>
+<year>2010</year>
+<publisher-name>UNIDO, United Nations Environment Programme</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://wedocs.unep.org/handle/20.500.11822/33337?show=full">https://wedocs.unep.org/handle/20.500.11822/33337?show=full</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref7">
+<mixed-citation>González Ordóñez, I. (2017). La gestión ambiental en la competitividad de las Pymes<italic>. Revista científica Agroecosistemas, 5</italic>(1), 60-70. <ext-link ext-link-type="uri" xlink:href="https://biblat.unam.mx/es/revista/agroecosistemas/articulo/la-gestion-ambiental-en-la-competitividad-de-las-pymes">https://biblat.unam.mx/es/revista/agroecosistemas/articulo/la-gestion-ambiental-en-la-competitividad-de-las-pymes</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>González Ordóñez</surname>
+<given-names>I.</given-names>
+</name>
+</person-group>
+<article-title>La gestión ambiental en la competitividad de las Pymes</article-title>
+<source>Revista científica Agroecosistemas</source>
+<year>2017</year>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://biblat.unam.mx/es/revista/agroecosistemas/articulo/la-gestion-ambiental-en-la-competitividad-de-las-pymes">https://biblat.unam.mx/es/revista/agroecosistemas/articulo/la-gestion-ambiental-en-la-competitividad-de-las-pymes</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref8">
+<mixed-citation>González Ordóñez, I. (2019). Gestión ambiental y competitividad de las PYMES del sector comercio en el cantón Machala, Provincia El Oro, Ecuador. <italic>Revista Espacios, 40</italic>(27), 1-12. <ext-link ext-link-type="uri" xlink:href="http://www.revistaespacios.com/a19v40n27/19402712.html">http://www.revistaespacios.com/a19v40n27/19402712.html</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>González Ordóñez</surname>
+<given-names>I.</given-names>
+</name>
+</person-group>
+<article-title>Gestión ambiental y competitividad de las PYMES del sector comercio en el cantón Machala, Provincia El Oro, Ecuador</article-title>
+<source>Revista Espacios</source>
+<year>2019</year>
+<volume>40</volume>
+<issue>27</issue>
+<fpage>1</fpage>
+<lpage>12</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="http://www.revistaespacios.com/a19v40n27/19402712.html">http://www.revistaespacios.com/a19v40n27/19402712.html</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref9">
+<mixed-citation>González Ordóñez, I., Alaña Castillo, P. y Gonzaga Añazco, J. (2018). La gestión ambiental en la competitividad de las Pymes del Ecuador. <italic>Revista INNOVA Research Journal, 3</italic>(1), 108-120 <ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=6285643">https://dialnet.unirioja.es/servlet/articulo?codigo=6285643</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>González Ordóñez</surname>
+<given-names>I.</given-names>
+</name>
+<name>
+<surname>Alaña Castillo</surname>
+<given-names>P.</given-names>
+</name>
+<name>
+<surname>Gonzaga Añazco</surname>
+<given-names>J.</given-names>
+</name>
+</person-group>
+<article-title>La gestión ambiental en la competitividad de las Pymes del Ecuador</article-title>
+<source>Revista INNOVA Research Journal</source>
+<year>2018</year>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=6285643">https://dialnet.unirioja.es/servlet/articulo?codigo=6285643</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref10">
+<mixed-citation>INEGI (2019). <italic>Encuesta Nacional sobre Productividad y Competitividad de las Micro, Pequeñas y Medianas Empresas</italic> (ENAPROCE 2018). México, INEGI.</mixed-citation>
+<element-citation publication-type="report">
+<person-group person-group-type="author">
+<collab>INEGI</collab>
+</person-group>
+<source>Encuesta Nacional sobre Productividad y Competitividad de las Micro, Pequeñas y Medianas Empresas (ENAPROCE 2018)</source>
+<year>2019</year>
+<publisher-name>INEGI</publisher-name>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref11">
+<mixed-citation>Janovitz Klappe, A., Ruiz Ledesma, J., Robles Valderrama, E., Gómez González, G. y Ruiz Guzmán, J. L. (2002). La gestión de la productividad y competitividad de las Pymes y la contabilidad ambiental. <italic>Revista Mexicana de Agronegocios, VI(</italic>11) 463-482. <ext-link ext-link-type="uri" xlink:href="https://www.redalyc.org/pdf/141/14111607.pdf">https://www.redalyc.org/pdf/141/14111607.pdf</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Janovitz Klappe</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Ruiz Ledesma</surname>
+<given-names>J.</given-names>
+</name>
+<name>
+<surname>Robles Valderrama</surname>
+<given-names>E.</given-names>
+</name>
+<name>
+<surname>Gómez González</surname>
+<given-names>G.</given-names>
+</name>
+<name>
+<surname>Ruiz Guzmán</surname>
+<given-names>J. L.</given-names>
+</name>
+</person-group>
+<article-title>La gestión de la productividad y competitividad de las Pymes y la contabilidad ambiental</article-title>
+<source>Revista Mexicana de Agronegocios</source>
+<year>2002</year>
+<volume>VI</volume>
+<issue>11</issue>
+<fpage>463</fpage>
+<lpage>482</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://www.redalyc.org/pdf/141/14111607.pdf">https://www.redalyc.org/pdf/141/14111607.pdf</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref12">
+<mixed-citation>Navarro Arredondo, A. (2019). Control de la contaminación atmosférica en la Zona Metropolitana del Valle de México. <italic>Estudios Demográficos y Urbanos, 34</italic>(3/102), 631-663. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.24201/edu.v34i3.1806">https://doi.org/10.24201/edu.v34i3.1806</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Navarro Arredondo</surname>
+<given-names>A.</given-names>
+</name>
+</person-group>
+<article-title>Control de la contaminación atmosfjournalérica en la Zona Metropolitana del Valle de México</article-title>
+<source>Estudios Demográficos y Urbanos</source>
+<year>2019</year>
+<volume>34</volume>
+<issue>3/102</issue>
+<fpage>631</fpage>
+<lpage>663</lpage>
+<pub-id pub-id-type="doi">10.24201/edu.v34i3.1806</pub-id>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref13">
+<mixed-citation>Ojeda, R. y Mul, J. (2015). La gestión ambiental y su relación con la competitividad: un estudio aplicado en las micro, pequeñas y medianas empresas del estado de Yucatán, México. <italic>Revista Tec Empresarial, 9</italic>(2), 41-49. <ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=5181427">https://dialnet.unirioja.es/servlet/articulo?codigo=5181427</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Ojeda</surname>
+<given-names>R.</given-names>
+</name>
+<name>
+<surname>Mul</surname>
+<given-names>J.</given-names>
+</name>
+</person-group>
+<article-title>La gestión ambiental y su relación con la competitividad: un estudio aplicado en las micro, pequeñas y medianas empresas del estado de Yucatán, México</article-title>
+<source>Revista Tec Empresarial</source>
+<year>2015</year>
+<volume>9</volume>
+<issue>2</issue>
+<fpage>41</fpage>
+<lpage>49</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=5181427">https://dialnet.unirioja.es/servlet/articulo?codigo=5181427</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref14">
+<mixed-citation>Ortiz, A., Izquierdo, H. y Rodríguez Monroy, C. (2013). Gestión Ambiental en pymes industriales. <italic>Interciencia, 38</italic>(3), 179-185.</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Ortiz</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Izquierdo</surname>
+<given-names>H.</given-names>
+</name>
+<name>
+<surname>Rodríguez Monroy</surname>
+<given-names>C.</given-names>
+</name>
+</person-group>
+<article-title>Gestión Ambiental en pymes industriales</article-title>
+<source>Interciencia</source>
+<year>2013</year>
+<volume>38</volume>
+<issue>3</issue>
+<fpage>179</fpage>
+<lpage>185</lpage>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref15">
+<mixed-citation>Rubio Bañón, A. y Aragón Sánchez, A. (2008). Recursos estratégicos en la PYME. <italic>Revista Europea de Dirección y Economía de la Empresa, 17</italic>(1) 103-126. <ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=2581343">https://dialnet.unirioja.es/servlet/articulo?codigo=2581343</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Rubio Bañón</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Aragón Sánchez</surname>
+<given-names>A.</given-names>
+</name>
+</person-group>
+<article-title>Recursos estratégicos en la PYME</article-title>
+<source>Revista Europea de Dirección y Economía de la Empresa</source>
+<year>2008</year>
+<volume>17</volume>
+<issue>1</issue>
+<fpage>103</fpage>
+<lpage>126</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://dialnet.unirioja.es/servlet/articulo?codigo=2581343">https://dialnet.unirioja.es/servlet/articulo?codigo=2581343</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref16">
+<mixed-citation>Rubio Calduch, V. (2015). <italic>La Gestión Ambiental en la pequeña y mediana empresa</italic>. Departamento de Industria y Medio Ambiente Cámara de Comercio, Industria y Navegación de Castellón.  <ext-link ext-link-type="uri" xlink:href="http://www.ces.gva.es/pdf/conferencias/02/3.pdf">http://www.ces.gva.es/pdf/conferencias/02/3.pdf</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Rubio Calduch</surname>
+<given-names>V.</given-names>
+</name>
+</person-group>
+<source>La Gestión Ambiental en la pequeña y mediana empresa</source>
+<year>2015</year>
+<publisher-name>Departamento de Industria y Medio Ambiente Cámara de Comercio, Industria y Navegación de Castellón</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="http://www.ces.gva.es/pdf/conferencias/02/3.pdf">http://www.ces.gva.es/pdf/conferencias/02/3.pdf</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref17">
+<mixed-citation>Saavedra, M., Tapia, B. y Milla, S. (2012). <italic>Perfil de la Mipyme Industrial en México: Un estudio empírico. </italic>Universidad Nacional Autónoma de México, Facultad de Contaduría y Administración.</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Saavedra</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Tapia</surname>
+<given-names>B.</given-names>
+</name>
+<name>
+<surname>Milla</surname>
+<given-names>S.</given-names>
+</name>
+</person-group>
+<source>Perfil de la Mipyme Industrial en México: Un estudio empírico</source>
+<year>2012</year>
+<publisher-name>Universidad Nacional Autónoma de México, Facultad de Contaduría y Administración</publisher-name>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref18">
+<mixed-citation>Saavedra, M., Tapia, B., Milla, S., Mancilla, M., Hernández, C. y Pérez, M. (2014). <italic>La determinación de la competitividad de la PYME en el Distrito Federal</italic>. Una aplicación del enfoque sistémico. Universidad Nacional Autónoma de México, Facultad de Contaduría y Administración.</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Saavedra</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Tapia</surname>
+<given-names>B.</given-names>
+</name>
+<name>
+<surname>Milla</surname>
+<given-names>S.</given-names>
+</name>
+<name>
+<surname>Mancilla</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Hernández</surname>
+<given-names>C.</given-names>
+</name>
+<name>
+<surname>Pérez</surname>
+<given-names>M.</given-names>
+</name>
+</person-group>
+<source>La determinación de la competitividad de la PYME en el Distrito Federal</source>
+<year>2014</year>
+<publisher-name>Universidad Nacional Autónoma de México, Facultad de Contaduría y Administración.</publisher-name>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref19">
+<mixed-citation>Saavedra García, M. y Camarena Adame, M.  (2017). La competitividad en el nivel micro de las PYME y su relación con la Gestión Ambiental. <italic>Contabilidad y Auditoría</italic>, (46), 71-110. <ext-link ext-link-type="uri" xlink:href="https://ojs.econ.uba.ar/index.php/Contyaudit/article/view/1055">https://ojs.econ.uba.ar/index.php/Contyaudit/article/view/1055</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Saavedra García</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Camarena Adame</surname>
+<given-names>M.</given-names>
+</name>
+</person-group>
+<article-title>La competitividad en el nivel micro de las PYME y su relación con la Gestión Ambiental</article-title>
+<source>Contabilidad y Auditoría</source>
+<year>2017</year>
+<issue>46</issue>
+<fpage>71</fpage>
+<lpage>110</lpage>
+<comment>https://ojs.econ.uba.ar/index.php/Contyaudit/article/view/1055</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref20">
+<mixed-citation>Sánchez, A., Romero, L. y Sosa, S. (2014).  Environmental Management in Small and Medium-Sized Companies: An Analysis from the Perspective of the Theory of Planned Behavior. <italic>PLoS ONE, 9</italic>(2), e88504. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pone.0088504">https://doi.org/10.1371/journal.pone.0088504</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Sánchez</surname>
+<given-names>A.</given-names>
+</name>
+<name>
+<surname>Romero</surname>
+<given-names>L.</given-names>
+</name>
+<name>
+<surname>Sosa</surname>
+<given-names>S.</given-names>
+</name>
+</person-group>
+<article-title>Environmental Management in Small and Medium-Sized Companies: An Analysis from the Perspective of the Theory of Planned Behavior</article-title>
+<source>PLoS ONE</source>
+<year>2014</year>
+<volume>9</volume>
+<issue>2</issue>
+<pub-id pub-id-type="doi">10.1371/journal.pone.0088504</pub-id>
+<elocation-id>e88504</elocation-id>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref21">
+<mixed-citation>Sepúlveda, M. (2005). <italic>Políticas e instrumentos para mejorar la gestión ambiental de la pyme en Chile y promover su oferta de bienes y servicios ambientales</italic>. Naciones Unidas-CEPAL, División de desarrollo sostenible y asentamientos humanos. <ext-link ext-link-type="uri" xlink:href="https://www.cepal.org/es/publicaciones/5648-politicas-instrumentos-mejorar-la-gestion-ambiental-la-pyme-chile-promover-su">https://www.cepal.org/es/publicaciones/5648-politicas-instrumentos-mejorar-la-gestion-ambiental-la-pyme-chile-promover-su</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Sepúlveda</surname>
+<given-names>M.</given-names>
+</name>
+</person-group>
+<source>Políticas e instrumentos para mejorar la gestión ambiental de la pyme en Chile y promover su oferta de bienes y servicios ambientales</source>
+<year>2005</year>
+<publisher-name>Naciones Unidas-CEPAL, División de desarrollo sostenible y asentamientos humanos</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://www.cepal.org/es/publicaciones/5648-politicas-instrumentos-mejorar-la-gestion-ambiental-la-pyme-chile-promover-su">https://www.cepal.org/es/publicaciones/5648-politicas-instrumentos-mejorar-la-gestion-ambiental-la-pyme-chile-promover-su</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref22">
+<mixed-citation>Starkey, R. (1998). <italic>Environmental Management Tools for SMEs: A Handbook.</italic> The Centre for Corporate Environmental Management (CCEM). <ext-link ext-link-type="uri" xlink:href="https://www.eea.europa.eu/publications/GH-14-98-065-EN-C/file">https://www.eea.europa.eu/publications/GH-14-98-065-EN-C/file</ext-link>
+</mixed-citation>
+<element-citation publication-type="other">
+<person-group person-group-type="author">
+<name>
+<surname>Starkey</surname>
+<given-names>R.</given-names>
+</name>
+</person-group>
+<source>Environmental Management Tools for SMEs: A Handbook</source>
+<year>1998</year>
+<publisher-name>The Centre for Corporate Environmental Management (CCEM)</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://www.eea.europa.eu/publications/GH-14-98-065-EN-C/file">https://www.eea.europa.eu/publications/GH-14-98-065-EN-C/file</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref23">
+<mixed-citation>Tagle, G. (2010). <italic>¿Cuál es el valor financiero de la RSE?</italic> IM Trust, Chile, Seminario Internacional.</mixed-citation>
+<element-citation publication-type="confproc">
+<person-group person-group-type="author">
+<name>
+<surname>Tagle</surname>
+<given-names>G.</given-names>
+</name>
+</person-group>
+<source>¿Cuál es el valor financiero de la RSE?</source>
+<year>2010</year>
+<conf-name>IM Trust, Chile, Seminario Internacional</conf-name>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref24">
+<mixed-citation>Torres, S. y Hofman, A. (1990). <italic>El reto ambiental del desarrollo de América Latina y el Caribe. </italic>CEPAL/ PNUMA. <ext-link ext-link-type="uri" xlink:href="https://repositorio.cepal.org/handle/11362/1559">https://repositorio.cepal.org/handle/11362/1559</ext-link>
+</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Torres</surname>
+<given-names>S.</given-names>
+</name>
+<name>
+<surname>Hofman</surname>
+<given-names>A.</given-names>
+</name>
+</person-group>
+<source>El reto ambiental del desarrollo de América Latina y el Caribe</source>
+<year>1990</year>
+<publisher-name>CEPAL/ PNUMA</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://repositorio.cepal.org/handle/11362/1559">https://repositorio.cepal.org/handle/11362/1559</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref25">
+<mixed-citation>Van Hoof, B. &amp; Thiell, M. (2015). Anchor company contribution to cleaner production dissemination: experience from a Mexican sustainable supply programme. <italic>Journal of Cleaner Production, 86</italic>(1), 245-255. <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jclepro.2014.08.021">https://doi.org/10.1016/j.jclepro.2014.08.021</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Van Hoof</surname>
+<given-names>B.</given-names>
+</name>
+<name>
+<surname>Thiell</surname>
+<given-names>M.</given-names>
+</name>
+</person-group>
+<article-title>Anchor company contribution to cleaner production dissemination: experience from a Mexican sustainable supply programme</article-title>
+<source>Journal of Cleaner Production</source>
+<year>2015</year>
+<volume>86</volume>
+<issue>1</issue>
+<fpage>245</fpage>
+<lpage>255</lpage>
+<pub-id pub-id-type="doi">10.1016/j.jclepro.2014.08.021</pub-id>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref26">
+<mixed-citation>Vera, M. y Martínez, M. (2020). Hacia un diseño de políticas públicas de datos abiertos de medio ambiente. <italic>Cadernos Gestão Pública e Cidadania, 25</italic>(82), 1-23.  <ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.12660/cgpc.v25n82.80506">http://dx.doi.org/10.12660/cgpc.v25n82.80506</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Vera</surname>
+<given-names>M.</given-names>
+</name>
+<name>
+<surname>Martínez</surname>
+<given-names>M.</given-names>
+</name>
+</person-group>
+<article-title>Hacia un diseño de políticas públicas de datos abiertos de medio ambiente</article-title>
+<source>Cadernos Gestão Pública e Cidadania</source>
+<year>2020</year>
+<volume>25</volume>
+<issue>82</issue>
+<fpage>1</fpage>
+<lpage>23</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.12660/cgpc.v25n82.80506">http://dx.doi.org/10.12660/cgpc.v25n82.80506</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref27">
+<mixed-citation>Vives, A. (2006). Social and Evironmental Responsibility in Small and Medium Enterprises in Latin America. <italic>The Journal of Corporate Citizenship</italic>, (21), 39-50. <ext-link ext-link-type="uri" xlink:href="https://www.jstor.org/stable/jcorpciti.21.39">https://www.jstor.org/stable/jcorpciti.21.39</ext-link>
+</mixed-citation>
+<element-citation publication-type="journal">
+<person-group person-group-type="author">
+<name>
+<surname>Vives</surname>
+<given-names>A.</given-names>
+</name>
+</person-group>
+<article-title>Social and Evironmental Responsibility in Small and Medium Enterprises in Latin America</article-title>
+<source>The Journal of Corporate Citizenship</source>
+<year>2006</year>
+<issue>21</issue>
+<fpage>39</fpage>
+<lpage>50</lpage>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://www.jstor.org/stable/jcorpciti.21.39">https://www.jstor.org/stable/jcorpciti.21.39</ext-link>
+</comment>
+</element-citation>
+</ref>
+<ref id="redalyc_511674246003_ref28">
+<mixed-citation>Walker, J., Redmond, J., Sheridan, L., Wang, C. y Goeft, U. (2008). <italic>Small and medium enterprises and the environment: barriers, drivers, innovation and best practice. A review of the literature</italic>. Cowan University and Swan Catchment Council. <ext-link ext-link-type="uri" xlink:href="https://ro.ecu.edu.au/ecuworks/7062">https://ro.ecu.edu.au/ecuworks/7062</ext-link>/</mixed-citation>
+<element-citation publication-type="book">
+<person-group person-group-type="author">
+<name>
+<surname>Walker</surname>
+<given-names>J.</given-names>
+</name>
+<name>
+<surname>Redmond</surname>
+<given-names>J.</given-names>
+</name>
+<name>
+<surname>Sheridan</surname>
+<given-names>L.</given-names>
+</name>
+<name>
+<surname>Wang</surname>
+<given-names>C.</given-names>
+</name>
+<name>
+<surname>Goeft</surname>
+<given-names>U.</given-names>
+</name>
+</person-group>
+<source>Small and medium enterprises and the environment: barriers drivers innovation and best practice A review of the literature</source>
+<year>2008</year>
+<publisher-name>Cowan University and Swan Catchment Council</publisher-name>
+<comment>
+<ext-link ext-link-type="uri" xlink:href="https://ro.ecu.edu.au/ecuworks/7062/">https://ro.ecu.edu.au/ecuworks/7062/</ext-link>
+</comment>
+</element-citation>
+</ref>
+</ref-list>
+</back>
+</article>
