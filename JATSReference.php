@@ -19,8 +19,8 @@ class JATSReference {
         $this->dom->appendChild($this->ref);
 
         $this->element_citation = $this->dom->createElement('element_citation');
-        $this->element_citation->setAttribute('publication_type',$this->reference->getTitleType());
-        $this->mixed_citation = $this->dom->createElement('mixed_citation');
+        $this->element_citation->setAttribute(qualifiedName: 'publication_type',value: $this->reference->getTitleType());
+        $this->mixed_citation = $this->dom->createElement(localName: 'mixed_citation');
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
 

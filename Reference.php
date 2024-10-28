@@ -1,8 +1,8 @@
 <?php
-include_once 'Expression/AuthorExpression.php';
-include_once 'Expression/DateExpression.php';
-include_once 'Expression/TitleExpression.php';
-include_once 'Expression/URLExpression.php';
+include_once 'Expression/Analyzers/AuthorAnalyzer/AuthorExpression.php';
+include_once 'Expression/Analyzers/DateAnalyzer/DateExpression.php';
+include_once 'Expression/Analyzers/TitleAnalyzer/TitleExpression.php';
+include_once 'Expression/Analyzers/UrlAnalyzer/URLExpression.php';
 include_once 'Printer/BookPrinter.php';
 include_once 'Printer/JournalPrinter.php';
 include_once 'Printer/ChapterPrinter.php';
@@ -32,7 +32,7 @@ class Reference {
 
     public function __construct(string $referenceText) {
         $this->referenceText = $referenceText;
-        $this->type = null;
+        $this->type = [];
         $this->parse();
     }
 
@@ -46,10 +46,14 @@ class Reference {
         $dateExpression = DateExpression::parse($this->referenceText);
         $this->date = $dateExpression['value'];
         $this->dateType = $dateExpression['expression'];
+
+        if ($dateExpression['expression'] === 'congress') {
+            $this->type[] = $dateExpression['expression'];
+        }
     }
 
     private function parseTitle() {
-        $titleExpression = TitleExpression::parse($this->referenceText);
+        $titleExpression = TitleExpression::parse($this->referenceText, $this->type);
         $this->title = $titleExpression['value'];
         $this->type = $titleExpression['expression'];
         $this->titleType = $titleExpression['expression'];
@@ -63,10 +67,10 @@ class Reference {
 
     private function parse() {
         $this->parseAuthor();
-        $this->parseDate();
-        $this->parseTitle();
+        $this->parseDate(); 
         $this->parseURL();
-
+        $this->parseTitle();
+        echo(" \n $this->type \n");
     }
 
     // Getter para author

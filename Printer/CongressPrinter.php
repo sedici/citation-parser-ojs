@@ -7,8 +7,29 @@ class CongressPrinter extends GenericPrinter{
         return $this->reference['book'].' ('.$this->reference['edicion'].'). '.$this->reference['editorial'].'.';
     }
 
+    public function getPublisherName(): string{
+        return $this->get('publishername');
+    }
+
+    public function getTitle(): string{
+        return $this->get('title');
+    }
+
+    public function getPublisher(): string{
+        return $this->get('publisher');
+    }
+
+    public function getEvent(): string{
+        return $this->get('event');
+    }
+
+    public function getComment(): string{
+        return $this->get('comment');
+    }
+
     public function createXMLElements(): array {
         $elements = [];
+
         return $elements;
     }
 }

@@ -36,15 +36,15 @@ $test = 'Escudé, C. (1992). El realismo periférico. Fundamentos para la nueva 
     $test = 'Escude, C. (1992). El realismo periférico fundamentos para la nueva política exterior argentina. Planeta. ';
 
 
-$dom = new \DOMDocument('1.0', 'UTF-8');
+$dom = new \DOMDocument(version: '1.0', encoding: 'UTF-8');
 // Leer el archivo de texto
-$referencias = file('Examples/ayana/14758/reference.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$referencias = file(filename: 'examples/ayana/prueba/prueba.txt', flags: FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 // Procesar cada referencia
 foreach ($referencias as $referencia) {
-    $reference = new Reference($referencia);    
-    $jats = new JATSReference($reference,$dom);
+    $reference = new Reference(referenceText: $referencia);
+    $jats = new JATSReference(reference: $reference,dom: $dom);
     $jats->getJatsXML();
 }
 
-$dom->save('output.xml');
+$dom->save(filename: 'output.xml');
