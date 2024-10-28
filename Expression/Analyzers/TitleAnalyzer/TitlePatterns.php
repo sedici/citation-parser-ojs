@@ -20,8 +20,8 @@
         $thesisPattern = '/(?P<title>[A-Z][0-9A-Za-zÀ-ÿ\s\:,;\(\)]+)\s\[(?P<comment>[^\][]*)\].\s/';
     
         return [
-            $thesisPattern => 'thesis',
             $congressPattern => 'congress',
+            $thesisPattern => 'thesis',
             $bookPattern => 'book',
             $chapterPattern => 'chapter',
             $journalPattern => 'journal',
