@@ -5,7 +5,7 @@
     public static function getAllPatterns() {
 
         // Types of congress references
-        $congressPattern = '/\)\.\s(?P<title>.+?)\s\[(?P<comment>[^\]]+)\](?:(?:\.\s(?P<event>[A-Z][^\.]*))?(?:\.\s(?P<publisher>(Universidad|Editorial|Press|Ediciones)[^\.]*))?(?:\.\s(?P<publishername>[A-Z][^\.]*))?)?\.??/';
+        $congressPattern = '/\)\.\s(?P<title>.+?)\s\[(?P<comment>[^\]]+)\](?:(?:\.\s(?P<evento>[A-Z][^\.]*))?(?:\.\s(?P<publisher>(Universidad|Editorial|Press|Ediciones)[^\.]*))?(?:\.\s(?P<publishername>[A-Z][^\.]*))?)?\.??/';
         
         // Book reference pattern
         $bookPattern = '/(?P<title>[A-Z0-9][0-9A-Za-zÀ-ÿ\s\:\,\;\-]+\.)(\s\((?P<edicion>(?P<nedicion>[0-9]+ª)\sed\.(,\sVol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?)\)\.)?\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s\:\,\;\-]+\.)/';
@@ -20,8 +20,8 @@
         $thesisPattern = '/(?P<title>[A-Z][0-9A-Za-zÀ-ÿ\s\:,;\(\)]+)\s\[(?P<comment>[^\][]*)\].\s/';
     
         return [
-            $congressPattern => 'congress',
             $thesisPattern => 'thesis',
+            $congressPattern => 'congress',
             $bookPattern => 'book',
             $chapterPattern => 'chapter',
             $journalPattern => 'journal',
