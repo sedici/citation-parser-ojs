@@ -81,7 +81,7 @@ class Reference {
     }
 
     // Getter para author
-    public function getAuthor() {[];
+    public function getAuthor() {
         return $this->author;
     }
 
