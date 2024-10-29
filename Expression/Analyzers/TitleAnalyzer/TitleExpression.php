@@ -7,7 +7,7 @@ class TitleExpression extends Expression{
     public static function parse($text, array $types = []) {
 
         $analyzer = new TitleAnalyzer($types);
-        return $analyzer->analyze($text, $types);
+        return $analyzer->analyze($text);
     }
 
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ref id="parser_ref">
-  <element_citation publication_type="congress">
+  <element_citation publication_type="book">
     <person-group person-group-type="author">
       <name>
         <surname>Bisang</surname>
@@ -13,7 +13,9 @@
     </person-group>
     <year>2024</year>
     <month>1</month>
-    <day>25</day>
+    <day>26</day>
+    <source>Las redes de producción en el agro argentino.</source>
+    <publisher-name>XIV Congreso anual AAPRESID.</publisher-name>
   </element_citation>
   <mixed_citation/>
 </ref>

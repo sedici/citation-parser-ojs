@@ -4,6 +4,7 @@
 
         public static function getPatterns () {
 
+            //Author Pattern.
             $apellido = "(?P<apellido>[A-Za-zÀ-ÿñÑ]+(?:\s[A-Za-zÀ-ÿñÑ]+)*)";
             $nombre = "(?P<nombres>(\p{Lu}\.\s?)+)";
     
@@ -12,6 +13,9 @@
     
             $author = "(?P<author>".$apellido.", ".$nombre." ".$role.")"; //Corregir los espacios
             $authors = '/'.$author.$roles.'((?:,\s|y\s))?/u';
+
+            //Institution Pattern.
+            
 
             return $authors;
 
