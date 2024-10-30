@@ -15,7 +15,7 @@ include_once 'Printer/DOIPrinter.php';
 include_once 'Printer/HANDLEPrinter.php';
 
 class Reference {
-    private $referenceText;
+    private $plainTextReference;
     private $type;
 
     public $author;
@@ -30,20 +30,20 @@ class Reference {
     public $url;
     public $urlType;
 
-    public function __construct(string $referenceText) {
-        $this->referenceText = $referenceText;
+    public function __construct(string $plainTextReference) {
+        $this->plainTextReference = $plainTextReference;
         $this->type = [];
         $this->parse();
     }
 
     private function parseAuthor() {
-        $authorExpression = $this->author = AuthorExpression::parse($this->referenceText);
+        $authorExpression = $this->author = AuthorExpression::parse($this->plainTextReference);
         $this->author = $authorExpression['value'];
         $this->authorType = $authorExpression['expression'];
     }
 
     private function parseDate() {
-        $dateExpression = DateExpression::parse($this->referenceText);
+        $dateExpression = DateExpression::parse($this->plainTextReference);
         $this->date = $dateExpression['value'];
         $this->dateType = $dateExpression['expression'];
 
@@ -53,14 +53,14 @@ class Reference {
     }
 
     private function parseTitle() {
-        $titleExpression = TitleExpression::parse($this->referenceText, $this->type);
+        $titleExpression = TitleExpression::parse($this->plainTextReference, $this->type);
         $this->title = $titleExpression['value'];
         $this->type = $titleExpression['expression'];
         $this->titleType = $titleExpression['expression'];
     }
 
     private function parseURL() {
-        $URLExpression = URLExpression::parse($this->referenceText);
+        $URLExpression = URLExpression::parse($this->plainTextReference);
         $this->url = $URLExpression['value'];
         $this->urlType = $URLExpression['expression'];
     }
@@ -78,6 +78,15 @@ class Reference {
         // Usando array_merge para combinar los arreglos
         $combinedArray = array_merge($this->author, $this->title, $this->date, $this->url);
         return $combinedArray;
+    }
+
+    // Getter para author
+    public function getType() {
+        return $this->type;
+    }
+
+    public function getPlainTextReference() {
+        return $this->plainTextReference;
     }
 
     // Getter para author

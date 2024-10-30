@@ -3,24 +3,26 @@ include_once 'Reference.php';
 class JATSReference {
 
     public $reference;
-    public const JATS_REF_ID_PREFIX = 'parser_ref';
+    public const JATS_REF_ID_PREFIX = 'parser_';
     private $dom;
     private $ref;
     private $element_citation;
     private $mixed_citation;
 
-    public function __construct(Reference $reference,\DOMDocument $dom = null) {
+    public function __construct(Reference $reference,\DOMDocument $dom = null, int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
 
         // Crear el elemento raíz <ref> con el prefijo de ID
         $this->ref = $this->dom->createElement('ref');
-        $this->ref->setAttribute('id', self::JATS_REF_ID_PREFIX );
+        $this->ref->setAttribute('id', self::JATS_REF_ID_PREFIX.$id );
         $this->dom->appendChild($this->ref);
+        
+        $this->mixed_citation = $this->dom->createElement(localName: 'mixed_citation',value: $this->reference->getPlainTextReference());
 
         $this->element_citation = $this->dom->createElement('element_citation');
         $this->element_citation->setAttribute(qualifiedName: 'publication_type',value: $this->reference->getTitleType());
-        $this->mixed_citation = $this->dom->createElement(localName: 'mixed_citation');
+
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
 
