@@ -5,7 +5,7 @@ require_once 'JATSReference.php';
 $dom = new \DOMDocument('1.0', 'UTF-8');
 
 // Leer el archivo de texto con referencias
-$referencias = file('examples/ayana/14758/ayana.14758.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$referencias = file('examples/ayana/prueba/prueba.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 // Nombre del archivo CSV
 $fileCsv = 'informe_referencias_jats.csv';

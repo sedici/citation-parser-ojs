@@ -42,7 +42,7 @@ $referencias = file(filename: 'examples/ayana/prueba/prueba.txt', flags: FILE_IG
 
 // Procesar cada referencia
 foreach ($referencias as $referencia) {
-    $reference = new Reference(referenceText: $referencia);
+    $reference = new Reference(plainTextReference: $referencia);
     $jats = new JATSReference(reference: $reference,dom: $dom);
     $jats->getJatsXML();
 }

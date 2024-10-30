@@ -70,7 +70,6 @@ class Reference {
         $this->parseDate(); 
         $this->parseURL();
         $this->parseTitle();
-        echo(" \n $this->type \n");
     }
 
     // Getter para author
