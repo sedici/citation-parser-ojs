@@ -25,7 +25,7 @@ class AuthorPrinter extends GenericPrinter {
         $authorElement->setAttribute('person-group-type','author');
         $elements[] = $authorElement;
 
-        $authores = $this->reference['authors'];
+        $authores = $this->reference['authors'] ?? [];
 
         foreach ($authores as $autor) {
             $nameElement = $this->dom->createElement('name');

@@ -15,8 +15,12 @@ class CongressPrinter extends GenericPrinter{
         return $this->get('title');
     }
 
-    public function getPublisher(): string{
-        return $this->get('publisher');
+    public function getSource(): string{
+        return $this->get('title');
+    }
+
+    public function getPublisherLoc(): string{
+        return $this->get('publisherloc');
     }
 
     public function getEvent(): string{
@@ -29,6 +33,18 @@ class CongressPrinter extends GenericPrinter{
 
     public function createXMLElements(): array {
         $elements = [];
+
+        $sourceElement = $this->createElement('source',$this->getSource());
+        $elements[] = $sourceElement;
+
+        $commentElement = $this->createElement('comment',$this->getComment());
+        $elements[] = $commentElement;
+
+        $publisherLocElement = $this->createElement('publisher-loc',$this->getPublisherLoc());
+        $elements[] = $publisherLocElement;
+
+        $publisherNameElement = $this->createElement('publisher-name',$this->getPublisherName());
+        $elements[] = $publisherNameElement;
 
         return $elements;
     }
