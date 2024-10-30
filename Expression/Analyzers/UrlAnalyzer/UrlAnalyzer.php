@@ -17,7 +17,7 @@
                 }
             }
 
-            return array('expression' => 'No match found', 'value' => '');
+            return array('expression' => null, 'value' => '');
         }
 
     }

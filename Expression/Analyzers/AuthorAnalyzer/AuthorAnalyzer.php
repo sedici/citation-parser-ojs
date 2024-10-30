@@ -28,7 +28,7 @@ include_once('AuthorPatterns.php');
             }
     
             //return $authors_array;
-            return array('expression' => 'author', 'value' => $authors_array);
+            return array('expression' => null, 'value' => $authors_array);
 
         }
 
