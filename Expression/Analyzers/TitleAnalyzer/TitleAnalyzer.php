@@ -1,8 +1,7 @@
 <?php
 
     include_once('TitlePatterns.php');
-    include_once('TitleKeywords/Comment/CommentKeywords.php');
-
+    
     class TitleAnalyzer{
 
         private $patterns;
