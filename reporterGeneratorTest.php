@@ -6,22 +6,17 @@ function generateCsv($inputFile, $outputCsv, $generateXML = true){
         
     // Crear el documento DOM para generar el XML
     $dom = new \DOMDocument('1.0', 'UTF-8');
-
-    // Leer el archivo de texto con referencias
     $referencias = file($inputFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
-    // Nombre del archivo CSV
     $fileCsv = $outputCsv;
 
     // Abrir el archivo CSV en modo de escritura
     $handleCsv = fopen($fileCsv, 'w');
-
-    // Escribir la primera fila con los encabezados
     fputcsv($handleCsv, ["reference", "author", "date", "title", "url", "match", "incomplete match", "espected type", "result type"]);
 
     // Procesar cada referencia
     foreach ($referencias as $index => $referencia) {
-        // Crear el objeto Reference y JATSReference (como en tu código)
+
+        // Crear el objeto Reference
         $reference = new Reference(plainTextReference: $referencia);
 
         $matchAuthor = !empty($reference->getAuthor()) ? true : false;
@@ -30,12 +25,9 @@ function generateCsv($inputFile, $outputCsv, $generateXML = true){
         $matchUrl = !empty($reference->getURL()) ? true : false;
         $matchType = $reference->getType();
         
-        // Agregar la referencia al CSV en la primera columna
-        // Puedes dejar las otras columnas vacías o llenarlas según necesites
+
         $matchComplete = ($matchAuthor && $matchDate && $matchTitle) ? true : false; 
         $matchIncomplete = ($matchAuthor || $matchDate || $matchTitle) ? true : false; 
-        
-        // Agregar el tipo esperado y el tipo resultante (aquí puedes definir cómo obtener estos tipos)
         $expectedType = ''; // Definir o calcular el tipo esperado
         $resultType = $matchType; // Este es el tipo obtenido
 
@@ -88,7 +80,9 @@ function generateReports($fileCsv = 'parserReport.csv'){
             // Suponiendo que `matchComplete` esté en la sexta columna (índice 5)
             if (isset($data[5]) && $data[5] == 1) {
                 $matchCompleteCount++;
-                $matchCompleteRows[] = [
+                $matchCompleteRows[] = $totalRows; 
+
+                $matchCompleteReference[] = [
                     'row' => $totalRows, 
                     'expectedType' => $data[7], // `espected type` (índice 7)
                     'resultType' => $data[8]    // `result type` (índice 8)
@@ -97,9 +91,12 @@ function generateReports($fileCsv = 'parserReport.csv'){
                 if ($data[7] === $data[8]) {
                     $correctTypeCount++; // Incrementa si son iguales
                 }
+            } else {
+                $nonMatchCompleteRows[] = $totalRows;
             }
         }
         fclose($handleCsv);
+            // Retornar los dos arreglos con las filas correspondientes
     }
 
     // Calcular los porcentajes
@@ -126,7 +123,7 @@ function generateReports($fileCsv = 'parserReport.csv'){
 
     // Imprimir las filas que tienen `matchComplete = 1`
     echo "\nFilas con matchComplete: \n";
-    foreach ($matchCompleteRows as $row) {
+    foreach ($matchCompleteReference as $row) {
         echo "Fila " . $row['row'] . " - Esperado: " . $row['expectedType'] . ", Resultado: " . $row['resultType'] . "\n";
     }
 
@@ -136,6 +133,11 @@ function generateReports($fileCsv = 'parserReport.csv'){
     echo "------------------------------------------\n";
     echo "| " . str_pad(number_format($precisionPercentage, 2) . "%", 20) . "|\n";
     echo "------------------------------------------\n";
+
+    return [
+        'matchCompleteRows' => $matchCompleteRows,
+        'nonMatchCompleteRows' => $nonMatchCompleteRows,
+    ];
 }
 
 function extractXmlByIds($xmlFile, $elementIds, $outputFile = 'result.xml') {
@@ -149,9 +151,10 @@ function extractXmlByIds($xmlFile, $elementIds, $outputFile = 'result.xml') {
     $root = $resultDom->createElement('ref-list');
     $resultDom->appendChild($root);
 
+
     // Buscar y agregar cada <ref> por ID
     foreach ($elementIds as $id) {
-        $query = "//ref[@id='$id']";
+        $query = "//ref[@id='parser_$id']";
         $nodes = $xpath->query($query);
 
         foreach ($nodes as $node) {
@@ -172,21 +175,39 @@ function extractXmlByIds($xmlFile, $elementIds, $outputFile = 'result.xml') {
 }
 
 
+$inputFile = 'examples/ayana/14758/ayana.14758.txt';
+$outputCsv = 'reports/informe_referencias_jats.csv';
+$xmlFile = 'reports/informe_referencias_jats.xml';
+$elementIds = [];
+
+generateCsv($inputFile,$outputCsv);
+$result = generateReports($outputCsv);
+
+extractXmlByIds($xmlFile,$result['nonMatchCompleteRows']);
+        
 
 // Obtener las opciones de ejecución desde los parámetros
+
+/*
 $action = $argv[1] ?? null;
+
+
+$inputFile = 'examples/ayana/14758/ayana.14758.txt';
+$outputCsv = 'reports/informe_referencias_jats.csv';
 
 switch ($action) {
     case 'generate_csv':
-        generateCsv($inputFile = 'examples/ayana/14758/ayana.14758.txt', $outputCsv = 'reports/informe_referencias_jats.csv');
+        generateCsv($inputFile,$outputCsv);
         break;
 
     case 'generate_reports':
-        generateReports($outputCsv = 'reports/informe_referencias_jats.csv');
+        $result = generateReports($outputCsv);
+        print_r($result);
         break;
-
+        
     default:
         echo "Uso: php report_generator.php [generate_csv|load_csv|generate_reports]\n";
         break;
 }
+*/
 ?>
