@@ -17,3 +17,13 @@
   </element_citation>
   <mixed_citation>Messineo, T. (26 de enero de 2024). An example thesis [Conferencia]. XV Congress. University of La Plata. La Plata, Argentina.</mixed_citation>
 </ref>
+<ref id="parser_1">
+  <element_citation publication_type="">
+    <person-group person-group-type="author"/>
+    <year>2020</year>
+    <!--Error: Failed to parse the title information. Please review.-->
+    <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1787/b6bccb81-en">https://doi.org/10.1787/b6bccb81-en</ext-link>
+    <pub-id pub-id-type="doi">10.1787/b6bccb81-en</pub-id>
+  </element_citation>
+  <mixed_citation>Organización para la Cooperación y el Desarrollo Económico (2020). La dinámica de la urbanización de África 2020: Áfricapolis, mapeando una nueva geografía urbana. Estudios de África occidental, Editorial OECD, https://doi.org/10.1787/b6bccb81-en</mixed_citation>
+</ref>
