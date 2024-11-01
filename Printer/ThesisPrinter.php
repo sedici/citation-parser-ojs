@@ -32,11 +32,15 @@ class ThesisPrinter extends TitlePrinter implements EnrichmentInstitutionInterfa
         $publisherLocElement = $this->createElement('publisher-loc',$this->getPublisherLoc());
         $elements[] = $publisherLocElement;
 
-        $publisherNameElement = $this->createElement('publisher-name',$this->getPublisherName());
-        $elements[] = $publisherNameElement;
 
-        $result = $this->enrichInstitutionData('Universidad Nacional de La Plata');
-        if ($result) $elements[] = $result;
+        $publisherName = $this->getPublisherName();
+        if (!empty($publisherName)) {
+            $publisherNameElement = $this->createElement('publisher-name',$publisherName );
+            $elements[] = $publisherNameElement;
+
+            $result = $this->enrichInstitutionData($publisherName);
+            if ($result) $elements[] = $result;
+        }
         
         return $elements;
     }
