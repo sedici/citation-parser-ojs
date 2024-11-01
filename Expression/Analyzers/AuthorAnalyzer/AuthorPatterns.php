@@ -18,10 +18,12 @@
         }
 
         public static function getInstitutionPattern(){
-            
-           //Institution Pattern.
 
-           return null;
+            //Institution Pattern.
+            $institution = '/(?P<institution>[\s\S]*)/';
+
+            
+            return $institution;
 
         }
 
