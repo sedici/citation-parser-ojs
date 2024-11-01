@@ -1,6 +1,7 @@
 <?php
 class OpenAlexAPI {
     private $baseUrl = "https://api.openalex.org/institutions?search=";
+    private $doiUrl = "https://api.openalex.org/works/";
 
     public function searchInstitutions(string $query): array {
         // Construye la URL completa con el parámetro de búsqueda
@@ -31,6 +32,78 @@ class OpenAlexAPI {
         // Si no hay resultados válidos, devuelve un mensaje indicando que no se encontró información
         return ["error" => "No se encontraron instituciones con el término de búsqueda proporcionado"];
     }
+
+    public function searchWorksWhitDoi(string $query): array {
+
+        /*
+            title
+            publication_year
+            publication_date
+            ids
+            primary_location{
+                source:{
+                    display_name
+                    issn_l
+                }
+            }
+            authorships:{
+                0:{
+                    author:{
+                        display_name:
+                        orcid: 
+                    }
+                    institution:{
+                        0:{
+                            display_name
+                            ror
+
+                        }
+                    }   
+                }
+                <n>:
+            }
+
+            */
+        // Construye la URL completa con el parámetro de búsqueda
+        $url = $this->doiUrl . urlencode($query);
+    
+        // Realiza la solicitud y obtiene la respuesta en JSON
+        $response = file_get_contents($url);
+    
+        // Si hay algún error en la solicitud, devuelve un mensaje de error
+        if ($response === FALSE) {
+            return ["error" => "No se pudo conectar a la API"];
+        }
+    
+        // Decodifica el JSON en un array asociativo
+        $data = json_decode($response, true);
+        print_r($data['authorships']);
+        
+        $result = $data; // Obtenemos el primer resultado
+        
+            // Preparamos el arreglo con los datos de interés
+            $institutions = [];
+            foreach ($result['authorships'] as $authorship) {
+                $author = $authorship['author']['raw_author_name'] ?? null;
+                $orcid = $authorship['author']['orcid'] ?? null;
+            }
+    
+            // Retorna los datos de interés en formato de arreglo
+            return [
+                "title" => $result['title'] ?? null,
+                "publication_year" => $result['publication_year'] ?? null,
+                "publication_date" => $result['publication_date'] ?? null,
+                "source_display_name" => $result['primary_location']['source']['display_name'] ?? null,
+                "source_issn_l" => $result['primary_location']['source']['issn_l'] ?? null,
+            ];
+        }
+    
 }
+
+
+$openalex = new OpenAlexAPI();
+$result = $openalex->searchWorksWhitDoi('https://doi.org/10.24215/23143738e136');
+
+print_r($result);
 
 ?>
