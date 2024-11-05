@@ -95,6 +95,17 @@ class JATSReference {
         }
     }
 
+    public function getDoi(): ?string {
+        $urlType = $this->reference->getURLType();
+        // Verificar si el tipo de URL es 'doi', si no, retornar null
+        if ($urlType !== 'DOI') {
+            return null;
+        }
+        // Retornar el DOI si el tipo de URL es correcto
+        return $this->reference->getURL()['doi'];
+    }
+    
+
 
 
 }

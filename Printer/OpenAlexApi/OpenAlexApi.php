@@ -1,11 +1,13 @@
 <?php
 class OpenAlexAPI {
-    private $baseUrl = "https://api.openalex.org/institutions?search=";
-    private $doiUrl = "https://api.openalex.org/works/";
+    private string $institutionsUrl = "https://api.openalex.org/institutions?search=";
+    private string $worksUrl = "https://api.openalex.org/works/";
+    private string $doisUrl = "https://api.openalex.org/works?filter=doi:";
+
 
     public function searchInstitutions(string $query): array {
         // Construye la URL completa con el parámetro de búsqueda
-        $url = $this->baseUrl . urlencode($query);
+        $url = $this->institutionsUrl . urlencode($query);
 
         // Realiza la solicitud y obtiene la respuesta en JSON
         $response = file_get_contents($url);
@@ -65,7 +67,7 @@ class OpenAlexAPI {
 
             */
         // Construye la URL completa con el parámetro de búsqueda
-        $url = $this->doiUrl . urlencode($query);
+        $url = $this->worksUrl . urlencode($query);
     
         // Realiza la solicitud y obtiene la respuesta en JSON
         $response = file_get_contents($url);
@@ -82,28 +84,51 @@ class OpenAlexAPI {
         $result = $data; // Obtenemos el primer resultado
         
             // Preparamos el arreglo con los datos de interés
-            $institutions = [];
-            foreach ($result['authorships'] as $authorship) {
-                $author = $authorship['author']['raw_author_name'] ?? null;
-                $orcid = $authorship['author']['orcid'] ?? null;
+            $authors = [];
+            foreach ($result['authorships'] as $index => $authorship) {
+                $authors[$index]['display_name'] = $authorship['author']['display_name'] ?? null;
+                $authors[$index]['orcid']  = $authorship['author']['orcid'] ?? null;
             }
-    
+            $result['authors'] =  $authors;
             // Retorna los datos de interés en formato de arreglo
+            
             return [
                 "title" => $result['title'] ?? null,
                 "publication_year" => $result['publication_year'] ?? null,
                 "publication_date" => $result['publication_date'] ?? null,
                 "source_display_name" => $result['primary_location']['source']['display_name'] ?? null,
                 "source_issn_l" => $result['primary_location']['source']['issn_l'] ?? null,
+                "authors" => $result['authors'] ?? null,
             ];
-        }
+    }
     
+    public function searchWorksListWithDoi(array $dois) {
+        // Verificar que el array no esté vacío
+        if (empty($dois)) {
+            throw new InvalidArgumentException("La lista de DOIs no puede estar vacía.");
+        }
+
+        // Concatenar los DOIs con "|"
+        $doiList = implode('|', $dois);
+        
+        // Construir la URL de la solicitud
+        $url = $this->doisUrl . urlencode($doiList);
+        print($url."                          ");
+        // Realizar la solicitud GET
+        $response = file_get_contents($url);
+
+        // Convertir la respuesta a JSON y retornarla
+        return $response;
+    }
+
+
 }
 
 
+/*
 $openalex = new OpenAlexAPI();
 $result = $openalex->searchWorksWhitDoi('https://doi.org/10.24215/23143738e136');
 
 print_r($result);
-
+*/
 ?>
