@@ -21,7 +21,6 @@
 
             //Institution Pattern.
             $institution = '/(?P<institution>[\s\S]*)/';
-
             
             return $institution;
 
