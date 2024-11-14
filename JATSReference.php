@@ -26,15 +26,18 @@ class JATSReference {
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
 
+    }
+
+    public function createXMLElemetns(){
         $this->addAuthors();
         $this->addDate();
         $this->addTitle();
         $this->addURL();
-
     }
 
-    public function getJatsXML(string $rout = 'output.xml') {
+    public function getJatsXML(string $rout = null) {
         // Devolver el XML como una cadena
+        $this->createXMLElemetns();
         $this->dom->preserveWhiteSpace = false; // Opcional, para evitar espacios en blanco innecesarios
         $this->dom->formatOutput = true; // Activar la salida formateada
         return $this->dom->save($rout);
@@ -105,6 +108,9 @@ class JATSReference {
         return $this->reference->getURL()['doi'];
     }
     
+    public function getInstitutions(): ?string {
+        return null;
+    }
 
 
 

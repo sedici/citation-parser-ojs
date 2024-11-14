@@ -113,10 +113,8 @@ class OpenAlexAPI {
         
         // Construir la URL de la solicitud
         $url = $this->doisUrl . urlencode($doiList);
-        print($url."                          ");
         // Realizar la solicitud GET
         $response = file_get_contents($url);
-
         // Convertir la respuesta a JSON y retornarla
         return $response;
     }
