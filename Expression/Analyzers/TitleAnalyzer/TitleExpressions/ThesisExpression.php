@@ -9,5 +9,5 @@ include_once('GenericExpression.php');
         public static function getPattern(){
             return self::$thesisExpression;
         }
-
+        
     }

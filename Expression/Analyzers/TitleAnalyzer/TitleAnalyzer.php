@@ -22,7 +22,7 @@
 
         public function analyze(string $text) {
             foreach ($this->patterns as $pattern => $name) {
-                if (preg_match($pattern, $text, $matches)) { 
+                if (preg_match($pattern, $text, $matches)) {
                     return array('expression' => $name, 'value' => $matches);
                 }
             }
