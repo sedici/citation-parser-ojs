@@ -9,14 +9,14 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
-    public function __construct(Reference $reference,\DOMDocument $dom = null, int $id = 0) {
+    public function __construct(Reference $reference,\DOMDocument $dom = null,\DOMElement $reflist = null, int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
-
+        $this->reflist = $reflist;
         // Crear el elemento raíz <ref> con el prefijo de ID
         $this->ref = $this->dom->createElement('ref');
         $this->ref->setAttribute('id', self::JATS_REF_ID_PREFIX.$id );
-        $this->dom->appendChild($this->ref);
+        $this->reflist->appendChild($this->ref);
         
         $this->mixed_citation = $this->dom->createElement(localName: 'mixed_citation',value: $this->reference->getPlainTextReference());
 
