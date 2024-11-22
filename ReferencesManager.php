@@ -28,7 +28,7 @@ class ReferencesManager {
         $this->process();
     }
 
-    public function process($output = 'output.xml') {
+    public function process() {
         // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
             $reference = new Reference($ref);
@@ -51,12 +51,12 @@ class ReferencesManager {
         }
 
         //$this->openAlexRequest();
-        $this->generateXML($output);
+        $this->generateXML();
     }
 
-    private function generateXML(string $rout = null) {
+    private function generateXML() {
         foreach ($this->jatsList as $jats) {
-            $jats->getJatsXML($rout);
+            $jats->getJatsXML();
         }
         //$this->dom->save();
     }
@@ -77,19 +77,3 @@ class ReferencesManager {
      }
  
 }
-/*
-$dom = new \DOMDocument('1.0', 'UTF-8');
-$article = $dom->createElement('article');
-$article->setAttributeNS(
-    "http://www.w3.org/2000/xmlns/",
-    "xmlns:xlink",
-    "http://www.w3.org/1999/xlink"
-);
-$dom->appendChild($article);
-$back = $dom->createElement('back');
-$article->appendChild($back);
-
-$ref = file('examples/ayana/15096/ayana.15096.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-$manager = new ReferencesManager($dom,$back,$ref);
-$manager->process('reports/output.xml');
-*/
