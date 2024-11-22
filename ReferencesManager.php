@@ -19,19 +19,20 @@ class ReferencesManager {
     public function __construct(\DOMDocument $dom = null,\DOMElement $back = null,array $refs = null) {
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->back = $back;
-        $this->refs = file('examples/ayana/15096/ayana.15096.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        $this->refs = $refs;
 
         $this->reflist = $this->dom->createElement('ref-list');
         $this->back->appendChild($this->reflist);
 
         $this->oam = new OpenAlexApiManager();
+        $this->process();
     }
 
-    public function process() {
+    public function process($output = 'output.xml') {
         // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
             $reference = new Reference($ref);
-            $jats = new JATSReference($reference, $this->dom, $this->reflist, $index);
+            $jats = new JATSReference($this->dom, $this->reflist, $reference, $index);
             $this->jatsList[] = $jats;
 
             // Si la referencia tiene DOI, agregar al manager de OpenAlex
@@ -50,14 +51,14 @@ class ReferencesManager {
         }
 
         //$this->openAlexRequest();
-        $this->generateXML('reports/output.xml');
+        $this->generateXML($output);
     }
 
     private function generateXML(string $rout = null) {
         foreach ($this->jatsList as $jats) {
             $jats->getJatsXML($rout);
         }
-        //$this->dom->save('reports/output.xml');
+        //$this->dom->save();
     }
 
     private function openAlexRequest() {
@@ -76,7 +77,7 @@ class ReferencesManager {
      }
  
 }
-
+/*
 $dom = new \DOMDocument('1.0', 'UTF-8');
 $article = $dom->createElement('article');
 $article->setAttributeNS(
@@ -88,5 +89,7 @@ $dom->appendChild($article);
 $back = $dom->createElement('back');
 $article->appendChild($back);
 
-$manager = new ReferencesManager($dom,$back,null);
-$manager->process();
+$ref = file('examples/ayana/15096/ayana.15096.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$manager = new ReferencesManager($dom,$back,$ref);
+$manager->process('reports/output.xml');
+*/

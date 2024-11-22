@@ -9,7 +9,7 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
-    public function __construct(Reference $reference,\DOMDocument $dom = null,\DOMElement $reflist = null, int $id = 0) {
+    public function __construct(\DOMDocument $dom = null,\DOMElement $reflist = null,Reference $reference,int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->reflist = $reflist;
