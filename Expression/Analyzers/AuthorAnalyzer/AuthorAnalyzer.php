@@ -52,8 +52,6 @@ include_once('AuthorPatterns.php');
                 $authors_array['institution'] = $institutionMatch['institution'];
             }
 
-            print_r($authors_array);
-
             //Return only $authors_array if the reference does not contain institutions as authors.
             return array('expression' => null, 'value' => $authors_array);
             
