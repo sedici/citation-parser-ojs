@@ -9,7 +9,7 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
-    public function __construct(Reference $reference,\DOMDocument $dom = null,\DOMElement $reflist = null, int $id = 0) {
+    public function __construct(\DOMDocument $dom = null,\DOMElement $reflist = null,Reference $reference,int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->reflist = $reflist;
@@ -18,10 +18,10 @@ class JATSReference {
         $this->ref->setAttribute('id', self::JATS_REF_ID_PREFIX.$id );
         $this->reflist->appendChild($this->ref);
         
-        $this->mixed_citation = $this->dom->createElement(localName: 'mixed_citation',value: $this->reference->getPlainTextReference());
+        $this->mixed_citation = $this->dom->createElement('mixed_citation',$this->reference->getPlainTextReference());
 
         $this->element_citation = $this->dom->createElement('element_citation');
-        $this->element_citation->setAttribute(qualifiedName: 'publication_type',value: $this->reference->getTitleType());
+        $this->element_citation->setAttribute('publication_type',$this->reference->getTitleType());
 
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
@@ -35,12 +35,9 @@ class JATSReference {
         $this->addURL();
     }
 
-    public function getJatsXML(string $rout = null) {
+    public function getJatsXML() {
         // Devolver el XML como una cadena
         $this->createXMLElemetns();
-        $this->dom->preserveWhiteSpace = false; // Opcional, para evitar espacios en blanco innecesarios
-        $this->dom->formatOutput = true; // Activar la salida formateada
-        return $this->dom->save($rout);
     }
 
     public function addAuthors() {
