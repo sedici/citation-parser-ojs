@@ -18,10 +18,10 @@ class JATSReference {
         $this->ref->setAttribute('id', self::JATS_REF_ID_PREFIX.$id );
         $this->reflist->appendChild($this->ref);
         
-        $this->mixed_citation = $this->dom->createElement('mixed_citation',$this->reference->getPlainTextReference());
+        $this->mixed_citation = $this->dom->createElement('mixed-citation',$this->reference->getPlainTextReference());
 
-        $this->element_citation = $this->dom->createElement('element_citation');
-        $this->element_citation->setAttribute('publication_type',$this->reference->getTitleType());
+        $this->element_citation = $this->dom->createElement('element-citation');
+        $this->element_citation->setAttribute('publication-type',$this->reference->getTitleType());
 
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);

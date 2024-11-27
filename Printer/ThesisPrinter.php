@@ -23,7 +23,7 @@ class ThesisPrinter extends TitlePrinter implements EnrichmentInstitutionInterfa
         */
 
         $elements = [];
-        $sourceElement = $this->createElement('source',$this->getSource());
+        $sourceElement = $this->createElement('article-title',$this->getSource());
         $elements[] = $sourceElement;
 
         $commentElement = $this->createElement('comment',$this->getComment());
