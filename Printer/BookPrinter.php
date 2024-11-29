@@ -33,9 +33,11 @@ class BookPrinter extends TitlePrinter{
     public function createXMLElements(): array {
         $elements = [];
         
+        //<source> tag creation
         $sourceElement = $this->createElement('source',$this->getSource());
         $elements[] = $sourceElement;
 
+        //<publisher-name> tag creation
         $publishernamElement = $this->createElement('publisher-name',$this->getEditorial());
         $elements[] = $publishernamElement;
         
