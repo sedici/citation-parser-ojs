@@ -3,7 +3,7 @@ include_once 'TitlePrinter.php';
 include_once 'OpenAlexApi/EnrichmentInstitutionInterface.php';
 include_once 'OpenAlexApi/OpenAlexApi.php';
 
-class CongressPrinter extends TitlePrinter implements EnrichmentInstitutionInterface{
+class ConfprocPrinter extends TitlePrinter implements EnrichmentInstitutionInterface{
 
     public function toPlainText(): string{
         //'Apellido Autor, N. N. (10 de abril de 2023). Título del trabajo. (3ª ed., Vol. 4). Editorial.';
@@ -37,19 +37,18 @@ class CongressPrinter extends TitlePrinter implements EnrichmentInstitutionInter
     public function createXMLElements(): array {
         $elements = [];
 
-        $sourceElement = $this->createElement('source',$this->getSource());
+        $sourceElement = $this->createElement('article-title',$this->getSource());
         $elements[] = $sourceElement;
 
         $commentElement = $this->createElement('comment',$this->getComment());
         $elements[] = $commentElement;
 
-        $publisherLocElement = $this->createElement('publisher-loc',$this->getPublisherLoc());
+        $publisherLocElement = $this->createElement('conf-loc',$this->getPublisherLoc());
         $elements[] = $publisherLocElement;
-
 
         $publisherName = $this->getPublisherName();
         if (!empty($publisherName)) {
-            $publisherNameElement = $this->createElement('publisher-name',$publisherName);
+            $publisherNameElement = $this->createElement('conf-name',$publisherName);
             $elements[] = $publisherNameElement;
 
             $result = $this->enrichInstitutionData($publisherName);

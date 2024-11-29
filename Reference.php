@@ -6,7 +6,7 @@ include_once 'Expression/Analyzers/UrlAnalyzer/URLExpression.php';
 include_once 'Printer/BookPrinter.php';
 include_once 'Printer/JournalPrinter.php';
 include_once 'Printer/ChapterPrinter.php';
-include_once 'Printer/CongressPrinter.php';
+include_once 'Printer/ConfprocPrinter.php';
 include_once 'Printer/DatePrinter.php';
 include_once 'Printer/AuthorPrinter.php';
 include_once 'Printer/ThesisPrinter.php';
