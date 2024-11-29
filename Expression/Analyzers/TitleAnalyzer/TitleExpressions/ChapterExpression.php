@@ -13,10 +13,10 @@ include_once('GenericExpression.php');
             $singularRole = "(?P<role>.*(?<!s)\.)"; //Only accepts a word in singular, for example: (Ed.|Comp.|Coord.|etc...).
             $book = "(?P<book>[A-Z][A-Za-zÀ-ÿ:,-°\s]+)";
 
-            $volume = "(?P<volumen>(?:[IVXLCDM]+|[0-9]+))";
-            $editionNumber = "(?P<nedicion>[0-9]+ᵃ)";
-            $pages = "(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\)";
-            $edition = "(?P<edicion>($editionNumber\sed\.,\s)?(Vol\.\s$volume)?(,\s)?$pages";
+            $volume = "(?P<volume>(?:[IVXLCDM]+|[0-9]+))";
+            $editionNumber = "(?P<nedition>[0-9]+ᵃ)";
+            $pages = "(pp.\s(?P<pages>(\d{1,4}-\d{1,4})))?)\)";
+            $edition = "(?P<edition>($editionNumber\sed\.,\s)?(Vol\.\s$volume)?(,\s)?$pages";
 
 
             // -----------------------> Contributors regex's: <----------------------------------------------------

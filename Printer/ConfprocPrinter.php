@@ -37,15 +37,19 @@ class ConfprocPrinter extends TitlePrinter implements EnrichmentInstitutionInter
     public function createXMLElements(): array {
         $elements = [];
 
+        //<article-title> tag creation
         $sourceElement = $this->createElement('article-title',$this->getSource());
         $elements[] = $sourceElement;
 
+        //<comment> tag creation
         $commentElement = $this->createElement('comment',$this->getComment());
         $elements[] = $commentElement;
 
+        //<conf-loc> tag creation
         $publisherLocElement = $this->createElement('conf-loc',$this->getPublisherLoc());
         $elements[] = $publisherLocElement;
 
+        //<conf-name> tag creation if exists.
         $publisherName = $this->getPublisherName();
         if (!empty($publisherName)) {
             $publisherNameElement = $this->createElement('conf-name',$publisherName);

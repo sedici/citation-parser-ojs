@@ -23,16 +23,20 @@ class ThesisPrinter extends TitlePrinter implements EnrichmentInstitutionInterfa
         */
 
         $elements = [];
+
+        //<article-title> tag creation
         $sourceElement = $this->createElement('article-title',$this->getSource());
         $elements[] = $sourceElement;
 
+        //<comment> tag creation
         $commentElement = $this->createElement('comment',$this->getComment());
         $elements[] = $commentElement;
 
+        //<publisher-loc> tag creation
         $publisherLocElement = $this->createElement('publisher-loc',$this->getPublisherLoc());
         $elements[] = $publisherLocElement;
 
-
+        //<publisher-name> tag creation if exists.
         $publisherName = $this->getPublisherName();
         if (!empty($publisherName)) {
             $publisherNameElement = $this->createElement('publisher-name',$publisherName );

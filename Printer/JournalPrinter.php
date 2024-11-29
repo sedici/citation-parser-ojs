@@ -42,21 +42,27 @@ class JournalPrinter extends TitlePrinter{
     public function createXMLElements(): array {
         $elements = [];
         
+        //<source> tag creation
         $sourceElement = $this->createElement('source',$this->getSource());
         $elements[] = $sourceElement;
 
+        //<article-title> tag creation
         $articleTitleElement = $this->createElement('article-title',$this->getTitle());
         $elements[] = $articleTitleElement;
 
+        //<volume> tag creation
         $volumeElement = $this->createElement('volume',$this->getVolume());
         $elements[] = $volumeElement;
 
+        //<issue> tag creation
         $editionElement = $this->createElement('issue',$this->getEdition());
         $elements[] = $editionElement;
 
+        //<fpage> tag creation
         $fpageElement = $this->createElement('fpage',$this->getFPages());
         $elements[] = $fpageElement;
 
+        //<lpage> tag creation
         $lpageElement = $this->createElement('lpage',$this->getLPages());
         $elements[] = $lpageElement;
 
