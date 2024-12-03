@@ -26,6 +26,10 @@ include_once('AuthorPatterns.php');
             // Smith, J. A., Johnson, M. L., Universidad Nacional de La Plata (2021
             preg_match_all($this->authorPattern, $firstPartText, $authorsMatches, PREG_SET_ORDER);
 
+            if (empty($authorsMatches)) {
+                return array('expression' => null, 'value' => '');
+            }
+
             $authors_array = array();
             $counter = 1;
             
@@ -53,7 +57,7 @@ include_once('AuthorPatterns.php');
             }
 
             //Return only $authors_array if the reference does not contain institutions as authors.
-            return array('expression' => null, 'value' => $authors_array);
+            return array('expression' => 'authors', 'value' => $authors_array);
             
         }
 

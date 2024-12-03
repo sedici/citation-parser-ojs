@@ -9,6 +9,8 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
+    private $errors = "";
+
     public function __construct(\DOMDocument $dom = null,\DOMElement $reflist = null,Reference $reference,int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
@@ -28,11 +30,24 @@ class JATSReference {
 
     }
 
+    public function checkErrors(){
+        //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
+        if (trim($this->errors) !== "") {
+            
+            $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
+        
+            $errorComment = $this->dom->createComment($textError);
+            $this->mixed_citation->appendChild($errorComment);
+            $this->ref->removeChild($this->element_citation);
+        }
+    }
+
     public function createXMLElemetns(){
         $this->addAuthors();
         $this->addDate();
         $this->addTitle();
         $this->addURL();
+        $this->checkErrors();
     }
 
     public function getJatsXML() {
@@ -40,18 +55,38 @@ class JATSReference {
         $this->createXMLElemetns();
     }
 
+    public function addError(String $errorText): String{
+        return $this->errors .= $errorText;
+    }
+
     public function addAuthors() {
-        // Devolver el XML como una cadena
+        // Return xml as a string
+
+        $authorType = $this->reference->getAuthorType();
+        if ($authorType === null || trim($authorType) === "" || $authorType === "No match found") {
+            print_r("entro");
+            $errorText = "Author. ";
+            $this->addError($errorText);
+            return;
+        }
+        $authorType = $this->reference->getAuthorType();
         $authorPrinter = new AuthorPrinter($this->reference->getAuthor(),$this->dom);
         $elements = $authorPrinter->createXMLElements();
         foreach ($elements as $element) {
             $this->element_citation->appendChild($element);
         }
-           
     }
 
     public function addDate() {
-        // Devolver el XML como una cadena
+        // Return xml as a string
+
+        $dateType = $this->reference->getDateType();
+        if ($dateType === null || trim($dateType) === "" || $dateType === "No match found") {
+            $errorText = "Date. ";
+            $this->addError($errorText);
+            return;
+        }
+
         $datePrinter = new DatePrinter($this->reference->getDate(),$this->dom);
         $elements = $datePrinter->createXMLElements();
         foreach ($elements as $element) {
@@ -62,9 +97,10 @@ class JATSReference {
 
 
     public function addURL() {
-        // Devolver el XML como una cadena
+        // Return xml as a string
+        
         $urlType = $this->reference->getURLType(); 
-        if ($urlType === null || trim($urlType) === "" || $urlType === "No match found") {
+        if ($urlType === null || trim($urlType) === "" || $urlType === "No match found. ") {
             return;
         }
 
@@ -79,11 +115,12 @@ class JATSReference {
     }
 
     public function addTitle(){
+        //Return xml as a string
 
         $titleType = $this->reference->getTitleType(); 
         if ($titleType === null || trim($titleType) === "" || $titleType === "No match found") {
-            $errorComment = $this->dom->createComment('Error: Failed to parse the title information. Please review.');
-            $this->element_citation->appendChild($errorComment);
+            $errorText = "Title. ";
+            $this->addError($errorText);
             return;
         }
 
