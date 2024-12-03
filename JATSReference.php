@@ -64,7 +64,6 @@ class JATSReference {
 
         $authorType = $this->reference->getAuthorType();
         if ($authorType === null || trim($authorType) === "" || $authorType === "No match found") {
-            print_r("entro");
             $errorText = "Author. ";
             $this->addError($errorText);
             return;
