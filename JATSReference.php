@@ -35,9 +35,8 @@ class JATSReference {
         if (trim($this->errors) !== "") {
             
             $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
-        
-            $errorComment = $this->dom->createComment($textError);
-            $this->mixed_citation->appendChild($errorComment);
+
+            $this->mixed_citation->nodeValue .= " --- " . $textError;
             $this->ref->removeChild($this->element_citation);
         }
     }
