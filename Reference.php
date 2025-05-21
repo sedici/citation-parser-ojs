@@ -13,6 +13,7 @@ include_once 'Printer/ThesisPrinter.php';
 include_once 'Printer/URLPrinter.php';
 include_once 'Printer/DOIPrinter.php';
 include_once 'Printer/HANDLEPrinter.php';
+include_once 'Printer/WebpagePrinter.php';
 
 class Reference {
     private $plainTextReference;

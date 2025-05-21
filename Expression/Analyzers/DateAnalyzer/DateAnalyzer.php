@@ -16,9 +16,7 @@ include_once ('DatePatterns.php');
                 if (preg_match($pattern, $text, $matches)) {
                     if ($name === 'periodday' || $name === 'periodmonth') {
                         return array('expression' => 'congress', 'value' => $matches);
-
                     } else {
-
                         return array('expression' => $name, 'value' => $matches);
                     }
                 }

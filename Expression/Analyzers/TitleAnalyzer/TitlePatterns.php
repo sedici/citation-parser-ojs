@@ -5,6 +5,9 @@ include_once('TitleExpressions/BookExpression.php');
 include_once('TitleExpressions/CongressExpression.php');
 include_once('TitleExpressions/ChapterExpression.php');
 include_once('TitleExpressions/ThesisExpression.php');
+include_once('TitleExpressions/WebsiteExpression.php');
+include_once('TitleExpressions/NewspaperArticleExpression.php');
+include_once('TitleExpressions/LawExpression.php');
 
     class TitlePatterns {
 
@@ -24,13 +27,26 @@ include_once('TitleExpressions/ThesisExpression.php');
     
         // Get thesis references PATTERN.
         $thesisPattern = ThesisExpression::getPattern();
+
+        // Get website references PATTERN.
+        $webpagePattern = WebsiteExpression::getPattern();
     
+        // Get newspaper article references PATTERN.
+        $newspaperArticlePattern = NewspaperArticleExpression::getPattern();
+
+        // Get law references PATTERN.
+        $lawPattern = LawExpression::getPattern();
+
+        // Merge all patterns into a single array.
         return array_merge(
+            $lawPattern,
+            $webpagePattern,
             $congressPattern,
             $thesisPattern,
             $chapterPattern,
             $journalPattern,
             $bookPattern,
+            $newspaperArticlePattern,
         );
     }
 
@@ -54,6 +70,18 @@ include_once('TitleExpressions/ThesisExpression.php');
 
         public static function getThesisPatterns(){
             return ThesisExpression::getPattern();
+        }
+
+        public static function getWebpagePatterns(){
+            return WebsiteExpression::getPattern();
+        }
+
+        public static function getNewspaperArticlePatterns(){
+            return NewspaperArticleExpression::getPattern();
+        }
+
+        public static function getLawPatterns(){
+            return LawExpression::getPattern();
         }
 
     }

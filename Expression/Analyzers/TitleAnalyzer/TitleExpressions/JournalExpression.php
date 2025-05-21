@@ -10,5 +10,4 @@ include_once('GenericExpression.php');
             return self::$journalExpression;
         }
 
-
     }

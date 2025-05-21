@@ -29,7 +29,7 @@ include_once('GenericExpression.php');
             $threeContributors = "(?P<contributors>$contributorOneFullname,\s$contributorTwoFullname\s(y|&|and)\s$contributorThreeFullname)";
 
             //-------------------------------------------------------------------------------------------//
-            //-----------------------> Complete regex cases of chapter's reference. <--------------------------//
+            //-----------------------> Complete regex cases of chapter's reference. <--------------------//
             //-------------------------------------------------------------------------------------------//
 
             //chapterRegexCaseOne is for references to chapters that have a single ed.|comp.|coord. Matches array contains only contributorname1 and contributorsurname1.

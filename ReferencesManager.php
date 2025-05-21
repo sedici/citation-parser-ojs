@@ -25,6 +25,7 @@ class ReferencesManager {
         $this->back->appendChild($this->reflist);
 
         $this->oam = new OpenAlexApiManager();
+
         $this->process();
     }
 

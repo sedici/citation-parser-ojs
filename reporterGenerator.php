@@ -2,7 +2,10 @@
 require_once 'Reference.php';
 require_once 'JATSReference.php';
 // Crear el documento DOM para generar el XML
-$dom = new \DOMDocument('1.0', 'UTF-8');
+$domDoc = new \DOMDocument('1.0', 'UTF-8');
+// Crear el elemento raíz para la lista de referencias
+$reflist = $domDoc->createElement('ref-list');
+$domDoc->appendChild($reflist);
 
 // Leer el archivo de texto con referencias
 $referencias = file('examples/ayana/prueba/prueba.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -38,13 +41,13 @@ foreach ($referencias as $index => $referencia) {
 
     fputcsv($handleCsv, [$referencia, $matchAuthor, $matchDate, $matchTitle, $matchUrl, $matchComplete, $matchIncomplete, $expectedType, $resultType]);
 
-    $jats = new JATSReference(reference: $reference, dom: $dom, id: $index);
+    $jats = new JATSReference(reference: $reference, dom: $domDoc, reflist: $reflist, id: $index);
     // Generar el XML JATS para la referencia
     $jats->getJatsXML();
 }
 
 // Guardar el archivo XML
-$dom->save('informe_referencias_jats.xml');
+$domDoc->save('informe_referencias_jats.xml');
 
 // Nombre del archivo CSV
 $fileCsv = 'informe_referencias_jats.csv';

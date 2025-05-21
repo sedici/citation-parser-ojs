@@ -144,7 +144,5 @@ class JATSReference {
         return null;
     }
 
-
-
 }
 ?>

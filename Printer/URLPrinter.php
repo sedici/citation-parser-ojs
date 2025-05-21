@@ -16,6 +16,10 @@ class URLPrinter extends GenericPrinter{
         $ext_link->setAttribute('ext-link-type','uri');
         $ext_link->setAttribute('xlink:href',$this->getURL());
         $elements[] = $ext_link;
+
+        $uriElement = $this->createElement('uri', $this->getURL());
+        $elements[] = $uriElement;
+
         return $elements;
     }
 }

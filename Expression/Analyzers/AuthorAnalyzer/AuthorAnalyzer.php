@@ -2,63 +2,98 @@
 
 include_once('AuthorPatterns.php');
 
+class AuthorAnalyzer {
 
-    class AuthorAnalyzer {
+    private $authorPattern;
+    private $institutionPattern;
 
-        private $authorPattern;
-        private $institutionPattern;
-
-        public function __construct(){
-            $this->authorPattern = AuthorPatterns::getAuthorPattern();
-            $this->institutionPattern = AuthorPatterns::getInstitutionPattern();
-        }
-
-        public function analyze(string $text){
-
-            // Example reference ($text) at this moment:
-            // Smith, J. A., Johnson, M. L., Universidad Nacional de La Plata (2021). An example title.
-
-            // Only the text before the closed parenthesis are taken, the rest is ignored.
-            $firstPartText = strstr($text, ')', true);
-
-            // Match using the author's regex pattern.
-            // Example reference ($firstPartText) at this moment: 
-            // Smith, J. A., Johnson, M. L., Universidad Nacional de La Plata (2021
-            preg_match_all($this->authorPattern, $firstPartText, $authorsMatches, PREG_SET_ORDER);
-
-            if (empty($authorsMatches)) {
-                return array('expression' => null, 'value' => '');
-            }
-
-            $authors_array = array();
-            $counter = 1;
-            
-            foreach ($authorsMatches as $match) {
-                $authors_array['authors']['author' . $counter] = [
-                    'apellido' => $match['apellido'],
-                    'nombres' => $match['nombres'],
-                    'role' => $match['role'] ?? '',
-                ];
-                $counter++;
-            }
-
-            //Names and surnames in the reference text are removed because i need to match the institution (only if exists):
-            $textWithoutAuthors = preg_replace($this->authorPattern, '', $firstPartText);
-            // Text $textWithoutAuthors at this moment: "Universidad Nacional de La Plata (2021". We need to delete the last part: ". (2021"
-            $textWithoutAuthors = strstr($textWithoutAuthors, '. (', true);
-            // Text $textWithoutAuthors at this moment: "Universidad Nacional de La Plata"
-
-            //Checking if the institution exists in the reference: 
-            if (!empty($textWithoutAuthors)) {
-                //Add 'institution' key in $authorsArray. This array will contains 'authors' and 'institution' key.
-                //Verifying with the regex if the institution respects a valid format: 
-                preg_match($this->institutionPattern, $textWithoutAuthors, $institutionMatch);
-                $authors_array['institution'] = $institutionMatch['institution'];
-            }
-
-            //Return only $authors_array if the reference does not contain institutions as authors.
-            return array('expression' => 'authors', 'value' => $authors_array);
-            
-        }
-
+    public function __construct(){
+        $this->authorPattern = AuthorPatterns::getAuthorPattern();
+        $this->institutionPattern = AuthorPatterns::getInstitutionPattern();
     }
+
+    public function analyze(string $text){
+        // Extract text before the closing parenthesis
+        $firstPartText = strstr($text, ')', true);
+        if (!$firstPartText) {
+            return ['expression' => null, 'value' => ''];
+        }
+
+        // Extract authors
+        $authorsData = $this->extractAuthors($firstPartText);
+
+        // Check if we have authors
+        if (empty($authorsData['authors'])) {
+            // No authors found, try to find an institution as the primary entity
+            $institution = $this->extractInstitution($firstPartText);
+
+            if (strstr($institution, '(', true)) {
+                $cleanInstitution = trim(strstr($institution, '(', true));
+            }
+
+            if (!empty($cleanInstitution)) {
+                return [
+                    'expression' => 'institution', 
+                    'value' => ['institution' => $cleanInstitution]
+                ];
+            }
+            return ['expression' => null, 'value' => ''];
+        }
+        
+        // If we have authors, also check for additional institution. For example: "Carl, J., Smith, A. Universidad Nacional de La Plata (2005)"
+        // This reference has authors and an institution, not only an institution or authors.
+        // We need to remove the authors from the text to find the institution. 
+        $textWithoutAuthors = preg_replace($this->authorPattern, '', $firstPartText);
+        if (strstr($textWithoutAuthors, '. (', true)) {
+            $textWithoutAuthors = strstr($textWithoutAuthors, '. (', true);
+        }
+        
+        if (!empty(trim($textWithoutAuthors))) {
+            //Check if the institution text is valid
+            // If the institution text is valid, we can extract the institution
+            // and add it to the authors data.
+            // If the institution text is not valid, we can ignore it.
+        
+            $institution = $this->extractInstitution($textWithoutAuthors);
+            $institutionClean = preg_replace('/\s*\(.*$/', '', $institution);
+
+            if (!empty($institutionClean)) {
+                $authorsData['institution'] = trim($institutionClean);
+            }
+        }
+        
+        return ['expression' => 'authors', 'value' => $authorsData];
+    }
+    
+    private function extractAuthors(string $text) {
+        $result = [];
+        preg_match_all($this->authorPattern, $text, $authorsMatches, PREG_SET_ORDER);
+        
+        if (empty($authorsMatches)) {
+            return $result;
+        }
+        
+        $counter = 1;
+        foreach ($authorsMatches as $match) {
+            $result['authors']['author' . $counter] = [
+                'apellido' => $match['apellido'],
+                'nombres' => $match['nombres'],
+                'role' => $match['role'] ?? '',
+            ];
+            $counter++;
+        }
+        
+        return $result;
+    }
+    
+    private function extractInstitution(string $text) {
+        preg_match($this->institutionPattern, $text, $institutionMatch);
+        return !empty($institutionMatch['institution']) ? $institutionMatch['institution'] : '';
+    }
+}
+
+// Si no tengo autores, entonces debo evaluar si tengo una institucion. En caso de tener institución, se devuelve la institucion.  
+// Si no tengo autores ni institucion, se devuelve null.
+// Si tengo autores, debo evaluar si tengo una institucion, ya que puedo haber ademas de autores, una institucion.
+// En caso de tener autores y una institucion, se devuelven ambos en el mismo array $authorsData.
+// Si tengo autores y no tengo institucion, se devuelven solo los autores.

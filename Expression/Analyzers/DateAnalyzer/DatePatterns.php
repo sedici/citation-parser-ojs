@@ -7,6 +7,9 @@ class DatePatterns {
         // Año específico
         $year = '/(?P<year>\d{4})/';
         
+        // Sin año
+        $noYear = '/\((((?P<noyear>[^0-9]*)))\)/';
+
         // Rango de años (2023-2024)
         $periodYear = '/\((?P<fyear>\d{4})\-(?P<lyear>\d{4})\)/';
         
@@ -29,6 +32,7 @@ class DatePatterns {
             $periodMonth => 'periodmonth',
             $periodYear => 'periodyear',
             $year => 'year',
+            $noYear => 'noyear',
             $recoveryDate => 'recoverydate'
         ];
     }
