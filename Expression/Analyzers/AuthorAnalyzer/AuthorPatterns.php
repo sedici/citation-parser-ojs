@@ -17,7 +17,6 @@
            return $authors;
         }
         public static function getInstitutionPattern(){
-
             //Institution Pattern.
             $institution = '/(?P<institution>[\s\S]*)/';
             
