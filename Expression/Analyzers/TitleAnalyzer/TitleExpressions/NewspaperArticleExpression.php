@@ -13,7 +13,7 @@ class NewspaperArticleExpression extends GenericExpression
         //Fernández, P. (24 de abril de 1842). El Mercurio, p. 3. => Detected as a Webpage reference
         //or
         //Cómo se preocupa Gimnasia por la cultura física de los niños. (10 de noviembre de 1933). El Argentino, p. 8. => Detected as a Webpage reference
-        '/\).\s(?P<source>[A-Z][A-Za-zÀ-ÿ\s\:\;\-]+(,\sp.(\s)?\d+)?)(.\s(https|http)?:\/\/[^\s]+)/' => 'webpage',
+        '/\).\s(?P<source>[A-Z][A-Za-zÀ-ÿ\s\:\;\-]+(,\sp.(\s)?\d+)?)(.\s(https|http):\/\/[^\s]+)/' => 'webpage',
     ];
 
     public static function getPattern()
