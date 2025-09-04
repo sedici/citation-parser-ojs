@@ -1,47 +1,26 @@
-# APA7-Reference-Parser
-Desarrollar un sistema de análisis y extracción de información de referencias bibliográficas en formato APA7 utilizando expresiones regulares en PHP.
+# Citation Parser OJS
 
+**Citation Parser OJS** es un sistema desarrollado en PHP para analizar referencias bibliográficas y generar automáticamente su representación en **XML JATS**.  
 
+Actualmente soporta referencias en **formato APA 7ma edición**, pero la estructura del proyecto está diseñada para permitir en el futuro la incorporación de otros estilos de referencias, facilitando su expansión y adaptación a distintos estándares bibliográficos.
 
-# Tabla de elmentos distintivos para el reconocimiento del referencias
+Está pensado para integrarse con el proyecto [docxToJats](https://github.com/Vitaliy-1/docxToJats/tree/main) y utilizarse en flujos de marcación de artículos en **OJS**, permitiendo la generación automática de XML de referencias para publicaciones científicas.
 
-| Libro      | Capitulo de libro | Revista | Congresos | Sitios dinamicos |
-| ------------- | ------------- | ------------- |------------- |------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+---
 
-# Terea siendo relizada
-1. Charapte, autores. NO FUNCIONAN LOS ACENTOS.
+## Características
 
+- Analiza referencias bibliográficas en estilo APA 7.
+- Arquitectura extensible para agregar soporte a otros estilos bibliográficos.
+- Extrae campos clave como:
+  - Autor(es)
+  - Año
+  - Título del artículo o libro
+  - Fuente (revista, editorial, DOI, URL)
+- Genera automáticamente XML JATS de cada referencia.
+- Diseñado para integrarse como módulo en otros proyectos PHP y en flujos de trabajo de OJS.
 
-# Problemas sin solucionar
+---
+##  Desarrollo futuro
 
-1. ¿Como resolver el camelcase de las editoriales y las revistas?
-2. ¿Como generaliza?
-5. Congresos y tesisnas
-
-
-Listado faltantes:
-1. congresos, sitios dinamicos y tesis.
-4. nro de articulo de revista
-5. libros
-    a. Traducidos 
-    b. Idioma original 
-6. Punteo general, como la aceptancion de ".", ":", ";". 
-
-
-
-JATS:
-1. Capitulo de libro: https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/part-title.html
-2. tesis: https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/part-title.html
-
-
-Regex:
-Title
-1. agregamos numero, - y mayusculas el titulo
-
-Jounal
-1. nedicion y volumen opciones
-2. fpage y lpage opciones
-3. unmero romano al nedicion
-4. - al titulo
+Conexión con **OpenAlex** para aprovechar DOI y enriquecer automáticamente la información de las referencias (autores, títulos, journals, etc.).
