@@ -1,4 +1,11 @@
 <?php
+
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
+
+
 include_once 'Printer/OpenAlexApi/OpenAlexApi.php';
 include_once 'Printer/OpenAlexApi/OpenAlexApiManager.php';
 require_once 'Reference.php';
