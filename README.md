@@ -24,3 +24,12 @@ Está pensado para integrarse con el proyecto [docxToJats](https://github.com/Vi
 ##  Desarrollo futuro
 
 Conexión con **OpenAlex** para aprovechar DOI y enriquecer automáticamente la información de las referencias (autores, títulos, journals, etc.).
+
+## Licencia
+
+Este proyecto está licenciado bajo **GNU General Public License v3.0 (GPLv3)**.  
+Puedes ver la licencia completa en el archivo [LICENSE](LICENSE).
+
+- Permite usar, modificar y distribuir el software.  
+- Obliga a mantener la misma licencia en derivados.  
+- Requiere dar atribución a **PREBI-SEDICI, Universidad Nacional de La Plata**.

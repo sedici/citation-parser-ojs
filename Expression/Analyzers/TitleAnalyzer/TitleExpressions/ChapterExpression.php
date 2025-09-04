@@ -1,5 +1,9 @@
 <?php
-//original regex: '/\)\.\s(?P<title>[A-Z0-9À-ÿ].+?\.)\sEn\s(?P<author>(?P<nombres>(\p{Lu}\.\s?)+)\s(?P<apellido>\p{L}+(\s\p{L}+)*)\s(?P<role>(\((Ed.|Coord.|Comp.)\)))?((?:,\s|y|&\s))?)+(?P<roles>(\((Eds.|Coords.|Comps.)\)))?(?P<book>[A-Z][A-Za-zÀ-ÿ:,-°\s]+)\s(\((?P<edicion>((?P<nedicion>[0-9]+ᵃ)\sed\.,\s)?(Vol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?(,\s)?(pp.\s(?P<paginas>(\d{1,4}-\d{1,4})))?)\))\.\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s]+\.)/u' => 'chapter'
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
+
 include_once('GenericExpression.php');
 
     class ChapterExpression extends GenericExpression{

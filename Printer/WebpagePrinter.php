@@ -1,27 +1,12 @@
 <?php
-
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
 class WebpagePrinter extends TitlePrinter {
 
     public function createXMLElements(): array {
         
-        /*
-        <element-citation publication-type="webpage">
-            <day>4</day>
-            <month>6</month>
-            <date-in-citation iso-8601-date="2025-12-02">2025-12-02</date-in-citation> //YYYY-MM-DD
-            <year>2025</year>
-            <person-group person-group-type="author">
-                <name>
-                    <surname>Oswaldinato</surname>
-                    <given-names>A</given-names>
-                </name>
-            </person-group>
-            <source>Source web</source>
-            <article-title>ANSES</article-title>
-            <uri>https://www.anses.gob.ar/es/temas/salud-ambiental/contaminacion-ambiental</uri>
-        </element-citation>
-        */
-
         $elements = [];
         if ($this->getArticleTitle()) {
             $articleTitleElement = $this->createElement('article-title', $this->getArticleTitle());

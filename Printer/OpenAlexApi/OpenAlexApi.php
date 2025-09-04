@@ -1,4 +1,8 @@
 <?php
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
 class OpenAlexAPI {
     private string $institutionsUrl = "https://api.openalex.org/institutions?search=";
     private string $worksUrl = "https://api.openalex.org/works/";
