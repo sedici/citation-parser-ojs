@@ -7,12 +7,16 @@ include_once 'OpenAlexApi.php';
 class OpenAlexApiManager {
     
     private array $dois;
-    private $response;
+    private array $institutions;
+    private $worksWithDoiResponse;
+    private $institutionsResponse;
     private OpenAlexAPI $api;
 
-    public function __construct(array $dois = []){
+    public function __construct(array $dois = [], array $institutions = []) {
         $this->dois = $dois;
-        $this->response = null;
+        $this->institutions = $institutions;
+        $this->worksWithDoiResponse = null;
+        $this->institutionsResponse = null;
         $this->api = new OpenAlexAPI();
     }
 
@@ -22,6 +26,12 @@ class OpenAlexApiManager {
         }
     }
 
+    public function addInstitution(string $institution): void {
+        if (!in_array($institution, $this->institutions)) { // Evitar duplicados
+            $this->institutions[] = $institution;
+        }
+    }
+ 
     public function removeDoi(string $doi): bool {
         $index = array_search($doi, $this->dois);
         if ($index !== false) {
@@ -32,22 +42,54 @@ class OpenAlexApiManager {
         return false; // Indica que el DOI no estaba en el array
     }
 
-    public function listDois(): array {
+    public function removeInstitution(string $institution): bool {
+        $index = array_search($institution, $this->institutions);
+        if ($index !== false) {
+            unset($this->institutions[$index]);
+            $this->institutions = array_values($this->institutions); // Reindexar el array
+            return true; // Indica que la institución fue eliminada
+        }
+        return false; // Indica que la institución no estaba en el array
+    }
+
+    public function getInstitutions(): array {
+        return $this->institutions;
+    }
+
+    public function getDois(): array {
         return $this->dois;
     }
 
-    public function request() {
+    public function doiRequest() {
         try {
-            $this->response = $this->api->searchWorksListWithDoi($this->dois);
-            return $this->response;
+            $this->worksWithDoiResponse = $this->api->searchWorksListWithDoi($this->dois);
+            return $this->worksWithDoiResponse;
         } catch (Exception $e) {
             error_log("Error al realizar la solicitud a la API: " . $e->getMessage());
             return null;
         }
     }
 
-    public function getResponse() {
-        return $this->response;
+    public function searchInstitution(String $institution) {
+        try {
+            if ($institution) {
+                $this->institutionsResponse = $this->api->searchWorksListWithInstitutions($institution);
+            }
+
+            file_put_contents(
+                __DIR__ . '/testInstitution.log',
+                print_r($this->institutionsResponse, true)
+            );
+
+            return json_decode($this->institutionsResponse, true);
+        } catch (Exception $e) {
+            error_log("Error al realizar la solicitud a la API: " . $e->getMessage());
+            return null;
+        }
+    }
+
+    public function getWorksWithDoiResponse() {
+        return $this->worksWithDoiResponse;
     }
 }
 /*

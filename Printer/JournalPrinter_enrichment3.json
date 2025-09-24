@@ -1,0 +1,876 @@
+{
+    "id": "https:\/\/openalex.org\/W2797196737",
+    "doi": "https:\/\/doi.org\/10.1186\/s12889-018-5188-0",
+    "title": "Human-animal interaction as a social determinant of health: descriptive findings from the health and retirement study",
+    "display_name": "Human-animal interaction as a social determinant of health: descriptive findings from the health and retirement study",
+    "publication_year": 2018,
+    "publication_date": "2018-03-02",
+    "ids": {
+        "openalex": "https:\/\/openalex.org\/W2797196737",
+        "doi": "https:\/\/doi.org\/10.1186\/s12889-018-5188-0",
+        "mag": "2797196737",
+        "pmid": "https:\/\/pubmed.ncbi.nlm.nih.gov\/29519232",
+        "pmcid": "https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/5844080"
+    },
+    "language": "en",
+    "primary_location": {
+        "is_oa": true,
+        "landing_page_url": "https:\/\/doi.org\/10.1186\/s12889-018-5188-0",
+        "pdf_url": null,
+        "source": {
+            "id": "https:\/\/openalex.org\/S200437886",
+            "display_name": "BMC Public Health",
+            "issn_l": "1471-2458",
+            "issn": [
+                "1471-2458"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https:\/\/openalex.org\/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+                "https:\/\/openalex.org\/P4310319965",
+                "https:\/\/openalex.org\/P4310320256"
+            ],
+            "host_organization_lineage_names": [
+                "Springer Nature",
+                "BioMed Central"
+            ],
+            "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https:\/\/openalex.org\/licenses\/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    "type": "article",
+    "type_crossref": "journal-article",
+    "indexed_in": [
+        "crossref",
+        "doaj",
+        "pubmed"
+    ],
+    "open_access": {
+        "is_oa": true,
+        "oa_status": "gold",
+        "oa_url": "https:\/\/doi.org\/10.1186\/s12889-018-5188-0",
+        "any_repository_has_fulltext": true
+    },
+    "authorships": [
+        {
+            "author_position": "first",
+            "author": {
+                "id": "https:\/\/openalex.org\/A5053419564",
+                "display_name": "Megan K. Mueller",
+                "orcid": "https:\/\/orcid.org\/0000-0001-9058-0894"
+            },
+            "institutions": [
+                {
+                    "id": "https:\/\/openalex.org\/I121934306",
+                    "display_name": "Tufts University",
+                    "ror": "https:\/\/ror.org\/05wvpxv85",
+                    "country_code": "US",
+                    "type": "funder",
+                    "lineage": [
+                        "https:\/\/openalex.org\/I121934306"
+                    ]
+                }
+            ],
+            "countries": [
+                "US"
+            ],
+            "is_corresponding": true,
+            "raw_author_name": "Megan K. Mueller",
+            "raw_affiliation_strings": [
+                "Department of Clinical Sciences, Cummings School of Veterinary Medicine at Tufts University",
+                "Jonathan M. Tisch College of Civic Life at Tufts University, North Grafton, MA, USA",
+                "Tufts Institute for Human-Animal Interaction"
+            ],
+            "affiliations": [
+                {
+                    "raw_affiliation_string": "Jonathan M. Tisch College of Civic Life at Tufts University, North Grafton, MA, USA",
+                    "institution_ids": [
+                        "https:\/\/openalex.org\/I121934306"
+                    ]
+                },
+                {
+                    "raw_affiliation_string": "Department of Clinical Sciences, Cummings School of Veterinary Medicine at Tufts University",
+                    "institution_ids": [
+                        "https:\/\/openalex.org\/I121934306"
+                    ]
+                },
+                {
+                    "raw_affiliation_string": "Tufts Institute for Human-Animal Interaction",
+                    "institution_ids": []
+                }
+            ]
+        },
+        {
+            "author_position": "middle",
+            "author": {
+                "id": "https:\/\/openalex.org\/A5070032027",
+                "display_name": "Nancy R. Gee",
+                "orcid": "https:\/\/orcid.org\/0000-0003-2890-9884"
+            },
+            "institutions": [
+                {
+                    "id": "https:\/\/openalex.org\/I61032284",
+                    "display_name": "SUNY Fredonia",
+                    "ror": "https:\/\/ror.org\/05vrs0r17",
+                    "country_code": "US",
+                    "type": "funder",
+                    "lineage": [
+                        "https:\/\/openalex.org\/I61032284"
+                    ]
+                }
+            ],
+            "countries": [
+                "US"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Nancy R. Gee",
+            "raw_affiliation_strings": [
+                "Department of Psychology, State University of New York, Fredonia, NY, USA"
+            ],
+            "affiliations": [
+                {
+                    "raw_affiliation_string": "Department of Psychology, State University of New York, Fredonia, NY, USA",
+                    "institution_ids": [
+                        "https:\/\/openalex.org\/I61032284"
+                    ]
+                }
+            ]
+        },
+        {
+            "author_position": "last",
+            "author": {
+                "id": "https:\/\/openalex.org\/A5075237912",
+                "display_name": "Regina M. Bures",
+                "orcid": null
+            },
+            "institutions": [
+                {
+                    "id": "https:\/\/openalex.org\/I4210144228",
+                    "display_name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development",
+                    "ror": "https:\/\/ror.org\/04byxyr05",
+                    "country_code": "US",
+                    "type": "funder",
+                    "lineage": [
+                        "https:\/\/openalex.org\/I1299022934",
+                        "https:\/\/openalex.org\/I1299303238",
+                        "https:\/\/openalex.org\/I4210144228"
+                    ]
+                },
+                {
+                    "id": "https:\/\/openalex.org\/I1299303238",
+                    "display_name": "National Institutes of Health",
+                    "ror": "https:\/\/ror.org\/01cwqze88",
+                    "country_code": "US",
+                    "type": "government",
+                    "lineage": [
+                        "https:\/\/openalex.org\/I1299022934",
+                        "https:\/\/openalex.org\/I1299303238"
+                    ]
+                }
+            ],
+            "countries": [
+                "US"
+            ],
+            "is_corresponding": false,
+            "raw_author_name": "Regina M. Bures",
+            "raw_affiliation_strings": [
+                "Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, Bethesda, MD, USA"
+            ],
+            "affiliations": [
+                {
+                    "raw_affiliation_string": "Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health, Bethesda, MD, USA",
+                    "institution_ids": [
+                        "https:\/\/openalex.org\/I4210144228",
+                        "https:\/\/openalex.org\/I1299303238"
+                    ]
+                }
+            ]
+        }
+    ],
+    "institution_assertions": [],
+    "countries_distinct_count": 1,
+    "institutions_distinct_count": 4,
+    "corresponding_author_ids": [
+        "https:\/\/openalex.org\/A5053419564"
+    ],
+    "corresponding_institution_ids": [
+        "https:\/\/openalex.org\/I121934306"
+    ],
+    "apc_list": {
+        "value": 1870,
+        "currency": "GBP",
+        "value_usd": 2293
+    },
+    "apc_paid": {
+        "value": 1870,
+        "currency": "GBP",
+        "value_usd": 2293
+    },
+    "fwci": 6.442,
+    "has_fulltext": true,
+    "fulltext_origin": "pdf",
+    "cited_by_count": 85,
+    "citation_normalized_percentile": {
+        "value": 0.999952,
+        "is_in_top_1_percent": true,
+        "is_in_top_10_percent": true
+    },
+    "cited_by_percentile_year": {
+        "min": 97,
+        "max": 98
+    },
+    "biblio": {
+        "volume": "18",
+        "issue": "1",
+        "first_page": null,
+        "last_page": null
+    },
+    "is_retracted": false,
+    "is_paratext": false,
+    "primary_topic": {
+        "id": "https:\/\/openalex.org\/T11214",
+        "display_name": "Human-Animal Interaction Studies",
+        "score": 1,
+        "subfield": {
+            "id": "https:\/\/openalex.org\/subfields\/1311",
+            "display_name": "Genetics"
+        },
+        "field": {
+            "id": "https:\/\/openalex.org\/fields\/13",
+            "display_name": "Biochemistry, Genetics and Molecular Biology"
+        },
+        "domain": {
+            "id": "https:\/\/openalex.org\/domains\/1",
+            "display_name": "Life Sciences"
+        }
+    },
+    "topics": [
+        {
+            "id": "https:\/\/openalex.org\/T11214",
+            "display_name": "Human-Animal Interaction Studies",
+            "score": 1,
+            "subfield": {
+                "id": "https:\/\/openalex.org\/subfields\/1311",
+                "display_name": "Genetics"
+            },
+            "field": {
+                "id": "https:\/\/openalex.org\/fields\/13",
+                "display_name": "Biochemistry, Genetics and Molecular Biology"
+            },
+            "domain": {
+                "id": "https:\/\/openalex.org\/domains\/1",
+                "display_name": "Life Sciences"
+            }
+        },
+        {
+            "id": "https:\/\/openalex.org\/T11420",
+            "display_name": "Geographies of human-animal interactions",
+            "score": 0.9896,
+            "subfield": {
+                "id": "https:\/\/openalex.org\/subfields\/3305",
+                "display_name": "Geography, Planning and Development"
+            },
+            "field": {
+                "id": "https:\/\/openalex.org\/fields\/33",
+                "display_name": "Social Sciences"
+            },
+            "domain": {
+                "id": "https:\/\/openalex.org\/domains\/2",
+                "display_name": "Social Sciences"
+            }
+        },
+        {
+            "id": "https:\/\/openalex.org\/T10838",
+            "display_name": "Animal Behavior and Welfare Studies",
+            "score": 0.9771,
+            "subfield": {
+                "id": "https:\/\/openalex.org\/subfields\/3404",
+                "display_name": "Small Animals"
+            },
+            "field": {
+                "id": "https:\/\/openalex.org\/fields\/34",
+                "display_name": "Veterinary"
+            },
+            "domain": {
+                "id": "https:\/\/openalex.org\/domains\/4",
+                "display_name": "Health Sciences"
+            }
+        }
+    ],
+    "keywords": [
+        {
+            "id": "https:\/\/openalex.org\/keywords\/biostatistics",
+            "display_name": "Biostatistics",
+            "score": 0.6966095
+        },
+        {
+            "id": "https:\/\/openalex.org\/keywords\/depression",
+            "display_name": "Depression",
+            "score": 0.51490676
+        },
+        {
+            "id": "https:\/\/openalex.org\/keywords\/animal-assisted-therapy",
+            "display_name": "Animal-Assisted Therapy",
+            "score": 0.45501107
+        }
+    ],
+    "concepts": [
+        {
+            "id": "https:\/\/openalex.org\/C140556311",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q214746",
+            "display_name": "Biostatistics",
+            "level": 3,
+            "score": 0.6966095
+        },
+        {
+            "id": "https:\/\/openalex.org\/C71924100",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q11190",
+            "display_name": "Medicine",
+            "level": 0,
+            "score": 0.6600076
+        },
+        {
+            "id": "https:\/\/openalex.org\/C134362201",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q317309",
+            "display_name": "Mental health",
+            "level": 2,
+            "score": 0.62562907
+        },
+        {
+            "id": "https:\/\/openalex.org\/C138816342",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q189603",
+            "display_name": "Public health",
+            "level": 2,
+            "score": 0.5415031
+        },
+        {
+            "id": "https:\/\/openalex.org\/C2908647359",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q2625603",
+            "display_name": "Population",
+            "level": 2,
+            "score": 0.5244175
+        },
+        {
+            "id": "https:\/\/openalex.org\/C2776867660",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q1814941",
+            "display_name": "Depression (economics)",
+            "level": 2,
+            "score": 0.51490676
+        },
+        {
+            "id": "https:\/\/openalex.org\/C2777226563",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q606591",
+            "display_name": "Animal-assisted therapy",
+            "level": 4,
+            "score": 0.45501107
+        },
+        {
+            "id": "https:\/\/openalex.org\/C118552586",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q7867",
+            "display_name": "Psychiatry",
+            "level": 1,
+            "score": 0.28844184
+        },
+        {
+            "id": "https:\/\/openalex.org\/C99454951",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q932068",
+            "display_name": "Environmental health",
+            "level": 1,
+            "score": 0.26890674
+        },
+        {
+            "id": "https:\/\/openalex.org\/C523966790",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q459426",
+            "display_name": "Animal welfare",
+            "level": 2,
+            "score": 0.20947424
+        },
+        {
+            "id": "https:\/\/openalex.org\/C3018573395",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q606591",
+            "display_name": "Pet therapy",
+            "level": 3,
+            "score": 0.117902994
+        },
+        {
+            "id": "https:\/\/openalex.org\/C159110408",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q121176",
+            "display_name": "Nursing",
+            "level": 1,
+            "score": 0.076924235
+        },
+        {
+            "id": "https:\/\/openalex.org\/C18903297",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q7150",
+            "display_name": "Ecology",
+            "level": 1,
+            "score": 0
+        },
+        {
+            "id": "https:\/\/openalex.org\/C86803240",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q420",
+            "display_name": "Biology",
+            "level": 0,
+            "score": 0
+        },
+        {
+            "id": "https:\/\/openalex.org\/C162324750",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q8134",
+            "display_name": "Economics",
+            "level": 0,
+            "score": 0
+        },
+        {
+            "id": "https:\/\/openalex.org\/C139719470",
+            "wikidata": "https:\/\/www.wikidata.org\/wiki\/Q39680",
+            "display_name": "Macroeconomics",
+            "level": 1,
+            "score": 0
+        }
+    ],
+    "mesh": [
+        {
+            "descriptor_ui": "D003863",
+            "descriptor_name": "Depression",
+            "qualifier_ui": "Q000453",
+            "qualifier_name": "epidemiology",
+            "is_major_topic": true
+        },
+        {
+            "descriptor_ui": "D010067",
+            "descriptor_name": "Ownership",
+            "qualifier_ui": "Q000706",
+            "qualifier_name": "statistics & numerical data",
+            "is_major_topic": true
+        },
+        {
+            "descriptor_ui": "D000368",
+            "descriptor_name": "Aged",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D000369",
+            "descriptor_name": "Aged, 80 and over",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D000818",
+            "descriptor_name": "Animals",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D002415",
+            "descriptor_name": "Cats",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D004285",
+            "descriptor_name": "Dogs",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D005260",
+            "descriptor_name": "Female",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D001841",
+            "descriptor_name": "Human-Animal Bond",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D006801",
+            "descriptor_name": "Humans",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D008137",
+            "descriptor_name": "Longitudinal Studies",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D008297",
+            "descriptor_name": "Male",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D008875",
+            "descriptor_name": "Middle Aged",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D064890",
+            "descriptor_name": "Social Determinants of Health",
+            "qualifier_ui": "",
+            "qualifier_name": null,
+            "is_major_topic": false
+        },
+        {
+            "descriptor_ui": "D014481",
+            "descriptor_name": "United States",
+            "qualifier_ui": "Q000453",
+            "qualifier_name": "epidemiology",
+            "is_major_topic": false
+        }
+    ],
+    "locations_count": 4,
+    "locations": [
+        {
+            "is_oa": true,
+            "landing_page_url": "https:\/\/doi.org\/10.1186\/s12889-018-5188-0",
+            "pdf_url": null,
+            "source": {
+                "id": "https:\/\/openalex.org\/S200437886",
+                "display_name": "BMC Public Health",
+                "issn_l": "1471-2458",
+                "issn": [
+                    "1471-2458"
+                ],
+                "is_oa": true,
+                "is_in_doaj": true,
+                "is_indexed_in_scopus": true,
+                "is_core": true,
+                "host_organization": "https:\/\/openalex.org\/P4310320256",
+                "host_organization_name": "BioMed Central",
+                "host_organization_lineage": [
+                    "https:\/\/openalex.org\/P4310319965",
+                    "https:\/\/openalex.org\/P4310320256"
+                ],
+                "host_organization_lineage_names": [
+                    "Springer Nature",
+                    "BioMed Central"
+                ],
+                "type": "journal"
+            },
+            "license": "cc-by",
+            "license_id": "https:\/\/openalex.org\/licenses\/cc-by",
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true
+        },
+        {
+            "is_oa": false,
+            "landing_page_url": "https:\/\/doaj.org\/article\/0f379fb7970f498694f8d9a2b9d27e01",
+            "pdf_url": null,
+            "source": {
+                "id": "https:\/\/openalex.org\/S4306401280",
+                "display_name": "DOAJ (DOAJ: Directory of Open Access Journals)",
+                "issn_l": null,
+                "issn": null,
+                "is_oa": true,
+                "is_in_doaj": false,
+                "is_indexed_in_scopus": false,
+                "is_core": false,
+                "host_organization": null,
+                "host_organization_name": null,
+                "host_organization_lineage": [],
+                "host_organization_lineage_names": [],
+                "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": null,
+            "is_accepted": false,
+            "is_published": false
+        },
+        {
+            "is_oa": true,
+            "landing_page_url": "https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5844080",
+            "pdf_url": null,
+            "source": {
+                "id": "https:\/\/openalex.org\/S2764455111",
+                "display_name": "PubMed Central",
+                "issn_l": null,
+                "issn": null,
+                "is_oa": true,
+                "is_in_doaj": false,
+                "is_indexed_in_scopus": false,
+                "is_core": false,
+                "host_organization": "https:\/\/openalex.org\/I1299303238",
+                "host_organization_name": "National Institutes of Health",
+                "host_organization_lineage": [
+                    "https:\/\/openalex.org\/I1299303238"
+                ],
+                "host_organization_lineage_names": [
+                    "National Institutes of Health"
+                ],
+                "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": "publishedVersion",
+            "is_accepted": true,
+            "is_published": true
+        },
+        {
+            "is_oa": false,
+            "landing_page_url": "https:\/\/pubmed.ncbi.nlm.nih.gov\/29519232",
+            "pdf_url": null,
+            "source": {
+                "id": "https:\/\/openalex.org\/S4306525036",
+                "display_name": "PubMed",
+                "issn_l": null,
+                "issn": null,
+                "is_oa": false,
+                "is_in_doaj": false,
+                "is_indexed_in_scopus": false,
+                "is_core": false,
+                "host_organization": "https:\/\/openalex.org\/I1299303238",
+                "host_organization_name": "National Institutes of Health",
+                "host_organization_lineage": [
+                    "https:\/\/openalex.org\/I1299303238"
+                ],
+                "host_organization_lineage_names": [
+                    "National Institutes of Health"
+                ],
+                "type": "repository"
+            },
+            "license": null,
+            "license_id": null,
+            "version": null,
+            "is_accepted": false,
+            "is_published": false
+        }
+    ],
+    "best_oa_location": {
+        "is_oa": true,
+        "landing_page_url": "https:\/\/doi.org\/10.1186\/s12889-018-5188-0",
+        "pdf_url": null,
+        "source": {
+            "id": "https:\/\/openalex.org\/S200437886",
+            "display_name": "BMC Public Health",
+            "issn_l": "1471-2458",
+            "issn": [
+                "1471-2458"
+            ],
+            "is_oa": true,
+            "is_in_doaj": true,
+            "is_indexed_in_scopus": true,
+            "is_core": true,
+            "host_organization": "https:\/\/openalex.org\/P4310320256",
+            "host_organization_name": "BioMed Central",
+            "host_organization_lineage": [
+                "https:\/\/openalex.org\/P4310319965",
+                "https:\/\/openalex.org\/P4310320256"
+            ],
+            "host_organization_lineage_names": [
+                "Springer Nature",
+                "BioMed Central"
+            ],
+            "type": "journal"
+        },
+        "license": "cc-by",
+        "license_id": "https:\/\/openalex.org\/licenses\/cc-by",
+        "version": "publishedVersion",
+        "is_accepted": true,
+        "is_published": true
+    },
+    "sustainable_development_goals": [],
+    "grants": [
+        {
+            "funder": "https:\/\/openalex.org\/F4320337337",
+            "funder_display_name": "National Institute on Aging",
+            "award_id": "NIA U01AG009740"
+        }
+    ],
+    "datasets": [],
+    "versions": [],
+    "referenced_works_count": 36,
+    "referenced_works": [
+        "https:\/\/openalex.org\/W1682328562",
+        "https:\/\/openalex.org\/W1738350880",
+        "https:\/\/openalex.org\/W1792184416",
+        "https:\/\/openalex.org\/W1847449740",
+        "https:\/\/openalex.org\/W1972564462",
+        "https:\/\/openalex.org\/W1978956619",
+        "https:\/\/openalex.org\/W1979912700",
+        "https:\/\/openalex.org\/W1988370601",
+        "https:\/\/openalex.org\/W1997647346",
+        "https:\/\/openalex.org\/W2003147874",
+        "https:\/\/openalex.org\/W2005364279",
+        "https:\/\/openalex.org\/W2012784258",
+        "https:\/\/openalex.org\/W2027250496",
+        "https:\/\/openalex.org\/W2065936249",
+        "https:\/\/openalex.org\/W2067658156",
+        "https:\/\/openalex.org\/W2071365348",
+        "https:\/\/openalex.org\/W2074960413",
+        "https:\/\/openalex.org\/W2077392501",
+        "https:\/\/openalex.org\/W2094772694",
+        "https:\/\/openalex.org\/W2100776939",
+        "https:\/\/openalex.org\/W2111829043",
+        "https:\/\/openalex.org\/W2115197498",
+        "https:\/\/openalex.org\/W2120778596",
+        "https:\/\/openalex.org\/W2124131697",
+        "https:\/\/openalex.org\/W2135100269",
+        "https:\/\/openalex.org\/W2137649926",
+        "https:\/\/openalex.org\/W2139320294",
+        "https:\/\/openalex.org\/W2140655726",
+        "https:\/\/openalex.org\/W2146749661",
+        "https:\/\/openalex.org\/W2151945541",
+        "https:\/\/openalex.org\/W2466216495",
+        "https:\/\/openalex.org\/W2897210091",
+        "https:\/\/openalex.org\/W3125170928",
+        "https:\/\/openalex.org\/W4241254588",
+        "https:\/\/openalex.org\/W4248956578",
+        "https:\/\/openalex.org\/W51591921"
+    ],
+    "related_works": [
+        "https:\/\/openalex.org\/W4380903871",
+        "https:\/\/openalex.org\/W2914670086",
+        "https:\/\/openalex.org\/W2750676651",
+        "https:\/\/openalex.org\/W2404087909",
+        "https:\/\/openalex.org\/W2146236429",
+        "https:\/\/openalex.org\/W1977389139",
+        "https:\/\/openalex.org\/W163469799",
+        "https:\/\/openalex.org\/W1563497214",
+        "https:\/\/openalex.org\/W1549208786",
+        "https:\/\/openalex.org\/W1532736434"
+    ],
+    "abstract_inverted_index": {
+        "We": [
+            0
+        ],
+        "focused": [
+            1
+        ],
+        "on": [
+            2
+        ],
+        "human-animal": [
+            3
+        ],
+        "interaction": [
+            4
+        ],
+        "(HAI)": [
+            5
+        ],
+        "as": [
+            6
+        ],
+        "an": [
+            7
+        ],
+        "important": [
+            8
+        ],
+        "aspect": [
+            9
+        ],
+        "of": [
+            10
+        ],
+        "social": [
+            11
+        ],
+        "functioning": [
+            12
+        ],
+        "at": [
+            13
+        ],
+        "the": [
+            14
+        ],
+        "individual": [
+            15
+        ],
+        "level,": [
+            16
+        ],
+        "framing": [
+            17
+        ],
+        "this": [
+            18
+        ],
+        "emerging": [
+            19
+        ],
+        "field": [
+            20
+        ],
+        "from": [
+            21
+        ],
+        "a": [
+            22
+        ],
+        "public": [
+            23
+        ],
+        "health": [
+            24
+        ],
+        "perspective.": [
+            25
+        ]
+    },
+    "cited_by_api_url": "https:\/\/api.openalex.org\/works?filter=cites:W2797196737",
+    "counts_by_year": [
+        {
+            "year": 2025,
+            "cited_by_count": 5
+        },
+        {
+            "year": 2024,
+            "cited_by_count": 15
+        },
+        {
+            "year": 2023,
+            "cited_by_count": 7
+        },
+        {
+            "year": 2022,
+            "cited_by_count": 15
+        },
+        {
+            "year": 2021,
+            "cited_by_count": 17
+        },
+        {
+            "year": 2020,
+            "cited_by_count": 10
+        },
+        {
+            "year": 2019,
+            "cited_by_count": 15
+        },
+        {
+            "year": 2018,
+            "cited_by_count": 1
+        }
+    ],
+    "updated_date": "2025-08-17T07:36:49.435266",
+    "created_date": "2018-04-24"
+}

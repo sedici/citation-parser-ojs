@@ -1,0 +1,21 @@
+Array
+(
+    [0] => Array
+        (
+            [id] => https://openalex.org/I874386039
+            [ror] => https://ror.org/01tjs6929
+            [display_name] => Universidad Nacional de La Plata
+            [type] => funder
+        )
+
+    [1] => Array
+        (
+            [error] => No se encontraron instituciones con el término de búsqueda proporcionado
+        )
+
+    [2] => Array
+        (
+            [error] => No se encontraron instituciones con el término de búsqueda proporcionado
+        )
+
+)

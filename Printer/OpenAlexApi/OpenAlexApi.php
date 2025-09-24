@@ -9,7 +9,7 @@ class OpenAlexAPI {
     private string $doisUrl = "https://api.openalex.org/works?filter=doi:";
 
 
-    public function searchInstitutions(string $query): array {
+    public function searchInstitution(string $query): array {
         // Construye la URL completa con el parámetro de búsqueda
         $url = $this->institutionsUrl . urlencode($query);
 
@@ -39,7 +39,7 @@ class OpenAlexAPI {
         return ["error" => "No se encontraron instituciones con el término de búsqueda proporcionado"];
     }
 
-    public function searchWorksWhitDoi(string $query): array {
+    public function searchWorksWithDoiTest(string $query): array {
 
         /*
             title
@@ -123,6 +123,20 @@ class OpenAlexAPI {
         return $response;
     }
 
+    public function searchWorksListWithInstitutions(String $institution) {
+        // Verificar que el array no esté vacío
+        if (empty($institution)) {
+            throw new InvalidArgumentException("La institución no puede estar vacía.");
+        }
+
+        // Construir la URL de la solicitud
+        $url = $this->institutionsUrl . urlencode($institution);
+        error_log('URL OPENALEX ' . $url);
+        // Realizar la solicitud GET
+        $response = file_get_contents($url);
+        // Convertir la respuesta a JSON y retornarla
+        return $response;
+    }
 
 }
 

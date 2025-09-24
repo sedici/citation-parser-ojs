@@ -15,6 +15,8 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
+    private $enrichmentData = [];
+
     private $errors = "";
 
     public function __construct(\DOMDocument $dom = null,\DOMElement $reflist = null,Reference $reference,int $id = 0) {
@@ -37,9 +39,17 @@ class JATSReference {
     }
 
     public function checkErrors(){
+        if (!empty($this->enrichmentData)) {
+            $this->errors = ""; // Clear errors if enrichment data is present
+        }
+        
+        if ($this->reference->getURLType() == 'DOI' && empty($this->enrichmentData)){
+            $this->addError('The specified DOI does not exist in OpenAlex database.');
+        }
+
         //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
         if (trim($this->errors) !== "") {
-            
+
             $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
 
             $this->mixed_citation->nodeValue .= " --- " . $textError;
@@ -53,6 +63,7 @@ class JATSReference {
         $this->addTitle();
         $this->addURL();
         $this->checkErrors();
+        $this->enrichment();
     }
 
     public function getJatsXML() {
@@ -69,11 +80,10 @@ class JATSReference {
 
         $authorType = $this->reference->getAuthorType();
         if ($authorType === null || trim($authorType) === "" || $authorType === "No match found") {
-            $errorText = "Author. ";
-            $this->addError($errorText);
+            $this->addError("Author. ");
             return;
         }
-        $authorType = $this->reference->getAuthorType();
+
         $authorPrinter = new AuthorPrinter($this->reference->getAuthor(),$this->dom);
         $elements = $authorPrinter->createXMLElements();
         foreach ($elements as $element) {
@@ -86,8 +96,7 @@ class JATSReference {
 
         $dateType = $this->reference->getDateType();
         if ($dateType === null || trim($dateType) === "" || $dateType === "No match found") {
-            $errorText = "Date. ";
-            $this->addError($errorText);
+            $this->addError("Date. ");
             return;
         }
 
@@ -98,7 +107,6 @@ class JATSReference {
         }
            
     }
-
 
     public function addURL() {
         // Return xml as a string
@@ -115,16 +123,14 @@ class JATSReference {
         foreach ($elements as $element) {
             $this->element_citation->appendChild($element);
         }
-           
     }
 
-    public function addTitle(){
+    public function addTitle(){     
         //Return xml as a string
 
         $titleType = $this->reference->getTitleType(); 
         if ($titleType === null || trim($titleType) === "" || $titleType === "No match found") {
-            $errorText = "Title. ";
-            $this->addError($errorText);
+            $this->addError("Title. ");
             return;
         }
 
@@ -134,6 +140,7 @@ class JATSReference {
         foreach ($elements as $element) {
             $this->element_citation->appendChild($element);
         }
+
     }
 
     public function getDoi(): ?string {
@@ -146,9 +153,78 @@ class JATSReference {
         return $this->reference->getURL()['doi'];
     }
     
-    public function getInstitutions(): ?string {
-        return null;
+    public function getInstitution(): ?string {
+        return $this->reference->getAuthor()['institution'] ?? null;
     }
 
+    public function setEnrichmentData(Array $enrichmentData) {
+        $this->enrichmentData = $enrichmentData;
+    }
+
+    /**
+     * Enrich the JATS reference with data from OpenAlex
+     * If there is enrichment data, it will add or replace elements in the element-citation tag
+     * If there is no enrichment data, it will not modify the element-citation tag
+     * If there are errors, it will remove the element-citation tag and add a comment in the mixed-citation tag
+     * @return void
+     */
+    public function enrichment() {
+        if (empty($this->enrichmentData)) { return; }
+
+        $sourceType = $this->enrichmentData['primary_location']['source']['type'] ?? null;
+        $publicationType = $this->element_citation->getAttribute('publication-type');
+
+        if (empty($publicationType)) {
+            $this->element_citation->setAttribute('publication-type', strtolower($sourceType));
+        }
+
+        if ($sourceType) {
+            $printerClassName = ucfirst($sourceType).'Printer';
+            $printer = new $printerClassName([], $this->dom);   
+            if (method_exists($printer, 'enrichment')) {
+                $elements = $printer->enrichment($this->enrichmentData);
+                foreach ($elements as $newElement) {
+                    $tag = $newElement->tagName;
+                    $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
+                    if ($existing) {
+                        $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
+                    } else {
+                        $this->element_citation->appendChild($newElement); // Agregar al final
+                    }
+                }
+            }
+            $this->ref->appendChild($this->element_citation);
+
+            file_put_contents(
+                __DIR__. '/dom.log',
+                print_r($this->dom->saveXML(), true)
+            );
+        }
+    }
+
+    /** 
+     * Validate institution data from OpenAlex results
+     * @param Array $results Results (information) from OpenAlex institution search for a specific institution
+     * @return void
+    */
+    public function validateOpenAlexInstitution(Array $results) {
+        $displayName = $results['display_name'] ?? null; // Institution name from OpenAlex
+        if ($displayName === null) {
+            $this->addError("Institution data could not be validated with OpenAlex. ");
+            return;
+        }
+        $jatsInstitution = $this->reference->getAuthor()['institution'];
+        $this->validateAuthor($displayName, "Institution name does not match with OpenAlex data. ");
+    }
+
+    private function validateAuthor($openAlexName, $authorName , $errorMessage = ''){
+        if (strtolower($authorName) !== strtolower($openAlexName)) {
+            $this->addError($errorMessage);
+        } else {
+            //Replace default institution using openalex institution 
+            $this->reference->setAuthor('institution', $openAlexName);
+        }
+    }
 }
+
 ?>

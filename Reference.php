@@ -139,4 +139,8 @@ class Reference {
             // Lógica para determinar el tipo de referencia
         }
     }
+
+    public function setAuthor($key, $value) {
+        $this->author[$key] = $value;
+    }
 }

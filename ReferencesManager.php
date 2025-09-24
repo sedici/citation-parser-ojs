@@ -45,20 +45,17 @@ class ReferencesManager {
 
             // Si la referencia tiene DOI, agregar al manager de OpenAlex
             $doi = $jats->getDoi();
-            $institutions = $jats->getinstitutions();
+            $institution = $jats->getInstitution();
             if ($doi) {
-                
                 $this->oam->addDoi($doi);
                 $this->jatsWithDoi[$doi] = $jats;
 
-            } else if ($institutions) {       
-                $this->oam->addInstitutios($institutions);
-                $this->jatsRefListWithInstitutions[$institutions] = $jats;
+            } else if ($institution) {
+                $this->processInstitution($institution, $jats);
             }
-
         }
 
-        //$this->openAlexRequest();
+        $this->openAlexRequest();
         $this->generateXML();
     }
 
@@ -66,22 +63,46 @@ class ReferencesManager {
         foreach ($this->jatsList as $jats) {
             $jats->getJatsXML();
         }
-        //$this->dom->save();
+        //$this->dom->saveXML();
+
+        file_put_contents(
+            __DIR__ . '/Printer/testJats/testJats.log',
+            print_r($this->dom->saveXML(), true)
+        );
     }
 
     private function openAlexRequest() {
         // Implementación de la solicitud a OpenAlex si es necesario
-         $oar = $this->oam->request();
-         $this->enrichmenteJatsRefElement($oar);
+         $jsonDoiOar = $this->oam->doiRequest();
+         $decodedDoiOar = json_decode($jsonDoiOar, true);
+         $this->enrichmentJatsRefElement($decodedDoiOar);
+
          return null;
      }
  
-     private function enrichmenteJatsRefElement(){
-         foreach ($this->jatsWithDoi as $index => $jats) {
-             if ($oar[$index]){
-                 $jats->enrichmente($oar[$index]);
-             } 
-         }
-     }
+    private function enrichmentJatsRefElement($oar){
+        $results = $oar['results'] ?? [];
+        foreach ($this->jatsWithDoi as $doi => $jats) {
+            foreach ($results as $index => $result) {
+                if (strpos($result['doi'],  $doi) !== false) {
+                   $jats->setEnrichmentData($result); //Se setea un array vacío si no existe el DOI en OpenAlex y un array con datos si existe
+                   break;
+                } 
+            }
+        }
+    }
  
+    private function processInstitution(String $institution, JATSReference $jats = null) {
+        if (!$jats) {
+            return null;
+        }
+        $request = $this->oam->searchInstitution($institution);
+        $results = $request['results'] ?? [];
+        if (count($results) === 1) {
+            $result = $results[0];
+            $jats->validateOpenAlexInstitution($result);
+        }
+        
+    }
+
 }

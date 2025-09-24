@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.2 20190208//EN" "https://jats.nlm.nih.gov/publishing/1.2/JATS-journalpublishing1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <front>
+    <journal-meta>
+      <journal-id/>
+      <issn/>
+    </journal-meta>
+    <article-meta>
+      <title-group>
+        <article-title/>
+      </title-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec-1">
+      <title>Background</title>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare mattis feugiat. Nam metus mauris, egestas congue odio quis, egestas laoreet justo (1). Aliquam erat volutpat. Curabitur at quam non diam interdum rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus (Tomás Messineo, 20254e). Praesent non nisl vehicula justo consectetur porttitor non interdum ex. Nunc porta purus ante, eget faucibus ante tempor eget. Ut vitae commodo quam, non mattis odio. In ultrices risus eget pulvinar facilisis. Vivamus nec nisl libero (2). Etiam velit neque, ullamcorper id ornare in, pharetra vel magna (3–5). Ut vehicula pellentesque quam, et aliquam massa volutpat eget . Suspendisse potenti. Sed ultricies nibh eu felis consectetur pellentesque.</p>
+      <p>In et tellus bibendum, fermentum massa id, mollis nisl. Vestibulum malesuada vehicula metus ac condimentum. Morbi quis massa aliquet turpis pharetra varius at eu sem. Phasellus sed pretium ligula, sed ultrices tellus. Donec aliquam sodales ligula dapibus vehicula. Mauris a eros in diam posuere iaculis quis vel ipsum. Duis iaculis condimentum lobortis. Donec non tristique ipsum, ut posuere massa . Morbi ante tellus, semper vitae justo a, consectetur accumsan nunc. Duis sed vulputate ante. Duis vel imperdiet neque. Vestibulum risus mauris, rhoncus id elementum a, ultrices eget sem. Mauris luctus dui at lectus interdum, non aliquet orci laoreet.</p>
+      <p><bold>Integer sed posuere enim.</bold> Praesent interdum, nisl at porttitor auctor, magna justo semper tellus, quis molestie nunc turpis ut eros. Phasellus ultrices consequat est a bibendum. Nam fermentum pretium erat vel varius. In auctor non risus eget laoreet. Aliquam ut elit id ante blandit eleifend laoreet egestas turpis. Etiam at felis eu justo faucibus accumsan. Praesent rhoncus in magna non sagittis. Ut molestie ex erat, quis venenatis eros vestibulum non. Proin eu pulvinar metus, nec dapibus ex. Aenean purus nunc, vulputate sit amet ligula nec, posuere vestibulum tortor. Aliquam est neque, tempus elementum pellentesque ut, gravida blandit justo. Mauris velit elit, scelerisque ac lorem a, vulputate pulvinar risus. Ut scelerisque vel lectus vitae ornare.</p>
+    </sec>
+    <sec id="sec-2">
+      <title>Methods</title>
+      <sec id="sec-2_1">
+        <title>Study design</title>
+        <p><bold>Nullam hendrerit condimentum tellus eu sagittis.</bold> Suspendisse lacus felis, tincidunt eget feugiat non, tristique in augue. Cras pharetra quam sed sapien mattis volutpat. In placerat, orci a pharetra lacinia, dolor nunc pellentesque est, sed interdum mauris arcu quis purus. Curabitur convallis, sapien varius rutrum elementum, nunc ligula varius nisl, pulvinar lobortis leo sapien vitae turpis. <italic>Maecenas luctus</italic>, libero vestibulum rhoncus sodales, nunc nunc blandit massa, non finibus metus nulla vitae mauris. Quisque non vehicula ex. Cras mollis sit amet ante eu euismod. Ut cursus commodo sapien quis ornare. Vestibulum varius, ipsum quis pretium semper, dolor urna sagittis mauris, in dictum tellus lorem sit amet ipsum. Proin et mauris a erat interdum aliquam. Duis non ante ac nisl malesuada pretium. Cras et dignissim ipsum, sed iaculis nisi. <italic>Donec ut tortor et metus</italic> porttitor pharetra euismod non urna. Cras pharetra metus purus, a interdum sapien consequat et. Duis vitae sodales nisi.</p>
+        <p><bold>Nunc sit amet eleifend mi.</bold> Praesent id iaculis risus. Aenean ac erat congue enim mattis mattis a vel est. Proin pulvinar non felis tristique efficitur. Aliquam venenatis eget nisi non scelerisque. Suspendisse vel lectus convallis velit congue rhoncus sagittis a sem. Mauris tincidunt molestie risus. Pellentesque accumsan egestas ex, sit amet fermentum lorem mollis sollicitudin. Vestibulum quis dapibus nisi. Proin pulvinar vitae arcu a malesuada. Suspendisse ultrices, dolor non efficitur semper, sem orci volutpat nibh, in fermentum ipsum tortor eget urna. Integer vel eros sed lorem consectetur pellentesque. Nullam ac massa vitae urna iaculis scelerisque at eu massa. Fusce dignissim ex id nibh pulvinar rutrum. Pellentesque quis vulputate quam.</p>
+        <p><bold>Sed sed accumsan lectus.</bold> Praesent sit amet enim id mi iaculis congue. Proin fermentum mollis pretium. Maecenas tempor leo ut faucibus convallis. Sed placerat fermentum consectetur. Nunc ante nulla, lobortis eget ex at, accumsan cursus tellus. Curabitur blandit, velit at semper aliquet, neque magna mollis elit, non tincidunt dui quam at magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi porttitor tincidunt urna, eu blandit risus gravida ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis orci varius, blandit felis ac, tempus nulla. Nulla semper auctor egestas. Curabitur sodales quam id imperdiet finibus.</p>
+      </sec>
+      <sec id="sec-2_2">
+        <title>Sample</title>
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+        <list list-type="order">
+          <list-item>
+            <p>Ut scelerisque turpis nec lorem cursus, vestibulum venenatis felis convallis. </p>
+          </list-item>
+          <list-item>
+            <p>Vivamus metus tellus, cursus nec ex sollicitudin, volutpat lobortis nibh. </p>
+          </list-item>
+          <list-item>
+            <p>Maecenas consequat, quam a sodales porttitor, purus ipsum placerat mi, sed efficitur lectus risus eu nulla. </p>
+            <list list-type="bullet">
+              <list-item>
+                <p>Phasellus egestas finibus tincidunt. Nullam euismod aliquam purus a egestas. </p>
+              </list-item>
+              <list-item>
+                <p>Nunc laoreet quam metus, vel faucibus turpis laoreet vitae. </p>
+              </list-item>
+              <list-item>
+                <p>Mauris eleifend ut sapien eu scelerisque. </p>
+              </list-item>
+              <list-item>
+                <p>Nulla imperdiet elit quis leo vehicula iaculis. </p>
+              </list-item>
+              <list-item>
+                <p>Curabitur a nunc auctor, semper ex a, ornare tortor. Suspendisse eu nisl eu ex egestas ultricies ut quis purus. </p>
+              </list-item>
+            </list>
+          </list-item>
+        </list>
+        <list list-type="bullet"/>
+        <p>Suspendisse eu nisl eu ex egestas ultricies ut quis purus. Donec dignissim, nibh id fermentum eleifend, arcu mi pharetra nisl, in dignissim diam tellus at leo. Nam a erat ut nibh consequat pharetra in ultrices odio. Nulla viverra, libero eget efficitur efficitur, ante ligula imperdiet tortor, eu cursus augue quam sed augue.</p>
+      </sec>
+      <sec id="sec-2_3">
+        <title>Measures</title>
+        <p>Donec iaculis at ligula ac cursus. Praesent eu odio sed neque sollicitudin efficitur. Aenean ac felis ut sem luctus imperdiet nec quis massa. Suspendisse aliquam risus et posuere iaculis. Aliquam quis euismod nisi. Nunc finibus lorem eu diam sagittis, et tincidunt nibh auctor. Praesent imperdiet nisi et ligula ornare bibendum. Sed aliquam, nulla eu venenatis placerat, sem dolor volutpat ante, sed tincidunt tortor ante venenatis turpis. Nam molestie euismod enim, vitae scelerisque neque aliquam quis. Ut ut ornare orci. Duis tempus est ut diam venenatis tristique. Fusce egestas consequat felis, a venenatis urna aliquet vel. Ut leo nisi, ullamcorper vitae purus vitae, commodo fermentum nisl. Morbi molestie vulputate justo, et scelerisque tellus bibendum et. Sed maximus eros lobortis augue vestibulum tristique.</p>
+      </sec>
+      <sec id="sec-2_4">
+        <title>Statistical analysis</title>
+        <p>Fusce ut nibh orci. <bold>Phasellus libero urna</bold>, <bold><italic>suscipit non</italic></bold> leo eu, rhoncus finibus turpis. Aliquam ultricies, ipsum eget bibendum elementum, metus purus condimentum neque, vel pharetra sapien arcu nec diam. Donec vel tempor enim. Quisque fermentum massa ac augue porta, et ullamcorper risus vestibulum. Praesent efficitur massa mi, sed bibendum nulla aliquam ut. Phasellus in purus a augue mattis venenatis quis eu felis. Donec a leo vel arcu vestibulum consectetur. Duis a feugiat risus. Maecenas ornare augue eget lobortis gravida. Nullam lectus augue, venenatis sit amet nibh tristique, ullamcorper sollicitudin purus. Aliquam quis fermentum leo.</p>
+      </sec>
+      <sec id="sec-2_5">
+        <title>Treatment algorithm</title>
+        <p>Nam sagittis scelerisque tortor, at pulvinar dui. Cras tellus mi, aliquet eget pellentesque id, feugiat sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed feugiat ligula vitae diam laoreet aliquet (See <xref>Error: Reference source not found</xref>). Aenean tristique vulputate enim, quis interdum leo volutpat at. </p>
+        <fig id="fig1">
+          <label>Illustration </label>
+          <caption>
+            <title>Illustration 1: Pellentesque ac ligula facilisis, eleifend magna sed, vehicula libero; donec lectus est, fermentum vel sapien in, mollis finibus purus.</title>
+          </caption>
+          <graphic mimetype="image" mime-subtype="png" xlink:href="image1.png"/>
+        </fig>
+        <p>Proin condimentum quam vel aliquam eleifend. Donec vehicula, leo sed feugiat euismod, mauris nunc pretium dui, ac dignissim dui neque eu augue. Pellentesque dolor sem, sollicitudin in orci eget, condimentum pharetra eros. Curabitur aliquam accumsan facilisis. Donec ullamcorper, eros at vehicula suscipit, nisi elit ultrices lectus, sit amet viverra eros metus eu mauris. Vestibulum quis consectetur enim. Aenean ornare nisi ut erat venenatis lobortis. Donec mollis placerat ipsum ut porttitor. Maecenas vitae faucibus tellus. Proin scelerisque mattis consectetur.</p>
+      </sec>
+    </sec>
+    <sec id="sec-3">
+      <title>Results</title>
+      <sec id="sec-3_1">
+        <title>Primary outcome</title>
+        <p>Quisque ante ante, varius nec tortor at, blandit fermentum sapien. Nam at placerat ante. Sed cursus erat eget dui finibus suscipit in <xref>Error: Reference source not found</xref>. Duis at est facilisis, maximus diam ac, viverra nisl. Aenean tristique, leo id vestibulum lacinia, ligula massa congue felis, vel facilisis quam erat sed turpis. Quisque malesuada, lacus eu maximus ornare, enim lacus porttitor nunc, nec maximus dui dolor sit amet magna. Donec tincidunt dolor vulputate, ultrices arcu vel, tristique arcu. Cras aliquet euismod feugiat. Fusce auctor ac leo sed scelerisque. Fusce volutpat ipsum ac feugiat suscipit. Vestibulum elit sem, luctus quis neque at, fermentum porta dolor. Donec venenatis tempus tempus. Quisque faucibus, nisl eu blandit laoreet, mauris ex dictum nisl, at bibendum ex risus sed nulla. Nunc eget porta metus. Duis ut neque sed nisl dapibus aliquam. Cras molestie sed libero vitae lacinia.</p>
+        <fig id="fig2">
+          <graphic mimetype="image" mime-subtype="png" xlink:href="image2.png"/>
+        </fig>
+        <table-wrap id="tbl1">
+          <label>Table </label>
+          <caption>
+            <title>Table 1: Ynteger enim massa, tempor ut nulla ac, porttitor auctor justo phasellus lacinia vel massa ac tempus in id interdum arcu.</title>
+          </caption>
+          <table>
+            <tr>
+              <td>
+                <p>Measure</p>
+              </td>
+              <td>
+                <p>Control group</p>
+              </td>
+              <td>
+                <p>Active treatment</p>
+              </td>
+              <td>
+                <p>Total</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <p>Males</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>N</p>
+              </td>
+              <td>
+                <p>33</p>
+              </td>
+              <td>
+                <p>32</p>
+              </td>
+              <td>
+                <p>65</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>% among groups</p>
+              </td>
+              <td>
+                <p>50.77%</p>
+              </td>
+              <td>
+                <p>49.23%</p>
+              </td>
+              <td>
+                <p>100%</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>% among general sample</p>
+              </td>
+              <td>
+                <p>61.11%</p>
+              </td>
+              <td>
+                <p>59.26%</p>
+              </td>
+              <td>
+                <p>60.19%</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <p>Female</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>N</p>
+              </td>
+              <td>
+                <p>21</p>
+              </td>
+              <td>
+                <p>22</p>
+              </td>
+              <td>
+                <p>43</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>% among groups</p>
+              </td>
+              <td>
+                <p>48.84%</p>
+              </td>
+              <td>
+                <p>51.16%</p>
+              </td>
+              <td>
+                <p>100%</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>% among general sample</p>
+              </td>
+              <td>
+                <p>38.89%</p>
+              </td>
+              <td>
+                <p>40.74%</p>
+              </td>
+              <td>
+                <p>39.81%</p>
+              </td>
+            </tr>
+          </table>
+        </table-wrap>
+        <p>Aliquam commodo, sapien a gravida viverra, neque arcu lacinia elit, at varius sem erat id massa. Praesent magna odio, dignissim vel sollicitudin non, posuere in velit. Aliquam dapibus neque tellus, et venenatis sem gravida ac. Etiam vel justo a tellus aliquam dapibus. Donec tristique at ligula vel condimentum. Sed eget arcu ac ex facilisis feugiat. Sed congue nisl et ultricies fringilla. Nunc eu dolor ac arcu cursus posuere.</p>
+      </sec>
+      <sec id="sec-3_2">
+        <title>Secondary outcomes</title>
+        <sec id="sec-3_2_1">
+          <title>Therapeutic criteria</title>
+          <p>Duis sollicitudin vitae velit at molestie. Sed nibh augue, accumsan ut arcu id, porttitor malesuada mauris. Curabitur vehicula eu dolor a blandit. Sed ut venenatis tortor. Donec tincidunt nibh vel nulla vulputate, nec iaculis velit vestibulum. </p>
+          <p>Fusce tempus laoreet dolor nec pretium. Sed lacinia ullamcorper fermentum:</p>
+          <list list-type="order">
+            <list-item>
+              <p>Maecenas in <bold>porta</bold> dolor, ut sodales nulla. </p>
+            </list-item>
+            <list-item>
+              <p>Aenean eget cursus est. </p>
+            </list-item>
+            <list-item>
+              <p>Nulla ac efficitur sapien, porta euismod metus. </p>
+            </list-item>
+            <list-item>
+              <p>Mauris fringilla <bold><italic>ut enim</italic></bold> vel tincidunt. </p>
+            </list-item>
+            <list-item>
+              <p>Duis nunc dolor, mattis vitae tincidunt sit amet, efficitur eu mauris. </p>
+            </list-item>
+            <list-item>
+              <p>Etiam at mauris vel ligula finibus commodo ut nec felis. </p>
+            </list-item>
+            <list-item>
+              <p><italic>Praesent</italic> iaculis nibh vel velit ultrices, tempor pulvinar odio ultrices. Aenean metus nibh, convallis nec ultricies vel, elementum ut eros.</p>
+            </list-item>
+          </list>
+          <p>Aliquam pharetra aliquet nisi et cursus. Praesent vehicula risus eu dolor pretium blandit. Praesent pretium molestie tempor. Etiam porttitor, eros sagittis lobortis convallis, justo turpis porttitor erat, eget malesuada magna erat congue lectus.</p>
+        </sec>
+        <sec id="sec-3_2_2">
+          <title>Symptoms intensity</title>
+          <p>Aenean et condimentum augue. Ut placerat velit sem, vel dapibus purus ullamcorper sollicitudin. Donec vel semper odio. Cras metus justo, feugiat eget pellentesque id, porta eu augue. Cras tempor maximus est, gravida volutpat elit rutrum quis. Pellentesque nec rutrum metus. Donec lacinia efficitur mauris placerat tempus. Phasellus in magna nec massa tincidunt condimentum in ut mi. Nam neque ex, tempus non odio eu, mollis lobortis nibh. Integer ex orci, consectetur in molestie eget, vulputate eget ligula. Praesent faucibus ut tortor sodales facilisis. Pellentesque a risus augue. In pretium commodo nisl, in hendrerit neque. Aliquam viverra tincidunt tempus (see <xref>Error: Reference source not found</xref>).</p>
+          <table-wrap id="tbl2">
+            <label>Table </label>
+            <caption>
+              <title>Table 2: Aenean ut purus aliquet, bibendum orci et, gravida odio.</title>
+            </caption>
+            <table>
+              <tr>
+                <td>
+                  <p>Measure</p>
+                </td>
+                <td>
+                  <p>N</p>
+                </td>
+                <td>
+                  <p>Mean</p>
+                </td>
+                <td>
+                  <p>SD</p>
+                </td>
+                <td>
+                  <p>95% CI</p>
+                </td>
+                <td>
+                  <p>Max</p>
+                </td>
+                <td>
+                  <p>Min</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Criterion B</p>
+                </td>
+                <td rowspan="5">
+                  <p>108</p>
+                </td>
+                <td>
+                  <p>12.00</p>
+                </td>
+                <td>
+                  <p>2.41</p>
+                </td>
+                <td>
+                  <p>11.54-12.46</p>
+                </td>
+                <td>
+                  <p>5</p>
+                </td>
+                <td>
+                  <p>19</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Criterion C</p>
+                </td>
+                <td>
+                  <p>5.37</p>
+                </td>
+                <td>
+                  <p>1.13</p>
+                </td>
+                <td>
+                  <p>5.16-5.58</p>
+                </td>
+                <td>
+                  <p>3</p>
+                </td>
+                <td>
+                  <p>8</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Criterion D</p>
+                </td>
+                <td>
+                  <p>16.48</p>
+                </td>
+                <td>
+                  <p>3.33</p>
+                </td>
+                <td>
+                  <p>15.85-17.12</p>
+                </td>
+                <td>
+                  <p>10</p>
+                </td>
+                <td>
+                  <p>23</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Criterion E</p>
+                </td>
+                <td>
+                  <p>13.09</p>
+                </td>
+                <td>
+                  <p>3.07</p>
+                </td>
+                <td>
+                  <p>12.51-13.68</p>
+                </td>
+                <td>
+                  <p>6</p>
+                </td>
+                <td>
+                  <p>20</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Total (B+C+D+E)</p>
+                </td>
+                <td>
+                  <p>46.93</p>
+                </td>
+                <td>
+                  <p>8.44</p>
+                </td>
+                <td>
+                  <p>45.32-48.54</p>
+                </td>
+                <td>
+                  <p>26</p>
+                </td>
+                <td>
+                  <p>68</p>
+                </td>
+              </tr>
+            </table>
+          </table-wrap>
+        </sec>
+      </sec>
+    </sec>
+    <sec id="sec-4">
+      <title>Discussion</title>
+      <p>Duis ut cursus ligula, sit amet ultrices augue. Praesent commodo orci a placerat convallis. Curabitur interdum purus metus, sit amet porta ligula pretium sed. Mauris non lectus est. Nunc sodales euismod placerat. Donec viverra, ipsum a tempus suscipit, velit ante fermentum nibh, ac tincidunt lorem lorem sed orci. Etiam risus libero, interdum ut ante nec, bibendum placerat eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In sed vehicula ante. Pellentesque vehicula tristique nisi, quis commodo erat rhoncus sed. Quisque porta pellentesque lacus, eu bibendum lorem mattis at. Aenean ut purus aliquet, bibendum orci et, gravida odio.</p>
+      <p>Quisque rutrum tortor vitae ante fermentum interdum. Vivamus sollicitudin sodales turpis, a fermentum felis ullamcorper non. Duis nec justo sit amet ligula malesuada imperdiet. Cras id ex vulputate, ornare felis vel, fringilla elit. Vivamus dignissim metus eget magna porttitor tincidunt. Sed dignissim nunc sit amet hendrerit tristique. Nullam ante nisl, porta egestas nisl in, egestas consequat ligula. Cras tristique elementum tellus, non vehicula risus congue at. Nulla gravida dolor libero, eget cursus magna consequat quis. Etiam gravida nisi leo, eu aliquet risus hendrerit eu.</p>
+      <p>Pellentesque aliquet, nisl in venenatis maximus, quam lacus pulvinar elit, ac tincidunt nisl tortor non nisi. Aenean eget rhoncus tellus, eu euismod urna. Suspendisse et feugiat risus, sed pretium tortor . Vestibulum ac magna in mauris pretium tincidunt. Suspendisse velit dolor, sollicitudin tristique justo eu, luctus rutrum leo. Proin porta lacus sed massa molestie, et tincidunt nunc euismod. Ut id porta massa, eget laoreet leo.</p>
+    </sec>
+    <sec id="sec-5">
+      <title>Conclusion</title>
+      <p>Cras vitae urna turpis. Nam vel velit placerat, luctus sapien non, ornare odio. Integer bibendum imperdiet tellus sed tincidunt. Sed volutpat id urna in malesuada. Etiam ultricies sapien elit, non finibus odio efficitur at. Aenean non elit a nulla sollicitudin auctor. Suspendisse vitae mi pellentesque, pellentesque erat in, facilisis velit. Duis commodo commodo tristique. Nam eu tincidunt tortor. Maecenas id gravida est, eget lacinia nisl. Aliquam purus arcu, rutrum nec feugiat a, malesuada non leo. Nulla sollicitudin, enim at rhoncus commodo, orci libero luctus purus, id viverra lacus nisl non nibh.</p>
+    </sec>
+    <sec id="sec-6">
+      <title>References</title>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <ref id="parser_0">
+        <mixed-citation>Abad Castelló, M. y Álvarez Baz, A. (2021). Aprendizaje basado en datos y combinaciones léxicas: una propuesta didáctica con cuasisinónimos. MLS Educational Research, 5(2), 88-104. https://doi.org/10.29314/mlser.v5i2.562</mixed-citation>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Magdalena Abad Castelló</surname>
+            </name>
+            <name>
+              <surname>Antonio Álvarez Baz</surname>
+            </name>
+          </person-group>
+          <year>2021</year>
+          <source>MLS Educational Research</source>
+          <article-title>Aprendizaje basado en datos y combinaciones léxicas: una propuesta didáctica con cuasisinónimos</article-title>
+          <volume>5</volume>
+          <issue>2</issue>
+          <fpage>88</fpage>
+          <lpage>104</lpage>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.29314/mlser.v5i2.562">https://doi.org/10.29314/mlser.v5i2.562</ext-link>
+          <uri>https://doi.org/10.29314/mlser.v5i2.562</uri>
+          <pub-id pub-id-type="doi">10.29314/mlser.v5i2.562</pub-id>
+          <month>11</month>
+          <day>2</day>
+          <doi>https://doi.org/10.29314/mlser.v5i2.562</doi>
+          <issn-l>2603-5820</issn-l>
+        </element-citation>
+      </ref>
+      <ref id="parser_1">
+        <mixed-citation>Aikhenwald, A. (2012). The essence of mirativity. Linguistic Typology, 16(3), 435-485. https://doi.org/10.1515/lity-2012-0017</mixed-citation>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alexandra Y. Aikhenvald</surname>
+            </name>
+          </person-group>
+          <year>2012</year>
+          <source>Linguistic Typology</source>
+          <article-title>The essence of mirativity</article-title>
+          <volume>16</volume>
+          <issue>3</issue>
+          <fpage>435</fpage>
+          <lpage>485</lpage>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1515/lity-2012-0017">https://doi.org/10.1515/lity-2012-0017</ext-link>
+          <uri>https://doi.org/10.1515/lity-2012-0017</uri>
+          <pub-id pub-id-type="doi">10.1515/lity-2012-0017</pub-id>
+          <month>1</month>
+          <day>27</day>
+          <doi>https://doi.org/10.1515/lity-2012-0017</doi>
+          <issn-l>1430-0532</issn-l>
+          <issn>1613-415X</issn>
+        </element-citation>
+      </ref>
+      <ref id="parser_2">
+        <element-citation publication-type="thesis">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Angelina Oliveira</surname>
+              <given-names>A. </given-names>
+            </name>
+          </person-group>
+          <year>2024</year>
+          <article-title>Producciones escritas de angloparlantes en el marco de exámenes CELU</article-title>
+          <comment>Tesis de doctorado, Universidad Nacional de Misiones</comment>
+          <publisher-loc/>
+          <ext-link ext-link-type="uri" xlink:href="https://hdl.handle.net/20.500.12219/5564">https://hdl.handle.net/20.500.12219/5564</ext-link>
+          <uri>https://hdl.handle.net/20.500.12219/5564</uri>
+        </element-citation>
+        <mixed-citation>Angelina Oliveira, A. (2024). Producciones escritas de angloparlantes en el marco de exámenes CELU [Tesis de doctorado, Universidad Nacional de Misiones]. https://hdl.handle.net/20.500.12219/5564</mixed-citation>
+      </ref>
+      <ref id="parser_3">
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>González Vázquez</surname>
+              <given-names>M. </given-names>
+            </name>
+          </person-group>
+          <year>1998</year>
+          <article-title>La polisemia de 'poder' en e/le: acerca de la pertinencia comunicativa de la posibilidad lateral y bilateral</article-title>
+          <comment>Ponencia</comment>
+          <conf-loc>Santiago de Compostela, España</conf-loc>
+        </element-citation>
+        <mixed-citation>González Vázquez, M. (1998). La polisemia de 'poder' en e/le: acerca de la pertinencia comunicativa de la posibilidad lateral y bilateral [Ponencia]. IX Congreso Internacional de ASELE. Santiago de Compostela, España.</mixed-citation>
+      </ref>
+      <ref id="parser_4">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grice</surname>
+              <given-names>P. </given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <chapter-title>Lógica de la conversación.</chapter-title>
+          <source>La búsqueda del Significado</source>
+          <publisher-name>Tecnos.</publisher-name>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Valdées Villanueva</surname>
+              <given-names>L. </given-names>
+            </name>
+          </person-group>
+        </element-citation>
+        <mixed-citation>Grice, P. (1991). Lógica de la conversación. En L. Valdées Villanueva (Ed.), La búsqueda del Significado (pp. 516-543). Tecnos. (Trabajo original publicado en 1975).</mixed-citation>
+      </ref>
+      <ref id="parser_5">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hoye</surname>
+              <given-names>L. </given-names>
+            </name>
+          </person-group>
+          <year>2008</year>
+          <chapter-title>Evidentiality in discourse: A pragmatic and empirical account.</chapter-title>
+          <source>Pragmatics and corpus linguistics</source>
+          <publisher-name>Mouton de Gruyter.</publisher-name>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Romero</surname>
+              <given-names>J. </given-names>
+            </name>
+          </person-group>
+        </element-citation>
+        <mixed-citation>Hoye, L. (2008). Evidentiality in discourse: A pragmatic and empirical account. En J. Romero (Ed.), Pragmatics and corpus linguistics (pp. 151-174). Mouton de Gruyter.</mixed-citation>
+      </ref>
+      <ref id="parser_6">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sperber</surname>
+              <given-names>D. </given-names>
+            </name>
+            <name>
+              <surname>Wilson</surname>
+              <given-names>D. </given-names>
+            </name>
+          </person-group>
+          <year>1991</year>
+          <chapter-title>Sobre la definición de Relevancia.</chapter-title>
+          <source>La búsqueda del significado</source>
+          <publisher-name>Tecnos.</publisher-name>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Valdés Villanueva</surname>
+              <given-names>L. </given-names>
+            </name>
+          </person-group>
+        </element-citation>
+        <mixed-citation>Sperber, D. y Wilson, D. (1991). Sobre la definición de Relevancia. En L. Valdés Villanueva (Ed.), La búsqueda del significado (pp. 583-598). Tecnos. (Trabajo original publicado en 1986).</mixed-citation>
+      </ref>
+      <ref id="parser_7">
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vatrican</surname>
+              <given-names>A. </given-names>
+            </name>
+          </person-group>
+          <year>2015</year>
+          <source>Revista Española de Lingüística</source>
+          <article-title>La modalidad en la gramática: la capacidad en las construcciones saber y poder infinitivo</article-title>
+          <volume>2</volume>
+          <issue>45</issue>
+          <fpage>115</fpage>
+          <lpage>141</lpage>
+        </element-citation>
+        <mixed-citation>Vatrican, A. (2015). La modalidad en la gramática: la capacidad en las construcciones saber y poder infinitivo. Revista Española de Lingüística, 45(2), 115–141. </mixed-citation>
+      </ref>
+      <ref id="parser_8">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Fedigan</surname>
+              <given-names>L. M. </given-names>
+            </name>
+            <name>
+              <surname>Strum</surname>
+              <given-names>S. </given-names>
+            </name>
+          </person-group>
+          <year>1999</year>
+          <chapter-title>A brief history of primate studies: national traditions, disciplinary origins, and stages in North American field research.</chapter-title>
+          <source>The non-human primates.</source>
+          <publisher-name>Mountain View USA Mayfield Publishing Company.</publisher-name>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Dolhinow</surname>
+              <given-names>P. </given-names>
+            </name>
+            <name>
+              <surname>Fuentes</surname>
+              <given-names>A. </given-names>
+            </name>
+          </person-group>
+        </element-citation>
+        <mixed-citation>Fedigan, L. M. y Strum, S. (1999). A brief history of primate studies: national traditions, disciplinary origins, and stages in North American field research. En P. Dolhinow y A. Fuentes (Eds.), The non-human primates. (pp. 250-269). Mountain View USA Mayfield Publishing Company.</mixed-citation>
+      </ref>
+      <ref id="parser_9">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Matsuzawa</surname>
+              <given-names>T. </given-names>
+            </name>
+            <name>
+              <surname>Yamakoshi</surname>
+              <given-names>G. </given-names>
+            </name>
+          </person-group>
+          <year>1996</year>
+          <chapter-title>Comparison of chimpanzee material culture between Bossou and Nimba, West Africa.</chapter-title>
+          <source>Reaching into thought</source>
+          <publisher-name>United Kingdom Cambridge University Press.</publisher-name>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Russon</surname>
+              <given-names>A. </given-names>
+            </name>
+            <name>
+              <surname>Bard</surname>
+              <given-names>K. </given-names>
+            </name>
+            <name>
+              <surname>Parkers</surname>
+              <given-names>S. </given-names>
+            </name>
+          </person-group>
+        </element-citation>
+        <mixed-citation>Matsuzawa, T. y Yamakoshi, G. (1996). Comparison of chimpanzee material culture between Bossou and Nimba, West Africa. En A. Russon, K. Bard y S. Parkers (Eds.), Reaching into thought (pp. 211-232). United Kingdom Cambridge University Press.</mixed-citation>
+      </ref>
+      <ref id="parser_10">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Call</surname>
+              <given-names>J. </given-names>
+            </name>
+            <name>
+              <surname>Carpenter</surname>
+              <given-names>M.</given-names>
+            </name>
+            <collab>
+              <named-content content-type="name">Anashe</named-content>
+            </collab>
+          </person-group>
+          <year>2002</year>
+          <chapter-title>Three sources of information in social learning.</chapter-title>
+          <source>Imitation in animals and artifacts</source>
+          <publisher-name>Cambridge, USA: MIT Press.</publisher-name>
+          <person-group person-group-type="editor">
+            <name>
+              <surname>Dautenhahn</surname>
+              <given-names>K. </given-names>
+            </name>
+            <name>
+              <surname>Nehaniv</surname>
+              <given-names>C. </given-names>
+            </name>
+          </person-group>
+        </element-citation>
+        <mixed-citation>Call, J. y Carpenter, M., Universidad Nacional de La Plata. (2002). Three sources of information in social learning. En K. Dautenhahn y C. Nehaniv (Eds.), Imitation in animals and artifacts (pp. 211-228). Cambridge, USA: MIT Press.</mixed-citation>
+      </ref>
+      <ref id="parser_11">
+        <mixed-citation>Hola. Esto es una referencia mal escirita (2023). --- ERRORS FOUND IN THESE SECTIONS: "Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_12">
+        <mixed-citation>-sawda-w2 --- ERRORS FOUND IN THESE SECTIONS: "Author. Date. Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_13">
+        <mixed-citation>21.sc12. --- ERRORS FOUND IN THESE SECTIONS: "Author. Date. Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_14">
+        <mixed-citation>Vatrican, A. (2015). la modalidad en la gramática: la capacidad en las construcciones saber y poder infinitivo. Revista Española de Lingüística, 45(2), 115–141. --- ERRORS FOUND IN THESE SECTIONS: "Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_15">
+        <mixed-citation>Aikhenwald, A (20s22). the. Linguistic Typology, 16(3), 435-485.  --- ERRORS FOUND IN THESE SECTIONS: "Date. Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_16">
+        <mixed-citation>https://doi.org/10.1186/s12889-018-5188-0</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2018</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s12889-018-5188-0">https://doi.org/10.1186/s12889-018-5188-0</ext-link>
+          <uri>https://doi.org/10.1186/s12889-018-5188-0</uri>
+          <pub-id pub-id-type="doi">10.1186/s12889-018-5188-0</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Megan K. Mueller</surname>
+            </name>
+            <name>
+              <surname>Nancy R. Gee</surname>
+            </name>
+            <name>
+              <surname>Regina M. Bures</surname>
+            </name>
+          </person-group>
+          <month>3</month>
+          <day>2</day>
+          <doi>https://doi.org/10.1186/s12889-018-5188-0</doi>
+          <source>BMC Public Health</source>
+          <issn-l>1471-2458</issn-l>
+          <article-title>Human-animal interaction as a social determinant of health: descriptive findings from the health and retirement study</article-title>
+          <volume>18</volume>
+          <issue>1</issue>
+        </element-citation>
+      </ref>
+      <ref id="parser_17">
+        <mixed-citation>https://doi.org/10.18270/rce.v11i10.736</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2015</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.18270/rce.v11i10.736">https://doi.org/10.18270/rce.v11i10.736</ext-link>
+          <uri>https://doi.org/10.18270/rce.v11i10.736</uri>
+          <pub-id pub-id-type="doi">10.18270/rce.v11i10.736</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>María Rodríguez M.</surname>
+            </name>
+            <name>
+              <surname>Rafael Muñoz C.</surname>
+            </name>
+          </person-group>
+          <month>10</month>
+          <day>31</day>
+          <doi>https://doi.org/10.18270/rce.v11i10.736</doi>
+          <source>Revista Colombiana de Enfermería</source>
+          <issn-l>1909-1621</issn-l>
+          <issn>2346-2000</issn>
+          <article-title>Influencia de tener perros sobre la salud percibida en personas mayores de Jaén (España)</article-title>
+          <volume>11</volume>
+          <issue>10</issue>
+          <fpage>29</fpage>
+          <lpage>29</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_18">
+        <element-citation publication-type=""/>
+        <mixed-citation>https://doi.org/10.18270/rce.v11i10.7cj</mixed-citation>
+      </ref>
+      <ref id="parser_19">
+        <element-citation publication-type="webpage"/>
+        <mixed-citation>Universidad Nacional de La Plata. (2025). Titulo. https://doi.org/10.13252/rce.v11i10.7cj</mixed-citation>
+      </ref>
+      <ref id="parser_20">
+        <element-citation publication-type="webpage"/>
+        <mixed-citation>Universidad. (2025). Titulo. https://doi.org/10.13252/rce.v11i10.7cj</mixed-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>

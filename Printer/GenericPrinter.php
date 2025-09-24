@@ -56,6 +56,23 @@ abstract class GenericPrinter {
         return $this->dom->createElement($name, htmlspecialchars($value));
     }
 
+    /** 
+     * Método para obtener array con fecha [año, mes, día] desde string "2023-08-15"
+     * @return array [year, month, day]
+     * 
+     * @param string $date Fecha en formato "YYYY-MM-DD".
+     *  */
+    public function getPublicationDateArray($date): Array{
+        $dateParts = explode('-', $date);
+        $year = isset($dateParts[0]) ? (int)$dateParts[0] : null;
+        $month = isset($dateParts[1]) ? (int)$dateParts[1] : null;
+        $day = isset($dateParts[2]) ? (int)$dateParts[2] : null;
+
+        return ['year' => $year, 
+                'month' => $month, 
+                'day' => $day];
+    }
+
     /**
      * Creates XML elements based on the reference data.
      *
