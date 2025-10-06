@@ -71,7 +71,7 @@
       </sec>
       <sec id="sec-2_5">
         <title>Treatment algorithm</title>
-        <p>Nam sagittis scelerisque tortor, at pulvinar dui. Cras tellus mi, aliquet eget pellentesque id, feugiat sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed feugiat ligula vitae diam laoreet aliquet (See <xref>Error: Reference source not found</xref>). Aenean tristique vulputate enim, quis interdum leo volutpat at. </p>
+        <p>Nam sagittis scelerisque tortor, at pulvinar dui. Cras tellus mi, aliquet eget pellentesque id, feugiat sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed feugiat ligula vitae diam laoreet aliquet (See <xref>Illustration 1</xref>). Aenean tristique vulputate enim, quis interdum leo volutpat at. </p>
         <fig id="fig1">
           <label>Illustration </label>
           <caption>
@@ -86,7 +86,7 @@
       <title>Results</title>
       <sec id="sec-3_1">
         <title>Primary outcome</title>
-        <p>Quisque ante ante, varius nec tortor at, blandit fermentum sapien. Nam at placerat ante. Sed cursus erat eget dui finibus suscipit in <xref>Error: Reference source not found</xref>. Duis at est facilisis, maximus diam ac, viverra nisl. Aenean tristique, leo id vestibulum lacinia, ligula massa congue felis, vel facilisis quam erat sed turpis. Quisque malesuada, lacus eu maximus ornare, enim lacus porttitor nunc, nec maximus dui dolor sit amet magna. Donec tincidunt dolor vulputate, ultrices arcu vel, tristique arcu. Cras aliquet euismod feugiat. Fusce auctor ac leo sed scelerisque. Fusce volutpat ipsum ac feugiat suscipit. Vestibulum elit sem, luctus quis neque at, fermentum porta dolor. Donec venenatis tempus tempus. Quisque faucibus, nisl eu blandit laoreet, mauris ex dictum nisl, at bibendum ex risus sed nulla. Nunc eget porta metus. Duis ut neque sed nisl dapibus aliquam. Cras molestie sed libero vitae lacinia.</p>
+        <p>Quisque ante ante, varius nec tortor at, blandit fermentum sapien. Nam at placerat ante. Sed cursus erat eget dui finibus suscipit in <xref>Table 1</xref>. Duis at est facilisis, maximus diam ac, viverra nisl. Aenean tristique, leo id vestibulum lacinia, ligula massa congue felis, vel facilisis quam erat sed turpis. Quisque malesuada, lacus eu maximus ornare, enim lacus porttitor nunc, nec maximus dui dolor sit amet magna. Donec tincidunt dolor vulputate, ultrices arcu vel, tristique arcu. Cras aliquet euismod feugiat. Fusce auctor ac leo sed scelerisque. Fusce volutpat ipsum ac feugiat suscipit. Vestibulum elit sem, luctus quis neque at, fermentum porta dolor. Donec venenatis tempus tempus. Quisque faucibus, nisl eu blandit laoreet, mauris ex dictum nisl, at bibendum ex risus sed nulla. Nunc eget porta metus. Duis ut neque sed nisl dapibus aliquam. Cras molestie sed libero vitae lacinia.</p>
         <fig id="fig2">
           <graphic mimetype="image" mime-subtype="png" xlink:href="image2.png"/>
         </fig>
@@ -241,7 +241,7 @@
         </sec>
         <sec id="sec-3_2_2">
           <title>Symptoms intensity</title>
-          <p>Aenean et condimentum augue. Ut placerat velit sem, vel dapibus purus ullamcorper sollicitudin. Donec vel semper odio. Cras metus justo, feugiat eget pellentesque id, porta eu augue. Cras tempor maximus est, gravida volutpat elit rutrum quis. Pellentesque nec rutrum metus. Donec lacinia efficitur mauris placerat tempus. Phasellus in magna nec massa tincidunt condimentum in ut mi. Nam neque ex, tempus non odio eu, mollis lobortis nibh. Integer ex orci, consectetur in molestie eget, vulputate eget ligula. Praesent faucibus ut tortor sodales facilisis. Pellentesque a risus augue. In pretium commodo nisl, in hendrerit neque. Aliquam viverra tincidunt tempus (see <xref>Error: Reference source not found</xref>).</p>
+          <p>Aenean et condimentum augue. Ut placerat velit sem, vel dapibus purus ullamcorper sollicitudin. Donec vel semper odio. Cras metus justo, feugiat eget pellentesque id, porta eu augue. Cras tempor maximus est, gravida volutpat elit rutrum quis. Pellentesque nec rutrum metus. Donec lacinia efficitur mauris placerat tempus. Phasellus in magna nec massa tincidunt condimentum in ut mi. Nam neque ex, tempus non odio eu, mollis lobortis nibh. Integer ex orci, consectetur in molestie eget, vulputate eget ligula. Praesent faucibus ut tortor sodales facilisis. Pellentesque a risus augue. In pretium commodo nisl, in hendrerit neque. Aliquam viverra tincidunt tempus (see <xref>Table 2</xref>).</p>
           <table-wrap id="tbl2">
             <label>Table </label>
             <caption>
@@ -672,71 +672,6 @@
       </ref>
       <ref id="parser_15">
         <mixed-citation>Aikhenwald, A (20s22). the. Linguistic Typology, 16(3), 435-485.  --- ERRORS FOUND IN THESE SECTIONS: "Date. Title. "</mixed-citation>
-      </ref>
-      <ref id="parser_16">
-        <mixed-citation>https://doi.org/10.1186/s12889-018-5188-0</mixed-citation>
-        <element-citation publication-type="journal">
-          <year>2018</year>
-          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1186/s12889-018-5188-0">https://doi.org/10.1186/s12889-018-5188-0</ext-link>
-          <uri>https://doi.org/10.1186/s12889-018-5188-0</uri>
-          <pub-id pub-id-type="doi">10.1186/s12889-018-5188-0</pub-id>
-          <person-group person-group-type="author">
-            <name>
-              <surname>Megan K. Mueller</surname>
-            </name>
-            <name>
-              <surname>Nancy R. Gee</surname>
-            </name>
-            <name>
-              <surname>Regina M. Bures</surname>
-            </name>
-          </person-group>
-          <month>3</month>
-          <day>2</day>
-          <doi>https://doi.org/10.1186/s12889-018-5188-0</doi>
-          <source>BMC Public Health</source>
-          <issn-l>1471-2458</issn-l>
-          <article-title>Human-animal interaction as a social determinant of health: descriptive findings from the health and retirement study</article-title>
-          <volume>18</volume>
-          <issue>1</issue>
-        </element-citation>
-      </ref>
-      <ref id="parser_17">
-        <mixed-citation>https://doi.org/10.18270/rce.v11i10.736</mixed-citation>
-        <element-citation publication-type="journal">
-          <year>2015</year>
-          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.18270/rce.v11i10.736">https://doi.org/10.18270/rce.v11i10.736</ext-link>
-          <uri>https://doi.org/10.18270/rce.v11i10.736</uri>
-          <pub-id pub-id-type="doi">10.18270/rce.v11i10.736</pub-id>
-          <person-group person-group-type="author">
-            <name>
-              <surname>María Rodríguez M.</surname>
-            </name>
-            <name>
-              <surname>Rafael Muñoz C.</surname>
-            </name>
-          </person-group>
-          <month>10</month>
-          <day>31</day>
-          <doi>https://doi.org/10.18270/rce.v11i10.736</doi>
-          <source>Revista Colombiana de Enfermería</source>
-          <issn-l>1909-1621</issn-l>
-          <issn>2346-2000</issn>
-          <article-title>Influencia de tener perros sobre la salud percibida en personas mayores de Jaén (España)</article-title>
-          <volume>11</volume>
-          <issue>10</issue>
-          <fpage>29</fpage>
-          <lpage>29</lpage>
-        </element-citation>
-      </ref>
-      <ref id="parser_18">
-        <mixed-citation>https://doi.org/10.18270/rce.v11i10.7cj --- ERRORS FOUND IN THESE SECTIONS: "Author. Title. The specified DOI does not exist in OpenAlex database."</mixed-citation>
-      </ref>
-      <ref id="parser_19">
-        <mixed-citation>Universidad Nacional de La Plata. (2025). Titulo. https://doi.org/10.13252/rce.v11i10.7cj --- ERRORS FOUND IN THESE SECTIONS: "The specified DOI does not exist in OpenAlex database."</mixed-citation>
-      </ref>
-      <ref id="parser_20">
-        <mixed-citation>Universidad. (2025). Titulo. https://doi.org/10.13252/rce.v11i10.7cj --- ERRORS FOUND IN THESE SECTIONS: "The specified DOI does not exist in OpenAlex database."</mixed-citation>
       </ref>
     </ref-list>
   </back>

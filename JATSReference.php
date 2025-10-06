@@ -214,10 +214,10 @@ class JATSReference {
             return;
         }
         $jatsInstitution = $this->reference->getAuthor()['institution'];
-        $this->validateAuthor($displayName, "Institution name does not match with OpenAlex data. ");
+        $this->validateAuthor($displayName, $jatsInstitution, "Institution name does not match with OpenAlex data. ");
     }
 
-    private function validateAuthor($openAlexName, $authorName , $errorMessage = ''){
+    private function validateAuthor(String $openAlexName, String $authorName , String $errorMessage = ''){
         if (strtolower($authorName) !== strtolower($openAlexName)) {
             $this->addError($errorMessage);
         } else {
