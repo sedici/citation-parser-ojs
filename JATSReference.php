@@ -15,7 +15,7 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
-    private $enrichmentData = [];
+    private $enrichmentData = []; //Se setea un array vacío si no existe el DOI en OpenAlex y un array con datos para enriquecer al XML JATS si existe dicho DOI en OpenAlex
 
     private $errors = "";
 
@@ -38,20 +38,10 @@ class JATSReference {
 
     }
 
+    //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
     public function checkErrors(){
-        if (!empty($this->enrichmentData)) {
-            $this->errors = ""; // Clear errors if enrichment data is present
-        }
-        
-        if ($this->reference->getURLType() == 'DOI' && empty($this->enrichmentData)){
-            $this->addError('The specified DOI does not exist in OpenAlex database.');
-        }
-
-        //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
         if (trim($this->errors) !== "") {
-
             $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
-
             $this->mixed_citation->nodeValue .= " --- " . $textError;
             $this->ref->removeChild($this->element_citation);
         }
@@ -152,7 +142,7 @@ class JATSReference {
         // Retornar el DOI si el tipo de URL es correcto
         return $this->reference->getURL()['doi'];
     }
-    
+
     public function getInstitution(): ?string {
         return $this->reference->getAuthor()['institution'] ?? null;
     }
@@ -202,29 +192,6 @@ class JATSReference {
         }
     }
 
-    /** 
-     * Validate institution data from OpenAlex results
-     * @param Array $results Results (information) from OpenAlex institution search for a specific institution
-     * @return void
-    */
-    public function validateOpenAlexInstitution(Array $results) {
-        $displayName = $results['display_name'] ?? null; // Institution name from OpenAlex
-        if ($displayName === null) {
-            $this->addError("Institution data could not be validated with OpenAlex. ");
-            return;
-        }
-        $jatsInstitution = $this->reference->getAuthor()['institution'];
-        $this->validateAuthor($displayName, $jatsInstitution, "Institution name does not match with OpenAlex data. ");
-    }
-
-    private function validateAuthor(String $openAlexName, String $authorName , String $errorMessage = ''){
-        if (strtolower($authorName) !== strtolower($openAlexName)) {
-            $this->addError($errorMessage);
-        } else {
-            //Replace default institution using openalex institution 
-            $this->reference->setAuthor('institution', $openAlexName);
-        }
-    }
 }
 
 ?>

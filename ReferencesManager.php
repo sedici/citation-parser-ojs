@@ -5,11 +5,11 @@
 * Licensed under GPLv3: see LICENSE file for details.
 */
 
-
 include_once 'Printer/OpenAlexApi/OpenAlexApi.php';
 include_once 'Printer/OpenAlexApi/OpenAlexApiManager.php';
 require_once 'Reference.php';
 require_once 'JATSReference.php';
+include_once 'validators/AuthorValidator.php';
 
 class ReferencesManager {
     private $refs;
@@ -20,6 +20,8 @@ class ReferencesManager {
     public \DOMElement $back;
 
     public $reflist;
+
+    private AuthorValidator $authorValidator;
 
     private OpenAlexApiManager $oam;
 
@@ -33,14 +35,16 @@ class ReferencesManager {
 
         $this->oam = new OpenAlexApiManager();
 
+        $this->authorValidator = new AuthorValidator();
+
         $this->process();
     }
 
     public function process() {
         // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
-            $reference = new Reference($ref);
-            $jats = new JATSReference($this->dom, $this->reflist, $reference, $index);
+            $parsedReference = new Reference($ref);
+            $jats = new JATSReference($this->dom, $this->reflist, $parsedReference, $index);
             $this->jatsList[] = $jats;
 
             // Si la referencia tiene DOI, agregar al manager de OpenAlex
@@ -82,12 +86,21 @@ class ReferencesManager {
  
     private function enrichmentJatsRefElement($oar){
         $results = $oar['results'] ?? [];
+        
         foreach ($this->jatsWithDoi as $doi => $jats) {
+            $found = false;
             foreach ($results as $index => $result) {
                 if (strpos($result['doi'],  $doi) !== false) {
-                   $jats->setEnrichmentData($result); //Se setea un array vacío si no existe el DOI en OpenAlex y un array con datos si existe
-                   break;
-                } 
+                    $found = true;
+                    if ($this->authorValidator->validateFullNameAsAuthor($result, $jats)) {
+                        $jats->setEnrichmentData($result);
+                    }
+                    break;
+                }
+            }
+
+            if (!$found) {
+                $jats->addError('The DOI ' . $doi . ' does not exist in OpenAlex database.');
             }
         }
     }
@@ -97,12 +110,8 @@ class ReferencesManager {
             return null;
         }
         $request = $this->oam->searchInstitution($institution);
-        $results = $request['results'] ?? [];
-        if (count($results) === 1) {
-            $result = $results[0];
-            $jats->validateOpenAlexInstitution($result);
-        }
-        
+        $openAlexResults = $request['results'] ?? [];
+        $this->authorValidator->validateInstitutionAsAuthor($openAlexResults, $jats, $institution);
     }
 
 }
