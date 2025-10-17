@@ -11,6 +11,7 @@ class JATSReference {
     public $reference;
     public const JATS_REF_ID_PREFIX = 'parser_';
     private $dom;
+    private $reflist;
     private $ref;
     private $element_citation;
     private $mixed_citation;
@@ -148,6 +149,8 @@ class JATSReference {
     }
 
     public function setEnrichmentData(Array $enrichmentData) {
+        // Inject original reference authors so printers can apply the same strategy when building JATS
+        $enrichmentData['__reference_authors'] = $this->reference->getAuthor()['authors'] ?? [];
         $this->enrichmentData = $enrichmentData;
     }
 

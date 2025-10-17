@@ -1,0 +1,133 @@
+[
+  {
+    "label": "T.T vs Tomas Nahuel (no reuse)",
+    "referenceAuthor": { "apellido": "Perez", "nombres": "T. T." },
+    "displayName": "Tomas Nahuel Perez",
+    "expectMatch": false
+  },
+  {
+    "label": "T.N vs Tomas Nahuel",
+    "referenceAuthor": { "apellido": "Perez", "nombres": "T N." },
+    "displayName": "Tomas Nahuel Perez",
+    "expectMatch": true,
+    "expectSurname": "Perez",
+    "expectGiven": "Tomas Nahuel"
+  },
+  {
+    "label": "J.P vs Juan Pablo",
+    "referenceAuthor": { "apellido": "García", "nombres": "J P" },
+    "displayName": "Juan Pablo García",
+    "expectMatch": true,
+    "expectSurname": "García",
+    "expectGiven": "Juan Pablo"
+  },
+  {
+    "label": "J.P vs Juan-Pablo (single token hyphen, should fail)",
+    "referenceAuthor": { "apellido": "García", "nombres": "J. P." },
+    "displayName": "Juan-Pablo García",
+    "expectMatch": false
+  },
+  {
+    "label": "A. vs Ana María",
+    "referenceAuthor": { "apellido": "Luna", "nombres": "A." },
+    "displayName": "Ana María Luna",
+    "expectMatch": true,
+    "expectSurname": "Luna",
+    "expectGiven": "Ana María"
+  },
+  {
+    "label": "T.N.T vs Tomas Alfajor Termas (missing N)",
+    "referenceAuthor": { "apellido": "Diaz", "nombres": "T. N. T." },
+    "displayName": "Tomas Alfajor Termas Diaz",
+    "expectMatch": false
+  },
+  {
+    "label": "Match with diacritics (García vs Garcia)",
+    "referenceAuthor": { "apellido": "García", "nombres": "J." },
+    "displayName": "Jose Garcia",
+    "expectMatch": false
+  }
+  ,
+  {
+    "label": "Out of order initials (N.T vs Tomas Nahuel)",
+    "referenceAuthor": { "apellido": "Perez", "nombres": "N. T." },
+    "displayName": "Tomas Nahuel Perez",
+    "expectMatch": false
+  },
+  {
+    "label": "Apellido compuesto (De la Fuente)",
+    "referenceAuthor": { "apellido": "De la Fuente", "nombres": "A." },
+    "displayName": "Ana De la Fuente",
+    "expectMatch": true,
+    "expectSurname": "De la Fuente",
+    "expectGiven": "Ana"
+  },
+  {
+    "label": "Partícula en apellido (van der Waals)",
+    "referenceAuthor": { "apellido": "van der Waals", "nombres": "J. D." },
+    "displayName": "Johannes Diderik van der Waals",
+    "expectMatch": true,
+    "expectSurname": "van der Waals",
+    "expectGiven": "Johannes Diderik"
+  },
+  {
+    "label": "Una inicial, múltiples nombres",
+    "referenceAuthor": { "apellido": "Lopez", "nombres": "J." },
+    "displayName": "Juan Pablo Carlos Lopez",
+    "expectMatch": true,
+    "expectSurname": "Lopez",
+    "expectGiven": "Juan Pablo Carlos"
+  },
+  {
+    "label": "Saltar token intermedio (J. C. vs Juan Pablo Carlos)",
+    "referenceAuthor": { "apellido": "Lopez", "nombres": "J. C." },
+    "displayName": "Juan Pablo Carlos Lopez",
+    "expectMatch": true,
+    "expectSurname": "Lopez",
+    "expectGiven": "Juan Carlos"
+  },
+  {
+    "label": "Más iniciales que tokens (J. P. C. D.)",
+    "referenceAuthor": { "apellido": "Lopez", "nombres": "J. P. C. D." },
+    "displayName": "Juan Pablo Carlos Lopez",
+    "expectMatch": false
+  },
+  {
+    "label": "Solo apellido en referencia",
+    "referenceAuthor": { "apellido": "Perez" },
+    "displayName": "Tomas Nahuel Perez",
+    "expectMatch": true,
+    "expectSurname": "Perez",
+    "expectGiven": "Tomas Nahuel"
+  },
+  {
+    "label": "Referencia sin apellido (debe fallar)",
+    "referenceAuthor": { "nombres": "J. P." },
+    "displayName": "Juan Pablo Garcia",
+    "expectMatch": false
+  },
+  {
+    "label": "Diacríticos coinciden (García vs García)",
+    "referenceAuthor": { "apellido": "García", "nombres": "J." },
+    "displayName": "Jose García",
+    "expectMatch": true,
+    "expectSurname": "García",
+    "expectGiven": "Jose"
+  },
+  {
+    "label": "Nombres con apóstrofe (O'Connor)",
+    "referenceAuthor": { "apellido": "O'Connor", "nombres": "L." },
+    "displayName": "Liam O'Connor",
+    "expectMatch": true,
+    "expectSurname": "O'Connor",
+    "expectGiven": "Liam"
+  },
+  {
+    "label": "Apellido con guion (Smith-Jones)",
+    "referenceAuthor": { "apellido": "Smith-Jones", "nombres": "A." },
+    "displayName": "Alice Bob Jorgensen Smith-Jones",
+    "expectMatch": true,
+    "expectSurname": "Smith-Jones",
+    "expectGiven": "Alice Bob Jorgensen"
+  }
+]

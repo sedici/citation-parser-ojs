@@ -4,6 +4,7 @@
 * Licensed under GPLv3: see LICENSE file for details.
 */
 include_once 'TitlePrinter.php';
+include_once __DIR__ . '/../validators/AuthorNameStrategy.php';
 class JournalPrinter extends TitlePrinter{
 
     static int $i = 1;
@@ -91,12 +92,32 @@ class JournalPrinter extends TitlePrinter{
         if (!empty($data['authorships'])) {
             $personGroup = $this->dom->createElement('person-group');
             $personGroup->setAttribute('person-group-type', 'author');
+
+            // original reference authors to guide splitting (same strategy as validation)
+            $referenceAuthors = $data['__reference_authors'] ?? [];
+
             foreach ($data['authorships'] as $authorData) {
                 $displayName = $authorData['author']['display_name'] ?? null;
                 if (!$displayName) { continue; }
+
+                $split = null;
+                // Try to match against each reference author to get deterministic surname + given-names
+                foreach ($referenceAuthors as $refAuthor) {
+                    $split = AuthorFullNameProcessor::matchReferenceToDisplayName($refAuthor, $displayName);
+                    if ($split !== null) { break; }
+                }
+
                 $name = $this->dom->createElement('name');
-                $surname = $this->dom->createElement('surname', $displayName);
-                $name->appendChild($surname);
+                if ($split !== null) {
+                    $name->appendChild($this->dom->createElement('surname', $split['surname']));
+                    if (!empty($split['given-names'])) {
+                        $name->appendChild($this->dom->createElement('given-names', $split['given-names']));
+                    }
+                } else {
+                    // Fallback: keep prior behavior to avoid data loss
+                    $name->appendChild($this->dom->createElement('surname', $displayName));
+                }
+
                 $personGroup->appendChild($name);
             }
             $elements[] = $personGroup;

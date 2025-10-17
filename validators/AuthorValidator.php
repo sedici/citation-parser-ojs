@@ -1,5 +1,7 @@
 <?php
 
+include_once __DIR__ . '/AuthorFullNameProcessor.php';
+
 class AuthorValidator {
 
     /** 
@@ -34,7 +36,6 @@ class AuthorValidator {
      * @return bool
      */
     public function validateFullNameAsAuthor(array $openAlexResults, JATSReference $jatsReference): bool {
-        
         $authorships = $openAlexResults['authorships'] ?? null;
         $referenceAuthors = $jatsReference->reference->getAuthor()['authors'] ?? null;
 
@@ -45,16 +46,17 @@ class AuthorValidator {
 
         $allMatched = true;
 
-        // Para cada autor de la referencia, intentamos encontrarlo en OpenAlex
+        // For each reference author, we try to find them in the authorships returned by OpenAlex
         foreach ($referenceAuthors as $referenceAuthor) {
             $matchFound = false;
             foreach ($authorships as $authorship) {
                 $openAlexFullName = $authorship['author']['display_name'] ?? null;
                 if ($openAlexFullName === null) continue;
 
-                if ($this->findMatchByFullName($jatsReference, $referenceAuthor, $openAlexFullName)) {
+                $split = AuthorFullNameProcessor::matchReferenceToDisplayName($referenceAuthor, $openAlexFullName);
+                if ($split !== null) {
                     $matchFound = true;
-                    break; // no hace falta seguir buscando este autor
+                    break; // don't need to keep looking for this author
                 }
             }
 
@@ -74,47 +76,13 @@ class AuthorValidator {
      * Search for approximate matches between the reference author and the OpenAlex display_name
      */
     private function findMatchByFullName(JATSReference $jatsReference, array $referenceAuthor, string $anOpenAlexFullName): bool {
-        $authorSurname = $referenceAuthor['apellido'] ?? '';
-        $authorGivenNames = $referenceAuthor['nombres'] ?? '';
-
-        if (!$authorSurname) {
+    $split = AuthorFullNameProcessor::matchReferenceToDisplayName($referenceAuthor, $anOpenAlexFullName);
+        if ($split === null) {
+            $authorSurname = $referenceAuthor['apellido'] ?? '';
+            $authorGivenNames = $referenceAuthor['nombres'] ?? '';
+            $jatsReference->addError("Author '{$authorSurname}, {$authorGivenNames}' does not match OpenAlex name '{$anOpenAlexFullName}'.");
             return false;
         }
-
-        // Verificar apellido
-        error_log("Checking surname: $authorSurname against OpenAlex name: $anOpenAlexFullName");
-        if (stripos($anOpenAlexFullName, $authorSurname) === false) {
-            error_log("Surname check failed");
-            return false;
-        }
-        error_log("Surname check passed");
-
-        // Eliminar apellido del nombre completo de OpenAlex
-        $remainingName = trim(str_ireplace($authorSurname, '', $anOpenAlexFullName));
-
-        // Verificar iniciales / nombres
-        if ($authorGivenNames) {
-            $givenParts = preg_split('/\s+/', $authorGivenNames); // separar nombres o iniciales
-            foreach ($givenParts as $part) {
-                $initial = rtrim($part, '.'); // quitar punto de inicial
-                $found = false;
-
-                // Buscar alguna palabra en remainingName que empiece con la inicial
-                foreach (preg_split('/\s+/', $remainingName) as $namePart) {
-                    if (stripos($namePart, $initial) === 0) {
-                        $found = true;
-                        break;
-                    }
-                }
-
-                if (!$found) {
-                    // Alguna inicial no coincide
-                    $jatsReference->addError("Author '{$authorSurname}, {$authorGivenNames}' does not match OpenAlex name '{$anOpenAlexFullName}'.");
-                    return false;
-                }
-            }
-        }
-
         return true;
     }
 }
