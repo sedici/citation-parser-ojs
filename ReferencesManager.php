@@ -25,7 +25,7 @@ class ReferencesManager {
 
     private OpenAlexApiManager $oam;
 
-    public function __construct(\DOMDocument $dom = null,\DOMElement $back = null,array $refs = null) {
+    public function __construct(?\DOMDocument $dom = null, ?\DOMElement $back = null, ?array $refs = null) {
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->back = $back;
         $this->refs = $refs;
@@ -83,7 +83,7 @@ class ReferencesManager {
 
          return null;
      }
- 
+
     private function enrichmentJatsRefElement($oar){
         $results = $oar['results'] ?? [];
         
@@ -93,6 +93,9 @@ class ReferencesManager {
                 if (strpos($result['doi'],  $doi) !== false) {
                     $found = true;
                     if ($this->authorValidator->validateFullNameAsAuthor($result, $jats)) {
+                        // Preprocesar autores una sola vez para que los printers solo impriman
+                        $formattedAuthors = $this->authorValidator->buildFormattedAuthors($result, $jats);
+                        $result['__authors_formatted'] = $formattedAuthors;
                         $jats->setEnrichmentData($result);
                     }
                     break;
@@ -105,7 +108,7 @@ class ReferencesManager {
         }
     }
  
-    private function processInstitution(String $institution, JATSReference $jats = null) {
+    private function processInstitution(String $institution, ?JATSReference $jats = null) {
         if (!$jats) {
             return null;
         }

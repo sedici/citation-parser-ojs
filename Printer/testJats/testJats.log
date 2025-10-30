@@ -425,6 +425,9 @@
         </element-citation>
       </ref>
       <ref id="parser_1">
+        <mixed-citation>Aikhenwald, A. (2012). The essence of mirativity. Linguistic Typology, 16(3), 435-485. https://doi.org/10.1515/lity-2012-0017 --- ERRORS FOUND IN THESE SECTIONS: "Author 'Aikhenwald, A. ' not found in OpenAlex data for DOI https://doi.org/10.1515/lity-2012-0017."</mixed-citation>
+      </ref>
+      <ref id="parser_2">
         <element-citation publication-type="thesis">
           <person-group person-group-type="author">
             <name>
@@ -441,7 +444,7 @@
         </element-citation>
         <mixed-citation>Angelina Oliveira, A. (2024). Producciones escritas de angloparlantes en el marco de exámenes CELU [Tesis de doctorado, Universidad Nacional de Misiones]. https://hdl.handle.net/20.500.12219/5564</mixed-citation>
       </ref>
-      <ref id="parser_2">
+      <ref id="parser_3">
         <element-citation publication-type="confproc">
           <person-group person-group-type="author">
             <name>
@@ -456,7 +459,7 @@
         </element-citation>
         <mixed-citation>González Vázquez, M. (1998). La polisemia de 'poder' en e/le: acerca de la pertinencia comunicativa de la posibilidad lateral y bilateral [Ponencia]. IX Congreso Internacional de ASELE. Santiago de Compostela, España.</mixed-citation>
       </ref>
-      <ref id="parser_3">
+      <ref id="parser_4">
         <element-citation publication-type="chapter">
           <person-group person-group-type="author">
             <name>
@@ -477,7 +480,7 @@
         </element-citation>
         <mixed-citation>Grice, P. (1991). Lógica de la conversación. En L. Valdées Villanueva (Ed.), La búsqueda del Significado (pp. 516-543). Tecnos. (Trabajo original publicado en 1975).</mixed-citation>
       </ref>
-      <ref id="parser_4">
+      <ref id="parser_5">
         <element-citation publication-type="chapter">
           <person-group person-group-type="author">
             <name>
@@ -498,7 +501,7 @@
         </element-citation>
         <mixed-citation>Hoye, L. (2008). Evidentiality in discourse: A pragmatic and empirical account. En J. Romero (Ed.), Pragmatics and corpus linguistics (pp. 151-174). Mouton de Gruyter.</mixed-citation>
       </ref>
-      <ref id="parser_5">
+      <ref id="parser_6">
         <element-citation publication-type="chapter">
           <person-group person-group-type="author">
             <name>
@@ -523,7 +526,7 @@
         </element-citation>
         <mixed-citation>Sperber, D. y Wilson, D. (1991). Sobre la definición de Relevancia. En L. Valdés Villanueva (Ed.), La búsqueda del significado (pp. 583-598). Tecnos. (Trabajo original publicado en 1986).</mixed-citation>
       </ref>
-      <ref id="parser_6">
+      <ref id="parser_7">
         <element-citation publication-type="journal">
           <person-group person-group-type="author">
             <name>
@@ -541,7 +544,7 @@
         </element-citation>
         <mixed-citation>Vatrican, A. (2015). La modalidad en la gramática: la capacidad en las construcciones saber y poder infinitivo. Revista Española de Lingüística, 45(2), 115–141. </mixed-citation>
       </ref>
-      <ref id="parser_7">
+      <ref id="parser_8">
         <element-citation publication-type="chapter">
           <person-group person-group-type="author">
             <name>
@@ -570,7 +573,7 @@
         </element-citation>
         <mixed-citation>Fedigan, L. M. y Strum, S. (1999). A brief history of primate studies: national traditions, disciplinary origins, and stages in North American field research. En P. Dolhinow y A. Fuentes (Eds.), The non-human primates. (pp. 250-269). Mountain View USA Mayfield Publishing Company.</mixed-citation>
       </ref>
-      <ref id="parser_8">
+      <ref id="parser_9">
         <element-citation publication-type="chapter">
           <person-group person-group-type="author">
             <name>
@@ -603,65 +606,682 @@
         </element-citation>
         <mixed-citation>Matsuzawa, T. y Yamakoshi, G. (1996). Comparison of chimpanzee material culture between Bossou and Nimba, West Africa. En A. Russon, K. Bard y S. Parkers (Eds.), Reaching into thought (pp. 211-232). United Kingdom Cambridge University Press.</mixed-citation>
       </ref>
-      <ref id="parser_9">
-        <element-citation publication-type="chapter">
+      <ref id="parser_10">
+        <mixed-citation>https://doi.org/10.1007/s11270-010-0494-x</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2010</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s11270-010-0494-x">https://doi.org/10.1007/s11270-010-0494-x</ext-link>
+          <uri>https://doi.org/10.1007/s11270-010-0494-x</uri>
+          <pub-id pub-id-type="doi">10.1007/s11270-010-0494-x</pub-id>
           <person-group person-group-type="author">
             <name>
-              <surname>Call</surname>
-              <given-names>J. </given-names>
+              <surname>Rui Zuo</surname>
             </name>
             <name>
-              <surname>Carpenter</surname>
-              <given-names>M. </given-names>
+              <surname>Yanguo Teng</surname>
+            </name>
+            <name>
+              <surname>Jinsheng Wang</surname>
+            </name>
+            <name>
+              <surname>Qinhong Hu</surname>
+            </name>
+            <name>
+              <surname>Minli Guo</surname>
             </name>
           </person-group>
-          <year>2002</year>
-          <chapter-title>Three sources of information in social learning.</chapter-title>
-          <source>Imitation in animals and artifacts</source>
-          <publisher-name>Cambridge, USA: MIT Press.</publisher-name>
-          <person-group person-group-type="editor">
-            <name>
-              <surname>Dautenhahn</surname>
-              <given-names>K. </given-names>
-            </name>
-            <name>
-              <surname>Nehaniv</surname>
-              <given-names>C. </given-names>
-            </name>
-          </person-group>
+          <month>6</month>
+          <day>14</day>
+          <doi>https://doi.org/10.1007/s11270-010-0494-x</doi>
+          <source>Water Air &amp; Soil Pollution</source>
+          <issn-l>0049-6979</issn-l>
+          <issn>1573-2932</issn>
+          <article-title>Experimental Validation of Retardation of Tritium Migration in the Chinese Loess Media</article-title>
+          <volume>215</volume>
+          <issue>1-4</issue>
+          <fpage>497</fpage>
+          <lpage>506</lpage>
         </element-citation>
-        <mixed-citation>Call, J. y Carpenter, M. (2002). Three sources of information in social learning. En K. Dautenhahn y C. Nehaniv (Eds.), Imitation in animals and artifacts (pp. 211-228). Cambridge, USA: MIT Press.</mixed-citation>
-      </ref>
-      <ref id="parser_10">
-        <mixed-citation>Hola. Esto es una referencia mal escirita (2023). --- ERRORS FOUND IN THESE SECTIONS: "No institution found in OpenAlex for the name "Hola. Esto es una referencia mal escirita". Title. "</mixed-citation>
       </ref>
       <ref id="parser_11">
-        <mixed-citation>-sawda-w2 --- ERRORS FOUND IN THESE SECTIONS: "Author. Date. Title. "</mixed-citation>
+        <mixed-citation>https://doi.org/10.1002/2013WR014012 --- ERRORS FOUND IN THESE SECTIONS: "The DOI 10.1002/2013WR014012 does not exist in OpenAlex database.Author. Title. "</mixed-citation>
       </ref>
       <ref id="parser_12">
-        <mixed-citation>21.sc12. --- ERRORS FOUND IN THESE SECTIONS: "Author. Date. Title. "</mixed-citation>
+        <mixed-citation>https://doi.org/10.1016/j.apgeochem.2014.04.016</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2014</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.apgeochem.2014.04.016">https://doi.org/10.1016/j.apgeochem.2014.04.016</ext-link>
+          <uri>https://doi.org/10.1016/j.apgeochem.2014.04.016</uri>
+          <pub-id pub-id-type="doi">10.1016/j.apgeochem.2014.04.016</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Axel Suckow</surname>
+            </name>
+          </person-group>
+          <month>5</month>
+          <day>24</day>
+          <doi>https://doi.org/10.1016/j.apgeochem.2014.04.016</doi>
+          <source>Applied Geochemistry</source>
+          <issn-l>0883-2927</issn-l>
+          <issn>1872-9134</issn>
+          <article-title>The age of groundwater – Definitions, models and why we do not need this term</article-title>
+          <volume>50</volume>
+          <fpage>222</fpage>
+          <lpage>230</lpage>
+        </element-citation>
       </ref>
       <ref id="parser_13">
-        <mixed-citation>Vatrican, A. (2015). la modalidad en la gramática: la capacidad en las construcciones saber y poder infinitivo. Revista Española de Lingüística, 45(2), 115–141. --- ERRORS FOUND IN THESE SECTIONS: "Title. "</mixed-citation>
+        <mixed-citation>Fontes, J. (1983). Dating of groundwater. En International Atomic Energy Agency (Ed.), Guidebook on Nuclear Techniques in Hydrology (pp. 285–317). International Atomic Energy Agency. --- ERRORS FOUND IN THESE SECTIONS: "Title. "</mixed-citation>
       </ref>
       <ref id="parser_14">
-        <mixed-citation>Aikhenwald, A (20s22). the. Linguistic Typology, 16(3), 435-485.  --- ERRORS FOUND IN THESE SECTIONS: "No institution found in OpenAlex for the name "Aikhenwald, A". Date. Title. "</mixed-citation>
+        <mixed-citation>https://doi.org/10.1038/ngeo881</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2010</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/ngeo881">https://doi.org/10.1038/ngeo881</ext-link>
+          <uri>https://doi.org/10.1038/ngeo881</uri>
+          <pub-id pub-id-type="doi">10.1038/ngeo881</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tom Gleeson</surname>
+            </name>
+            <name>
+              <surname>Jonathan VanderSteen</surname>
+            </name>
+            <name>
+              <surname>Marios Sophocleous</surname>
+            </name>
+            <name>
+              <surname>Makoto Taniguchi</surname>
+            </name>
+            <name>
+              <surname>William M. Alley</surname>
+            </name>
+            <name>
+              <surname>D. M. Allen</surname>
+            </name>
+            <name>
+              <surname>Yangxiao Zhou</surname>
+            </name>
+          </person-group>
+          <month>5</month>
+          <day>28</day>
+          <doi>https://doi.org/10.1038/ngeo881</doi>
+          <source>Nature Geoscience</source>
+          <issn-l>1752-0894</issn-l>
+          <issn>1752-0908</issn>
+          <article-title>Groundwater sustainability strategies</article-title>
+          <volume>3</volume>
+          <issue>6</issue>
+          <fpage>378</fpage>
+          <lpage>379</lpage>
+        </element-citation>
       </ref>
       <ref id="parser_15">
+        <mixed-citation>https://doi.org/10.1038/ngeo2590</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2015</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/ngeo2590">https://doi.org/10.1038/ngeo2590</ext-link>
+          <uri>https://doi.org/10.1038/ngeo2590</uri>
+          <pub-id pub-id-type="doi">10.1038/ngeo2590</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tom Gleeson</surname>
+            </name>
+            <name>
+              <surname>Kevin M. Befus</surname>
+            </name>
+            <name>
+              <surname>Scott Jasechko</surname>
+            </name>
+            <name>
+              <surname>Elco Luijendijk</surname>
+            </name>
+            <name>
+              <surname>M. Bayani Cardenas</surname>
+            </name>
+          </person-group>
+          <month>11</month>
+          <day>9</day>
+          <doi>https://doi.org/10.1038/ngeo2590</doi>
+          <source>Nature Geoscience</source>
+          <issn-l>1752-0894</issn-l>
+          <issn>1752-0908</issn>
+          <article-title>The global volume and distribution of modern groundwater</article-title>
+          <volume>9</volume>
+          <issue>2</issue>
+          <fpage>161</fpage>
+          <lpage>167</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_16">
+        <mixed-citation>https://doi.org/10.5194/hess-28-3519-2024</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2024</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.5194/hess-28-3519-2024">https://doi.org/10.5194/hess-28-3519-2024</ext-link>
+          <uri>https://doi.org/10.5194/hess-28-3519-2024</uri>
+          <pub-id pub-id-type="doi">10.5194/hess-28-3519-2024</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Laurent Gourdol</surname>
+            </name>
+            <name>
+              <surname>M. K. Stewart</surname>
+            </name>
+            <name>
+              <surname>Uwe Morgenstern</surname>
+            </name>
+            <name>
+              <surname>Laurent Pfister</surname>
+            </name>
+          </person-group>
+          <month>8</month>
+          <day>6</day>
+          <doi>https://doi.org/10.5194/hess-28-3519-2024</doi>
+          <source>Hydrology and earth system sciences</source>
+          <issn-l>1027-5606</issn-l>
+          <issn>1607-7938</issn>
+          <article-title>Short high-accuracy tritium data time series for assessing groundwater mean transit times in the vadose and saturated zones of the Luxembourg Sandstone aquifer</article-title>
+          <volume>28</volume>
+          <issue>15</issue>
+          <fpage>3519</fpage>
+          <lpage>3547</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_17">
+        <mixed-citation>https://doi.org/10.1080/10256016.2020.1857378</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2020</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/10256016.2020.1857378">https://doi.org/10.1080/10256016.2020.1857378</ext-link>
+          <uri>https://doi.org/10.1080/10256016.2020.1857378</uri>
+          <pub-id pub-id-type="doi">10.1080/10256016.2020.1857378</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liang‐Feng Han</surname>
+            </name>
+            <name>
+              <surname>Leonard I. Wassenaar</surname>
+            </name>
+          </person-group>
+          <month>12</month>
+          <day>22</day>
+          <doi>https://doi.org/10.1080/10256016.2020.1857378</doi>
+          <source>Isotopes in Environmental and Health Studies</source>
+          <issn-l>1025-6016</issn-l>
+          <issn>1477-2639</issn>
+          <article-title>Principles and uncertainties of &lt;sup&gt;14&lt;/sup&gt;C age estimations for groundwater transport and resource evaluation</article-title>
+          <volume>57</volume>
+          <issue>2</issue>
+          <fpage>111</fpage>
+          <lpage>141</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_18">
+        <mixed-citation>International Atomic Energy Agency. (1992). Statistical Treatment of Data on Environmental Isotopes in Precipitation (Technical Series Report No. 331). IAEA. --- ERRORS FOUND IN THESE SECTIONS: "Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_19">
         <element-citation publication-type="book">
           <person-group person-group-type="author">
             <collab>
-              <named-content content-type="name">Universidad Nacional de La Plata</named-content>
+              <named-content content-type="name">International Atomic Energy Agency.</named-content>
             </collab>
           </person-group>
-          <year>2025</year>
-          <source>Titulo de una revista.</source>
-          <publisher-name>No tiene subtitulardopolis.</publisher-name>
+          <year>2006</year>
+          <source>Use of Chlorofluorocarbons in Hydrology: A Guidebook.</source>
+          <publisher-name>IAEA.</publisher-name>
         </element-citation>
-        <mixed-citation>Universidad nacional de la plata (2025). Titulo de una revista. No tiene subtitulardopolis.</mixed-citation>
+        <mixed-citation>International Atomic Energy Agency. (2006). Use of Chlorofluorocarbons in Hydrology: A Guidebook. IAEA.</mixed-citation>
       </ref>
-      <ref id="parser_16">
-        <mixed-citation>Aikhenvsal, A. (2012). The essence of mirativity. Linguistic Typology, 16(3), 435-485. https://doi.org/10.1515/lity-2012-0017 --- ERRORS FOUND IN THESE SECTIONS: "Author 'Aikhenvsal, A. ' not found in OpenAlex data for DOI https://doi.org/10.1515/lity-2012-0017."</mixed-citation>
+      <ref id="parser_20">
+        <mixed-citation>https://doi.org/10.1038/ngeo2943</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2017</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/ngeo2943">https://doi.org/10.1038/ngeo2943</ext-link>
+          <uri>https://doi.org/10.1038/ngeo2943</uri>
+          <pub-id pub-id-type="doi">10.1038/ngeo2943</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Scott Jasechko</surname>
+            </name>
+            <name>
+              <surname>Debra Perrone</surname>
+            </name>
+            <name>
+              <surname>Kevin M. Befus</surname>
+            </name>
+            <name>
+              <surname>M. Bayani Cardenas</surname>
+            </name>
+            <name>
+              <surname>Grant Ferguson</surname>
+            </name>
+            <name>
+              <surname>Tom Gleeson</surname>
+            </name>
+            <name>
+              <surname>Elco Luijendijk</surname>
+            </name>
+            <name>
+              <surname>Jeffrey J. McDonnell</surname>
+            </name>
+            <name>
+              <surname>Richard G. Taylor</surname>
+            </name>
+            <name>
+              <surname>Yoshihide Wada</surname>
+            </name>
+            <name>
+              <surname>James W. Kirchner</surname>
+            </name>
+          </person-group>
+          <month>4</month>
+          <day>25</day>
+          <doi>https://doi.org/10.1038/ngeo2943</doi>
+          <source>Nature Geoscience</source>
+          <issn-l>1752-0894</issn-l>
+          <issn>1752-0908</issn>
+          <article-title>Global aquifers dominated by fossil groundwaters but wells vulnerable to modern contamination</article-title>
+          <volume>10</volume>
+          <issue>6</issue>
+          <fpage>425</fpage>
+          <lpage>429</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_21">
+        <mixed-citation>https://doi.org/10.3133/tm4F3 --- ERRORS FOUND IN THESE SECTIONS: "The DOI 10.3133/tm4F3 does not exist in OpenAlex database.Author. Title. "</mixed-citation>
+      </ref>
+      <ref id="parser_22">
+        <mixed-citation>https://doi.org/10.1038/s43247-022-00473-y</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2022</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s43247-022-00473-y">https://doi.org/10.1038/s43247-022-00473-y</ext-link>
+          <uri>https://doi.org/10.1038/s43247-022-00473-y</uri>
+          <pub-id pub-id-type="doi">10.1038/s43247-022-00473-y</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bryant C. Jurgens</surname>
+            </name>
+            <name>
+              <surname>Kirsten E. Faulkner</surname>
+            </name>
+            <name>
+              <surname>Peter B. McMahon</surname>
+            </name>
+            <name>
+              <surname>Andrew G. Hunt</surname>
+            </name>
+            <name>
+              <surname>Gerolamo C. Casile</surname>
+            </name>
+            <name>
+              <surname>M. B. Young</surname>
+            </name>
+            <name>
+              <surname>Kenneth Belitz</surname>
+            </name>
+          </person-group>
+          <month>7</month>
+          <day>1</day>
+          <doi>https://doi.org/10.1038/s43247-022-00473-y</doi>
+          <source>Communications Earth &amp; Environment</source>
+          <issn-l>2662-4435</issn-l>
+          <article-title>Over a third of groundwater in USA public-supply aquifers is Anthropocene-age and susceptible to surface contamination</article-title>
+          <volume>3</volume>
+          <issue>1</issue>
+        </element-citation>
+      </ref>
+      <ref id="parser_23">
+        <element-citation publication-type="">
+          <year>1002</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/0471929514">https://doi.org/10.1002/0471929514</ext-link>
+          <uri>https://doi.org/10.1002/0471929514</uri>
+          <pub-id pub-id-type="doi">10.1002/0471929514</pub-id>
+        </element-citation>
+        <mixed-citation>https://doi.org/10.1002/0471929514</mixed-citation>
+      </ref>
+      <ref id="parser_24">
+        <mixed-citation>https://doi.org/10.1515/9781501509056-016 --- ERRORS FOUND IN THESE SECTIONS: "Author. Title. No printer class found for source type: ebook platform. "</mixed-citation>
+      </ref>
+      <ref id="parser_25">
+        <mixed-citation>https://doi.org/10.1016/j.proeps.2015.07.070</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2015</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.proeps.2015.07.070">https://doi.org/10.1016/j.proeps.2015.07.070</ext-link>
+          <uri>https://doi.org/10.1016/j.proeps.2015.07.070</uri>
+          <pub-id pub-id-type="doi">10.1016/j.proeps.2015.07.070</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Martin Králík</surname>
+            </name>
+          </person-group>
+          <month>1</month>
+          <day>1</day>
+          <doi>https://doi.org/10.1016/j.proeps.2015.07.070</doi>
+          <source>Procedia Earth and Planetary Science</source>
+          <issn-l>1878-5220</issn-l>
+          <article-title>How to Estimate Mean Residence Times of Groundwater</article-title>
+          <volume>13</volume>
+          <fpage>301</fpage>
+          <lpage>306</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_26">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Leibundgut</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Maloszewski</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>y Külls</surname>
+              <given-names>C. </given-names>
+            </name>
+          </person-group>
+          <year>2009</year>
+          <source>Tracers in Hydrology.</source>
+          <publisher-name>Wiley-Blackwell.</publisher-name>
+        </element-citation>
+        <mixed-citation>Leibundgut, C., Maloszewski, P., y Külls, C. (2009). Tracers in Hydrology. Wiley-Blackwell.</mixed-citation>
+      </ref>
+      <ref id="parser_27">
+        <mixed-citation>https://doi.org/10.1016/j.earscirev.2013.09.002</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2013</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.earscirev.2013.09.002">https://doi.org/10.1016/j.earscirev.2013.09.002</ext-link>
+          <uri>https://doi.org/10.1016/j.earscirev.2013.09.002</uri>
+          <pub-id pub-id-type="doi">10.1016/j.earscirev.2013.09.002</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zheng‐Tian Lu</surname>
+            </name>
+            <name>
+              <surname>Peter Schlösser</surname>
+            </name>
+            <name>
+              <surname>William M. Smethie</surname>
+            </name>
+            <name>
+              <surname>Neil C. Sturchio</surname>
+            </name>
+            <name>
+              <surname>Tobias P. Fischer</surname>
+            </name>
+            <name>
+              <surname>B. Mack Kennedy</surname>
+            </name>
+            <name>
+              <surname>Roland Purtschert</surname>
+            </name>
+            <name>
+              <surname>Jeffrey P. Severinghaus</surname>
+            </name>
+            <name>
+              <surname>D. Kip Solomon</surname>
+            </name>
+            <name>
+              <surname>Toste Tanhua</surname>
+            </name>
+            <name>
+              <surname>Reika Yokochi</surname>
+            </name>
+          </person-group>
+          <month>9</month>
+          <day>18</day>
+          <doi>https://doi.org/10.1016/j.earscirev.2013.09.002</doi>
+          <source>Earth-Science Reviews</source>
+          <issn-l>0012-8252</issn-l>
+          <issn>1872-6828</issn>
+          <article-title>Tracer applications of noble gas radionuclides in the geosciences</article-title>
+          <volume>138</volume>
+          <fpage>196</fpage>
+          <lpage>214</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_28">
+        <mixed-citation>https://doi.org/10.1016/0022-1694(82)90147-0</mixed-citation>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Piotr Małoszewski</surname>
+            </name>
+            <name>
+              <surname>A. Zuber</surname>
+            </name>
+          </person-group>
+          <year>1982</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/0022-1694(82)90147-0">https://doi.org/10.1016/0022-1694(82)90147-0</ext-link>
+          <uri>https://doi.org/10.1016/0022-1694(82)90147-0</uri>
+          <pub-id pub-id-type="doi">10.1016/0022-1694(82)90147-0</pub-id>
+          <month>6</month>
+          <day>1</day>
+          <doi>https://doi.org/10.1016/0022-1694(82)90147-0</doi>
+          <source>Journal of Hydrology</source>
+          <issn-l>0022-1694</issn-l>
+          <issn>1879-2707</issn>
+          <article-title>Determining the turnover time of groundwater systems with the aid of environmental tracers</article-title>
+          <volume>57</volume>
+          <issue>3-4</issue>
+          <fpage>207</fpage>
+          <lpage>231</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_29">
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Maloszewski</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>y Zuber</surname>
+              <given-names>A. </given-names>
+            </name>
+          </person-group>
+          <year>2000</year>
+          <source>Manual on lumped parameter models used for the interpretation of environmental tracer data in groundwaters.</source>
+          <publisher-name>International Atomic Energy Agency.</publisher-name>
+        </element-citation>
+        <mixed-citation>Maloszewski, P., y Zuber, A. (2000). Manual on lumped parameter models used for the interpretation of environmental tracer data in groundwaters. International Atomic Energy Agency.</mixed-citation>
+      </ref>
+      <ref id="parser_30">
+        <mixed-citation>https://doi.org/10.1007/s10040-016-1378-y</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2016</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1007/s10040-016-1378-y">https://doi.org/10.1007/s10040-016-1378-y</ext-link>
+          <uri>https://doi.org/10.1007/s10040-016-1378-y</uri>
+          <pub-id pub-id-type="doi">10.1007/s10040-016-1378-y</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Daniel Martínez</surname>
+            </name>
+            <name>
+              <surname>Élise Fourré</surname>
+            </name>
+            <name>
+              <surname>Orlando Mauricio Quiroz Londoño</surname>
+            </name>
+            <name>
+              <surname>Philippe Jean‐Baptiste</surname>
+            </name>
+            <name>
+              <surname>Melisa Glok Galli</surname>
+            </name>
+            <name>
+              <surname>Arnaud Dapoigny</surname>
+            </name>
+            <name>
+              <surname>Sebastián Grondona</surname>
+            </name>
+          </person-group>
+          <month>2</month>
+          <day>24</day>
+          <doi>https://doi.org/10.1007/s10040-016-1378-y</doi>
+          <source>Hydrogeology Journal</source>
+          <issn-l>1431-2174</issn-l>
+          <issn>1435-0157</issn>
+          <article-title>Residence time distribution in a large unconfined–semiconfined aquifer in the Argentine Pampas using 3H/3He and CFC tracers</article-title>
+          <volume>24</volume>
+          <issue>5</issue>
+          <fpage>1107</fpage>
+          <lpage>1120</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_31">
+        <mixed-citation>https://doi.org/10.1016/j.jhydrol.2022.127846</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2022</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jhydrol.2022.127846">https://doi.org/10.1016/j.jhydrol.2022.127846</ext-link>
+          <uri>https://doi.org/10.1016/j.jhydrol.2022.127846</uri>
+          <pub-id pub-id-type="doi">10.1016/j.jhydrol.2022.127846</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Daniel Martínez</surname>
+            </name>
+            <name>
+              <surname>Wei Jiang</surname>
+            </name>
+            <name>
+              <surname>Takuya Matsumoto</surname>
+            </name>
+            <name>
+              <surname>Orlando Mauricio Quiroz Londoño</surname>
+            </name>
+            <name>
+              <surname>Florian Ritterbusch</surname>
+            </name>
+            <name>
+              <surname>Claudio Lexow</surname>
+            </name>
+            <name>
+              <surname>Guo‐Min Yang</surname>
+            </name>
+            <name>
+              <surname>L. Bertolín</surname>
+            </name>
+            <name>
+              <surname>J. C. Mabry</surname>
+            </name>
+            <name>
+              <surname>Nicoló Romeo</surname>
+            </name>
+            <name>
+              <surname>Marcelo Zárate</surname>
+            </name>
+            <name>
+              <surname>Zheng‐Tian Lu</surname>
+            </name>
+          </person-group>
+          <month>4</month>
+          <day>21</day>
+          <doi>https://doi.org/10.1016/j.jhydrol.2022.127846</doi>
+          <source>Journal of Hydrology</source>
+          <issn-l>0022-1694</issn-l>
+          <issn>1879-2707</issn>
+          <article-title>81Kr reveals one-million-year-old groundwater at the Atlantic coast of Argentina as a record of Mid-Pleistocene climate</article-title>
+          <volume>610</volume>
+          <fpage>127846</fpage>
+          <lpage>127846</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_32">
+        <mixed-citation>https://doi.org/10.1016/j.gsd.2024.101402</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2024</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.gsd.2024.101402">https://doi.org/10.1016/j.gsd.2024.101402</ext-link>
+          <uri>https://doi.org/10.1016/j.gsd.2024.101402</uri>
+          <pub-id pub-id-type="doi">10.1016/j.gsd.2024.101402</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Daniel Martínez</surname>
+            </name>
+            <name>
+              <surname>Orlando Mauricio Quiroz Londoño</surname>
+            </name>
+            <name>
+              <surname>Alejandro Basaldúa</surname>
+            </name>
+            <name>
+              <surname>Melisa Glok Galli</surname>
+            </name>
+            <name>
+              <surname>Ximena Solana</surname>
+            </name>
+            <name>
+              <surname>Emiliano Alcaraz</surname>
+            </name>
+            <name>
+              <surname>Leandro Bertolin</surname>
+            </name>
+          </person-group>
+          <month>12</month>
+          <day>1</day>
+          <doi>https://doi.org/10.1016/j.gsd.2024.101402</doi>
+          <source>Groundwater for Sustainable Development</source>
+          <issn-l>2352-801X</issn-l>
+          <article-title>The groundwater age of the Argentine aquifers: a review and paleoclimate insight</article-title>
+          <fpage>101402</fpage>
+          <lpage>101402</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_33">
+        <mixed-citation>https://doi.org/10.1016/j.epsl.2020.116120</mixed-citation>
+        <element-citation publication-type="journal">
+          <year>2020</year>
+          <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.epsl.2020.116120">https://doi.org/10.1016/j.epsl.2020.116120</ext-link>
+          <uri>https://doi.org/10.1016/j.epsl.2020.116120</uri>
+          <pub-id pub-id-type="doi">10.1016/j.epsl.2020.116120</pub-id>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Takuya Matsumoto</surname>
+            </name>
+            <name>
+              <surname>Kamel Zouari</surname>
+            </name>
+            <name>
+              <surname>Rim Trabelsi</surname>
+            </name>
+            <name>
+              <surname>D. J. Hillegonds</surname>
+            </name>
+            <name>
+              <surname>Wei Jiang</surname>
+            </name>
+            <name>
+              <surname>Zheng‐Tian Lu</surname>
+            </name>
+            <name>
+              <surname>Peter Mueller</surname>
+            </name>
+            <name>
+              <surname>Jake Zappala</surname>
+            </name>
+            <name>
+              <surname>L. Araguás</surname>
+            </name>
+            <name>
+              <surname>Nicoló Romeo</surname>
+            </name>
+            <name>
+              <surname>Aissa Agoun</surname>
+            </name>
+          </person-group>
+          <month>1</month>
+          <day>28</day>
+          <doi>https://doi.org/10.1016/j.epsl.2020.116120</doi>
+          <source>Earth and Planetary Science Letters</source>
+          <issn-l>0012-821X</issn-l>
+          <issn>1385-013X</issn>
+          <article-title>Krypton-81 dating of the deep Continental Intercalaire aquifer with implications for chlorine-36 dating</article-title>
+          <volume>535</volume>
+          <fpage>116120</fpage>
+          <lpage>116120</lpage>
+        </element-citation>
+      </ref>
+      <ref id="parser_34">
+        <mixed-citation>https://doi.org/10.1016/0022-1694(92)90165-R --- ERRORS FOUND IN THESE SECTIONS: "The DOI 10.1016/0022-1694(92)90165-R does not exist in OpenAlex database.Title. "</mixed-citation>
       </ref>
     </ref-list>
   </back>

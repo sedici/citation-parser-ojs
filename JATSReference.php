@@ -16,11 +16,12 @@ class JATSReference {
     private $element_citation;
     private $mixed_citation;
 
-    private $enrichmentData = []; //Se setea un array vacío si no existe el DOI en OpenAlex y un array con datos para enriquecer al XML JATS si existe dicho DOI en OpenAlex
+    private $enrichmentData = []; //Set an empty array if there is no DOI in OpenAlex and an array with data to enrich the JATS XML if that DOI exists in OpenAlex
 
     private $errors = "";
+    private bool $enrichmentHadErrors = false; 
 
-    public function __construct(\DOMDocument $dom = null,\DOMElement $reflist = null,Reference $reference,int $id = 0) {
+    public function __construct(?\DOMDocument $dom = null, ?\DOMElement $reflist = null, Reference $reference, int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->reflist = $reflist;
@@ -40,7 +41,14 @@ class JATSReference {
     }
 
     //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
-    public function checkErrors(){
+    public function checkErrors(): void{
+        // If we have enrichment data and no errors during enrichment
+        // We suppress previous parsing errors to avoid dirtying the final XML.
+        if (!empty($this->enrichmentData) && $this->enrichmentHadErrors === false) {
+            $this->errors = ""; // no imprimir ni propagar errores si el enriquecimiento salió bien
+            return;
+        }
+
         if (trim($this->errors) !== "") {
             $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
             $this->mixed_citation->nodeValue .= " --- " . $textError;
@@ -53,8 +61,8 @@ class JATSReference {
         $this->addDate();
         $this->addTitle();
         $this->addURL();
-        $this->checkErrors();
         $this->enrichment();
+        $this->checkErrors();
     }
 
     public function getJatsXML() {
@@ -150,7 +158,6 @@ class JATSReference {
 
     public function setEnrichmentData(Array $enrichmentData) {
         // Inject original reference authors so printers can apply the same strategy when building JATS
-        $enrichmentData['__reference_authors'] = $this->reference->getAuthor()['authors'] ?? [];
         $this->enrichmentData = $enrichmentData;
     }
 
@@ -173,6 +180,12 @@ class JATSReference {
 
         if ($sourceType) {
             $printerClassName = ucfirst($sourceType).'Printer';
+            if (!class_exists($printerClassName)) {
+                error_log('[JournalPrinter::enrichment()] No printer class found for source type: ' . $sourceType);
+                $this->addError("No printer class found for source type: " . $sourceType . ". ");
+                $this->enrichmentHadErrors = true;
+                return; // No printer available for this source type
+            }
             $printer = new $printerClassName([], $this->dom);   
             if (method_exists($printer, 'enrichment')) {
                 $elements = $printer->enrichment($this->enrichmentData);

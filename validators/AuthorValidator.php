@@ -6,10 +6,10 @@ class AuthorValidator {
 
     /** 
      * Validate institution data from OpenAlex results
-     * @param Array $results Results (information) from OpenAlex institution search for a specific reference
+     * @param array $results Results (information) from OpenAlex institution search for a specific reference
      * @return void
     */
-    public function validateInstitutionAsAuthor(Array $openAlexResults, JATSReference $jatsReference, String $institution): bool {
+    public function validateInstitutionAsAuthor(array $openAlexResults, JATSReference $jatsReference, string $institution): bool {
         if ($openAlexResults === null || count($openAlexResults) === 0) {
             $jatsReference->addError("No institution found in OpenAlex for the name \"$institution\". ");
             return false;
@@ -32,15 +32,20 @@ class AuthorValidator {
 
     /**
      * Validate full name data from OpenAlex results
-     * @param Array $openAlexResults Results (information) from OpenAlex DOI search for a specific reference
+     * @param array $openAlexResults Results (information) from OpenAlex DOI search for a specific reference
      * @return bool
      */
     public function validateFullNameAsAuthor(array $openAlexResults, JATSReference $jatsReference): bool {
-        $authorships = $openAlexResults['authorships'] ?? null;
-        $referenceAuthors = $jatsReference->reference->getAuthor()['authors'] ?? null;
+        $authorships = $openAlexResults['authorships'] ?? [];
+        $referenceAuthors = $jatsReference->reference->getAuthor()['authors'] ?? [];
 
-        if (empty($referenceAuthors)) {
-            $jatsReference->addError("No authors found in the reference.");
+        // Si la referencia no tiene autores, no bloquear la creación ni validar
+        if (empty($referenceAuthors)) { return true; }
+
+        // Si hay autores en la referencia pero OpenAlex no devolvió authorships, reportar
+        if (empty($authorships)) {
+            $doi = $openAlexResults['doi'] ?? '';
+            $jatsReference->addError("OpenAlex did not return authors for DOI {$doi}.");
             return false;
         }
 
@@ -62,7 +67,7 @@ class AuthorValidator {
 
             if (!$matchFound) {
                 $allMatched = false;
-                $doi = $openAlexResults['doi'];
+                $doi = $openAlexResults['doi'] ?? '';
                 $surname = $referenceAuthor['apellido'];
                 $names = $referenceAuthor['nombres'];
                 $jatsReference->addError("Author '{$surname}, {$names}' not found in OpenAlex data for DOI {$doi}.");
@@ -70,6 +75,48 @@ class AuthorValidator {
         }
 
         return $allMatched;
+    }
+
+    /**
+     * Build a normalized list of authors to be printed by printers, avoiding re-processing later.
+     * Strategy:
+     * - If the reference has authors, try to split OpenAlex display_name using AuthorFullNameProcessor
+     *   against each reference author. If split succeeds, use surname + given-names; otherwise fallback
+     *   to surname with full display_name.
+     * - If the reference has NO authors (DOI-only case), do not attempt splitting; fallback to surname=display_name.
+     *
+     * @return array Each item: ['surname' => string, 'given-names' => string|null]
+     */
+    public function buildFormattedAuthors(array $openAlexResults, JATSReference $jatsReference): array {
+        $formatted = [];
+        $authorships = $openAlexResults['authorships'] ?? [];
+        $referenceAuthors = $jatsReference->reference->getAuthor()['authors'] ?? [];
+
+        if (empty($authorships)) { return $formatted; }
+
+        foreach ($authorships as $authorship) {
+            $displayName = $authorship['author']['display_name'] ?? null;
+            if (!$displayName) { continue; }
+
+            $entry = ['surname' => $displayName, 'given-names' => null];
+
+            if (!empty($referenceAuthors)) {
+                foreach ($referenceAuthors as $refAuthor) {
+                    $split = AuthorFullNameProcessor::matchReferenceToDisplayName($refAuthor, $displayName);
+                    if ($split !== null) {
+                        $entry = [
+                            'surname' => $split['surname'] ?? $displayName,
+                            'given-names' => $split['given-names'] ?? null,
+                        ];
+                        break;
+                    }
+                }
+            }
+
+            $formatted[] = $entry;
+        }
+
+        return $formatted;
     }
 
     /**
