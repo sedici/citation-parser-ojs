@@ -6,8 +6,6 @@
 include_once 'TitlePrinter.php';
 class JournalPrinter extends TitlePrinter{
 
-    static int $i = 1;
-
     public function toPlainText(): string{
         return $this->getTitle().$this->getJournal().', '.$this->getEdition().'('.$this->getVolume().'), '.$this->getPages().'.';
     }

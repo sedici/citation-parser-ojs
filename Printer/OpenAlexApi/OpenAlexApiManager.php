@@ -76,11 +76,6 @@ class OpenAlexApiManager {
                 $this->institutionsResponse = $this->api->searchWorksListWithInstitutions($institution);
             }
 
-            file_put_contents(
-                __DIR__ . '/testInstitution.log',
-                print_r($this->institutionsResponse, true)
-            );
-
             return json_decode($this->institutionsResponse, true);
         } catch (Exception $e) {
             error_log("Error al realizar la solicitud a la API: " . $e->getMessage());

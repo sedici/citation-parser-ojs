@@ -131,7 +131,6 @@ class OpenAlexAPI {
 
         // Construir la URL de la solicitud
         $url = $this->institutionsUrl . urlencode($institution);
-        error_log('URL OPENALEX ' . $url);
         // Realizar la solicitud GET
         $response = file_get_contents($url);
         // Convertir la respuesta a JSON y retornarla

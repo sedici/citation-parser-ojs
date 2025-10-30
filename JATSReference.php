@@ -201,10 +201,6 @@ class JATSReference {
             }
             $this->ref->appendChild($this->element_citation);
 
-            file_put_contents(
-                __DIR__. '/dom.log',
-                print_r($this->dom->saveXML(), true)
-            );
         }
     }
 

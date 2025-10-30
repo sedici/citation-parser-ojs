@@ -68,11 +68,6 @@ class ReferencesManager {
             $jats->getJatsXML();
         }
         //$this->dom->saveXML();
-
-        file_put_contents(
-            __DIR__ . '/Printer/testJats/testJats.log',
-            print_r($this->dom->saveXML(), true)
-        );
     }
 
     private function openAlexRequest() {
