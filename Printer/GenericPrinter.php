@@ -25,14 +25,12 @@ abstract class GenericPrinter {
     
     protected function get(string $key) {
         if ($this->reference === null) {
-            //trigger_error("La referencia no está inicializada.", E_USER_WARNING);
             return false;
         }
 
         if (array_key_exists($key, $this->reference)) {
             return $this->reference[$key];
         } else {
-            //trigger_error("La clave '{$key}' no existe en la referencia.", E_USER_WARNING);
             return false;
         }
     }

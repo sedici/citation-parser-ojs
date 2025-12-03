@@ -10,6 +10,11 @@ include_once('GenericExpression.php');
 
         private static $thesisExpression = ['/(?P<title>[A-Z][0-9A-Za-zÀ-ÿ\s:,;()]+)\s\[(?P<comment>[^,]*,\s(?P<publishername>[^]]+))\]./' => 'thesis'];
 
+        /**
+         * Returns the regex pattern for thesis expressions.
+         *
+         * @return array The regex pattern for thesis expressions.
+         */
         public static function getPattern(){
             return self::$thesisExpression;
         }

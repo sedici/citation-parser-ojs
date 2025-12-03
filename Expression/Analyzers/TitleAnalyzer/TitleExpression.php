@@ -9,10 +9,17 @@ include_once 'TitleAnalyzer.php';
 
 class TitleExpression extends Expression{
 
-    public static function parse($text, array $types = []) {
+    /**
+     * Parses the given reference to analyze title patterns.
+     *
+     * @param string $reference The reference text to be analyzed.
+     * @param array $types Optional array of specific types of references to analyze.
+     * @return array The result of the title analysis.
+     */
+    public static function parse($reference, array $types = []) {
 
         $analyzer = new TitleAnalyzer($types);
-        return $analyzer->analyze($text);
+        return $analyzer->analyze($reference);
     }
 
 }

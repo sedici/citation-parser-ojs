@@ -16,19 +16,19 @@ class AuthorAnalyzer {
         $this->institutionPattern = AuthorPatterns::getInstitutionPattern();
     }
 
+    /**
+     * Analyzes the given text to extract authors name and surname or institution as authors information.
+     *
+     * @param string $text The text to analyze.
+     * @return array An associative array with 'expression' and 'value' keys.
+     */
     public function analyze(string $text){
-        // Extract text before the closing parenthesis
         $firstPartText = strstr($text, ')', true);
         if (!$firstPartText) {
             return ['expression' => null, 'value' => ''];
         }
-
-        // Extract authors
         $authorsData = $this->extractAuthors($firstPartText);
-
-        // Check if we have authors
         if (empty($authorsData['authors'])) {
-            // No authors found, try to find an institution as the primary entity
             $institution = $this->extractInstitution($firstPartText);
 
             if (strstr($institution, '(', true)) {
@@ -90,14 +90,13 @@ class AuthorAnalyzer {
         return $result;
     }
     
+    /** Extracts institution from the given text.
+     *
+     * @param string $text The text to extract institution from.
+     * @return string The extracted institution or an empty string if not found.
+     */
     private function extractInstitution(string $text) {
         preg_match($this->institutionPattern, $text, $institutionMatch);
         return !empty($institutionMatch['institution']) ? $institutionMatch['institution'] : '';
     }
 }
-
-// Si no tengo autores, entonces debo evaluar si tengo una institucion. En caso de tener institución, se devuelve la institucion.  
-// Si no tengo autores ni institucion, se devuelve null.
-// Si tengo autores, debo evaluar si tengo una institucion, ya que puedo haber ademas de autores, una institucion.
-// En caso de tener autores y una institucion, se devuelven ambos en el mismo array $authorsData.
-// Si tengo autores y no tengo institucion, se devuelven solo los autores.

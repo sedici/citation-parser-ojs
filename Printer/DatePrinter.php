@@ -46,8 +46,11 @@ class DatePrinter extends GenericPrinter{
         return $this->get('date');
     }
 
+    /**
+     * Creates XML elements for the date components.
+     * @return array An array of XML elements for year, month, and day.
+     */
     public function createXMLElements(): array {
-        //$dateElement = $this->dom->createElement('date');
         $elements = [];
 
         if ($year = $this->getYear()) {

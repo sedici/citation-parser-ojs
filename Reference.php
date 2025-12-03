@@ -78,14 +78,11 @@ class Reference {
         $this->parseTitle();
     }
 
-    // Getter para author
     public function merge(): array {
-        // Usando array_merge para combinar los arreglos
         $combinedArray = array_merge($this->author, $this->title, $this->date, $this->url);
         return $combinedArray;
     }
 
-    // Getter para author
     public function getType() {
         return $this->type;
     }
@@ -94,49 +91,35 @@ class Reference {
         return $this->plainTextReference;
     }
 
-    // Getter para author
     public function getAuthor() {
         return $this->author;
     }
 
-    // Getter para authorType
     public function getAuthorType() {
         return $this->authorType;
     }
 
-    // Getter para title
     public function getTitle() {
         return $this->title;
     }
 
-    // Getter para titleType
     public function getTitleType() {
         return $this->titleType;
     }
 
-    // Getter para date
     public function getDate() {
         return $this->date;
     }
 
-    // Getter para dateType
     public function getDateType() {
         return $this->dateType;
     }
 
-    // Getter para date
     public function getURL() {
         return $this->url;
     }
 
-    // Getter para dateType
     public function getURLType() {
         return $this->urlType;
-    }
-
-    private function determineType() {
-        if ($this->type === null) {
-            // Lógica para determinar el tipo de referencia
-        }
     }
 }

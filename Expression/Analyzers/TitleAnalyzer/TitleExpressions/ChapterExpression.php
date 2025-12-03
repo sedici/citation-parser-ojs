@@ -8,9 +8,19 @@ include_once('GenericExpression.php');
 
     class ChapterExpression extends GenericExpression{
 
+        /**
+         * Returns the regular expression patterns to identify chapter titles in references.
+         *
+         * @return array An associative array where keys are regex patterns and values are the type 'chapter'.
+         * 
+         * CASES HANDLED:
+            * 1. One contributor (singular role), e.g. "Ed."
+            * 2. Two contributors (plural role), e.g. "Eds."
+            * 3. Three contributors (plural role), e.g. "Eds."
+         */
+
         public static function getPattern(){
 
-            //--------------------------> Parts of a chapter Reference <--------------------------:
             $title = "(?P<title>.*?)";
             $editorial = '(?P<editorial>.+?\.)';
             $pluralRole = "(?P<role>(.*(?<=s)\.))"; //Only accepts a word in plural, for example: (Eds.|Comps.|Coords.|etc...).
@@ -22,8 +32,6 @@ include_once('GenericExpression.php');
             $pages = "(pp.\s(?P<pages>(\d{1,4}-\d{1,4})))?)\)";
             $edition = "(?P<edition>($editionNumber\sed\.,\s)?(Vol\.\s$volume)?(,\s)?$pages";
 
-
-            // -----------------------> Contributors regex's: <----------------------------------------------------
             $contributorOneFullname = "(?P<contributorname1>(\p{Lu}\.\s?)+)(?P<contributorsurname1>[A-Za-zÀ-ÿñÑ]+(?:\s[A-Za-zÀ-ÿñÑ]+)*)";
             $contributorTwoFullname = "(?P<contributorname2>(\p{Lu}\.\s?)+)(?P<contributorsurname2>[A-Za-zÀ-ÿñÑ]+(?:\s[A-Za-zÀ-ÿñÑ]+)*)";
             $contributorThreeFullname = "(?P<contributorname3>(\p{Lu}\.\s?)+)\s?(?P<contributorsurname3>[A-Za-zÀ-ÿñÑ]+(?:\s[A-Za-zÀ-ÿñÑ]+)*)";
@@ -31,14 +39,6 @@ include_once('GenericExpression.php');
             $oneContributor = "(?P<contributors>$contributorOneFullname)";
             $twoContributors = "(?P<contributors>$contributorOneFullname\s(y|&|and)\s$contributorTwoFullname)";
             $threeContributors = "(?P<contributors>$contributorOneFullname,\s$contributorTwoFullname\s(y|&|and)\s$contributorThreeFullname)";
-
-            //-------------------------------------------------------------------------------------------//
-            //-----------------------> Complete regex cases of chapter's reference. <--------------------//
-            //-------------------------------------------------------------------------------------------//
-
-            //chapterRegexCaseOne is for references to chapters that have a single ed.|comp.|coord. Matches array contains only contributorname1 and contributorsurname1.
-            //chapterRegexCaseTwo is for references to chapters that have 2 eds.|comps.|coords. Matches array contains contributorname1, contributorsurname1, contributorname2, contributorsurname2.
-            //chapterRegexCaseThree is for references to chapters that have 3 eds.|comps.|coords. Matches array contains contributorname1, contributorsurname1, contributorname2, contributorsurname2, contributorname3, contributorsurname3.
             
             $chapterRegexCaseOne = "/\)\.\s$title\s(En|In|)\s$oneContributor\s\($singularRole\),\s$book\s(\($edition)\.\s$editorial/u";
             $chapterRegexCaseTwo = "/\)\.\s$title\s(En|In|)\s$twoContributors\s\($pluralRole\),\s$book\s(\($edition)\.\s$editorial/u";

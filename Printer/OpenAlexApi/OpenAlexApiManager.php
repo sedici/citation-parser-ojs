@@ -17,7 +17,7 @@ class OpenAlexApiManager {
     }
 
     public function addDoi(string $doi): void {
-        if (!in_array($doi, $this->dois)) { // Evitar duplicados
+        if (!in_array($doi, $this->dois)) {
             $this->dois[] = $doi;
         }
     }
@@ -26,10 +26,10 @@ class OpenAlexApiManager {
         $index = array_search($doi, $this->dois);
         if ($index !== false) {
             unset($this->dois[$index]);
-            $this->dois = array_values($this->dois); // Reindexar el array
-            return true; // Indica que el DOI fue eliminado
+            $this->dois = array_values($this->dois);
+            return true;
         }
-        return false; // Indica que el DOI no estaba en el array
+        return false;
     }
 
     public function listDois(): array {
@@ -50,9 +50,3 @@ class OpenAlexApiManager {
         return $this->response;
     }
 }
-/*
-$manager = new OpenAlexApiManager();
-$manager->addDoi('https://doi.org/10.24215/23143738e136'); 
-$manager->addDoi('https://doi.org/10.1371/journal.pone.0266781'); 
-$responce = $manager->request();
-print_r($responce); */

@@ -5,6 +5,11 @@
 */
 class WebpagePrinter extends TitlePrinter {
 
+    /**
+     * Create XML elements for the webpage citation.
+     *
+     * @return array An array of XML elements representing the webpage citation.
+     */
     public function createXMLElements(): array {
         
         $elements = [];

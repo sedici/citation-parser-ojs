@@ -34,14 +34,16 @@ class BookPrinter extends TitlePrinter{
         return $this->get('editorial');
     }
 
+    /**
+     * Create XML elements for book details.
+     * @return array
+     */
     public function createXMLElements(): array {
         $elements = [];
         
-        //<source> tag creation
         $sourceElement = $this->createElement('source',$this->getSource());
         $elements[] = $sourceElement;
 
-        //<publisher-name> tag creation
         $publishernamElement = $this->createElement('publisher-name',$this->getEditorial());
         $elements[] = $publishernamElement;
         

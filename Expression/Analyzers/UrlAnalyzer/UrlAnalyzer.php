@@ -13,9 +13,14 @@
             $this->patterns = UrlPatterns::getPatterns();
         }
 
-        public function analyze(string $text) {
+        /**
+         * Analyzes the given reference text to identify URL patterns.
+         * @param string $reference The reference text to analyze.
+         * @return array An array containing the expression type and matched values.
+         */
+        public function analyze(string $reference): array {
             foreach ($this->patterns as $pattern => $name) {
-                if (preg_match($pattern, $text, $matches)) {
+                if (preg_match($pattern, $reference, $matches)) {
                     return array('expression' => $name, 'value' => $matches);
                 }
             }

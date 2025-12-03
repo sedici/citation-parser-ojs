@@ -36,52 +36,37 @@ class ReferencesManager {
         $this->process();
     }
 
+    /**
+     * Process the references and generate JATS XML.
+     * This method iterates through the references, creates JATSReference objects,
+     * and generates the corresponding XML.
+     * @return void
+     */
     public function process() {
-        // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
             $reference = new Reference($ref);
             $jats = new JATSReference($this->dom, $this->reflist, $reference, $index);
             $this->jatsList[] = $jats;
 
-            // Si la referencia tiene DOI, agregar al manager de OpenAlex
             $doi = $jats->getDoi();
-            $institutions = $jats->getinstitutions();
             if ($doi) {
-                
                 $this->oam->addDoi($doi);
                 $this->jatsWithDoi[$doi] = $jats;
-
-            } else if ($institutions) {       
-                $this->oam->addInstitutios($institutions);
-                $this->jatsRefListWithInstitutions[$institutions] = $jats;
             }
-
         }
 
-        //$this->openAlexRequest();
         $this->generateXML();
     }
 
+    /**
+     * Generate the JATS XML for all references.
+     * This method calls the getJatsXML method on each JATSReference object
+     * to build the complete XML structure.
+     * @return void
+     */
     private function generateXML() {
         foreach ($this->jatsList as $jats) {
             $jats->getJatsXML();
         }
-        //$this->dom->save();
     }
-
-    private function openAlexRequest() {
-        // Implementación de la solicitud a OpenAlex si es necesario
-         $oar = $this->oam->request();
-         $this->enrichmenteJatsRefElement($oar);
-         return null;
-     }
- 
-     private function enrichmenteJatsRefElement(){
-         foreach ($this->jatsWithDoi as $index => $jats) {
-             if ($oar[$index]){
-                 $jats->enrichmente($oar[$index]);
-             } 
-         }
-     }
- 
 }

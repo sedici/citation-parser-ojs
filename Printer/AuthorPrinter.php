@@ -22,11 +22,14 @@ class AuthorPrinter extends GenericPrinter {
         return $result;
     }
 
+    /**
+     * Create XML elements for authors and institutions.
+     * @return array
+     */
     public function createXMLElements(): array {
         $elements = [];
         $authorElement = null;
 
-        // Manejar autores si existen
         if (isset($this->reference['authors'])) {
             $authorElement = $this->dom->createElement('person-group');
             $authorElement->setAttribute('person-group-type','author');
@@ -43,22 +46,18 @@ class AuthorPrinter extends GenericPrinter {
             }
         }
         
-        // Manejar institución si existe
         if (isset($this->reference['institution'])) {
-            // Si no existe un person-group de tipo "author", se crea
             if ($authorElement === null) {
                 $authorElement = $this->dom->createElement('person-group');
                 $authorElement->setAttribute('person-group-type', 'author');
                 $elements[] = $authorElement;
             }
             
-            // Crear la estructura collab para la institución
             $collabElement = $this->dom->createElement('collab');
             $namedContentElement = $this->dom->createElement('named-content');
             $namedContentElement->setAttribute('content-type', 'name');
             $namedContentElement->textContent = $this->reference['institution'];
             
-            // Ensamblar la estructura
             $collabElement->appendChild($namedContentElement);
             $authorElement->appendChild($collabElement);
         }

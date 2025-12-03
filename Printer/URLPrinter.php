@@ -14,6 +14,10 @@ class URLPrinter extends GenericPrinter{
         return $this->get('url');
     }
 
+    /** 
+     * Creates the XML elements representing the URL in JATS format.
+     * @return array An array of XML elements.
+     */
     public function createXMLElements(): array {
         $elements = [];
         $ext_link = $this->createElement('ext-link', $this->getURL());

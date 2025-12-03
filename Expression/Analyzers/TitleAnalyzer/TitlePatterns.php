@@ -14,33 +14,24 @@ include_once('TitleExpressions/LawExpression.php');
 
     class TitlePatterns {
 
+    /**
+     * Returns all title patterns from different expression classes.
+     * The title will help to identify the type of reference
+     * (e.g., journal, book, thesis, webpage, newspaper article, law, congress, etc.).
+     * 
+     * @return array An array containing all title patterns.
+     */
     public static function getAllPatterns() {
 
-        // Get congress references PATTERN.
         $congressPattern = CongressExpression::getPattern();
-        
-        // Get book references PATTERN.
         $bookPattern = BookExpression::getPattern();
-    
-        // Get book's chapter reference PATTERN.
         $chapterPattern = ChapterExpression::getPattern();
-    
-        // Get journal references PATTERN.
         $journalPattern = JournalExpression::getPattern();
-    
-        // Get thesis references PATTERN.
         $thesisPattern = ThesisExpression::getPattern();
-
-        // Get website references PATTERN.
         $webpagePattern = WebsiteExpression::getPattern();
-    
-        // Get newspaper article references PATTERN.
         $newspaperArticlePattern = NewspaperArticleExpression::getPattern();
-
-        // Get law references PATTERN.
         $lawPattern = LawExpression::getPattern();
-
-        // Merge all patterns into a single array.
+        
         return array_merge(
             $lawPattern,
             $webpagePattern,
@@ -52,8 +43,6 @@ include_once('TitleExpressions/LawExpression.php');
             $newspaperArticlePattern,
         );
     }
-
-    //--------------------------------------> SPECIFIC PATTERN GETTERS <--------------------------------------------------//
 
         public static function getCongressPatterns(){
             return CongressExpression::getPattern();;

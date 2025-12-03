@@ -8,10 +8,13 @@ include_once 'UrlAnalyzer.php';
 
 class URLExpression extends Expression {
     
-    public static function parse($text) {
-
+    /**
+     * Parses a URL reference string using UrlAnalyzer.
+     * @param string $reference The reference string to parse.
+     * @return array Parsed components of the reference.
+     */
+    public static function parse(string $reference): array {
         $analyzer = new UrlAnalyzer();
-        return $analyzer->analyze($text);
-
+        return $analyzer->analyze($reference);
     }
 }

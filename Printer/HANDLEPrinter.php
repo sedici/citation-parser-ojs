@@ -6,6 +6,11 @@
 include_once 'URLPrinter.php';
 class HANDLEPrinter extends URLPrinter{
 
+    /**
+     * Create the XML elements for the HANDLE citation part.
+     *
+     * @return array An array of XML elements representing the HANDLE citation part.
+     */
     public function createXMLElements(): array {
         $elements = parent::createXMLElements();
 

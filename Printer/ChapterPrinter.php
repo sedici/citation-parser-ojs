@@ -47,34 +47,33 @@ class ChapterPrinter extends TitlePrinter{
         return $this->get('volume');
     }
 
+    /**
+     * Create XML elements for the chapter citation
+     *
+     * @return array An array of XML elements representing the chapter citation
+     */
     public function createXMLElements(): array {
         $elements = [];
 
-        //<chapter-title> tag creation
         $chapterTitleElement = $this->createElement('chapter-title',$this->getTitle());
         $elements[] = $chapterTitleElement;
         
-        //<source> tag creation
         $sourceElement = $this->createElement('source',$this->getSource());
         $elements[] = $sourceElement;
 
-        //<edition> tag creation
         $publishernamElement = $this->createElement('publisher-name',$this->getEditorial());
         $elements[] = $publishernamElement;
 
-        //<edition> tag creation if exists
         if (!empty($this->getEdition())) {
             $editionElement = $this->createElement('edition', $this->getEdition());
             $elements[] = $editionElement;   
         }
 
-        //<volume> tag creation if exists
         if (!empty($this->getVolume())) {
             $volumeElement = $this->createElement('volume', $this->getVolume());
             $elements[] = $volumeElement;
         }
 
-        //<person-group-type="editor"> tag creation.
         $editorsElement = $this->dom->createElement('person-group');
         $editorsElement->setAttribute('person-group-type', 'editor');
         $elements[] = $editorsElement;

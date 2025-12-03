@@ -6,8 +6,12 @@
 
 include_once('GenericExpression.php');
 
+    /**
+     * BookExpression class
+     * 
+     * This class defines the regular expression patterns to identify book titles in references.
+     */
     class BookExpression extends GenericExpression{
-
         private static  $bookExpression = ['/(?P<title>[A-Z0-9][0-9A-Za-zÀ-ÿ\s\:\,\;\-]+\.)(\s\((?P<edicion>(?P<nedicion>[0-9]+ª)\sed\.(,\sVol\.\s(?P<volumen>(?:[IVXLCDM]+|[0-9]+)))?)\)\.)?\s(?P<editorial>[A-Z][A-Za-zÀ-ÿ\s\:\,\;\-]+\.)/' => 'book'] ;
 
         public static function getPattern(){
