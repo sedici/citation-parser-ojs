@@ -1,0 +1,2264 @@
+[
+  {
+    "author": [
+      {
+        "family": "Smith",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "The Art of Coding"
+    ],
+    "publisher": [
+      "Universal Press"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Doe",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "2021"
+    ],
+    "title": [
+      "The Book of Everything"
+    ],
+    "edition": [
+      "2nd"
+    ],
+    "publisher": [
+      "Universal Press"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Hawkings",
+        "given": "S."
+      }
+    ],
+    "date": [
+      "1988"
+    ],
+    "title": [
+      "A Brief History of Time"
+    ],
+    "publisher": [
+      "Bantam Books"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Kahneman",
+        "given": "D."
+      }
+    ],
+    "date": [
+      "2011"
+    ],
+    "title": [
+      "Thinking, Fast and Slow"
+    ],
+    "publisher": [
+      "Farrar, Straus and Giroux"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Martin",
+        "given": "R.C."
+      }
+    ],
+    "date": [
+      "2008"
+    ],
+    "title": [
+      "Clean Code: A Handbook of Agile Software Craftsmanship"
+    ],
+    "publisher": [
+      "Prentice Hall"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Sapolsky",
+        "given": "R.M."
+      }
+    ],
+    "date": [
+      "2017"
+    ],
+    "title": [
+      "Behave: The Biology of Humans at Our Best and Worst"
+    ],
+    "publisher": [
+      "Penguin Books"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Harari",
+        "given": "Y.N."
+      }
+    ],
+    "date": [
+      "2015"
+    ],
+    "title": [
+      "Sapiens: A Brief History of Humankind"
+    ],
+    "location": [
+      "Harper"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Newport",
+        "given": "C."
+      }
+    ],
+    "date": [
+      "2016"
+    ],
+    "title": [
+      "Deep Work: Rules for Focused Success in a Distracted World"
+    ],
+    "publisher": [
+      "Grand Central Publishing"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Clear",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "2018"
+    ],
+    "title": [
+      "Atomic Habits: An Easy & Proven Way to Build"
+    ],
+    "publisher": [
+      "Good Habits & Break Bad Ones. Avery"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Taleb",
+        "given": "N.N."
+      }
+    ],
+    "date": [
+      "2007"
+    ],
+    "title": [
+      "The Black Swan: The Impact of the Highly Improbable"
+    ],
+    "publisher": [
+      "Random House"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Turing",
+        "given": "A.M."
+      }
+    ],
+    "date": [
+      "1950"
+    ],
+    "title": [
+      "Computing machinery and intelligence"
+    ],
+    "volume": [
+      "59"
+    ],
+    "pages": [
+      "433–460"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Mind"
+    ],
+    "issue": [
+      "236"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Einstein",
+        "given": "A."
+      }
+    ],
+    "date": [
+      "1905"
+    ],
+    "title": [
+      "Zur Elektrodynamik bewegter Körper"
+    ],
+    "volume": [
+      "322"
+    ],
+    "pages": [
+      "891–921"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Annalen der Physik"
+    ],
+    "issue": [
+      "10"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Watson",
+        "given": "J.D."
+      },
+      {
+        "family": "Crick",
+        "given": "F.H."
+      }
+    ],
+    "date": [
+      "1953"
+    ],
+    "title": [
+      "Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid"
+    ],
+    "volume": [
+      "171"
+    ],
+    "pages": [
+      "737–738"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Nature"
+    ],
+    "issue": [
+      "4356"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Shannon",
+        "given": "C.E."
+      }
+    ],
+    "date": [
+      "1948"
+    ],
+    "title": [
+      "A mathematical theory of communication"
+    ],
+    "volume": [
+      "27"
+    ],
+    "pages": [
+      "379–423"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "The Bell System Technical Journal"
+    ],
+    "issue": [
+      "3"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "LeCun",
+        "given": "Y."
+      },
+      {
+        "family": "Bengio",
+        "given": "Y."
+      },
+      {
+        "family": "Hinton",
+        "given": "G."
+      }
+    ],
+    "date": [
+      "2015"
+    ],
+    "title": [
+      "Deep learning"
+    ],
+    "volume": [
+      "521"
+    ],
+    "pages": [
+      "436–444"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Nature"
+    ],
+    "issue": [
+      "7553"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Vaswani",
+        "given": "A."
+      },
+      {
+        "family": "Shazeer",
+        "given": "N."
+      },
+      {
+        "family": "Parmar",
+        "given": "N."
+      },
+      {
+        "family": "Uszkoreit",
+        "given": "J."
+      },
+      {
+        "family": "Jones",
+        "given": "L."
+      },
+      {
+        "family": "Gomez",
+        "given": "A.N."
+      },
+      {
+        "family": "Polosukhin",
+        "given": "I."
+      },
+      {
+        "others": true
+      }
+    ],
+    "date": [
+      "2017"
+    ],
+    "title": [
+      "Attention is all you need"
+    ],
+    "volume": [
+      "30"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Advances in Neural Information Processing Systems"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "K."
+      },
+      {
+        "family": "Zhang",
+        "given": "X."
+      },
+      {
+        "family": "Ren",
+        "given": "S."
+      },
+      {
+        "family": "Sun",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "2016"
+    ],
+    "title": [
+      "Deep residual learning for image recognition"
+    ],
+    "container-title": [
+      "Proceedings of the IEEE conference on computer vision and pattern recognition"
+    ],
+    "pages": [
+      "770–778"
+    ],
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Silver",
+        "given": "D."
+      },
+      {
+        "family": "Huang",
+        "given": "A."
+      },
+      {
+        "family": "Maddison",
+        "given": "C.J."
+      },
+      {
+        "family": "Guez",
+        "given": "A."
+      },
+      {
+        "family": "Sifre",
+        "given": "L."
+      },
+      {
+        "family": "Den Driessche",
+        "given": "G.",
+        "particle": "Van"
+      },
+      {
+        "family": "Hassabis",
+        "given": "D."
+      },
+      {
+        "others": true
+      }
+    ],
+    "date": [
+      "2016"
+    ],
+    "title": [
+      "Mastering the game of Go with deep neural networks and tree search"
+    ],
+    "volume": [
+      "529"
+    ],
+    "pages": [
+      "484–489"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Nature"
+    ],
+    "issue": [
+      "7587"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Rumelhart",
+        "given": "D.E."
+      },
+      {
+        "family": "Hinton",
+        "given": "G.E."
+      },
+      {
+        "family": "Williams",
+        "given": "R.J."
+      }
+    ],
+    "date": [
+      "1986"
+    ],
+    "title": [
+      "Learning representations by back-propagating errors"
+    ],
+    "volume": [
+      "323"
+    ],
+    "pages": [
+      "533–536"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "nature"
+    ],
+    "issue": [
+      "6088"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Bengio",
+        "given": "Y."
+      },
+      {
+        "family": "Ducharme",
+        "given": "R."
+      },
+      {
+        "family": "Vincent",
+        "given": "P."
+      },
+      {
+        "family": "Jauvin",
+        "given": "C."
+      }
+    ],
+    "date": [
+      "2003"
+    ],
+    "title": [
+      "A neural probabilistic language model"
+    ],
+    "volume": [
+      "3"
+    ],
+    "pages": [
+      "1137–1155"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Journal of machine learning research"
+    ],
+    "issue": [
+      "Feb"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Author",
+        "given": "A."
+      }
+    ],
+    "date": [
+      "2022"
+    ],
+    "title": [
+      "Chapter Title"
+    ],
+    "editor": [
+      {
+        "family": "En",
+        "given": "E."
+      }
+    ],
+    "container-title": [
+      "The Anthology"
+    ],
+    "pages": [
+      "50–60"
+    ],
+    "publisher": [
+      "Big House"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Goodfellow",
+        "given": "I."
+      }
+    ],
+    "date": [
+      "2016"
+    ],
+    "title": [
+      "Deep Feedforward Networks"
+    ],
+    "editor": [
+      {
+        "family": "Bengio",
+        "given": "Y."
+      },
+      {
+        "family": "Courville",
+        "given": "A."
+      }
+    ],
+    "container-title": [
+      "Deep Learning"
+    ],
+    "pages": [
+      "164–223"
+    ],
+    "publisher": [
+      "MIT Press"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Piaget",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "1972"
+    ],
+    "title": [
+      "Intellectual evolution from adolescence to adulthood"
+    ],
+    "editor": [
+      {
+        "family": "Johnson-Laird",
+        "given": "P.N."
+      },
+      {
+        "family": "Wason",
+        "given": "P.C."
+      }
+    ],
+    "container-title": [
+      "Thinking: Readings in cognitive science"
+    ],
+    "pages": [
+      "158–165"
+    ],
+    "publisher": [
+      "Cambridge University Press"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Freud",
+        "given": "S."
+      }
+    ],
+    "date": [
+      "1961"
+    ],
+    "title": [
+      "The ego and the id"
+    ],
+    "editor": [
+      {
+        "family": "Strachey",
+        "given": "J."
+      }
+    ],
+    "container-title": [
+      "The standard edition of the complete psychological works of Sigmund Freud"
+    ],
+    "volume": [
+      "19"
+    ],
+    "pages": [
+      "3–66"
+    ],
+    "publisher": [
+      "Hogarth Press"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Bergmann",
+        "given": "P.G."
+      }
+    ],
+    "date": [
+      "1993"
+    ],
+    "title": [
+      "Relativity"
+    ],
+    "container-title": [
+      "The New Encyclopedia Britannica"
+    ],
+    "volume": [
+      "26"
+    ],
+    "pages": [
+      "501–508"
+    ],
+    "publisher": [
+      "Encyclopedia Britannica"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Student",
+        "given": "S."
+      }
+    ],
+    "date": [
+      "2019"
+    ],
+    "genre": [
+      "My PhD Thesis [Doctoral dissertation]."
+    ],
+    "publisher": [
+      "University of Science"
+    ],
+    "type": "thesis"
+  },
+  {
+    "author": [
+      {
+        "family": "Harris",
+        "given": "L."
+      }
+    ],
+    "date": [
+      "2014"
+    ],
+    "title": [
+      "Instructional leadership perceptions and practices of elementary school leaders"
+    ],
+    "genre": [
+      "[Unpublished doctoral dissertation]."
+    ],
+    "publisher": [
+      "University of Virginia"
+    ],
+    "type": "thesis"
+  },
+  {
+    "author": [
+      {
+        "family": "Miranda",
+        "given": "C."
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "Exploración de redes neuronales [Tesis de maestría, Universidad Nacional"
+    ],
+    "publisher": [
+      "Repositorio Institucional"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "given": "W.H.O."
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "Coronavirus disease (COVID-19) dashboard. World Health Organization"
+    ],
+    "url": [
+      "https://covid19.who.int/"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "given": "OpenAI"
+      }
+    ],
+    "date": [
+      "2023"
+    ],
+    "title": [
+      "ChatGPT: Optimizing Language Models for Dialogue"
+    ],
+    "url": [
+      "https://openai.com/blog/chatgpt/"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Geographic",
+        "given": "National"
+      }
+    ],
+    "date": [
+      "2020-06-20"
+    ],
+    "title": [
+      "The power of the ocean"
+    ],
+    "url": [
+      "https://www.nationalgeographic.com/ocean/power"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Institute",
+        "given": "National Cancer"
+      }
+    ],
+    "date": [
+      "2019"
+    ],
+    "title": [
+      "Taking time: Support for people with cancer"
+    ],
+    "publisher": [
+      "U.S. Department of Health and Human Services"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Organization",
+        "given": "World Health"
+      }
+    ],
+    "date": [
+      "2018"
+    ],
+    "title": [
+      "Global status report on road safety 2018"
+    ],
+    "note": [
+      "License: CC BY-NC-SA 3.0 IGO."
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Smith",
+        "given": "I.M."
+      }
+    ],
+    "date": [
+      "1988"
+    ],
+    "title": [
+      "U.S"
+    ],
+    "volume": [
+
+    ],
+    "publisher": [
+      "U.S. Patent and Trademark Office"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Patent"
+    ],
+    "issue": [
+      "123,445"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Hiremath",
+        "given": "S.C."
+      },
+      {
+        "family": "Kumar",
+        "given": "S."
+      },
+      {
+        "family": "Lu",
+        "given": "F."
+      }
+    ],
+    "date": [
+      "2016"
+    ],
+    "title": [
+      "U.S"
+    ],
+    "volume": [
+
+    ],
+    "publisher": [
+      "U.S. Patent and Trademark Office"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Patent"
+    ],
+    "issue": [
+      "9,364,439"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Katz",
+        "given": "I."
+      },
+      {
+        "family": "Gabayan",
+        "given": "K."
+      }
+    ],
+    "date": [
+      "2011"
+    ],
+    "title": [
+      "Social media adoption in an unbundled enterprise"
+    ],
+    "container-title": [
+      "Proceedings of the 2011 Conference on Human Factors in Computing Systems"
+    ],
+    "pages": [
+      "210–220"
+    ],
+    "publisher": [
+      "ACM"
+    ],
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Schwartz",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "1993-09-30"
+    ],
+    "title": [
+      "Obesity affects economic, social status"
+    ],
+    "volume": [
+      "A1"
+    ],
+    "pages": [
+      "4"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "The Washington Post"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Chamberlin",
+        "given": "J."
+      },
+      {
+        "family": "Novotney",
+        "given": "A."
+      },
+      {
+        "family": "Packard",
+        "given": "E."
+      },
+      {
+        "family": "Price",
+        "given": "M."
+      }
+    ],
+    "date": [
+      "2008-05"
+    ],
+    "title": [
+      "Enhancing worker well-being: Occupational health psychologists convene to share their research on work, stress, and health"
+    ],
+    "volume": [
+      "39"
+    ],
+    "pages": [
+      "26–29"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Monitor on Psychology"
+    ],
+    "issue": [
+      "5"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Borenstein",
+        "given": "M."
+      },
+      {
+        "family": "Hedges",
+        "given": "L."
+      },
+      {
+        "family": "Higgins",
+        "given": "J."
+      },
+      {
+        "family": "Rothstein",
+        "given": "H."
+      }
+    ],
+    "date": [
+      "2014"
+    ],
+    "title": [
+      "Comprehensive Meta-Analysis (Version 3.3.070"
+    ],
+    "publisher": [
+      "Computer software]. Biostat"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "O'Donohue",
+        "given": "W."
+      }
+    ],
+    "date": [
+      "2017"
+    ],
+    "title": [
+      "Content analysis of undergraduate psychology textbooks (Dataset"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "APA"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Perez",
+        "given": "Juan"
+      }
+    ],
+    "title": [
+      "Estrategias de ventas 2024\""
+    ],
+    "container-title": [
+      "Presentación interna"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Team",
+        "given": "R.Core"
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "R: A language and environment for statistical computing"
+    ],
+    "publisher": [
+      "R Foundation for Statistical Computing"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Foundation",
+        "given": "Python Software"
+      }
+    ],
+    "date": [
+      "2021"
+    ],
+    "volume": [
+      "3"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Python Language Reference"
+    ],
+    "issue": [
+      "9.5"
+    ]
+  },
+  {
+    "author": [
+      {
+        "given": "StataCorp"
+      }
+    ],
+    "date": [
+      "2019"
+    ],
+    "title": [
+      "Stata Statistical Software: Release 16"
+    ],
+    "location": [
+      "StataCorp LLC"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Corp",
+        "given": "I.B.M."
+      }
+    ],
+    "date": [
+      "2017"
+    ],
+    "title": [
+      "IBM SPSS Statistics for Windows, Version 25.0"
+    ],
+    "publisher": [
+      "IBM Corp"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Brody",
+        "given": "J.E."
+      }
+    ],
+    "date": [
+      "2007-12-11"
+    ],
+    "title": [
+      "Mental reserves keep brain agile"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "The New York Times"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Toner",
+        "given": "K."
+      }
+    ],
+    "date": [
+      "2020-09-24"
+    ],
+    "title": [
+      "When to wear a face mask"
+    ],
+    "container-title": [
+      "CNN"
+    ],
+    "url": [
+      "https://cnn.it/3k7w"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Harlan",
+        "given": "C."
+      }
+    ],
+    "date": [
+      "2013-04-02"
+    ],
+    "title": [
+      "North Korea vows to restart shuttered nuclear reactor that can make bomb-grade plutonium"
+    ],
+    "volume": [
+      "A1"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "The Washington Post"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Stobbe",
+        "given": "M."
+      }
+    ],
+    "date": [
+      "2020-01-08"
+    ],
+    "title": [
+      "Cancer death rate in US sees largest one-year drop ever"
+    ],
+    "publisher": [
+      "Chicago Tribune"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Sack",
+        "given": "K."
+      }
+    ],
+    "date": [
+      "2000-02"
+    ],
+    "title": [
+      "Character and cholesterol"
+    ],
+    "volume": [
+      "14"
+    ],
+    "pages": [
+      "20–22"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Health"
+    ],
+    "issue": [
+      "2"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Weir",
+        "given": "K."
+      }
+    ],
+    "date": [
+      "2017-01"
+    ],
+    "title": [
+      "Forgiveness can improve mental and physical health"
+    ],
+    "volume": [
+      "48"
+    ],
+    "pages": [
+      "30"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Monitor on Psychology"
+    ],
+    "issue": [
+      "1"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Geddes",
+        "given": "L."
+      }
+    ],
+    "date": [
+      "2020-11-25"
+    ],
+    "title": [
+      "How we will learn to live with Covid-19"
+    ],
+    "volume": [
+      "248"
+    ],
+    "pages": [
+      "10–11"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "New Scientist"
+    ],
+    "issue": [
+      "3310"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Schulte",
+        "given": "B."
+      }
+    ],
+    "date": [
+      "2019-09"
+    ],
+    "title": [
+      "The best time of day to do everything"
+    ],
+    "volume": [
+      "235"
+    ],
+    "pages": [
+      "32–37"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Fast Company"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Duckworth",
+        "given": "A.L."
+      },
+      {
+        "family": "Quirk",
+        "given": "A."
+      }
+    ],
+    "date": [
+      "2014"
+    ],
+    "title": [
+      "Reading capability"
+    ],
+    "editor": [
+      {
+        "family": "Vijver",
+        "given": "F.M.H.",
+        "particle": "van de"
+      }
+    ],
+    "container-title": [
+      "Objective measures of character [Symposium]. 2014 AERA Annual Meeting"
+    ],
+    "location": [
+      "Philadelphia, PA"
+    ],
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Fistek",
+        "given": "A."
+      },
+      {
+        "family": "Jester",
+        "given": "E."
+      },
+      {
+        "family": "Sonnenberg",
+        "given": "K."
+      }
+    ],
+    "date": [
+      "2017, July 12-15"
+    ],
+    "title": [
+      "Everybody's got a little music in them: Using music therapy to connect, engage"
+    ],
+    "container-title": [
+      "and motivate [Conference session]. Autism Society National Conference"
+    ],
+    "location": [
+      "Milwaukee, WI, United States"
+    ],
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Lee",
+        "given": "D.J."
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "Analysis of cloud security [Paper presentation"
+    ],
+    "container-title": [
+      "International Conference on Cyber Security"
+    ],
+    "location": [
+      "London, UK"
+    ],
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Pang",
+        "given": "B."
+      },
+      {
+        "family": "Lee",
+        "given": "L."
+      }
+    ],
+    "date": [
+      "2005"
+    ],
+    "title": [
+      "Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales"
+    ],
+    "container-title": [
+      "Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics"
+    ],
+    "pages": [
+      "115–124"
+    ],
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Center",
+        "given": "Pew Research"
+      }
+    ],
+    "date": [
+      "2018"
+    ],
+    "title": [
+      "American trends panel Wave 26 [DataSet"
+    ],
+    "publisher": [
+      "Pew Research Center"
+    ],
+    "url": [
+      "https://www.pewresearch.org/"
+    ],
+    "type": "book"
+  },
+  {
+    "title": [
+      "National Center for Education Statistics",
+      "Fast Response Survey System (FRSS) 109: Teachers' Use of Educational Technology in U.S"
+    ],
+    "date": [
+      "2016"
+    ],
+    "note": [
+      "Public Schools, 2019 (Dataset)."
+    ],
+    "url": [
+      "https://doi.org/10.3886/ICPSR35588.v3"
+    ],
+    "doi": [
+      "10.3886/ICPSR35588.v3"
+    ],
+    "type": null
+  },
+  {
+    "title": [
+      "United States Census Bureau",
+      "Census: Population and Housing Tables (Dataset"
+    ],
+    "date": [
+      "2020"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Page",
+        "given": "L."
+      }
+    ],
+    "date": [
+      "2001"
+    ],
+    "title": [
+      "Method for node ranking in a linked database"
+    ],
+    "volume": [
+
+    ],
+    "publisher": [
+      "U.S. Patent and Trademark Office"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "U.S. Patent"
+    ],
+    "issue": [
+      "6,285,999"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Jobs",
+        "given": "S.P."
+      },
+      {
+        "family": "Forstall",
+        "given": "S."
+      }
+    ],
+    "date": [
+      "2013"
+    ],
+    "title": [
+      "Touch screen device, method, and graphical user interface for determining commands"
+    ],
+    "volume": [
+
+    ],
+    "publisher": [
+      "U.S. Patent and Trademark Office"
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "U.S. Patent"
+    ],
+    "issue": [
+      "8,570,278"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Climate Change",
+        "given": "Intergovernmental Panel",
+        "particle": "on"
+      }
+    ],
+    "date": [
+      "2014"
+    ],
+    "title": [
+      "Climate Change 2014: Synthesis Report"
+    ],
+    "container-title": [
+      "Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change"
+    ],
+    "publisher": [
+      "IPCC"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "International",
+        "given": "Amnesty"
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "Death sentences and executions 2019"
+    ],
+    "publisher": [
+      "Amnesty International"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "T.L."
+      }
+    ],
+    "date": [
+      "2005"
+    ],
+    "title": [
+      "The World Is Flat: A Brief History of the Twenty-first Century"
+    ],
+    "publisher": [
+      "Farrar, Straus and Giroux"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "given": "N.A.S.A."
+      }
+    ],
+    "date": [
+      "2022-07-12"
+    ],
+    "title": [
+      "Webb's First Deep Field"
+    ],
+    "url": [
+      "https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "News",
+        "given": "B.B.C."
+      }
+    ],
+    "date": [
+      "2021-03-23"
+    ],
+    "title": [
+      "Suez Canal: Giant ship blocking trade route floated"
+    ],
+    "url": [
+      "https://www.bbc.com/news/world-middle-east-56567600"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "given": "Mozilla"
+      }
+    ],
+    "date": [
+      "2024"
+    ],
+    "title": [
+      "MDN Web"
+    ],
+    "location": [
+      "Docs"
+    ],
+    "publisher": [
+      "CSS Grid Layout"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Ritzmann",
+        "given": "R.E."
+      }
+    ],
+    "date": [
+      "1974"
+    ],
+    "title": [
+      "The snapping mechanism of Alpukid shrimp"
+    ],
+    "genre": [
+      "[Ph.D. Thesis,"
+    ],
+    "publisher": [
+      "University of Virginia]. ProQuest Dissertations and Theses Global"
+    ],
+    "type": "thesis"
+  },
+  {
+    "author": [
+      {
+        "family": "Adams",
+        "given": "R.J."
+      }
+    ],
+    "date": [
+      "1973"
+    ],
+    "title": [
+      "Building a foundation for evaluation of instruction in higher education and continuing education"
+    ],
+    "genre": [
+      "(Doctoral dissertation)."
+    ],
+    "publisher": [
+      "Cornell University"
+    ],
+    "type": "thesis"
+  },
+  {
+    "author": [
+      {
+        "family": "Gladwell",
+        "given": "M."
+      }
+    ],
+    "date": [
+      "2008"
+    ],
+    "title": [
+      "Outliers: The Story of Success"
+    ],
+    "publisher": [
+      "Little, Brown and Company"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Obama",
+        "given": "B."
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "A Promised Land"
+    ],
+    "publisher": [
+      "Crown"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Isaacson",
+        "given": "W."
+      }
+    ],
+    "date": [
+      "2011"
+    ],
+    "title": [
+      "Steve Jobs"
+    ],
+    "publisher": [
+      "Simon & Schuster"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Orwell",
+        "given": "G."
+      }
+    ],
+    "date": [
+      "1949"
+    ],
+    "title": [
+      "Nineteen Eighty-Four"
+    ],
+    "publisher": [
+      "Secker & Warburg"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Austen",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "1813"
+    ],
+    "title": [
+      "Pride and Prejudice"
+    ],
+    "publisher": [
+      "T. Egerton"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Tolkien",
+        "given": "J.R.R."
+      }
+    ],
+    "date": [
+      "1954"
+    ],
+    "title": [
+      "The Fellowship of the Ring"
+    ],
+    "publisher": [
+      "George Allen & Unwin"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Herbert",
+        "given": "F."
+      }
+    ],
+    "date": [
+      "1965"
+    ],
+    "title": [
+      "Dune"
+    ],
+    "publisher": [
+      "Chilton Books"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Mnih",
+        "given": "V."
+      },
+      {
+        "family": "Kavukcuoglu",
+        "given": "K."
+      },
+      {
+        "family": "Silver",
+        "given": "D."
+      },
+      {
+        "family": "Graves",
+        "given": "A."
+      },
+      {
+        "family": "Antonoglou",
+        "given": "I."
+      },
+      {
+        "family": "Wierstra",
+        "given": "D."
+      },
+      {
+        "family": "Riedmiller",
+        "given": "M."
+      }
+    ],
+    "date": [
+      "2013"
+    ],
+    "title": [
+      "Playing atari with deep reinforcement learning"
+    ],
+    "note": [
+      "arXiv preprint arXiv:1312.5602."
+    ],
+    "arxiv": [
+      "1312.5602"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Sutskever",
+        "given": "I."
+      },
+      {
+        "family": "Vinyals",
+        "given": "O."
+      },
+      {
+        "family": "Le",
+        "given": "Q.V."
+      }
+    ],
+    "date": [
+      "2014"
+    ],
+    "title": [
+      "Sequence to sequence learning with neural networks"
+    ],
+    "container-title": [
+      "Advances in neural information processing systems"
+    ],
+    "pages": [
+      "27"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Kingma",
+        "given": "D.P."
+      },
+      {
+        "family": "Ba",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "2014"
+    ],
+    "title": [
+      "Adam: A method for stochastic optimization"
+    ],
+    "note": [
+      "arXiv preprint arXiv:1412.6980."
+    ],
+    "arxiv": [
+      "1412.6980"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Devlin",
+        "given": "J."
+      },
+      {
+        "family": "Chang",
+        "given": "M.W."
+      },
+      {
+        "family": "Lee",
+        "given": "K."
+      },
+      {
+        "family": "Toutanova",
+        "given": "K."
+      }
+    ],
+    "date": [
+      "2018"
+    ],
+    "title": [
+      "Bert: Pre-training of deep bidirectional transformers for language understanding"
+    ],
+    "note": [
+      "arXiv preprint arXiv:1810.04805."
+    ],
+    "arxiv": [
+      "1810.04805"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Mikolov",
+        "given": "T."
+      },
+      {
+        "family": "Chen",
+        "given": "K."
+      },
+      {
+        "family": "Corrado",
+        "given": "G."
+      },
+      {
+        "family": "Dean",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "2013"
+    ],
+    "title": [
+      "Efficient estimation of word representations in vector space"
+    ],
+    "note": [
+      "arXiv preprint arXiv:1301.3781."
+    ],
+    "arxiv": [
+      "1301.3781"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Aron",
+        "given": "L."
+      },
+      {
+        "family": "Botella",
+        "given": "M."
+      },
+      {
+        "family": "Lubart",
+        "given": "T."
+      }
+    ],
+    "date": [
+      "2019"
+    ],
+    "title": [
+      "Culinary arts: Talent and their development"
+    ],
+    "editor": [
+      {
+        "family": "Subotnik",
+        "given": "R.F."
+      },
+      {
+        "family": "Olszewski-Kubilius",
+        "given": "P."
+      },
+      {
+        "family": "Worrell",
+        "given": "F.C."
+      }
+    ],
+    "container-title": [
+      "The psychology of high performance: Developing human potential into domain-specific talent"
+    ],
+    "pages": [
+      "345–359"
+    ],
+    "publisher": [
+      "American Psychological Association"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Dillard",
+        "given": "J.P."
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "Currents in the study of persuasion"
+    ],
+    "editor": [
+      {
+        "family": "Oliver",
+        "given": "M.B."
+      },
+      {
+        "family": "Raney",
+        "given": "A.A."
+      },
+      {
+        "family": "Bryant",
+        "given": "J."
+      }
+    ],
+    "container-title": [
+      "Media effects: Advances in theory and research"
+    ],
+    "edition": [
+      "4th"
+    ],
+    "pages": [
+      "115–129"
+    ],
+    "publisher": [
+      "Routledge"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Thelen",
+        "given": "E."
+      }
+    ],
+    "date": [
+      "1989"
+    ],
+    "title": [
+      "Self-organization in developmental processes: Can systems approaches work?"
+    ],
+    "editor": [
+      {
+        "family": "Gunnar",
+        "given": "M.R."
+      },
+      {
+        "family": "Thelen",
+        "given": "E."
+      }
+    ],
+    "container-title": [
+      "Systems and development: The Minnesota Symposia on Child Psychology"
+    ],
+    "volume": [
+      "22"
+    ],
+    "pages": [
+      "77–117"
+    ],
+    "publisher": [
+      "Erlbaum"
+    ],
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Bureau",
+        "given": "U.S.Census"
+      }
+    ],
+    "date": [
+      "2020"
+    ],
+    "title": [
+      "U.S. and World Population Clock"
+    ],
+    "url": [
+      "https://www.census.gov/popclock/"
+    ],
+    "type": null
+  },
+  {
+    "author": [
+      {
+        "family": "Avramova",
+        "given": "N."
+      }
+    ],
+    "date": [
+      "2019-01-03"
+    ],
+    "title": [
+      "The secret to a long, happy, healthy life? Think age"
+    ],
+    "publisher": [
+      "CNN"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Arts",
+        "given": "Canada Council",
+        "particle": "for the"
+      }
+    ],
+    "date": [
+      "2013"
+    ],
+    "title": [
+      "What We Heard: Summary of consultation meetings, 2013"
+    ],
+    "publisher": [
+      "Canada Council for the Arts"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Dyson",
+        "given": "J."
+      }
+    ],
+    "date": [
+      "1986"
+    ],
+    "title": [
+      "Vacuum cleaner. U.S"
+    ],
+    "volume": [
+
+    ],
+    "type": "article-journal",
+    "container-title": [
+      "Patent"
+    ],
+    "issue": [
+      "4,567,123"
+    ]
+  },
+  {
+    "author": [
+      {
+        "family": "Blackwell",
+        "given": "E."
+      },
+      {
+        "family": "Conrod",
+        "given": "P.J."
+      }
+    ],
+    "date": [
+      "2003"
+    ],
+    "title": [
+      "A five-dimensional measure of drinking motives"
+    ],
+    "genre": [
+      "Unpublished manuscript,"
+    ],
+    "publisher": [
+      "Department of Psychology, University of British Columbia"
+    ],
+    "location": [
+      "Vancouver, Canada"
+    ],
+    "type": "manuscript"
+  },
+  {
+    "author": [
+      {
+        "family": "Frankl",
+        "given": "V.E."
+      }
+    ],
+    "date": [
+      "1984"
+    ],
+    "title": [
+      "Man's Search for Meaning"
+    ],
+    "publisher": [
+      "Beacon Press"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Coelho",
+        "given": "P."
+      }
+    ],
+    "date": [
+      "1988"
+    ],
+    "title": [
+      "The Alchemist"
+    ],
+    "publisher": [
+      "HarperTorch"
+    ],
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Huxley",
+        "given": "A."
+      }
+    ],
+    "date": [
+      "1932"
+    ],
+    "title": [
+      "Brave New World"
+    ],
+    "publisher": [
+      "Chatto & Windus"
+    ],
+    "type": "book"
+  }
+]

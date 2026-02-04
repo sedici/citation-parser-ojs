@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+  <sequence>
+    <author>Smith, J.</author>
+    <date>(2020).</date>
+    <title>The Art of Coding.</title>
+    <publisher>Universal Press.</publisher>
+  </sequence>
+  <sequence>
+    <author>Doe, J.</author>
+    <date>(2021).</date>
+    <title>The Book of Everything.</title>
+    <edition>(2nd ed.).</edition>
+    <publisher>Universal Press.</publisher>
+  </sequence>
+  <sequence>
+    <author>Hawkings, S.</author>
+    <date>(1988).</date>
+    <title>A Brief History of Time.</title>
+    <publisher>Bantam Books.</publisher>
+  </sequence>
+  <sequence>
+    <author>Kahneman, D.</author>
+    <date>(2011).</date>
+    <title>Thinking, Fast and Slow.</title>
+    <publisher>Farrar, Straus and Giroux.</publisher>
+  </sequence>
+  <sequence>
+    <author>Martin, R. C.</author>
+    <date>(2008).</date>
+    <title>Clean Code: A Handbook of Agile Software Craftsmanship.</title>
+    <publisher>Prentice Hall.</publisher>
+  </sequence>
+  <sequence>
+    <author>Sapolsky, R. M.</author>
+    <date>(2017).</date>
+    <title>Behave: The Biology of Humans at Our Best and Worst.</title>
+    <publisher>Penguin Books.</publisher>
+  </sequence>
+  <sequence>
+    <author>Harari, Y. N.</author>
+    <date>(2015).</date>
+    <title>Sapiens: A Brief History of Humankind.</title>
+    <location>Harper.</location>
+  </sequence>
+  <sequence>
+    <author>Newport, C.</author>
+    <date>(2016).</date>
+    <title>Deep Work: Rules for Focused Success in a Distracted World.</title>
+    <publisher>Grand Central Publishing.</publisher>
+  </sequence>
+  <sequence>
+    <author>Clear, J.</author>
+    <date>(2018).</date>
+    <title>Atomic Habits: An Easy &amp; Proven Way to Build</title>
+    <publisher>Good Habits &amp; Break Bad Ones. Avery.</publisher>
+  </sequence>
+  <sequence>
+    <author>Taleb, N. N.</author>
+    <date>(2007).</date>
+    <title>The Black Swan: The Impact of the Highly Improbable.</title>
+    <publisher>Random House.</publisher>
+  </sequence>
+  <sequence>
+    <author>Turing, A. M.</author>
+    <date>(1950).</date>
+    <title>Computing machinery and intelligence.</title>
+    <journal>Mind,</journal>
+    <volume>59(236),</volume>
+    <pages>433-460.</pages>
+  </sequence>
+  <sequence>
+    <author>Einstein, A.</author>
+    <date>(1905).</date>
+    <title>Zur Elektrodynamik bewegter Körper.</title>
+    <journal>Annalen der Physik,</journal>
+    <volume>322(10),</volume>
+    <pages>891-921.</pages>
+  </sequence>
+  <sequence>
+    <author>Watson, J. D., &amp; Crick, F. H.</author>
+    <date>(1953).</date>
+    <title>Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid.</title>
+    <journal>Nature,</journal>
+    <volume>171(4356),</volume>
+    <pages>737-738.</pages>
+  </sequence>
+  <sequence>
+    <author>Shannon, C. E.</author>
+    <date>(1948).</date>
+    <title>A mathematical theory of communication.</title>
+    <journal>The Bell System Technical Journal,</journal>
+    <volume>27(3),</volume>
+    <pages>379-423.</pages>
+  </sequence>
+  <sequence>
+    <author>LeCun, Y., Bengio, Y., &amp; Hinton, G.</author>
+    <date>(2015).</date>
+    <title>Deep learning.</title>
+    <journal>Nature,</journal>
+    <volume>521(7553),</volume>
+    <pages>436-444.</pages>
+  </sequence>
+  <sequence>
+    <author>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... &amp; Polosukhin, I.</author>
+    <date>(2017).</date>
+    <title>Attention is all you need.</title>
+    <journal>Advances in Neural Information Processing Systems,</journal>
+    <volume>30.</volume>
+  </sequence>
+  <sequence>
+    <author>He, K., Zhang, X., Ren, S., &amp; Sun, J.</author>
+    <date>(2016).</date>
+    <title>Deep residual learning for image recognition.</title>
+    <container-title>In Proceedings of the IEEE conference on computer vision and pattern recognition</container-title>
+    <pages>(pp. 770-778).</pages>
+  </sequence>
+  <sequence>
+    <author>Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., Van Den Driessche, G., ... &amp; Hassabis, D.</author>
+    <date>(2016).</date>
+    <title>Mastering the game of Go with deep neural networks and tree search.</title>
+    <journal>Nature,</journal>
+    <volume>529(7587),</volume>
+    <pages>484-489.</pages>
+  </sequence>
+  <sequence>
+    <author>Rumelhart, D. E., Hinton, G. E., &amp; Williams, R. J.</author>
+    <date>(1986).</date>
+    <title>Learning representations by back-propagating errors.</title>
+    <journal>nature,</journal>
+    <volume>323(6088),</volume>
+    <pages>533-536.</pages>
+  </sequence>
+  <sequence>
+    <author>Bengio, Y., Ducharme, R., Vincent, P., &amp; Jauvin, C.</author>
+    <date>(2003).</date>
+    <title>A neural probabilistic language model.</title>
+    <journal>Journal of machine learning research,</journal>
+    <volume>3(Feb),</volume>
+    <pages>1137-1155.</pages>
+  </sequence>
+  <sequence>
+    <author>Author, A.</author>
+    <date>(2022).</date>
+    <title>Chapter Title.</title>
+    <editor>En Editor, E. (Ed.),</editor>
+    <container-title>The Anthology</container-title>
+    <pages>(pp. 50-60).</pages>
+    <publisher>Big House.</publisher>
+  </sequence>
+  <sequence>
+    <author>Goodfellow, I.</author>
+    <date>(2016).</date>
+    <title>Deep Feedforward Networks.</title>
+    <editor>In Y. Bengio &amp; A. Courville (Eds.),</editor>
+    <container-title>Deep Learning</container-title>
+    <pages>(pp. 164-223).</pages>
+    <publisher>MIT Press.</publisher>
+  </sequence>
+  <sequence>
+    <author>Piaget, J.</author>
+    <date>(1972).</date>
+    <title>Intellectual evolution from adolescence to adulthood.</title>
+    <editor>In P. N. Johnson-Laird &amp; P. C. Wason (Eds.),</editor>
+    <container-title>Thinking: Readings in cognitive science</container-title>
+    <pages>(pp. 158-165).</pages>
+    <publisher>Cambridge University Press.</publisher>
+  </sequence>
+  <sequence>
+    <author>Freud, S.</author>
+    <date>(1961).</date>
+    <title>The ego and the id.</title>
+    <editor>In J. Strachey (Ed. &amp; Trans.),</editor>
+    <container-title>The standard edition of the complete psychological works of Sigmund Freud</container-title>
+    <volume>(Vol. 19,</volume>
+    <pages>pp. 3-66).</pages>
+    <publisher>Hogarth Press.</publisher>
+  </sequence>
+  <sequence>
+    <author>Bergmann, P. G.</author>
+    <date>(1993).</date>
+    <title>Relativity.</title>
+    <container-title>In The New Encyclopedia Britannica.</container-title>
+    <volume>(Vol. 26,</volume>
+    <pages>pp. 501-508).</pages>
+    <publisher>Encyclopedia Britannica.</publisher>
+  </sequence>
+  <sequence>
+    <author>Student, S.</author>
+    <date>(2019).</date>
+    <genre>My PhD Thesis [Doctoral dissertation].</genre>
+    <publisher>University of Science.</publisher>
+  </sequence>
+  <sequence>
+    <author>Harris, L.</author>
+    <date>(2014).</date>
+    <title>Instructional leadership perceptions and practices of elementary school leaders</title>
+    <genre>[Unpublished doctoral dissertation].</genre>
+    <publisher>University of Virginia.</publisher>
+  </sequence>
+  <sequence>
+    <author>Miranda, C.</author>
+    <date>(2020).</date>
+    <title>Exploración de redes neuronales [Tesis de maestría, Universidad Nacional].</title>
+    <publisher>Repositorio Institucional.</publisher>
+  </sequence>
+  <sequence>
+    <author>WHO.</author>
+    <date>(2020).</date>
+    <title>Coronavirus disease (COVID-19) dashboard. World Health Organization.</title>
+    <url>https://covid19.who.int/</url>
+  </sequence>
+  <sequence>
+    <author>OpenAI.</author>
+    <date>(2023).</date>
+    <title>ChatGPT: Optimizing Language Models for Dialogue.</title>
+    <url>https://openai.com/blog/chatgpt/</url>
+  </sequence>
+  <sequence>
+    <author>National Geographic.</author>
+    <date>(2020, June 20).</date>
+    <title>The power of the ocean.</title>
+    <url>https://www.nationalgeographic.com/ocean/power</url>
+  </sequence>
+  <sequence>
+    <author>National Cancer Institute.</author>
+    <date>(2019).</date>
+    <title>Taking time: Support for people with cancer.</title>
+    <publisher>U.S. Department of Health and Human Services.</publisher>
+  </sequence>
+  <sequence>
+    <author>World Health Organization.</author>
+    <date>(2018).</date>
+    <title>Global status report on road safety 2018.</title>
+    <note>License: CC BY-NC-SA 3.0 IGO.</note>
+  </sequence>
+  <sequence>
+    <author>Smith, I. M.</author>
+    <date>(1988).</date>
+    <title>U.S.</title>
+    <journal>Patent</journal>
+    <volume>No. 123,445.</volume>
+    <publisher>U.S. Patent and Trademark Office.</publisher>
+  </sequence>
+  <sequence>
+    <author>Hiremath, S. C., Kumar, S., &amp; Lu, F.</author>
+    <date>(2016).</date>
+    <title>U.S.</title>
+    <journal>Patent</journal>
+    <volume>No. 9,364,439.</volume>
+    <publisher>U.S. Patent and Trademark Office.</publisher>
+  </sequence>
+  <sequence>
+    <author>Katz, I., &amp; Gabayan, K.</author>
+    <date>(2011).</date>
+    <title>Social media adoption in an unbundled enterprise.</title>
+    <container-title>In Proceedings of the 2011 Conference on Human Factors in Computing Systems</container-title>
+    <pages>(pp. 210-220).</pages>
+    <publisher>ACM.</publisher>
+  </sequence>
+  <sequence>
+    <author>Schwartz, J.</author>
+    <date>(1993, September 30).</date>
+    <title>Obesity affects economic, social status.</title>
+    <journal>The Washington Post,</journal>
+    <volume>A1,</volume>
+    <pages>A4.</pages>
+  </sequence>
+  <sequence>
+    <author>Chamberlin, J., Novotney, A., Packard, E., &amp; Price, M.</author>
+    <date>(2008, May).</date>
+    <title>Enhancing worker well-being: Occupational health psychologists convene to share their research on work, stress, and health.</title>
+    <journal>Monitor on Psychology,</journal>
+    <volume>39(5),</volume>
+    <pages>26-29.</pages>
+  </sequence>
+  <sequence>
+    <author>Borenstein, M., Hedges, L., Higgins, J., &amp; Rothstein, H.</author>
+    <date>(2014).</date>
+    <title>Comprehensive Meta-Analysis (Version 3.3.070)</title>
+    <publisher>[Computer software]. Biostat.</publisher>
+  </sequence>
+  <sequence>
+    <author>O'Donohue, W.</author>
+    <date>(2017).</date>
+    <title>Content analysis of undergraduate psychology textbooks (Dataset).</title>
+    <journal>APA.</journal>
+  </sequence>
+  <sequence>
+    <author>Perez, Juan.</author>
+    <title>"Estrategias de ventas 2024".</title>
+    <container-title>Presentación interna.</container-title>
+  </sequence>
+  <sequence>
+    <author>R Core Team.</author>
+    <date>(2020).</date>
+    <title>R: A language and environment for statistical computing.</title>
+    <publisher>R Foundation for Statistical Computing.</publisher>
+  </sequence>
+  <sequence>
+    <author>Python Software Foundation.</author>
+    <date>(2021).</date>
+    <journal>Python Language Reference,</journal>
+    <volume>version 3.9.5.</volume>
+  </sequence>
+  <sequence>
+    <author>StataCorp.</author>
+    <date>(2019).</date>
+    <title>Stata Statistical Software: Release 16.</title>
+    <location>StataCorp LLC.</location>
+  </sequence>
+  <sequence>
+    <author>IBM Corp.</author>
+    <date>(2017).</date>
+    <title>IBM SPSS Statistics for Windows, Version 25.0.</title>
+    <publisher>IBM Corp.</publisher>
+  </sequence>
+  <sequence>
+    <author>Brody, J. E.</author>
+    <date>(2007, December 11).</date>
+    <title>Mental reserves keep brain agile.</title>
+    <journal>The New York Times.</journal>
+  </sequence>
+  <sequence>
+    <author>Toner, K.</author>
+    <date>(2020, September 24).</date>
+    <title>When to wear a face mask.</title>
+    <container-title>CNN.</container-title>
+    <url>https://cnn.it/3k7w</url>
+  </sequence>
+  <sequence>
+    <author>Harlan, C.</author>
+    <date>(2013, April 2).</date>
+    <title>North Korea vows to restart shuttered nuclear reactor that can make bomb-grade plutonium.</title>
+    <journal>The Washington Post,</journal>
+    <volume>A1.</volume>
+  </sequence>
+  <sequence>
+    <author>Stobbe, M.</author>
+    <date>(2020, January 8).</date>
+    <title>Cancer death rate in US sees largest one-year drop ever.</title>
+    <publisher>Chicago Tribune.</publisher>
+  </sequence>
+  <sequence>
+    <author>Sack, K.</author>
+    <date>(2000, February).</date>
+    <title>Character and cholesterol.</title>
+    <journal>Health,</journal>
+    <volume>14(2),</volume>
+    <pages>20-22.</pages>
+  </sequence>
+  <sequence>
+    <author>Weir, K.</author>
+    <date>(2017, January).</date>
+    <title>Forgiveness can improve mental and physical health.</title>
+    <journal>Monitor on Psychology,</journal>
+    <volume>48(1),</volume>
+    <pages>30.</pages>
+  </sequence>
+  <sequence>
+    <author>Geddes, L.</author>
+    <date>(2020, November 25).</date>
+    <title>How we will learn to live with Covid-19.</title>
+    <journal>New Scientist,</journal>
+    <volume>248(3310),</volume>
+    <pages>10-11.</pages>
+  </sequence>
+  <sequence>
+    <author>Schulte, B.</author>
+    <date>(2019, September).</date>
+    <title>The best time of day to do everything.</title>
+    <journal>Fast Company,</journal>
+    <volume>(235),</volume>
+    <pages>32-37.</pages>
+  </sequence>
+  <sequence>
+    <author>Duckworth, A. L., &amp; Quirk, A.</author>
+    <date>(2014).</date>
+    <title>Reading capability.</title>
+    <editor>In F. M. H. van de Vijver (Chair),</editor>
+    <container-title>Objective measures of character [Symposium]. 2014 AERA Annual Meeting,</container-title>
+    <location>Philadelphia, PA.</location>
+  </sequence>
+  <sequence>
+    <author>Fistek, A., Jester, E., &amp; Sonnenberg, K.</author>
+    <date>(2017, July 12-15).</date>
+    <title>Everybody's got a little music in them: Using music therapy to connect, engage,</title>
+    <container-title>and motivate [Conference session]. Autism Society National Conference,</container-title>
+    <location>Milwaukee, WI, United States.</location>
+  </sequence>
+  <sequence>
+    <author>Lee, D. J.</author>
+    <date>(2020).</date>
+    <title>Analysis of cloud security [Paper presentation].</title>
+    <container-title>International Conference on Cyber Security,</container-title>
+    <location>London, UK.</location>
+  </sequence>
+  <sequence>
+    <author>Pang, B., &amp; Lee, L.</author>
+    <date>(2005).</date>
+    <title>Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales.</title>
+    <container-title>In Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics</container-title>
+    <pages>(pp. 115-124).</pages>
+  </sequence>
+  <sequence>
+    <author>Pew Research Center.</author>
+    <date>(2018).</date>
+    <title>American trends panel Wave 26 [DataSet].</title>
+    <publisher>Pew Research Center.</publisher>
+    <url>https://www.pewresearch.org/</url>
+  </sequence>
+  <sequence>
+    <title>National Center for Education Statistics.</title>
+    <date>(2016).</date>
+    <title>Fast Response Survey System (FRSS) 109: Teachers' Use of Educational Technology in U.S.</title>
+    <note>Public Schools, 2019 (Dataset).</note>
+    <url>https://doi.org/10.3886/ICPSR35588.v3</url>
+  </sequence>
+  <sequence>
+    <title>United States Census Bureau.</title>
+    <date>(2020). 2010</date>
+    <title>Census: Population and Housing Tables (Dataset).</title>
+  </sequence>
+  <sequence>
+    <author>Page, L.</author>
+    <date>(2001).</date>
+    <title>Method for node ranking in a linked database.</title>
+    <journal>U.S. Patent</journal>
+    <volume>No. 6,285,999.</volume>
+    <publisher>U.S. Patent and Trademark Office.</publisher>
+  </sequence>
+  <sequence>
+    <author>Jobs, S. P., &amp; Forstall, S.</author>
+    <date>(2013).</date>
+    <title>Touch screen device, method, and graphical user interface for determining commands.</title>
+    <journal>U.S. Patent</journal>
+    <volume>No. 8,570,278.</volume>
+    <publisher>U.S. Patent and Trademark Office.</publisher>
+  </sequence>
+  <sequence>
+    <author>Intergovernmental Panel on Climate Change.</author>
+    <date>(2014).</date>
+    <title>Climate Change 2014: Synthesis Report.</title>
+    <container-title>Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change.</container-title>
+    <publisher>IPCC.</publisher>
+  </sequence>
+  <sequence>
+    <author>Amnesty International.</author>
+    <date>(2020).</date>
+    <title>Death sentences and executions 2019.</title>
+    <publisher>Amnesty International.</publisher>
+  </sequence>
+  <sequence>
+    <author>Friedman, T. L.</author>
+    <date>(2005).</date>
+    <title>The World Is Flat: A Brief History of the Twenty-first Century.</title>
+    <publisher>Farrar, Straus and Giroux.</publisher>
+  </sequence>
+  <sequence>
+    <author>NASA.</author>
+    <date>(2022, July 12).</date>
+    <title>Webb's First Deep Field.</title>
+    <url>https://www.nasa.gov/image-feature/goddard/2022/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet</url>
+  </sequence>
+  <sequence>
+    <author>BBC News.</author>
+    <date>(2021, March 23).</date>
+    <title>Suez Canal: Giant ship blocking trade route floated.</title>
+    <url>https://www.bbc.com/news/world-middle-east-56567600</url>
+  </sequence>
+  <sequence>
+    <author>Mozilla.</author>
+    <date>(2024).</date>
+    <title>MDN Web</title>
+    <location>Docs:</location>
+    <publisher>CSS Grid Layout.</publisher>
+  </sequence>
+  <sequence>
+    <author>Ritzmann, R. E.</author>
+    <date>(1974).</date>
+    <title>The snapping mechanism of Alpukid shrimp</title>
+    <genre>[Ph.D. Thesis,</genre>
+    <publisher>University of Virginia]. ProQuest Dissertations and Theses Global.</publisher>
+  </sequence>
+  <sequence>
+    <author>Adams, R. J.</author>
+    <date>(1973).</date>
+    <title>Building a foundation for evaluation of instruction in higher education and continuing education</title>
+    <genre>(Doctoral dissertation).</genre>
+    <publisher>Cornell University.</publisher>
+  </sequence>
+  <sequence>
+    <author>Gladwell, M.</author>
+    <date>(2008).</date>
+    <title>Outliers: The Story of Success.</title>
+    <publisher>Little, Brown and Company.</publisher>
+  </sequence>
+  <sequence>
+    <author>Obama, B.</author>
+    <date>(2020).</date>
+    <title>A Promised Land.</title>
+    <publisher>Crown.</publisher>
+  </sequence>
+  <sequence>
+    <author>Isaacson, W.</author>
+    <date>(2011).</date>
+    <title>Steve Jobs.</title>
+    <publisher>Simon &amp; Schuster.</publisher>
+  </sequence>
+  <sequence>
+    <author>Orwell, G.</author>
+    <date>(1949).</date>
+    <title>Nineteen Eighty-Four.</title>
+    <publisher>Secker &amp; Warburg.</publisher>
+  </sequence>
+  <sequence>
+    <author>Austen, J.</author>
+    <date>(1813).</date>
+    <title>Pride and Prejudice.</title>
+    <publisher>T. Egerton.</publisher>
+  </sequence>
+  <sequence>
+    <author>Tolkien, J. R. R.</author>
+    <date>(1954).</date>
+    <title>The Fellowship of the Ring.</title>
+    <publisher>George Allen &amp; Unwin.</publisher>
+  </sequence>
+  <sequence>
+    <author>Herbert, F.</author>
+    <date>(1965).</date>
+    <title>Dune.</title>
+    <publisher>Chilton Books.</publisher>
+  </sequence>
+  <sequence>
+    <author>Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., &amp; Riedmiller, M.</author>
+    <date>(2013).</date>
+    <title>Playing atari with deep reinforcement learning.</title>
+    <note>arXiv preprint arXiv:1312.5602.</note>
+  </sequence>
+  <sequence>
+    <author>Sutskever, I., Vinyals, O., &amp; Le, Q. V.</author>
+    <date>(2014).</date>
+    <title>Sequence to sequence learning with neural networks.</title>
+    <container-title>Advances in neural information processing systems,</container-title>
+    <pages>27.</pages>
+  </sequence>
+  <sequence>
+    <author>Kingma, D. P., &amp; Ba, J.</author>
+    <date>(2014).</date>
+    <title>Adam: A method for stochastic optimization.</title>
+    <note>arXiv preprint arXiv:1412.6980.</note>
+  </sequence>
+  <sequence>
+    <author>Devlin, J., Chang, M. W., Lee, K., &amp; Toutanova, K.</author>
+    <date>(2018).</date>
+    <title>Bert: Pre-training of deep bidirectional transformers for language understanding.</title>
+    <note>arXiv preprint arXiv:1810.04805.</note>
+  </sequence>
+  <sequence>
+    <author>Mikolov, T., Chen, K., Corrado, G., &amp; Dean, J.</author>
+    <date>(2013).</date>
+    <title>Efficient estimation of word representations in vector space.</title>
+    <note>arXiv preprint arXiv:1301.3781.</note>
+  </sequence>
+  <sequence>
+    <author>Aron, L., Botella, M., &amp; Lubart, T.</author>
+    <date>(2019).</date>
+    <title>Culinary arts: Talent and their development.</title>
+    <editor>In R. F. Subotnik, P. Olszewski-Kubilius, &amp; F. C. Worrell (Eds.),</editor>
+    <container-title>The psychology of high performance: Developing human potential into domain-specific talent</container-title>
+    <pages>(pp. 345-359).</pages>
+    <publisher>American Psychological Association.</publisher>
+  </sequence>
+  <sequence>
+    <author>Dillard, J. P.</author>
+    <date>(2020).</date>
+    <title>Currents in the study of persuasion.</title>
+    <editor>In M. B. Oliver, A. A. Raney, &amp; J. Bryant (Eds.),</editor>
+    <container-title>Media effects: Advances in theory and research</container-title>
+    <edition>(4th ed.,</edition>
+    <pages>pp. 115-129).</pages>
+    <publisher>Routledge.</publisher>
+  </sequence>
+  <sequence>
+    <author>Thelen, E.</author>
+    <date>(1989).</date>
+    <title>Self-organization in developmental processes: Can systems approaches work?</title>
+    <editor>In M. R. Gunnar &amp; E. Thelen (Eds.),</editor>
+    <container-title>Systems and development: The Minnesota Symposia on Child Psychology</container-title>
+    <volume>(Vol. 22,</volume>
+    <pages>pp. 77-117).</pages>
+    <publisher>Erlbaum.</publisher>
+  </sequence>
+  <sequence>
+    <author>U.S. Census Bureau.</author>
+    <date>(2020).</date>
+    <title>U.S. and World Population Clock.</title>
+    <url>https://www.census.gov/popclock/</url>
+  </sequence>
+  <sequence>
+    <author>Avramova, N.</author>
+    <date>(2019, January 3).</date>
+    <title>The secret to a long, happy, healthy life? Think age.</title>
+    <publisher>CNN.</publisher>
+  </sequence>
+  <sequence>
+    <author>Canada Council for the Arts.</author>
+    <date>(2013).</date>
+    <title>What We Heard: Summary of consultation meetings, 2013.</title>
+    <publisher>Canada Council for the Arts.</publisher>
+  </sequence>
+  <sequence>
+    <author>Dyson, J.</author>
+    <date>(1986).</date>
+    <title>Vacuum cleaner. U.S.</title>
+    <journal>Patent</journal>
+    <volume>No. 4,567,123.</volume>
+  </sequence>
+  <sequence>
+    <author>Blackwell, E., &amp; Conrod, P. J.</author>
+    <date>(2003).</date>
+    <title>A five-dimensional measure of drinking motives.</title>
+    <genre>Unpublished manuscript,</genre>
+    <publisher>Department of Psychology, University of British Columbia,</publisher>
+    <location>Vancouver, Canada.</location>
+  </sequence>
+  <sequence>
+    <author>Frankl, V. E.</author>
+    <date>(1984).</date>
+    <title>Man's Search for Meaning.</title>
+    <publisher>Beacon Press.</publisher>
+  </sequence>
+  <sequence>
+    <author>Coelho, P.</author>
+    <date>(1988).</date>
+    <title>The Alchemist.</title>
+    <publisher>HarperTorch.</publisher>
+  </sequence>
+  <sequence>
+    <author>Huxley, A.</author>
+    <date>(1932).</date>
+    <title>Brave New World.</title>
+    <publisher>Chatto &amp; Windus.</publisher>
+  </sequence>
+</dataset>

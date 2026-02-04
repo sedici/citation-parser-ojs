@@ -1,0 +1,993 @@
+{
+    "date": "2025-12-16 12:45:54",
+    "provider": "gemini",
+    "model": "gemini-2.0-flash",
+    "total_items": 93,
+    "results": [
+        {
+            "original_text": "Smith, J. (2020). The Art of Coding. Universal Press.",
+            "type": "book",
+            "title": "The Art of Coding",
+            "authors": [
+                "Smith, J."
+            ],
+            "year": 2020,
+            "source": "Universal Press"
+        },
+        {
+            "original_text": "Doe, J. (2021). The Book of Everything. (2nd ed.). Universal Press.",
+            "type": "book",
+            "title": "The Book of Everything",
+            "authors": [
+                "Doe, J."
+            ],
+            "year": 2021,
+            "source": "Universal Press"
+        },
+        {
+            "original_text": "Hawkings, S. (1988). A Brief History of Time. Bantam Books.",
+            "type": "book",
+            "title": "A Brief History of Time",
+            "authors": [
+                "Hawkings, S."
+            ],
+            "year": 1988,
+            "source": "Bantam Books"
+        },
+        {
+            "original_text": "Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.",
+            "type": "book",
+            "title": "Thinking, Fast and Slow",
+            "authors": [
+                "Kahneman, D."
+            ],
+            "year": 2011,
+            "source": "Farrar, Straus and Giroux"
+        },
+        {
+            "original_text": "Martin, R. C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.",
+            "type": "book",
+            "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+            "authors": [
+                "Martin, R. C."
+            ],
+            "year": 2008,
+            "source": "Prentice Hall"
+        },
+        {
+            "original_text": "Sapolsky, R. M. (2017). Behave: The Biology of Humans at Our Best and Worst. Penguin Books.",
+            "type": "book",
+            "title": "Behave: The Biology of Humans at Our Best and Worst",
+            "authors": [
+                "Sapolsky, R. M."
+            ],
+            "year": 2017,
+            "source": "Penguin Books"
+        },
+        {
+            "original_text": "Harari, Y. N. (2015). Sapiens: A Brief History of Humankind. Harper.",
+            "type": "book",
+            "title": "Sapiens: A Brief History of Humankind",
+            "authors": [
+                "Harari, Y. N."
+            ],
+            "year": 2015,
+            "source": "Harper"
+        },
+        {
+            "original_text": "Newport, C. (2016). Deep Work: Rules for Focused Success in a Distracted World. Grand Central Publishing.",
+            "type": "book",
+            "title": "Deep Work: Rules for Focused Success in a Distracted World",
+            "authors": [
+                "Newport, C."
+            ],
+            "year": 2016,
+            "source": "Grand Central Publishing"
+        },
+        {
+            "original_text": "Clear, J. (2018). Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. Avery.",
+            "type": "book",
+            "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+            "authors": [
+                "Clear, J."
+            ],
+            "year": 2018,
+            "source": "Avery"
+        },
+        {
+            "original_text": "Taleb, N. N. (2007). The Black Swan: The Impact of the Highly Improbable. Random House.",
+            "type": "book",
+            "title": "The Black Swan: The Impact of the Highly Improbable",
+            "authors": [
+                "Taleb, N. N."
+            ],
+            "year": 2007,
+            "source": "Random House"
+        },
+        {
+            "original_text": "Turing, A. M. (1950). Computing machinery and intelligence. Mind, 59(236), 433-460.",
+            "type": "article",
+            "title": "Computing machinery and intelligence",
+            "authors": [
+                "Turing, A. M."
+            ],
+            "year": 1950,
+            "source": "Mind"
+        },
+        {
+            "original_text": "Einstein, A. (1905). Zur Elektrodynamik bewegter Körper. Annalen der Physik, 322(10), 891-921.",
+            "type": "article",
+            "title": "Zur Elektrodynamik bewegter Körper",
+            "authors": [
+                "Einstein, A."
+            ],
+            "year": 1905,
+            "source": "Annalen der Physik"
+        },
+        {
+            "original_text": "Watson, J. D., & Crick, F. H. (1953). Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid. Nature, 171(4356), 737-738.",
+            "type": "article",
+            "title": "Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid",
+            "authors": [
+                "Watson, J. D.",
+                "Crick, F. H."
+            ],
+            "year": 1953,
+            "source": "Nature"
+        },
+        {
+            "original_text": "Shannon, C. E. (1948). A mathematical theory of communication. The Bell System Technical Journal, 27(3), 379-423.",
+            "type": "article",
+            "title": "A mathematical theory of communication",
+            "authors": [
+                "Shannon, C. E."
+            ],
+            "year": 1948,
+            "source": "The Bell System Technical Journal"
+        },
+        {
+            "original_text": "LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436-444.",
+            "type": "article",
+            "title": "Deep learning",
+            "authors": [
+                "LeCun, Y.",
+                "Bengio, Y.",
+                "Hinton, G."
+            ],
+            "year": 2015,
+            "source": "Nature"
+        },
+        {
+            "original_text": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30.",
+            "type": "conference_paper",
+            "title": "Attention is all you need",
+            "authors": [
+                "Vaswani, A.",
+                "Shazeer, N.",
+                "Parmar, N.",
+                "Uszkoreit, J.",
+                "Jones, L.",
+                "Gomez, A. N.",
+                "Polosukhin, I."
+            ],
+            "year": 2017,
+            "source": "Advances in Neural Information Processing Systems"
+        },
+        {
+            "original_text": "He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).",
+            "type": "conference_paper",
+            "title": "Deep residual learning for image recognition",
+            "authors": [
+                "He, K.",
+                "Zhang, X.",
+                "Ren, S.",
+                "Sun, J."
+            ],
+            "year": 2016,
+            "source": "Proceedings of the IEEE conference on computer vision and pattern recognition"
+        },
+        {
+            "original_text": "Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., Van Den Driessche, G., ... & Hassabis, D. (2016). Mastering the game of Go with deep neural networks and tree search. Nature, 529(7587), 484-489.",
+            "type": "journal_article",
+            "title": "Mastering the game of Go with deep neural networks and tree search",
+            "authors": [
+                "Silver, D.",
+                "Huang, A.",
+                "Maddison, C. J.",
+                "Guez, A.",
+                "Sifre, L.",
+                "Van Den Driessche, G.",
+                "Hassabis, D."
+            ],
+            "year": 2016,
+            "source": "Nature"
+        },
+        {
+            "original_text": "Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. nature, 323(6088), 533-536.",
+            "type": "journal_article",
+            "title": "Learning representations by back-propagating errors",
+            "authors": [
+                "Rumelhart, D. E.",
+                "Hinton, G. E.",
+                "Williams, R. J."
+            ],
+            "year": 1986,
+            "source": "nature"
+        },
+        {
+            "original_text": "Bengio, Y., Ducharme, R., Vincent, P., & Jauvin, C. (2003). A neural probabilistic language model. Journal of machine learning research, 3(Feb), 1137-1155.",
+            "type": "journal_article",
+            "title": "A neural probabilistic language model",
+            "authors": [
+                "Bengio, Y.",
+                "Ducharme, R.",
+                "Vincent, P.",
+                "Jauvin, C."
+            ],
+            "year": 2003,
+            "source": "Journal of machine learning research"
+        },
+        {
+            "original_text": "Author, A. (2022). Chapter Title. En Editor, E. (Ed.), The Anthology (pp. 50-60). Big House.",
+            "type": "chapter",
+            "title": "Chapter Title",
+            "authors": [
+                "Author, A."
+            ],
+            "year": 2022,
+            "source": "The Anthology. Big House."
+        },
+        {
+            "original_text": "Goodfellow, I. (2016). Deep Feedforward Networks. In Y. Bengio & A. Courville (Eds.), Deep Learning (pp. 164-223). MIT Press.",
+            "type": "chapter",
+            "title": "Deep Feedforward Networks",
+            "authors": [
+                "Goodfellow, I."
+            ],
+            "year": 2016,
+            "source": "Deep Learning. MIT Press."
+        },
+        {
+            "original_text": "Piaget, J. (1972). Intellectual evolution from adolescence to adulthood. In P. N. Johnson-Laird & P. C. Wason (Eds.), Thinking: Readings in cognitive science (pp. 158-165). Cambridge University Press.",
+            "type": "chapter",
+            "title": "Intellectual evolution from adolescence to adulthood",
+            "authors": [
+                "Piaget, J."
+            ],
+            "year": 1972,
+            "source": "Thinking: Readings in cognitive science. Cambridge University Press."
+        },
+        {
+            "original_text": "Freud, S. (1961). The ego and the id. In J. Strachey (Ed. & Trans.), The standard edition of the complete psychological works of Sigmund Freud (Vol. 19, pp. 3-66). Hogarth Press.",
+            "type": "chapter",
+            "title": "The ego and the id",
+            "authors": [
+                "Freud, S."
+            ],
+            "year": 1961,
+            "source": "The standard edition of the complete psychological works of Sigmund Freud. Hogarth Press."
+        },
+        {
+            "original_text": "Bergmann, P. G. (1993). Relativity. In The New Encyclopedia Britannica. (Vol. 26, pp. 501-508). Encyclopedia Britannica.",
+            "type": "chapter",
+            "title": "Relativity",
+            "authors": [
+                "Bergmann, P. G."
+            ],
+            "year": 1993,
+            "source": "The New Encyclopedia Britannica. Encyclopedia Britannica."
+        },
+        {
+            "original_text": "Student, S. (2019). My PhD Thesis [Doctoral dissertation]. University of Science.",
+            "type": "dissertation",
+            "title": "My PhD Thesis",
+            "authors": [
+                "Student, S."
+            ],
+            "year": 2019,
+            "source": "University of Science"
+        },
+        {
+            "original_text": "Harris, L. (2014). Instructional leadership perceptions and practices of elementary school leaders [Unpublished doctoral dissertation]. University of Virginia.",
+            "type": "dissertation",
+            "title": "Instructional leadership perceptions and practices of elementary school leaders",
+            "authors": [
+                "Harris, L."
+            ],
+            "year": 2014,
+            "source": "University of Virginia"
+        },
+        {
+            "original_text": "Miranda, C. (2020). Exploración de redes neuronales [Tesis de maestría, Universidad Nacional]. Repositorio Institucional.",
+            "type": "thesis",
+            "title": "Exploración de redes neuronales",
+            "authors": [
+                "Miranda, C."
+            ],
+            "year": 2020,
+            "source": "Repositorio Institucional"
+        },
+        {
+            "original_text": "WHO. (2020). Coronavirus disease (COVID-19) dashboard. World Health Organization. https:\/\/covid19.who.int\/",
+            "type": "report",
+            "title": "Coronavirus disease (COVID-19) dashboard",
+            "authors": [
+                "WHO"
+            ],
+            "year": 2020,
+            "source": "World Health Organization"
+        },
+        {
+            "original_text": "OpenAI. (2023). ChatGPT: Optimizing Language Models for Dialogue. https:\/\/openai.com\/blog\/chatgpt\/",
+            "type": "blog post",
+            "title": "ChatGPT: Optimizing Language Models for Dialogue",
+            "authors": [
+                "OpenAI"
+            ],
+            "year": 2023,
+            "source": "https:\/\/openai.com\/blog\/chatgpt\/"
+        },
+        {
+            "original_text": "National Geographic. (2020, June 20). The power of the ocean. https:\/\/www.nationalgeographic.com\/ocean\/power",
+            "type": "website",
+            "title": "The power of the ocean",
+            "authors": [
+                "National Geographic"
+            ],
+            "year": 2020,
+            "source": "https:\/\/www.nationalgeographic.com\/ocean\/power"
+        },
+        {
+            "original_text": "National Cancer Institute. (2019). Taking time: Support for people with cancer. U.S. Department of Health and Human Services.",
+            "type": "report",
+            "title": "Taking time: Support for people with cancer",
+            "authors": [
+                "National Cancer Institute"
+            ],
+            "year": 2019,
+            "source": "U.S. Department of Health and Human Services"
+        },
+        {
+            "original_text": "World Health Organization. (2018). Global status report on road safety 2018. License: CC BY-NC-SA 3.0 IGO.",
+            "type": "report",
+            "title": "Global status report on road safety 2018",
+            "authors": [
+                "World Health Organization"
+            ],
+            "year": 2018,
+            "source": "License: CC BY-NC-SA 3.0 IGO"
+        },
+        {
+            "original_text": "Smith, I. M. (1988). U.S. Patent No. 123,445. U.S. Patent and Trademark Office.",
+            "type": "patent",
+            "title": "U.S. Patent No. 123,445",
+            "authors": [
+                "Smith, I. M."
+            ],
+            "year": 1988,
+            "source": "U.S. Patent and Trademark Office"
+        },
+        {
+            "original_text": "Hiremath, S. C., Kumar, S., & Lu, F. (2016). U.S. Patent No. 9,364,439. U.S. Patent and Trademark Office.",
+            "type": "patent",
+            "title": "U.S. Patent No. 9,364,439",
+            "authors": [
+                "Hiremath, S. C.",
+                "Kumar, S.",
+                "Lu, F."
+            ],
+            "year": 2016,
+            "source": "U.S. Patent and Trademark Office"
+        },
+        {
+            "original_text": "Katz, I., & Gabayan, K. (2011). Social media adoption in an unbundled enterprise. In Proceedings of the 2011 Conference on Human Factors in Computing Systems (pp. 210-220). ACM.",
+            "type": "Conference Proceeding",
+            "title": "Social media adoption in an unbundled enterprise",
+            "authors": [
+                "Katz, I.",
+                "Gabayan, K."
+            ],
+            "year": 2011,
+            "source": "ACM"
+        },
+        {
+            "original_text": "Schwartz, J. (1993, September 30). Obesity affects economic, social status. The Washington Post, A1, A4.",
+            "type": "Newspaper Article",
+            "title": "Obesity affects economic, social status",
+            "authors": [
+                "Schwartz, J."
+            ],
+            "year": 1993,
+            "source": "The Washington Post"
+        },
+        {
+            "original_text": "Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational health psychologists convene to share their research on work, stress, and health. Monitor on Psychology, 39(5), 26-29.",
+            "type": "Journal Article",
+            "title": "Enhancing worker well-being: Occupational health psychologists convene to share their research on work, stress, and health",
+            "authors": [
+                "Chamberlin, J.",
+                "Novotney, A.",
+                "Packard, E.",
+                "Price, M."
+            ],
+            "year": 2008,
+            "source": "Monitor on Psychology"
+        },
+        {
+            "original_text": "Borenstein, M., Hedges, L., Higgins, J., & Rothstein, H. (2014). Comprehensive Meta-Analysis (Version 3.3.070) [Computer software]. Biostat.",
+            "type": "Computer Software",
+            "title": "Comprehensive Meta-Analysis (Version 3.3.070)",
+            "authors": [
+                "Borenstein, M.",
+                "Hedges, L.",
+                "Higgins, J.",
+                "Rothstein, H."
+            ],
+            "year": 2014,
+            "source": "Biostat"
+        },
+        {
+            "original_text": "O'Donohue, W. (2017). Content analysis of undergraduate psychology textbooks (Dataset). APA.",
+            "type": "Dataset",
+            "title": "Content analysis of undergraduate psychology textbooks",
+            "authors": [
+                "O'Donohue, W."
+            ],
+            "year": 2017,
+            "source": "APA"
+        },
+        {
+            "original_text": "Perez, Juan. \"Estrategias de ventas 2024\". Presentación interna.",
+            "type": "presentation",
+            "title": "Estrategias de ventas 2024",
+            "authors": [
+                "Perez, Juan"
+            ],
+            "year": null,
+            "source": "Presentación interna"
+        },
+        {
+            "original_text": "R Core Team. (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing.",
+            "type": "software",
+            "title": "R: A language and environment for statistical computing",
+            "authors": [
+                "R Core Team"
+            ],
+            "year": 2020,
+            "source": "R Foundation for Statistical Computing"
+        },
+        {
+            "original_text": "Python Software Foundation. (2021). Python Language Reference, version 3.9.5.",
+            "type": "reference manual",
+            "title": "Python Language Reference, version 3.9.5",
+            "authors": [
+                "Python Software Foundation"
+            ],
+            "year": 2021,
+            "source": null
+        },
+        {
+            "original_text": "StataCorp. (2019). Stata Statistical Software: Release 16. StataCorp LLC.",
+            "type": "software",
+            "title": "Stata Statistical Software: Release 16",
+            "authors": [
+                "StataCorp"
+            ],
+            "year": 2019,
+            "source": "StataCorp LLC"
+        },
+        {
+            "original_text": "IBM Corp. (2017). IBM SPSS Statistics for Windows, Version 25.0. IBM Corp.",
+            "type": "software",
+            "title": "IBM SPSS Statistics for Windows, Version 25.0",
+            "authors": [
+                "IBM Corp"
+            ],
+            "year": 2017,
+            "source": "IBM Corp"
+        },
+        {
+            "original_text": "Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times.",
+            "type": "newspaper_article",
+            "title": "Mental reserves keep brain agile",
+            "authors": [
+                "J. E. Brody"
+            ],
+            "year": 2007,
+            "source": "The New York Times"
+        },
+        {
+            "original_text": "Toner, K. (2020, September 24). When to wear a face mask. CNN. https:\/\/cnn.it\/3k7w",
+            "type": "news_article",
+            "title": "When to wear a face mask",
+            "authors": [
+                "K. Toner"
+            ],
+            "year": 2020,
+            "source": "CNN"
+        },
+        {
+            "original_text": "Harlan, C. (2013, April 2). North Korea vows to restart shuttered nuclear reactor that can make bomb-grade plutonium. The Washington Post, A1.",
+            "type": "newspaper_article",
+            "title": "North Korea vows to restart shuttered nuclear reactor that can make bomb-grade plutonium",
+            "authors": [
+                "C. Harlan"
+            ],
+            "year": 2013,
+            "source": "The Washington Post"
+        },
+        {
+            "original_text": "Stobbe, M. (2020, January 8). Cancer death rate in US sees largest one-year drop ever. Chicago Tribune.",
+            "type": "newspaper_article",
+            "title": "Cancer death rate in US sees largest one-year drop ever",
+            "authors": [
+                "M. Stobbe"
+            ],
+            "year": 2020,
+            "source": "Chicago Tribune"
+        },
+        {
+            "original_text": "Sack, K. (2000, February). Character and cholesterol. Health, 14(2), 20-22.",
+            "type": "magazine_article",
+            "title": "Character and cholesterol",
+            "authors": [
+                "K. Sack"
+            ],
+            "year": 2000,
+            "source": "Health"
+        },
+        {
+            "original_text": "Weir, K. (2017, January). Forgiveness can improve mental and physical health. Monitor on Psychology, 48(1), 30.",
+            "type": "article",
+            "title": "Forgiveness can improve mental and physical health",
+            "authors": [
+                "Weir, K."
+            ],
+            "year": 2017,
+            "source": "Monitor on Psychology, 48(1), 30"
+        },
+        {
+            "original_text": "Geddes, L. (2020, November 25). How we will learn to live with Covid-19. New Scientist, 248(3310), 10-11.",
+            "type": "article",
+            "title": "How we will learn to live with Covid-19",
+            "authors": [
+                "Geddes, L."
+            ],
+            "year": 2020,
+            "source": "New Scientist, 248(3310), 10-11"
+        },
+        {
+            "original_text": "Schulte, B. (2019, September). The best time of day to do everything. Fast Company, (235), 32-37.",
+            "type": "article",
+            "title": "The best time of day to do everything",
+            "authors": [
+                "Schulte, B."
+            ],
+            "year": 2019,
+            "source": "Fast Company, (235), 32-37"
+        },
+        {
+            "original_text": "Duckworth, A. L., & Quirk, A. (2014). Reading capability. In F. M. H. van de Vijver (Chair), Objective measures of character [Symposium]. 2014 AERA Annual Meeting, Philadelphia, PA.",
+            "type": "symposium",
+            "title": "Reading capability",
+            "authors": [
+                "Duckworth, A. L.",
+                "Quirk, A."
+            ],
+            "year": 2014,
+            "source": "In F. M. H. van de Vijver (Chair), Objective measures of character [Symposium]. 2014 AERA Annual Meeting, Philadelphia, PA."
+        },
+        {
+            "original_text": "Fistek, A., Jester, E., & Sonnenberg, K. (2017, July 12-15). Everybody's got a little music in them: Using music therapy to connect, engage, and motivate [Conference session]. Autism Society National Conference, Milwaukee, WI, United States.",
+            "type": "conference_session",
+            "title": "Everybody's got a little music in them: Using music therapy to connect, engage, and motivate",
+            "authors": [
+                "Fistek, A.",
+                "Jester, E.",
+                "Sonnenberg, K."
+            ],
+            "year": 2017,
+            "source": "Autism Society National Conference, Milwaukee, WI, United States"
+        },
+        {
+            "original_text": "Lee, D. J. (2020). Analysis of cloud security [Paper presentation]. International Conference on Cyber Security, London, UK.",
+            "type": "Paper presentation",
+            "title": "Analysis of cloud security",
+            "authors": [
+                "Lee, D. J."
+            ],
+            "year": 2020,
+            "source": "International Conference on Cyber Security, London, UK."
+        },
+        {
+            "original_text": "Pang, B., & Lee, L. (2005). Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales. In Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics (pp. 115-124).",
+            "type": "Conference Proceeding",
+            "title": "Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales",
+            "authors": [
+                "Pang, B.",
+                "Lee, L."
+            ],
+            "year": 2005,
+            "source": "Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics"
+        },
+        {
+            "original_text": "Pew Research Center. (2018). American trends panel Wave 26 [DataSet]. Pew Research Center. https:\/\/www.pewresearch.org\/",
+            "type": "DataSet",
+            "title": "American trends panel Wave 26",
+            "authors": [
+                "Pew Research Center"
+            ],
+            "year": 2018,
+            "source": "Pew Research Center"
+        },
+        {
+            "original_text": "National Center for Education Statistics. (2016). Fast Response Survey System (FRSS) 109: Teachers' Use of Educational Technology in U.S. Public Schools, 2019 (Dataset). https:\/\/doi.org\/10.3886\/ICPSR35588.v3",
+            "type": "Dataset",
+            "title": "Fast Response Survey System (FRSS) 109: Teachers' Use of Educational Technology in U.S. Public Schools, 2019",
+            "authors": [
+                "National Center for Education Statistics"
+            ],
+            "year": 2016,
+            "source": "https:\/\/doi.org\/10.3886\/ICPSR35588.v3"
+        },
+        {
+            "original_text": "United States Census Bureau. (2020). 2010 Census: Population and Housing Tables (Dataset).",
+            "type": "Dataset",
+            "title": "2010 Census: Population and Housing Tables",
+            "authors": [
+                "United States Census Bureau"
+            ],
+            "year": 2020,
+            "source": "United States Census Bureau"
+        },
+        {
+            "original_text": "Page, L. (2001). Method for node ranking in a linked database. U.S. Patent No. 6,285,999. U.S. Patent and Trademark Office.",
+            "type": "patent",
+            "title": "Method for node ranking in a linked database",
+            "authors": [
+                "L. Page"
+            ],
+            "year": 2001,
+            "source": "U.S. Patent and Trademark Office"
+        },
+        {
+            "original_text": "Jobs, S. P., & Forstall, S. (2013). Touch screen device, method, and graphical user interface for determining commands. U.S. Patent No. 8,570,278. U.S. Patent and Trademark Office.",
+            "type": "patent",
+            "title": "Touch screen device, method, and graphical user interface for determining commands",
+            "authors": [
+                "S. P. Jobs",
+                "S. Forstall"
+            ],
+            "year": 2013,
+            "source": "U.S. Patent and Trademark Office"
+        },
+        {
+            "original_text": "Intergovernmental Panel on Climate Change. (2014). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. IPCC.",
+            "type": "report",
+            "title": "Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change",
+            "authors": [
+                "Intergovernmental Panel on Climate Change"
+            ],
+            "year": 2014,
+            "source": "IPCC"
+        },
+        {
+            "original_text": "Amnesty International. (2020). Death sentences and executions 2019. Amnesty International.",
+            "type": "report",
+            "title": "Death sentences and executions 2019",
+            "authors": [
+                "Amnesty International"
+            ],
+            "year": 2020,
+            "source": "Amnesty International"
+        },
+        {
+            "original_text": "Friedman, T. L. (2005). The World Is Flat: A Brief History of the Twenty-first Century. Farrar, Straus and Giroux.",
+            "type": "book",
+            "title": "The World Is Flat: A Brief History of the Twenty-first Century",
+            "authors": [
+                "T. L. Friedman"
+            ],
+            "year": 2005,
+            "source": "Farrar, Straus and Giroux"
+        },
+        {
+            "original_text": "NASA. (2022, July 12). Webb's First Deep Field. https:\/\/www.nasa.gov\/image-feature\/goddard\/2022\/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet",
+            "type": "website",
+            "title": "Webb's First Deep Field",
+            "authors": [
+                "NASA"
+            ],
+            "year": 2022,
+            "source": "https:\/\/www.nasa.gov\/image-feature\/goddard\/2022\/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet"
+        },
+        {
+            "original_text": "BBC News. (2021, March 23). Suez Canal: Giant ship blocking trade route floated. https:\/\/www.bbc.com\/news\/world-middle-east-56567600",
+            "type": "website",
+            "title": "Suez Canal: Giant ship blocking trade route floated",
+            "authors": [
+                "BBC News"
+            ],
+            "year": 2021,
+            "source": "https:\/\/www.bbc.com\/news\/world-middle-east-56567600"
+        },
+        {
+            "original_text": "Mozilla. (2024). MDN Web Docs: CSS Grid Layout.",
+            "type": "website",
+            "title": "MDN Web Docs: CSS Grid Layout",
+            "authors": [
+                "Mozilla"
+            ],
+            "year": 2024,
+            "source": "MDN Web Docs"
+        },
+        {
+            "original_text": "Ritzmann, R. E. (1974). The snapping mechanism of Alpukid shrimp [Ph.D. Thesis, University of Virginia]. ProQuest Dissertations and Theses Global.",
+            "type": "thesis",
+            "title": "The snapping mechanism of Alpukid shrimp",
+            "authors": [
+                "Ritzmann, R. E."
+            ],
+            "year": 1974,
+            "source": "ProQuest Dissertations and Theses Global"
+        },
+        {
+            "original_text": "Adams, R. J. (1973). Building a foundation for evaluation of instruction in higher education and continuing education (Doctoral dissertation). Cornell University.",
+            "type": "dissertation",
+            "title": "Building a foundation for evaluation of instruction in higher education and continuing education",
+            "authors": [
+                "Adams, R. J."
+            ],
+            "year": 1973,
+            "source": "Cornell University"
+        },
+        {
+            "original_text": "Gladwell, M. (2008). Outliers: The Story of Success. Little, Brown and Company.",
+            "type": "book",
+            "title": "Outliers: The Story of Success",
+            "authors": [
+                "M. Gladwell"
+            ],
+            "year": 2008,
+            "source": "Little, Brown and Company"
+        },
+        {
+            "original_text": "Obama, B. (2020). A Promised Land. Crown.",
+            "type": "book",
+            "title": "A Promised Land",
+            "authors": [
+                "B. Obama"
+            ],
+            "year": 2020,
+            "source": "Crown"
+        },
+        {
+            "original_text": "Isaacson, W. (2011). Steve Jobs. Simon & Schuster.",
+            "type": "book",
+            "title": "Steve Jobs",
+            "authors": [
+                "W. Isaacson"
+            ],
+            "year": 2011,
+            "source": "Simon & Schuster"
+        },
+        {
+            "original_text": "Orwell, G. (1949). Nineteen Eighty-Four. Secker & Warburg.",
+            "type": "book",
+            "title": "Nineteen Eighty-Four",
+            "authors": [
+                "G. Orwell"
+            ],
+            "year": 1949,
+            "source": "Secker & Warburg"
+        },
+        {
+            "original_text": "Austen, J. (1813). Pride and Prejudice. T. Egerton.",
+            "type": "book",
+            "title": "Pride and Prejudice",
+            "authors": [
+                "J. Austen"
+            ],
+            "year": 1813,
+            "source": "T. Egerton"
+        },
+        {
+            "original_text": "Tolkien, J. R. R. (1954). The Fellowship of the Ring. George Allen & Unwin.",
+            "type": "book",
+            "title": "The Fellowship of the Ring",
+            "authors": [
+                "J. R. R. Tolkien"
+            ],
+            "year": 1954,
+            "source": "George Allen & Unwin"
+        },
+        {
+            "original_text": "Herbert, F. (1965). Dune. Chilton Books.",
+            "type": "book",
+            "title": "Dune",
+            "authors": [
+                "F. Herbert"
+            ],
+            "year": 1965,
+            "source": "Chilton Books"
+        },
+        {
+            "original_text": "Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., & Riedmiller, M. (2013). Playing atari with deep reinforcement learning. arXiv preprint arXiv:1312.5602.",
+            "type": "preprint",
+            "title": "Playing atari with deep reinforcement learning",
+            "authors": [
+                "V. Mnih",
+                "K. Kavukcuoglu",
+                "D. Silver",
+                "A. Graves",
+                "I. Antonoglou",
+                "D. Wierstra",
+                "M. Riedmiller"
+            ],
+            "year": 2013,
+            "source": "arXiv preprint arXiv:1312.5602"
+        },
+        {
+            "original_text": "Sutskever, I., Vinyals, O., & Le, Q. V. (2014). Sequence to sequence learning with neural networks. Advances in neural information processing systems, 27.",
+            "type": "conference_paper",
+            "title": "Sequence to sequence learning with neural networks",
+            "authors": [
+                "I. Sutskever",
+                "O. Vinyals",
+                "Q. V. Le"
+            ],
+            "year": 2014,
+            "source": "Advances in neural information processing systems, 27"
+        },
+        {
+            "original_text": "Kingma, D. P., & Ba, J. (2014). Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980.",
+            "type": "preprint",
+            "title": "Adam: A method for stochastic optimization",
+            "authors": [
+                "D. P. Kingma",
+                "J. Ba"
+            ],
+            "year": 2014,
+            "source": "arXiv preprint arXiv:1412.6980"
+        },
+        {
+            "original_text": "Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.",
+            "type": "preprint",
+            "title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "authors": [
+                "Devlin, J.",
+                "Chang, M. W.",
+                "Lee, K.",
+                "Toutanova, K."
+            ],
+            "year": 2018,
+            "source": "arXiv preprint arXiv:1810.04805"
+        },
+        {
+            "original_text": "Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781.",
+            "type": "preprint",
+            "title": "Efficient estimation of word representations in vector space",
+            "authors": [
+                "Mikolov, T.",
+                "Chen, K.",
+                "Corrado, G.",
+                "Dean, J."
+            ],
+            "year": 2013,
+            "source": "arXiv preprint arXiv:1301.3781"
+        },
+        {
+            "original_text": "Aron, L., Botella, M., & Lubart, T. (2019). Culinary arts: Talent and their development. In R. F. Subotnik, P. Olszewski-Kubilius, & F. C. Worrell (Eds.), The psychology of high performance: Developing human potential into domain-specific talent (pp. 345-359). American Psychological Association.",
+            "type": "book_chapter",
+            "title": "Culinary arts: Talent and their development",
+            "authors": [
+                "Aron, L.",
+                "Botella, M.",
+                "Lubart, T."
+            ],
+            "year": 2019,
+            "source": "In R. F. Subotnik, P. Olszewski-Kubilius, & F. C. Worrell (Eds.), The psychology of high performance: Developing human potential into domain-specific talent (pp. 345-359). American Psychological Association."
+        },
+        {
+            "original_text": "Dillard, J. P. (2020). Currents in the study of persuasion. In M. B. Oliver, A. A. Raney, & J. Bryant (Eds.), Media effects: Advances in theory and research (4th ed., pp. 115-129). Routledge.",
+            "type": "book_chapter",
+            "title": "Currents in the study of persuasion",
+            "authors": [
+                "Dillard, J. P."
+            ],
+            "year": 2020,
+            "source": "In M. B. Oliver, A. A. Raney, & J. Bryant (Eds.), Media effects: Advances in theory and research (4th ed., pp. 115-129). Routledge."
+        },
+        {
+            "original_text": "Thelen, E. (1989). Self-organization in developmental processes: Can systems approaches work? In M. R. Gunnar & E. Thelen (Eds.), Systems and development: The Minnesota Symposia on Child Psychology (Vol. 22, pp. 77-117). Erlbaum.",
+            "type": "book_chapter",
+            "title": "Self-organization in developmental processes: Can systems approaches work?",
+            "authors": [
+                "Thelen, E."
+            ],
+            "year": 1989,
+            "source": "In M. R. Gunnar & E. Thelen (Eds.), Systems and development: The Minnesota Symposia on Child Psychology (Vol. 22, pp. 77-117). Erlbaum."
+        },
+        {
+            "original_text": "U.S. Census Bureau. (2020). U.S. and World Population Clock. https:\/\/www.census.gov\/popclock\/",
+            "type": "website",
+            "title": "U.S. and World Population Clock",
+            "authors": [
+                "U.S. Census Bureau"
+            ],
+            "year": 2020,
+            "source": "https:\/\/www.census.gov\/popclock\/"
+        },
+        {
+            "original_text": "Avramova, N. (2019, January 3). The secret to a long, happy, healthy life? Think age. CNN.",
+            "type": "article",
+            "title": "The secret to a long, happy, healthy life? Think age",
+            "authors": [
+                "N. Avramova"
+            ],
+            "year": 2019,
+            "source": "CNN"
+        },
+        {
+            "original_text": "Canada Council for the Arts. (2013). What We Heard: Summary of consultation meetings, 2013. Canada Council for the Arts.",
+            "type": "report",
+            "title": "What We Heard: Summary of consultation meetings, 2013",
+            "authors": [
+                "Canada Council for the Arts"
+            ],
+            "year": 2013,
+            "source": "Canada Council for the Arts"
+        },
+        {
+            "original_text": "Dyson, J. (1986). Vacuum cleaner. U.S. Patent No. 4,567,123.",
+            "type": "patent",
+            "title": "Vacuum cleaner",
+            "authors": [
+                "J. Dyson"
+            ],
+            "year": 1986,
+            "source": "U.S. Patent No. 4,567,123"
+        },
+        {
+            "original_text": "Blackwell, E., & Conrod, P. J. (2003). A five-dimensional measure of drinking motives. Unpublished manuscript, Department of Psychology, University of British Columbia, Vancouver, Canada.",
+            "type": "manuscript",
+            "title": "A five-dimensional measure of drinking motives",
+            "authors": [
+                "E. Blackwell",
+                "P. J. Conrod"
+            ],
+            "year": 2003,
+            "source": "Unpublished manuscript, Department of Psychology, University of British Columbia, Vancouver, Canada"
+        },
+        {
+            "original_text": "Frankl, V. E. (1984). Man's Search for Meaning. Beacon Press.",
+            "type": "book",
+            "title": "Man's Search for Meaning",
+            "authors": [
+                "Frankl, V. E."
+            ],
+            "year": 1984,
+            "source": "Beacon Press"
+        },
+        {
+            "original_text": "Coelho, P. (1988). The Alchemist. HarperTorch.",
+            "type": "book",
+            "title": "The Alchemist",
+            "authors": [
+                "Coelho, P."
+            ],
+            "year": 1988,
+            "source": "HarperTorch"
+        },
+        {
+            "original_text": "Huxley, A. (1932). Brave New World. Chatto & Windus.",
+            "type": "book",
+            "title": "Brave New World",
+            "authors": [
+                "Huxley, A."
+            ],
+            "year": 1932,
+            "source": "Chatto & Windus"
+        }
+    ]
+}

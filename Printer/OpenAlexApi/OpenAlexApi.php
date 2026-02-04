@@ -70,5 +70,6 @@ class OpenAlexAPI {
         $response = file_get_contents($url);
         return $response;
     }
+
 }
 ?>

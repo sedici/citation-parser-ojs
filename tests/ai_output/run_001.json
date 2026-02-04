@@ -1,0 +1,752 @@
+{
+    "date": "2025-12-16 12:10:40",
+    "provider": "mock",
+    "model": "gemini-1.5-pro",
+    "total_items": 93,
+    "results": [
+        {
+            "citation": "Smith, J. (2020). The Art of Coding. Universal Press.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Doe, J. (2021). The Book of Everything. (2nd ed.). Universal Press.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Hawkings, S. (1988). A Brief History of Time. Bantam Books.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Martin, R. C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Sapolsky, R. M. (2017). Behave: The Biology of Humans at Our Best and Worst. Penguin Books.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Harari, Y. N. (2015). Sapiens: A Brief History of Humankind. Harper.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Newport, C. (2016). Deep Work: Rules for Focused Success in a Distracted World. Grand Central Publishing.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Clear, J. (2018). Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. Avery.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Taleb, N. N. (2007). The Black Swan: The Impact of the Highly Improbable. Random House.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Turing, A. M. (1950). Computing machinery and intelligence. Mind, 59(236), 433-460.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Einstein, A. (1905). Zur Elektrodynamik bewegter Körper. Annalen der Physik, 322(10), 891-921.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Watson, J. D., & Crick, F. H. (1953). Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid. Nature, 171(4356), 737-738.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Shannon, C. E. (1948). A mathematical theory of communication. The Bell System Technical Journal, 27(3), 379-423.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436-444.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., Van Den Driessche, G., ... & Hassabis, D. (2016). Mastering the game of Go with deep neural networks and tree search. Nature, 529(7587), 484-489.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. nature, 323(6088), 533-536.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Bengio, Y., Ducharme, R., Vincent, P., & Jauvin, C. (2003). A neural probabilistic language model. Journal of machine learning research, 3(Feb), 1137-1155.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Author, A. (2022). Chapter Title. En Editor, E. (Ed.), The Anthology (pp. 50-60). Big House.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Goodfellow, I. (2016). Deep Feedforward Networks. In Y. Bengio & A. Courville (Eds.), Deep Learning (pp. 164-223). MIT Press.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Piaget, J. (1972). Intellectual evolution from adolescence to adulthood. In P. N. Johnson-Laird & P. C. Wason (Eds.), Thinking: Readings in cognitive science (pp. 158-165). Cambridge University Press.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Freud, S. (1961). The ego and the id. In J. Strachey (Ed. & Trans.), The standard edition of the complete psychological works of Sigmund Freud (Vol. 19, pp. 3-66). Hogarth Press.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Bergmann, P. G. (1993). Relativity. In The New Encyclopedia Britannica. (Vol. 26, pp. 501-508). Encyclopedia Britannica.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Student, S. (2019). My PhD Thesis [Doctoral dissertation]. University of Science.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Harris, L. (2014). Instructional leadership perceptions and practices of elementary school leaders [Unpublished doctoral dissertation]. University of Virginia.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Miranda, C. (2020). Exploración de redes neuronales [Tesis de maestría, Universidad Nacional]. Repositorio Institucional.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "WHO. (2020). Coronavirus disease (COVID-19) dashboard. World Health Organization. https:\/\/covid19.who.int\/",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "OpenAI. (2023). ChatGPT: Optimizing Language Models for Dialogue. https:\/\/openai.com\/blog\/chatgpt\/",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "National Geographic. (2020, June 20). The power of the ocean. https:\/\/www.nationalgeographic.com\/ocean\/power",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "National Cancer Institute. (2019). Taking time: Support for people with cancer. U.S. Department of Health and Human Services.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "World Health Organization. (2018). Global status report on road safety 2018. License: CC BY-NC-SA 3.0 IGO.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Smith, I. M. (1988). U.S. Patent No. 123,445. U.S. Patent and Trademark Office.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Hiremath, S. C., Kumar, S., & Lu, F. (2016). U.S. Patent No. 9,364,439. U.S. Patent and Trademark Office.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Katz, I., & Gabayan, K. (2011). Social media adoption in an unbundled enterprise. In Proceedings of the 2011 Conference on Human Factors in Computing Systems (pp. 210-220). ACM.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Schwartz, J. (1993, September 30). Obesity affects economic, social status. The Washington Post, A1, A4.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Chamberlin, J., Novotney, A., Packard, E., & Price, M. (2008, May). Enhancing worker well-being: Occupational health psychologists convene to share their research on work, stress, and health. Monitor on Psychology, 39(5), 26-29.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Borenstein, M., Hedges, L., Higgins, J., & Rothstein, H. (2014). Comprehensive Meta-Analysis (Version 3.3.070) [Computer software]. Biostat.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "O'Donohue, W. (2017). Content analysis of undergraduate psychology textbooks (Dataset). APA.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Perez, Juan. \"Estrategias de ventas 2024\". Presentación interna.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "R Core Team. (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Python Software Foundation. (2021). Python Language Reference, version 3.9.5.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "StataCorp. (2019). Stata Statistical Software: Release 16. StataCorp LLC.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "IBM Corp. (2017). IBM SPSS Statistics for Windows, Version 25.0. IBM Corp.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Brody, J. E. (2007, December 11). Mental reserves keep brain agile. The New York Times.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Toner, K. (2020, September 24). When to wear a face mask. CNN. https:\/\/cnn.it\/3k7w",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Harlan, C. (2013, April 2). North Korea vows to restart shuttered nuclear reactor that can make bomb-grade plutonium. The Washington Post, A1.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Stobbe, M. (2020, January 8). Cancer death rate in US sees largest one-year drop ever. Chicago Tribune.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Sack, K. (2000, February). Character and cholesterol. Health, 14(2), 20-22.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Weir, K. (2017, January). Forgiveness can improve mental and physical health. Monitor on Psychology, 48(1), 30.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Geddes, L. (2020, November 25). How we will learn to live with Covid-19. New Scientist, 248(3310), 10-11.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Schulte, B. (2019, September). The best time of day to do everything. Fast Company, (235), 32-37.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Duckworth, A. L., & Quirk, A. (2014). Reading capability. In F. M. H. van de Vijver (Chair), Objective measures of character [Symposium]. 2014 AERA Annual Meeting, Philadelphia, PA.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Fistek, A., Jester, E., & Sonnenberg, K. (2017, July 12-15). Everybody's got a little music in them: Using music therapy to connect, engage, and motivate [Conference session]. Autism Society National Conference, Milwaukee, WI, United States.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Lee, D. J. (2020). Analysis of cloud security [Paper presentation]. International Conference on Cyber Security, London, UK.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Pang, B., & Lee, L. (2005). Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales. In Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics (pp. 115-124).",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Pew Research Center. (2018). American trends panel Wave 26 [DataSet]. Pew Research Center. https:\/\/www.pewresearch.org\/",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "National Center for Education Statistics. (2016). Fast Response Survey System (FRSS) 109: Teachers' Use of Educational Technology in U.S. Public Schools, 2019 (Dataset). https:\/\/doi.org\/10.3886\/ICPSR35588.v3",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "United States Census Bureau. (2020). 2010 Census: Population and Housing Tables (Dataset).",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Page, L. (2001). Method for node ranking in a linked database. U.S. Patent No. 6,285,999. U.S. Patent and Trademark Office.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Jobs, S. P., & Forstall, S. (2013). Touch screen device, method, and graphical user interface for determining commands. U.S. Patent No. 8,570,278. U.S. Patent and Trademark Office.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Intergovernmental Panel on Climate Change. (2014). Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change. IPCC.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Amnesty International. (2020). Death sentences and executions 2019. Amnesty International.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Friedman, T. L. (2005). The World Is Flat: A Brief History of the Twenty-first Century. Farrar, Straus and Giroux.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "NASA. (2022, July 12). Webb's First Deep Field. https:\/\/www.nasa.gov\/image-feature\/goddard\/2022\/nasa-s-webb-delivers-deepest-infrared-image-of-universe-yet",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "BBC News. (2021, March 23). Suez Canal: Giant ship blocking trade route floated. https:\/\/www.bbc.com\/news\/world-middle-east-56567600",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Mozilla. (2024). MDN Web Docs: CSS Grid Layout.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Ritzmann, R. E. (1974). The snapping mechanism of Alpukid shrimp [Ph.D. Thesis, University of Virginia]. ProQuest Dissertations and Theses Global.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Adams, R. J. (1973). Building a foundation for evaluation of instruction in higher education and continuing education (Doctoral dissertation). Cornell University.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Gladwell, M. (2008). Outliers: The Story of Success. Little, Brown and Company.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Obama, B. (2020). A Promised Land. Crown.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Isaacson, W. (2011). Steve Jobs. Simon & Schuster.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Orwell, G. (1949). Nineteen Eighty-Four. Secker & Warburg.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Austen, J. (1813). Pride and Prejudice. T. Egerton.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Tolkien, J. R. R. (1954). The Fellowship of the Ring. George Allen & Unwin.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Herbert, F. (1965). Dune. Chilton Books.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D., & Riedmiller, M. (2013). Playing atari with deep reinforcement learning. arXiv preprint arXiv:1312.5602.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Sutskever, I., Vinyals, O., & Le, Q. V. (2014). Sequence to sequence learning with neural networks. Advances in neural information processing systems, 27.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Kingma, D. P., & Ba, J. (2014). Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. arXiv preprint arXiv:1301.3781.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Aron, L., Botella, M., & Lubart, T. (2019). Culinary arts: Talent and their development. In R. F. Subotnik, P. Olszewski-Kubilius, & F. C. Worrell (Eds.), The psychology of high performance: Developing human potential into domain-specific talent (pp. 345-359). American Psychological Association.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Dillard, J. P. (2020). Currents in the study of persuasion. In M. B. Oliver, A. A. Raney, & J. Bryant (Eds.), Media effects: Advances in theory and research (4th ed., pp. 115-129). Routledge.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Thelen, E. (1989). Self-organization in developmental processes: Can systems approaches work? In M. R. Gunnar & E. Thelen (Eds.), Systems and development: The Minnesota Symposia on Child Psychology (Vol. 22, pp. 77-117). Erlbaum.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "U.S. Census Bureau. (2020). U.S. and World Population Clock. https:\/\/www.census.gov\/popclock\/",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Avramova, N. (2019, January 3). The secret to a long, happy, healthy life? Think age. CNN.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Canada Council for the Arts. (2013). What We Heard: Summary of consultation meetings, 2013. Canada Council for the Arts.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Dyson, J. (1986). Vacuum cleaner. U.S. Patent No. 4,567,123.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Blackwell, E., & Conrod, P. J. (2003). A five-dimensional measure of drinking motives. Unpublished manuscript, Department of Psychology, University of British Columbia, Vancouver, Canada.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Frankl, V. E. (1984). Man's Search for Meaning. Beacon Press.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Coelho, P. (1988). The Alchemist. HarperTorch.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        },
+        {
+            "citation": "Huxley, A. (1932). Brave New World. Chatto & Windus.",
+            "parsed": {
+                "type": "journal",
+                "title": "Mock Batch Title",
+                "year": "2024"
+            }
+        }
+    ]
+}

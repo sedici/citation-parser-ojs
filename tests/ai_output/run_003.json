@@ -1,0 +1,2073 @@
+{
+    "date": "2025-12-16 12:53:03",
+    "provider": "gemini",
+    "model": "gemini-2.0-flash",
+    "total_items": 87,
+    "results": {
+        "0": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": null,
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Universal Press",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Smith",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "1": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "The Book of Everything",
+            "year": "2021",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Universal Press",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Doe",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "A Brief History of Time",
+            "year": "1988",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Bantam Books",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Hawkings",
+                            "given_names": "S."
+                        }
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "Thinking, Fast and Slow",
+            "year": "2011",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Farrar, Straus and Giroux",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Kahneman",
+                            "given_names": "D."
+                        }
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "Clean Code: A Handbook of Agile Software Craftsmanship",
+            "year": "2008",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Prentice Hall",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Martin",
+                            "given_names": "R. C."
+                        }
+                    ]
+                }
+            ]
+        },
+        "publication_type": "journal",
+        "article_title": "Forgiveness can improve mental and physical health",
+        "source": "Monitor on Psychology",
+        "year": "2017",
+        "volume": "48",
+        "issue": "1",
+        "fpage": "30",
+        "lpage": "30",
+        "pub_id_doi": null,
+        "publisher_name": null,
+        "publisher_loc": null,
+        "person_groups": [
+            {
+                "type": "author",
+                "names": [
+                    {
+                        "surname": "Weir",
+                        "given_names": "K."
+                    }
+                ]
+            }
+        ],
+        "5": {
+            "publication_type": "journal",
+            "article_title": "Computing machinery and intelligence",
+            "source": "Mind",
+            "year": "1950",
+            "volume": "59",
+            "issue": "236",
+            "fpage": "433",
+            "lpage": "460",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Turing",
+                            "given_names": "A. M."
+                        }
+                    ]
+                }
+            ]
+        },
+        "6": {
+            "publication_type": "journal",
+            "article_title": "Zur Elektrodynamik bewegter Körper",
+            "source": "Annalen der Physik",
+            "year": "1905",
+            "volume": "322",
+            "issue": "10",
+            "fpage": "891",
+            "lpage": "921",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Einstein",
+                            "given_names": "A."
+                        }
+                    ]
+                }
+            ]
+        },
+        "7": {
+            "publication_type": "journal",
+            "article_title": "Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid",
+            "source": "Nature",
+            "year": "1953",
+            "volume": "171",
+            "issue": "4356",
+            "fpage": "737",
+            "lpage": "738",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Watson",
+                            "given_names": "J. D."
+                        },
+                        {
+                            "surname": "Crick",
+                            "given_names": "F. H."
+                        }
+                    ]
+                }
+            ]
+        },
+        "8": {
+            "publication_type": "journal",
+            "article_title": "A mathematical theory of communication",
+            "source": "The Bell System Technical Journal",
+            "year": "1948",
+            "volume": "27",
+            "issue": "3",
+            "fpage": "379",
+            "lpage": "423",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Shannon",
+                            "given_names": "C. E."
+                        }
+                    ]
+                }
+            ]
+        },
+        "9": {
+            "publication_type": "journal",
+            "article_title": "Deep learning",
+            "source": "Nature",
+            "year": "2015",
+            "volume": "521",
+            "issue": "7553",
+            "fpage": "436",
+            "lpage": "444",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "LeCun",
+                            "given_names": "Y."
+                        },
+                        {
+                            "surname": "Bengio",
+                            "given_names": "Y."
+                        },
+                        {
+                            "surname": "Hinton",
+                            "given_names": "G."
+                        }
+                    ]
+                }
+            ]
+        },
+        "10": {
+            "batch_index": 3,
+            "error": "Invalid response from Gemini Batch. Content: {\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https:\\\/\\\/cloud.google.com\\\/vertex-ai\\\/generative-ai\\\/docs\\\/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
+            "inputs": [
+                "Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30.",
+                "He, K., Zhang, X., Ren, S., & Sun, J. (2016). Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 770-778).",
+                "Silver, D., Huang, A., Maddison, C. J., Guez, A., Sifre, L., Van Den Driessche, G., ... & Hassabis, D. (2016). Mastering the game of Go with deep neural networks and tree search. Nature, 529(7587), 484-489.",
+                "Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. nature, 323(6088), 533-536.",
+                "Bengio, Y., Ducharme, R., Vincent, P., & Jauvin, C. (2003). A neural probabilistic language model. Journal of machine learning research, 3(Feb), 1137-1155."
+            ]
+        },
+        "11": {
+            "publication_type": "book",
+            "article_title": "Chapter Title",
+            "source": "The Anthology",
+            "year": "2022",
+            "volume": null,
+            "issue": null,
+            "fpage": "50",
+            "lpage": "60",
+            "pub_id_doi": null,
+            "publisher_name": "Big House",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Author",
+                            "given_names": "A."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Editor",
+                            "given_names": "E."
+                        }
+                    ]
+                }
+            ]
+        },
+        "12": {
+            "publication_type": "book",
+            "article_title": "Deep Feedforward Networks",
+            "source": "Deep Learning",
+            "year": "2016",
+            "volume": null,
+            "issue": null,
+            "fpage": "164",
+            "lpage": "223",
+            "pub_id_doi": null,
+            "publisher_name": "MIT Press",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Goodfellow",
+                            "given_names": "I."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Bengio",
+                            "given_names": "Y."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Courville",
+                            "given_names": "A."
+                        }
+                    ]
+                }
+            ]
+        },
+        "13": {
+            "publication_type": "book",
+            "article_title": "Intellectual evolution from adolescence to adulthood",
+            "source": "Thinking: Readings in cognitive science",
+            "year": "1972",
+            "volume": null,
+            "issue": null,
+            "fpage": "158",
+            "lpage": "165",
+            "pub_id_doi": null,
+            "publisher_name": "Cambridge University Press",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Piaget",
+                            "given_names": "J."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Johnson-Laird",
+                            "given_names": "P. N."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Wason",
+                            "given_names": "P. C."
+                        }
+                    ]
+                }
+            ]
+        },
+        "14": {
+            "publication_type": "book",
+            "article_title": "The ego and the id",
+            "source": "The standard edition of the complete psychological works of Sigmund Freud",
+            "year": "1961",
+            "volume": "19",
+            "issue": null,
+            "fpage": "3",
+            "lpage": "66",
+            "pub_id_doi": null,
+            "publisher_name": "Hogarth Press",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Freud",
+                            "given_names": "S."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Strachey",
+                            "given_names": "J."
+                        }
+                    ]
+                },
+                {
+                    "type": "translator",
+                    "names": [
+                        {
+                            "surname": "Strachey",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "15": {
+            "publication_type": "book",
+            "article_title": "Relativity",
+            "source": "The New Encyclopedia Britannica",
+            "year": "1993",
+            "volume": "26",
+            "issue": null,
+            "fpage": "501",
+            "lpage": "508",
+            "pub_id_doi": null,
+            "publisher_name": "Encyclopedia Britannica",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Bergmann",
+                            "given_names": "P. G."
+                        }
+                    ]
+                }
+            ]
+        },
+        "16": {
+            "publication_type": "thesis",
+            "article_title": "My PhD Thesis",
+            "source": null,
+            "year": "2019",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "University of Science",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Student",
+                            "given_names": "S."
+                        }
+                    ]
+                }
+            ]
+        },
+        "17": {
+            "publication_type": "thesis",
+            "article_title": "Instructional leadership perceptions and practices of elementary school leaders",
+            "source": null,
+            "year": "2014",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "University of Virginia",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Harris",
+                            "given_names": "L."
+                        }
+                    ]
+                }
+            ]
+        },
+        "18": {
+            "publication_type": "thesis",
+            "article_title": "Exploración de redes neuronales",
+            "source": null,
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Universidad Nacional",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Miranda",
+                            "given_names": "C."
+                        }
+                    ]
+                }
+            ]
+        },
+        "19": {
+            "publication_type": "webpage",
+            "article_title": "Coronavirus disease (COVID-19) dashboard",
+            "source": null,
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "World Health Organization",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "WHO",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "20": {
+            "publication_type": "webpage",
+            "article_title": "ChatGPT: Optimizing Language Models for Dialogue",
+            "source": null,
+            "year": "2023",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "OpenAI",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "OpenAI",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "21": {
+            "publication_type": "webpage",
+            "article_title": "The power of the ocean",
+            "source": "National Geographic",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "22": {
+            "publication_type": "report",
+            "article_title": "Taking time: Support for people with cancer",
+            "source": null,
+            "year": "2019",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "U.S. Department of Health and Human Services",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "National Cancer Institute",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "23": {
+            "publication_type": "report",
+            "article_title": "Global status report on road safety 2018",
+            "source": null,
+            "year": "2018",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "World Health Organization",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "World Health Organization",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "24": {
+            "publication_type": "patent",
+            "article_title": null,
+            "source": "U.S. Patent No. 123,445",
+            "year": "1988",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "U.S. Patent and Trademark Office",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Smith",
+                            "given_names": "I. M."
+                        }
+                    ]
+                }
+            ]
+        },
+        "25": {
+            "publication_type": "patent",
+            "article_title": null,
+            "source": "U.S. Patent No. 9,364,439",
+            "year": "2016",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "U.S. Patent and Trademark Office",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Hiremath",
+                            "given_names": "S. C."
+                        },
+                        {
+                            "surname": "Kumar",
+                            "given_names": "S."
+                        },
+                        {
+                            "surname": "Lu",
+                            "given_names": "F."
+                        }
+                    ]
+                }
+            ]
+        },
+        "26": {
+            "publication_type": "confproc",
+            "article_title": "Social media adoption in an unbundled enterprise",
+            "source": "Proceedings of the 2011 Conference on Human Factors in Computing Systems",
+            "year": "2011",
+            "volume": null,
+            "issue": null,
+            "fpage": "210",
+            "lpage": "220",
+            "pub_id_doi": null,
+            "publisher_name": "ACM",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Katz",
+                            "given_names": "I."
+                        },
+                        {
+                            "surname": "Gabayan",
+                            "given_names": "K."
+                        }
+                    ]
+                }
+            ]
+        },
+        "27": {
+            "publication_type": "journal",
+            "article_title": "Obesity affects economic, social status",
+            "source": "The Washington Post",
+            "year": "1993",
+            "volume": null,
+            "issue": null,
+            "fpage": "A1",
+            "lpage": "A4",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Schwartz",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "28": {
+            "publication_type": "journal",
+            "article_title": "Enhancing worker well-being: Occupational health psychologists convene to share their research on work, stress, and health",
+            "source": "Monitor on Psychology",
+            "year": "2008",
+            "volume": "39",
+            "issue": "5",
+            "fpage": "26",
+            "lpage": "29",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Chamberlin",
+                            "given_names": "J."
+                        },
+                        {
+                            "surname": "Novotney",
+                            "given_names": "A."
+                        },
+                        {
+                            "surname": "Packard",
+                            "given_names": "E."
+                        },
+                        {
+                            "surname": "Price",
+                            "given_names": "M."
+                        }
+                    ]
+                }
+            ]
+        },
+        "29": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "Comprehensive Meta-Analysis (Version 3.3.070)",
+            "year": "2014",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Biostat",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Borenstein",
+                            "given_names": "M."
+                        },
+                        {
+                            "surname": "Hedges",
+                            "given_names": "L."
+                        },
+                        {
+                            "surname": "Higgins",
+                            "given_names": "J."
+                        },
+                        {
+                            "surname": "Rothstein",
+                            "given_names": "H."
+                        }
+                    ]
+                }
+            ]
+        },
+        "30": {
+            "publication_type": "report",
+            "article_title": "Content analysis of undergraduate psychology textbooks",
+            "source": null,
+            "year": "2017",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "APA",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "O'Donohue",
+                            "given_names": "W."
+                        }
+                    ]
+                }
+            ]
+        },
+        "31": {
+            "publication_type": "report",
+            "article_title": "Estrategias de ventas 2024",
+            "source": "Presentación interna",
+            "year": null,
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Perez",
+                            "given_names": "Juan"
+                        }
+                    ]
+                }
+            ]
+        },
+        "32": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "R: A language and environment for statistical computing",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "R Foundation for Statistical Computing",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "R Core Team",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "33": {
+            "publication_type": "report",
+            "article_title": null,
+            "source": "Python Language Reference, version 3.9.5",
+            "year": "2021",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Python Software Foundation",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Python Software Foundation",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "34": {
+            "publication_type": "report",
+            "article_title": null,
+            "source": "Stata Statistical Software: Release 16",
+            "year": "2019",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "StataCorp LLC",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "StataCorp",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "35": {
+            "publication_type": "report",
+            "article_title": null,
+            "source": "IBM SPSS Statistics for Windows, Version 25.0",
+            "year": "2017",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "IBM Corp.",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "IBM Corp.",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "36": {
+            "publication_type": "webpage",
+            "article_title": "Mental reserves keep brain agile",
+            "source": "The New York Times",
+            "year": "2007",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Brody",
+                            "given_names": "J. E."
+                        }
+                    ]
+                }
+            ]
+        },
+        "37": {
+            "publication_type": "webpage",
+            "article_title": "When to wear a face mask",
+            "source": "CNN",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Toner",
+                            "given_names": "K."
+                        }
+                    ]
+                }
+            ]
+        },
+        "38": {
+            "publication_type": "webpage",
+            "article_title": "North Korea vows to restart shuttered nuclear reactor that can make bomb-grade plutonium",
+            "source": "The Washington Post",
+            "year": "2013",
+            "volume": null,
+            "issue": null,
+            "fpage": "A1",
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Harlan",
+                            "given_names": "C."
+                        }
+                    ]
+                }
+            ]
+        },
+        "39": {
+            "publication_type": "webpage",
+            "article_title": "Cancer death rate in US sees largest one-year drop ever",
+            "source": "Chicago Tribune",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Stobbe",
+                            "given_names": "M."
+                        }
+                    ]
+                }
+            ]
+        },
+        "40": {
+            "publication_type": "journal",
+            "article_title": "Character and cholesterol",
+            "source": "Health",
+            "year": "2000",
+            "volume": "14",
+            "issue": "2",
+            "fpage": "20",
+            "lpage": "22",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Sack",
+                            "given_names": "K."
+                        }
+                    ]
+                }
+            ]
+        },
+        "41": {
+            "publication_type": "confproc",
+            "article_title": "Analysis of cloud security",
+            "source": "International Conference on Cyber Security",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": "London, UK",
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Lee",
+                            "given_names": "D. J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "42": {
+            "publication_type": "confproc",
+            "article_title": "Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales",
+            "source": "Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics",
+            "year": "2005",
+            "volume": null,
+            "issue": null,
+            "fpage": "115",
+            "lpage": "124",
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Pang",
+                            "given_names": "B."
+                        },
+                        {
+                            "surname": "Lee",
+                            "given_names": "L."
+                        }
+                    ]
+                }
+            ]
+        },
+        "43": {
+            "publication_type": "webpage",
+            "article_title": "American trends panel Wave 26",
+            "source": "Pew Research Center",
+            "year": "2018",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Pew Research Center",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "44": {
+            "publication_type": "webpage",
+            "article_title": "Fast Response Survey System (FRSS) 109: Teachers' Use of Educational Technology in U.S. Public Schools, 2019",
+            "source": null,
+            "year": "2016",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": "10.3886\/ICPSR35588.v3",
+            "publisher_name": "National Center for Education Statistics",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "45": {
+            "publication_type": "webpage",
+            "article_title": "2010 Census: Population and Housing Tables",
+            "source": null,
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "United States Census Bureau",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "46": {
+            "publication_type": "patent",
+            "article_title": "Method for node ranking in a linked database",
+            "source": "U.S. Patent No. 6,285,999",
+            "year": "2001",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "U.S. Patent and Trademark Office",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Page",
+                            "given_names": "L."
+                        }
+                    ]
+                }
+            ]
+        },
+        "47": {
+            "publication_type": "patent",
+            "article_title": "Touch screen device, method, and graphical user interface for determining commands",
+            "source": "U.S. Patent No. 8,570,278",
+            "year": "2013",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "U.S. Patent and Trademark Office",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Jobs",
+                            "given_names": "S. P."
+                        },
+                        {
+                            "surname": "Forstall",
+                            "given_names": "S."
+                        }
+                    ]
+                }
+            ]
+        },
+        "48": {
+            "publication_type": "report",
+            "article_title": "Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change",
+            "source": null,
+            "year": "2014",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "IPCC",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Intergovernmental Panel on Climate Change",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "49": {
+            "publication_type": "report",
+            "article_title": "Death sentences and executions 2019",
+            "source": null,
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Amnesty International",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Amnesty International",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "50": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "The World Is Flat: A Brief History of the Twenty-first Century",
+            "year": "2005",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Farrar, Straus and Giroux",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Friedman",
+                            "given_names": "T. L."
+                        }
+                    ]
+                }
+            ]
+        },
+        "51": {
+            "publication_type": "webpage",
+            "article_title": "Webb's First Deep Field",
+            "source": null,
+            "year": "2022",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "NASA",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "52": {
+            "publication_type": "webpage",
+            "article_title": "Suez Canal: Giant ship blocking trade route floated",
+            "source": null,
+            "year": "2021",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "BBC News",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "53": {
+            "publication_type": "webpage",
+            "article_title": "MDN Web Docs: CSS Grid Layout",
+            "source": null,
+            "year": "2024",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Mozilla",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "54": {
+            "publication_type": "thesis",
+            "article_title": "The snapping mechanism of Alpukid shrimp",
+            "source": null,
+            "year": "1974",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "ProQuest Dissertations and Theses Global",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Ritzmann",
+                            "given_names": "R. E."
+                        }
+                    ]
+                }
+            ]
+        },
+        "55": {
+            "publication_type": "thesis",
+            "article_title": "Building a foundation for evaluation of instruction in higher education and continuing education",
+            "source": null,
+            "year": "1973",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Cornell University",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Adams",
+                            "given_names": "R. J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "citations": [
+            {
+                "publication_type": "book",
+                "article_title": null,
+                "source": "Outliers: The Story of Success",
+                "year": "2008",
+                "volume": null,
+                "issue": null,
+                "fpage": null,
+                "lpage": null,
+                "pub_id_doi": null,
+                "publisher_name": "Little, Brown and Company",
+                "publisher_loc": null,
+                "person_groups": [
+                    {
+                        "type": "author",
+                        "names": [
+                            {
+                                "surname": "Gladwell",
+                                "given_names": "M."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "publication_type": "book",
+                "article_title": null,
+                "source": "A Promised Land",
+                "year": "2020",
+                "volume": null,
+                "issue": null,
+                "fpage": null,
+                "lpage": null,
+                "pub_id_doi": null,
+                "publisher_name": "Crown",
+                "publisher_loc": null,
+                "person_groups": [
+                    {
+                        "type": "author",
+                        "names": [
+                            {
+                                "surname": "Obama",
+                                "given_names": "B."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "publication_type": "book",
+                "article_title": null,
+                "source": "Steve Jobs",
+                "year": "2011",
+                "volume": null,
+                "issue": null,
+                "fpage": null,
+                "lpage": null,
+                "pub_id_doi": null,
+                "publisher_name": "Simon & Schuster",
+                "publisher_loc": null,
+                "person_groups": [
+                    {
+                        "type": "author",
+                        "names": [
+                            {
+                                "surname": "Isaacson",
+                                "given_names": "W."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "publication_type": "book",
+                "article_title": null,
+                "source": "Nineteen Eighty-Four",
+                "year": "1949",
+                "volume": null,
+                "issue": null,
+                "fpage": null,
+                "lpage": null,
+                "pub_id_doi": null,
+                "publisher_name": "Secker & Warburg",
+                "publisher_loc": null,
+                "person_groups": [
+                    {
+                        "type": "author",
+                        "names": [
+                            {
+                                "surname": "Orwell",
+                                "given_names": "G."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "publication_type": "book",
+                "article_title": null,
+                "source": "Pride and Prejudice",
+                "year": "1813",
+                "volume": null,
+                "issue": null,
+                "fpage": null,
+                "lpage": null,
+                "pub_id_doi": null,
+                "publisher_name": "T. Egerton",
+                "publisher_loc": null,
+                "person_groups": [
+                    {
+                        "type": "author",
+                        "names": [
+                            {
+                                "surname": "Austen",
+                                "given_names": "J."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "56": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "The Fellowship of the Ring",
+            "year": "1954",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "George Allen & Unwin",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Tolkien",
+                            "given_names": "J. R. R."
+                        }
+                    ]
+                }
+            ]
+        },
+        "57": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "Dune",
+            "year": "1965",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Chilton Books",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Herbert",
+                            "given_names": "F."
+                        }
+                    ]
+                }
+            ]
+        },
+        "58": {
+            "publication_type": "report",
+            "article_title": "Playing atari with deep reinforcement learning",
+            "source": "arXiv preprint arXiv:1312.5602",
+            "year": "2013",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Mnih",
+                            "given_names": "V."
+                        },
+                        {
+                            "surname": "Kavukcuoglu",
+                            "given_names": "K."
+                        },
+                        {
+                            "surname": "Silver",
+                            "given_names": "D."
+                        },
+                        {
+                            "surname": "Graves",
+                            "given_names": "A."
+                        },
+                        {
+                            "surname": "Antonoglou",
+                            "given_names": "I."
+                        },
+                        {
+                            "surname": "Wierstra",
+                            "given_names": "D."
+                        },
+                        {
+                            "surname": "Riedmiller",
+                            "given_names": "M."
+                        }
+                    ]
+                }
+            ]
+        },
+        "59": {
+            "publication_type": "confproc",
+            "article_title": "Sequence to sequence learning with neural networks",
+            "source": "Advances in neural information processing systems",
+            "year": "2014",
+            "volume": "27",
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Sutskever",
+                            "given_names": "I."
+                        },
+                        {
+                            "surname": "Vinyals",
+                            "given_names": "O."
+                        },
+                        {
+                            "surname": "Le",
+                            "given_names": "Q. V."
+                        }
+                    ]
+                }
+            ]
+        },
+        "60": {
+            "publication_type": "report",
+            "article_title": "Adam: A method for stochastic optimization",
+            "source": "arXiv preprint arXiv:1412.6980",
+            "year": "2014",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Kingma",
+                            "given_names": "D. P."
+                        },
+                        {
+                            "surname": "Ba",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "61": {
+            "publication_type": "webpage",
+            "article_title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+            "source": "arXiv preprint arXiv:1810.04805",
+            "year": "2018",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Devlin",
+                            "given_names": "J."
+                        },
+                        {
+                            "surname": "Chang",
+                            "given_names": "M. W."
+                        },
+                        {
+                            "surname": "Lee",
+                            "given_names": "K."
+                        },
+                        {
+                            "surname": "Toutanova",
+                            "given_names": "K."
+                        }
+                    ]
+                }
+            ]
+        },
+        "62": {
+            "publication_type": "webpage",
+            "article_title": "Efficient estimation of word representations in vector space",
+            "source": "arXiv preprint arXiv:1301.3781",
+            "year": "2013",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Mikolov",
+                            "given_names": "T."
+                        },
+                        {
+                            "surname": "Chen",
+                            "given_names": "K."
+                        },
+                        {
+                            "surname": "Corrado",
+                            "given_names": "G."
+                        },
+                        {
+                            "surname": "Dean",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "63": {
+            "publication_type": "book",
+            "article_title": "Culinary arts: Talent and their development",
+            "source": "The psychology of high performance: Developing human potential into domain-specific talent",
+            "year": "2019",
+            "volume": null,
+            "issue": null,
+            "fpage": "345",
+            "lpage": "359",
+            "pub_id_doi": null,
+            "publisher_name": "American Psychological Association",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Aron",
+                            "given_names": "L."
+                        },
+                        {
+                            "surname": "Botella",
+                            "given_names": "M."
+                        },
+                        {
+                            "surname": "Lubart",
+                            "given_names": "T."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Subotnik",
+                            "given_names": "R. F."
+                        },
+                        {
+                            "surname": "Olszewski-Kubilius",
+                            "given_names": "P."
+                        },
+                        {
+                            "surname": "Worrell",
+                            "given_names": "F. C."
+                        }
+                    ]
+                }
+            ]
+        },
+        "64": {
+            "publication_type": "book",
+            "article_title": "Currents in the study of persuasion",
+            "source": "Media effects: Advances in theory and research",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": "115",
+            "lpage": "129",
+            "pub_id_doi": null,
+            "publisher_name": "Routledge",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Dillard",
+                            "given_names": "J. P."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Oliver",
+                            "given_names": "M. B."
+                        },
+                        {
+                            "surname": "Raney",
+                            "given_names": "A. A."
+                        },
+                        {
+                            "surname": "Bryant",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "65": {
+            "publication_type": "book",
+            "article_title": "Self-organization in developmental processes: Can systems approaches work?",
+            "source": "Systems and development: The Minnesota Symposia on Child Psychology",
+            "year": "1989",
+            "volume": "22",
+            "issue": null,
+            "fpage": "77",
+            "lpage": "117",
+            "pub_id_doi": null,
+            "publisher_name": "Erlbaum",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Thelen",
+                            "given_names": "E."
+                        }
+                    ]
+                },
+                {
+                    "type": "editor",
+                    "names": [
+                        {
+                            "surname": "Gunnar",
+                            "given_names": "M. R."
+                        },
+                        {
+                            "surname": "Thelen",
+                            "given_names": "E."
+                        }
+                    ]
+                }
+            ]
+        },
+        "66": {
+            "publication_type": "webpage",
+            "article_title": null,
+            "source": "U.S. and World Population Clock",
+            "year": "2020",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "U.S. Census Bureau",
+            "publisher_loc": null,
+            "person_groups": []
+        },
+        "67": {
+            "publication_type": "webpage",
+            "article_title": "The secret to a long, happy, healthy life? Think age",
+            "source": "CNN",
+            "year": "2019",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Avramova",
+                            "given_names": "N."
+                        }
+                    ]
+                }
+            ]
+        },
+        "68": {
+            "publication_type": "report",
+            "article_title": "What We Heard: Summary of consultation meetings, 2013",
+            "source": null,
+            "year": "2013",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Canada Council for the Arts",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Canada Council for the Arts",
+                            "given_names": null
+                        }
+                    ]
+                }
+            ]
+        },
+        "69": {
+            "publication_type": "patent",
+            "article_title": "Vacuum cleaner",
+            "source": "U.S. Patent No. 4,567,123",
+            "year": "1986",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": null,
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Dyson",
+                            "given_names": "J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "70": {
+            "publication_type": "thesis",
+            "article_title": "A five-dimensional measure of drinking motives",
+            "source": null,
+            "year": "2003",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Department of Psychology, University of British Columbia",
+            "publisher_loc": "Vancouver, Canada",
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Blackwell",
+                            "given_names": "E."
+                        },
+                        {
+                            "surname": "Conrod",
+                            "given_names": "P. J."
+                        }
+                    ]
+                }
+            ]
+        },
+        "71": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "Man's Search for Meaning",
+            "year": "1984",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Beacon Press",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Frankl",
+                            "given_names": "V. E."
+                        }
+                    ]
+                }
+            ]
+        },
+        "72": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "The Alchemist",
+            "year": "1988",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "HarperTorch",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Coelho",
+                            "given_names": "P."
+                        }
+                    ]
+                }
+            ]
+        },
+        "73": {
+            "publication_type": "book",
+            "article_title": null,
+            "source": "Brave New World",
+            "year": "1932",
+            "volume": null,
+            "issue": null,
+            "fpage": null,
+            "lpage": null,
+            "pub_id_doi": null,
+            "publisher_name": "Chatto & Windus",
+            "publisher_loc": null,
+            "person_groups": [
+                {
+                    "type": "author",
+                    "names": [
+                        {
+                            "surname": "Huxley",
+                            "given_names": "A."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
