@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<back>
+  <ref-list>
+    <ref id="parser_0">
+      <mixed-citation> --- ERRORS FOUND IN THESE SECTIONS: "The DOI 10.1037/00223514.74.6.1464 does not exist in OpenAlex database.Title. "</mixed-citation>
+    </ref>
+    <ref id="parser_1">
+      <mixed-citation/>
+      <element-citation publication-type="book">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Huang</surname>
+            <given-names>Po-Sen</given-names>
+          </name>
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Huan</given-names>
+          </name>
+          <name>
+            <surname>Jiang</surname>
+            <given-names>Ray</given-names>
+          </name>
+          <name>
+            <surname>Stanforth</surname>
+            <given-names>Robert</given-names>
+          </name>
+          <name>
+            <surname>Welbl</surname>
+            <given-names>Johannes</given-names>
+          </name>
+          <name>
+            <surname>Rae</surname>
+            <given-names>Jack W.</given-names>
+          </name>
+          <name>
+            <surname>Maini</surname>
+            <given-names>Vishal</given-names>
+          </name>
+          <name>
+            <surname>Yogatama</surname>
+            <given-names>Dani</given-names>
+          </name>
+          <name>
+            <surname>Kohli</surname>
+            <given-names>Pushmeet</given-names>
+          </name>
+        </person-group>
+        <year>2020</year>
+        <source>Reducing sentiment bias in language models via counterfactual evaluation.</source>
+        <publisher-name>In T.</publisher-name>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.18653/v1/2020.findings-emnlp.7">https://doi.org/10.18653/v1/2020.findings-emnlp.7</ext-link>
+        <uri>https://doi.org/10.18653/v1/2020.findings-emnlp.7</uri>
+        <pub-id pub-id-type="doi">10.18653/v1/2020.findings-emnlp.7</pub-id>
+        <month>1</month>
+        <day>1</day>
+        <article-title>Reducing Sentiment Bias in Language Models via Counterfactual Evaluation</article-title>
+      </element-citation>
+    </ref>
+    <ref id="parser_2">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Mikolov</surname>
+            <given-names>Tomáš</given-names>
+          </name>
+          <name>
+            <surname>Sutskever</surname>
+            <given-names>Ilya</given-names>
+          </name>
+          <name>
+            <surname>Chen</surname>
+            <given-names>Kai</given-names>
+          </name>
+          <name>
+            <surname>Corrado</surname>
+            <given-names>Greg S.</given-names>
+          </name>
+          <name>
+            <surname>Dean</surname>
+            <given-names>Jeff</given-names>
+          </name>
+        </person-group>
+        <year>2013</year>
+        <source>arXiv (Cornell University)</source>
+        <article-title>Distributed Representations of Words and Phrases and their Compositionality</article-title>
+        <volume/>
+        <issue>26</issue>
+        <fpage/>
+        <lpage/>
+        <ext-link ext-link-type="uri" xlink:href="http://arxiv.org/abs/1310.4546">http://arxiv.org/abs/1310.4546</ext-link>
+        <uri>https://doi.org/10.48550/arXiv.1310.4546</uri>
+        <pub-id pub-id-type="doi">10.48550/arxiv.1310.4546</pub-id>
+        <month>10</month>
+        <day>16</day>
+      </element-citation>
+    </ref>
+    <ref id="parser_3">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Sheng</surname>
+            <given-names>Emily</given-names>
+          </name>
+          <name>
+            <surname>Chang</surname>
+            <given-names>Kai-Wei</given-names>
+          </name>
+          <name>
+            <surname>Natarajan</surname>
+            <given-names>Prem</given-names>
+          </name>
+          <name>
+            <surname>Peng</surname>
+            <given-names>Nanyun</given-names>
+          </name>
+        </person-group>
+        <year>2019</year>
+        <source>Jiang</source>
+        <article-title>The Woman Worked as a Babysitter: On Biases in Language Generation</article-title>
+        <volume/>
+        <issue>V</issue>
+        <fpage/>
+        <lpage/>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.18653/v1/d19-1339">https://doi.org/10.18653/v1/d19-1339</ext-link>
+        <uri>https://doi.org/10.18653/v1/D19-1339</uri>
+        <pub-id pub-id-type="doi">10.18653/v1/d19-1339</pub-id>
+        <month>1</month>
+        <day>1</day>
+      </element-citation>
+    </ref>
+    <ref id="parser_4">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Zhao</surname>
+            <given-names>Jieyu</given-names>
+          </name>
+          <name>
+            <surname>Zhou</surname>
+            <given-names>Yichao</given-names>
+          </name>
+          <name>
+            <surname>Li</surname>
+            <given-names>Zeyu</given-names>
+          </name>
+          <name>
+            <surname>Wang</surname>
+            <given-names>Wei</given-names>
+          </name>
+          <name>
+            <surname>Chang</surname>
+            <given-names>Kai-Wei</given-names>
+          </name>
+        </person-group>
+        <year>2018</year>
+        <source>In E. Riloff</source>
+        <article-title>Learning Gender-Neutral Word Embeddings</article-title>
+        <volume/>
+        <issue>D</issue>
+        <fpage/>
+        <lpage/>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.18653/v1/d18-1521">https://doi.org/10.18653/v1/d18-1521</ext-link>
+        <uri>https://doi.org/10.18653/v1/D18-1521</uri>
+        <pub-id pub-id-type="doi">10.18653/v1/d18-1521</pub-id>
+        <month>1</month>
+        <day>1</day>
+      </element-citation>
+    </ref>
+    <ref id="parser_5">
+      <mixed-citation> --- ERRORS FOUND IN THESE SECTIONS: "Author '�a, M.' not found in OpenAlex data for DOI https://doi.org/10.1080/15438627.2021.1888099.Author '�urek, P.' not found in OpenAlex data for DOI https://doi.org/10.1080/15438627.2021.1888099.Author 'Tavares, O. M.' not found in OpenAlex data for DOI https://doi.org/10.1080/15438627.2021.1888099."</mixed-citation>
+    </ref>
+    <ref id="parser_6">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Carling</surname>
+            <given-names>Christopher</given-names>
+          </name>
+          <name>
+            <surname>Le Gall</surname>
+            <given-names>Frank</given-names>
+          </name>
+          <name>
+            <surname>Malina</surname>
+            <given-names>Robert M.</given-names>
+          </name>
+        </person-group>
+        <year>2012</year>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/02640414.2011.637950">https://doi.org/10.1080/02640414.2011.637950</ext-link>
+        <uri>https://doi.org/10.1080/02640414.2011.637950</uri>
+        <pub-id pub-id-type="doi">10.1080/02640414.2011.637950</pub-id>
+        <month>1</month>
+        <day>31</day>
+        <article-title>Body size, skeletal maturity, and functional characteristics of elite academy soccer players on entry between 1992 and 2003</article-title>
+        <source>Journal of Sports Sciences</source>
+        <volume>30</volume>
+        <issue>15</issue>
+        <fpage>1683</fpage>
+        <lpage>1693</lpage>
+        <issn>0264-0414</issn>
+      </element-citation>
+    </ref>
+    <ref id="parser_7">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Nyakoko</surname>
+            <given-names>Farirayi Kowo-</given-names>
+          </name>
+          <name>
+            <surname>Gregson</surname>
+            <given-names>Celia L.</given-names>
+          </name>
+          <name>
+            <surname>Madanhire</surname>
+            <given-names>Tafadzwa</given-names>
+          </name>
+          <name>
+            <surname>Chibanda</surname>
+            <given-names>Lynda Stranix‐</given-names>
+          </name>
+          <name>
+            <surname>Rukuni</surname>
+            <given-names>Ruramayi</given-names>
+          </name>
+          <name>
+            <surname>Offiah</surname>
+            <given-names>Amaka C</given-names>
+          </name>
+          <name>
+            <surname>Micklesfield</surname>
+            <given-names>Lisa K.</given-names>
+          </name>
+          <name>
+            <surname>Cooper</surname>
+            <given-names>Cyrus</given-names>
+          </name>
+          <name>
+            <surname>Ferrand</surname>
+            <given-names>Rashida A.</given-names>
+          </name>
+          <name>
+            <surname>Rehman</surname>
+            <given-names>Andrea M.</given-names>
+          </name>
+          <name>
+            <surname>Ward</surname>
+            <given-names>Kate A.</given-names>
+          </name>
+        </person-group>
+        <year>2023</year>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.bone.2023.116725">https://doi.org/10.1016/j.bone.2023.116725</ext-link>
+        <uri>https://doi.org/10.1016/j.bone.2023.116725</uri>
+        <pub-id pub-id-type="doi">10.1016/j.bone.2023.116725</pub-id>
+        <month>3</month>
+        <day>3</day>
+        <article-title>Evaluation of two methods of bone age assessment in peripubertal children in Zimbabwe</article-title>
+        <source>Bone</source>
+        <volume>170</volume>
+        <fpage>116725</fpage>
+        <issn>1873-2763</issn>
+      </element-citation>
+    </ref>
+    <ref id="parser_8">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Malina</surname>
+            <given-names>Robert M.</given-names>
+          </name>
+          <name>
+            <surname>Chamorro</surname>
+            <given-names>Manuel Sánchez</given-names>
+          </name>
+          <name>
+            <surname>Serratosa</surname>
+            <given-names>Luis</given-names>
+          </name>
+          <name>
+            <surname>Morate</surname>
+            <given-names>Francisco</given-names>
+          </name>
+        </person-group>
+        <year>2007</year>
+        <source>Annals of Human Biology</source>
+        <article-title>TW3 and Fels skeletal ages in elite youth soccer players</article-title>
+        <volume>34</volume>
+        <issue>2</issue>
+        <fpage>265</fpage>
+        <lpage>272</lpage>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/03014460701207601">https://doi.org/10.1080/03014460701207601</ext-link>
+        <uri>https://doi.org/10.1080/03014460701207601</uri>
+        <pub-id pub-id-type="doi">10.1080/03014460701207601</pub-id>
+        <month>1</month>
+        <day>1</day>
+        <issn>0301-4460</issn>
+      </element-citation>
+    </ref>
+    <ref id="parser_9">
+      <mixed-citation> --- ERRORS FOUND IN THESE SECTIONS: "Author 'Figuereido, A. J.' not found in OpenAlex data for DOI https://doi.org/10.1007/s40279-017-0799-7.Author 'Philippaers, R. M.' not found in OpenAlex data for DOI https://doi.org/10.1007/s40279-017-0799-7.Author 'Depres, D.' not found in OpenAlex data for DOI https://doi.org/10.1007/s40279-017-0799-7.Author 'Guglielmo, L. G. A.' not found in OpenAlex data for DOI https://doi.org/10.1007/s40279-017-0799-7.Title. "</mixed-citation>
+    </ref>
+    <ref id="parser_10">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Ortega</surname>
+            <given-names>Ana Isabel</given-names>
+          </name>
+          <name>
+            <surname>Neto</surname>
+            <given-names>Francisco Haiter‐</given-names>
+          </name>
+          <name>
+            <surname>Ambrosano</surname>
+            <given-names>Gláucia María Bovi</given-names>
+          </name>
+          <name>
+            <surname>Bóscolo</surname>
+            <given-names>Frab Norberto</given-names>
+          </name>
+          <name>
+            <surname>Almeida</surname>
+            <given-names>Solange María</given-names>
+          </name>
+          <name>
+            <surname>Casanova</surname>
+            <given-names>Marcia Spinelli</given-names>
+          </name>
+        </person-group>
+        <year>2006</year>
+        <source>Journal of Applied Oral Science</source>
+        <article-title>Comparison of TW2 and TW3 skeletal age differences in a Brazilian population</article-title>
+        <volume>14</volume>
+        <issue>2</issue>
+        <fpage>142</fpage>
+        <lpage>146</lpage>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1590/s1678-77572006000200014">https://doi.org/10.1590/s1678-77572006000200014</ext-link>
+        <uri>https://doi.org/10.1590/S1678-77572006000200014</uri>
+        <pub-id pub-id-type="doi">10.1590/s1678-77572006000200014</pub-id>
+        <month>4</month>
+        <day>1</day>
+        <issn>1678-7757</issn>
+      </element-citation>
+    </ref>
+    <ref id="parser_11">
+      <mixed-citation/>
+      <element-citation publication-type="journal">
+        <person-group person-group-type="author">
+          <name>
+            <surname>Sinkler</surname>
+            <given-names>Margaret A.</given-names>
+          </name>
+          <name>
+            <surname>Furdock</surname>
+            <given-names>Ryan J.</given-names>
+          </name>
+          <name>
+            <surname>Halloran</surname>
+            <given-names>Sean</given-names>
+          </name>
+          <name>
+            <surname>Liu</surname>
+            <given-names>Raymond W.</given-names>
+          </name>
+        </person-group>
+        <year>2024</year>
+        <source>Journal of Pediatric Orthopaedics</source>
+        <article-title>The Addition of Hand-specific Skeletal Maturity Parameters Does Not Improve Skeletal Maturity Estimation Accuracy of the Modified Fels Wrist System</article-title>
+        <volume>44</volume>
+        <issue>4</issue>
+        <fpage>281</fpage>
+        <lpage>285</lpage>
+        <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1097/bpo.0000000000002621">https://doi.org/10.1097/bpo.0000000000002621</ext-link>
+        <uri>https://doi.org/10.1097/BPO.0000000000002621</uri>
+        <pub-id pub-id-type="doi">10.1097/bpo.0000000000002621</pub-id>
+        <month>1</month>
+        <day>25</day>
+        <issn>0271-6798</issn>
+      </element-citation>
+    </ref>
+  </ref-list>
+</back>

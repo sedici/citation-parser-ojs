@@ -6,6 +6,8 @@
 */
 
 include_once 'Reference.php';
+require_once __DIR__ . '/Printer/OpenAlexApi/Enrichers/OpenAlexEnricherFactory.php';
+
 class JATSReference {
 
     public $reference;
@@ -18,8 +20,13 @@ class JATSReference {
 
     private $enrichmentData = []; //Set an empty array if there is no DOI in OpenAlex and an array with data to enrich the JATS XML if that DOI exists in OpenAlex
 
+    private $openAlexSourceType = null;
+    private $enricherUsedClass = null;
+    private bool $isFallbackEnricher = false;
+
     private $errors = "";
     private bool $enrichmentHadErrors = false; 
+
 
     public function __construct(?\DOMDocument $dom = null, ?\DOMElement $reflist = null, Reference $reference, int $id = 0) {
         $this->reference = $reference;
@@ -161,6 +168,18 @@ class JATSReference {
         $this->enrichmentData = $enrichmentData;
     }
 
+    public function getOpenAlexSourceType(): ?string {
+        return $this->openAlexSourceType;
+    }
+
+    public function getEnricherUsed(): ?string {
+        return $this->enricherUsedClass;
+    }
+
+    public function isFallbackEnricher(): bool {
+        return $this->isFallbackEnricher;
+    }
+
     /**
      * Enrich the JATS reference with data from OpenAlex
      * If there is enrichment data, it will add or replace elements in the element-citation tag
@@ -171,38 +190,31 @@ class JATSReference {
     public function enrichment() {
         if (empty($this->enrichmentData)) { return; }
 
-        $sourceType = $this->enrichmentData['primary_location']['source']['type'] ?? null;
+        $resolved = OpenAlexEnricherFactory::resolve($this->enrichmentData);
+        $this->openAlexSourceType = $resolved['source_type'];
+        $this->enricherUsedClass = $resolved['enricher_class'];
+        $this->isFallbackEnricher = $resolved['is_fallback'];
+
         $publicationType = $this->element_citation->getAttribute('publication-type');
-
         if (empty($publicationType)) {
-            $this->element_citation->setAttribute('publication-type', strtolower($sourceType));
+            $this->element_citation->setAttribute('publication-type', strtolower($this->openAlexSourceType));
         }
 
-        if ($sourceType) {
-            $printerClassName = ucfirst($sourceType).'Printer';
-            if (!class_exists($printerClassName)) {
-                error_log('[JournalPrinter::enrichment()] No printer class found for source type: ' . $sourceType);
-                $this->addError("No printer class found for source type: " . $sourceType . ". ");
-                $this->enrichmentHadErrors = true;
-                return; // No printer available for this source type
-            }
-            $printer = new $printerClassName([], $this->dom);   
-            if (method_exists($printer, 'enrichment')) {
-                $elements = $printer->enrichment($this->enrichmentData);
-                foreach ($elements as $newElement) {
-                    $tag = $newElement->tagName;
-                    $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
-                    if ($existing) {
-                        $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
-                    } else {
-                        $this->element_citation->appendChild($newElement); // Agregar al final
-                    }
-                }
-            }
-            $this->ref->appendChild($this->element_citation);
+        $elements = $resolved['enricher']->enrich($this->dom, $this->enrichmentData);
 
+        foreach ($elements as $newElement) {
+            $tag = $newElement->tagName;
+            $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
+            if ($existing) {
+                $this->element_citation->replaceChild($newElement, $existing);
+            } else {
+                $this->element_citation->appendChild($newElement);
+            }
         }
+        $this->ref->appendChild($this->element_citation);
     }
+
+
 
 }
 

@@ -40,6 +40,10 @@ class ReferencesManager {
         $this->process();
     }
 
+    public function getJatsList(): array {
+        return $this->jatsList;
+    }
+
     public function process() {
         // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
@@ -85,7 +89,7 @@ class ReferencesManager {
         foreach ($this->jatsWithDoi as $doi => $jats) {
             $found = false;
             foreach ($results as $index => $result) {
-                if (strpos($result['doi'],  $doi) !== false) {
+                if (isset($result['doi']) && stripos($result['doi'], $doi) !== false) {
                     $found = true;
                     if ($this->authorValidator->validateFullNameAsAuthor($result, $jats)) {
                         // Preprocesar autores una sola vez para que los printers solo impriman
