@@ -6,6 +6,7 @@
 */
 
 include_once 'Reference.php';
+include_once 'Printer/OpenAlexApi/OpenAlexTypeMapper.php';
 class JATSReference {
 
     public $reference;
@@ -171,37 +172,33 @@ class JATSReference {
     public function enrichment() {
         if (empty($this->enrichmentData)) { return; }
 
-        $sourceType = $this->enrichmentData['primary_location']['source']['type'] ?? null;
-        $publicationType = $this->element_citation->getAttribute('publication-type');
+        $currentPubType = $this->element_citation->getAttribute('publication-type');
+        $resolvedPubType = OpenAlexTypeMapper::resolveJatsPublicationType(
+            $this->enrichmentData,
+            !empty($currentPubType) ? $currentPubType : OpenAlexTypeMapper::JATS_TYPE_JOURNAL
+        );
+        $this->element_citation->setAttribute('publication-type', $resolvedPubType);
 
-        if (empty($publicationType)) {
-            $this->element_citation->setAttribute('publication-type', strtolower($sourceType));
+        $printerClassName = OpenAlexTypeMapper::resolvePrinterClass($this->enrichmentData);
+        if (!$printerClassName || !class_exists($printerClassName)) {
+            return;
         }
 
-        if ($sourceType) {
-            $printerClassName = ucfirst($sourceType).'Printer';
-            if (!class_exists($printerClassName)) {
-                error_log('[JournalPrinter::enrichment()] No printer class found for source type: ' . $sourceType);
-                $this->addError("No printer class found for source type: " . $sourceType . ". ");
-                $this->enrichmentHadErrors = true;
-                return; // No printer available for this source type
-            }
-            $printer = new $printerClassName([], $this->dom);   
-            if (method_exists($printer, 'enrichment')) {
-                $elements = $printer->enrichment($this->enrichmentData);
-                foreach ($elements as $newElement) {
-                    $tag = $newElement->tagName;
-                    $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
-                    if ($existing) {
-                        $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
-                    } else {
-                        $this->element_citation->appendChild($newElement); // Agregar al final
-                    }
+        if (OpenAlexTypeMapper::isEnrichmentSupported($printerClassName)) {
+            $printer = new $printerClassName([], $this->dom);
+            $elements = $printer->enrichment($this->enrichmentData);
+            foreach ($elements as $newElement) {
+                $tag = $newElement->tagName;
+                $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
+                if ($existing) {
+                    $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
+                } else {
+                    $this->element_citation->appendChild($newElement); // Agregar al final
                 }
             }
-            $this->ref->appendChild($this->element_citation);
-
         }
+
+        $this->ref->appendChild($this->element_citation);
     }
 
 }
