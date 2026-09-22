@@ -61,6 +61,10 @@ class OpenAlexApiManager {
     }
 
     public function doiRequest() {
+        if (empty($this->dois)) {
+            return null;
+        }
+
         try {
             $this->worksWithDoiResponse = $this->api->searchWorksListWithDoi($this->dois);
             return $this->worksWithDoiResponse;
@@ -76,7 +80,7 @@ class OpenAlexApiManager {
                 $this->institutionsResponse = $this->api->searchWorksListWithInstitutions($institution);
             }
 
-            return json_decode($this->institutionsResponse, true);
+            return $this->institutionsResponse ? json_decode($this->institutionsResponse, true) : null;
         } catch (Exception $e) {
             error_log("Error al realizar la solicitud a la API: " . $e->getMessage());
             return null;
@@ -87,9 +91,3 @@ class OpenAlexApiManager {
         return $this->worksWithDoiResponse;
     }
 }
-/*
-$manager = new OpenAlexApiManager();
-$manager->addDoi('https://doi.org/10.24215/23143738e136'); 
-$manager->addDoi('https://doi.org/10.1371/journal.pone.0266781'); 
-$responce = $manager->request();
-print_r($responce); */
