@@ -7,6 +7,7 @@
 
 include_once 'Reference.php';
 include_once 'Printer/OpenAlexApi/OpenAlexTypeMapper.php';
+include_once __DIR__ . '/Enricher/OpenAlexEnricherFactory.php';
 class JATSReference {
 
     public $reference;
@@ -179,22 +180,24 @@ class JATSReference {
         );
         $this->element_citation->setAttribute('publication-type', $resolvedPubType);
 
-        $printerClassName = OpenAlexTypeMapper::resolvePrinterClass($this->enrichmentData);
-        if (!$printerClassName || !class_exists($printerClassName)) {
-            return;
+        // Si el tipo resultante es 'book' o 'chapter', Texture no admite <article-title> en element-citation
+        if ($resolvedPubType === OpenAlexTypeMapper::JATS_TYPE_BOOK || $resolvedPubType === OpenAlexTypeMapper::JATS_TYPE_CHAPTER) {
+            $articleTitle = $this->element_citation->getElementsByTagName('article-title')->item(0);
+            if ($articleTitle) {
+                $this->element_citation->removeChild($articleTitle);
+            }
         }
 
-        if (OpenAlexTypeMapper::isEnrichmentSupported($printerClassName)) {
-            $printer = new $printerClassName([], $this->dom);
-            $elements = $printer->enrichment($this->enrichmentData);
-            foreach ($elements as $newElement) {
-                $tag = $newElement->tagName;
-                $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
-                if ($existing) {
-                    $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
-                } else {
-                    $this->element_citation->appendChild($newElement); // Agregar al final
-                }
+        $enricher = OpenAlexEnricherFactory::getEnricher($this->enrichmentData);
+        $elements = $enricher->enrich($this->dom, $this->enrichmentData);
+
+        foreach ($elements as $newElement) {
+            $tag = $newElement->tagName;
+            $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
+            if ($existing) {
+                $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
+            } else {
+                $this->element_citation->appendChild($newElement); // Agregar al final
             }
         }
 
