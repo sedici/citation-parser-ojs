@@ -10,22 +10,22 @@ class AuthorValidator {
      * @return void
     */
     public function validateInstitutionAsAuthor(array $openAlexResults, JATSReference $jatsReference, string $institution): bool {
-        if ($openAlexResults === null || count($openAlexResults) === 0) {
-            $jatsReference->addError("No institution found in OpenAlex for the name \"$institution\". ");
-            return false;
-        } else if (count($openAlexResults) > 1) {
-            return false;
-        }
-
-        $displayName = $openAlexResults[0]['display_name'] ?? null; // Institution name from OpenAlex
-        $jatsInstitution = $jatsReference->reference->getAuthor()['institution'] ?? null; // Parsed Institution name from original JATS reference
-
-        if (strtolower($displayName) !== strtolower($jatsInstitution)) {  //this condition isn't necessary, but for security we keep it here
-            $jatsReference->addError("Specified name \"$displayName\" does not match with OpenAlex data: \"$jatsInstitution\".");
-            return false;
-        } else {
-            $jatsReference->reference->setAuthor('institution', $displayName); //Replace default institution using OpenAlex institution
-        }
+//        if ($openAlexResults === null || count($openAlexResults) === 0) {
+//            $jatsReference->addError("No institution found in OpenAlex for the name \"$institution\". ");
+//            return false;
+//        } else if (count($openAlexResults) > 1) {
+//            return false;
+//        }
+//
+//        $displayName = $openAlexResults[0]['display_name'] ?? null; // Institution name from OpenAlex
+//        $jatsInstitution = $jatsReference->reference->getAuthor()['institution'] ?? null; // Parsed Institution name from original JATS reference
+//
+//        if (strtolower($displayName) !== strtolower($jatsInstitution)) {  //this condition isn't necessary, but for security we keep it here
+//            $jatsReference->addError("Specified name \"$displayName\" does not match with OpenAlex data: \"$jatsInstitution\".");
+//            return false;
+//        } else {
+//            $jatsReference->reference->setAuthor('institution', $displayName); //Replace default institution using OpenAlex institution
+//        }
 
         return true;
     }   
