@@ -72,6 +72,10 @@ class JournalPrinter extends TitlePrinter{
         return $elements;
     }
 
+    /**
+     * @deprecated Este método se conserva por compatibilidad hacia atrás.
+     * La lógica de enriquecimiento ha sido migrada a Enricher/JournalOpenAlexEnricher.php.
+     */
     public function enrichment(array $data): array {
         $elements = [];
 
@@ -136,6 +140,5 @@ class JournalPrinter extends TitlePrinter{
 
         return $elements;
     }
-
 
 }

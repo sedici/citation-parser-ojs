@@ -45,15 +45,18 @@ class JournalOpenAlexEnricher extends BaseOpenAlexEnricher {
             $elements[] = $this->createElement($dom, 'issue', (string)$issue);
         }
 
-        // 4. Páginas
+        // 4. Páginas vs. identificadores electrónicos (elocation-id)
         $fpage = $data['biblio']['first_page'] ?? null;
-        if (!empty($fpage)) {
-            $elements[] = $this->createElement($dom, 'fpage', (string)$fpage);
-        }
-
         $lpage = $data['biblio']['last_page'] ?? null;
-        if (!empty($lpage)) {
-            $elements[] = $this->createElement($dom, 'lpage', (string)$lpage);
+        if (!empty($fpage)) {
+            if (preg_match('~^e\d+$~i', trim((string)$fpage))) {
+                $elements[] = $this->createElement($dom, 'elocation-id', (string)$fpage);
+            } else {
+                $elements[] = $this->createElement($dom, 'fpage', (string)$fpage);
+                if (!empty($lpage) && $lpage !== $fpage) {
+                    $elements[] = $this->createElement($dom, 'lpage', (string)$lpage);
+                }
+            }
         }
 
         // 5. ISSN de la revista
