@@ -77,7 +77,7 @@ class ReferencesManager {
     private function openAlexRequest() {
         // Implementación de la solicitud a OpenAlex si es necesario
          $jsonDoiOar = $this->oam->doiRequest();
-         $decodedDoiOar = json_decode($jsonDoiOar, true);
+         $decodedDoiOar = json_decode((string) $jsonDoiOar, true);
          $this->enrichmentJatsRefElement($decodedDoiOar);
 
          return null;

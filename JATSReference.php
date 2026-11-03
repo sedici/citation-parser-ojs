@@ -23,7 +23,7 @@ class JATSReference {
     private $errors = "";
     private bool $enrichmentHadErrors = false; 
 
-    public function __construct(?\DOMDocument $dom = null, ?\DOMElement $reflist = null, Reference $reference, int $id = 0) {
+    public function __construct(?\DOMDocument $dom, ?\DOMElement $reflist, Reference $reference, int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->reflist = $reflist;
@@ -35,7 +35,7 @@ class JATSReference {
         $this->mixed_citation = $this->dom->createElement('mixed-citation',$this->reference->getPlainTextReference());
 
         $this->element_citation = $this->dom->createElement('element-citation');
-        $this->element_citation->setAttribute('publication-type',$this->reference->getTitleType());
+        $this->element_citation->setAttribute('publication-type', (string) $this->reference->getTitleType());
 
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
