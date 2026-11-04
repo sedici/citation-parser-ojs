@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examples>
+  <example label="T.N vs Tomas Nahuel">
+    <name>
+      <surname>Perez</surname>
+      <given-names>Tomas Nahuel</given-names>
+    </name>
+  </example>
+  <example label="J.P vs Juan Pablo">
+    <name>
+      <surname>García</surname>
+      <given-names>Juan Pablo</given-names>
+    </name>
+  </example>
+  <example label="A. vs Ana María">
+    <name>
+      <surname>Luna</surname>
+      <given-names>Ana María</given-names>
+    </name>
+  </example>
+  <example label="Apellido compuesto (De la Fuente)">
+    <name>
+      <surname>De la Fuente</surname>
+      <given-names>Ana</given-names>
+    </name>
+  </example>
+  <example label="Partícula en apellido (van der Waals)">
+    <name>
+      <surname>van der Waals</surname>
+      <given-names>Johannes Diderik</given-names>
+    </name>
+  </example>
+  <example label="Una inicial, múltiples nombres">
+    <name>
+      <surname>Lopez</surname>
+      <given-names>Juan Pablo Carlos</given-names>
+    </name>
+  </example>
+  <example label="Saltar token intermedio (J. C. vs Juan Pablo Carlos)">
+    <name>
+      <surname>Lopez</surname>
+      <given-names>Juan Carlos</given-names>
+    </name>
+  </example>
+  <example label="Solo apellido en referencia">
+    <name>
+      <surname>Perez</surname>
+      <given-names>Tomas Nahuel</given-names>
+    </name>
+  </example>
+  <example label="Diacríticos coinciden (García vs García)">
+    <name>
+      <surname>García</surname>
+      <given-names>Jose</given-names>
+    </name>
+  </example>
+  <example label="Nombres con apóstrofe (O'Connor)">
+    <name>
+      <surname>O'Connor</surname>
+      <given-names>Liam</given-names>
+    </name>
+  </example>
+  <example label="Apellido con guion (Smith-Jones)">
+    <name>
+      <surname>Smith-Jones</surname>
+      <given-names>Alice Bob Jorgensen</given-names>
+    </name>
+  </example>
+</examples>

@@ -1,4 +1,9 @@
 <?php
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
+
 include_once 'Expression/Analyzers/AuthorAnalyzer/AuthorExpression.php';
 include_once 'Expression/Analyzers/DateAnalyzer/DateExpression.php';
 include_once 'Expression/Analyzers/TitleAnalyzer/TitleExpression.php';
@@ -133,5 +138,9 @@ class Reference {
         if ($this->type === null) {
             // Lógica para determinar el tipo de referencia
         }
+    }
+
+    public function setAuthor($key, $value) {
+        $this->author[$key] = $value;
     }
 }

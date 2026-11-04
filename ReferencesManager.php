@@ -1,8 +1,15 @@
 <?php
+
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
+
 include_once 'Printer/OpenAlexApi/OpenAlexApi.php';
 include_once 'Printer/OpenAlexApi/OpenAlexApiManager.php';
 require_once 'Reference.php';
 require_once 'JATSReference.php';
+include_once 'validators/AuthorValidator.php';
 
 class ReferencesManager {
     private $refs;
@@ -14,9 +21,11 @@ class ReferencesManager {
 
     public $reflist;
 
+    private AuthorValidator $authorValidator;
+
     private OpenAlexApiManager $oam;
 
-    public function __construct(\DOMDocument $dom = null,\DOMElement $back = null,array $refs = null) {
+    public function __construct(?\DOMDocument $dom = null, ?\DOMElement $back = null, ?array $refs = null) {
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->back = $back;
         $this->refs = $refs;
@@ -26,32 +35,35 @@ class ReferencesManager {
 
         $this->oam = new OpenAlexApiManager();
 
+        $this->authorValidator = new AuthorValidator();
+
         $this->process();
+    }
+
+    public function getJatsList(): array {
+        return $this->jatsList;
     }
 
     public function process() {
         // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
-            $reference = new Reference($ref);
-            $jats = new JATSReference($this->dom, $this->reflist, $reference, $index);
+            $parsedReference = new Reference($ref);
+            $jats = new JATSReference($this->dom, $this->reflist, $parsedReference, $index);
             $this->jatsList[] = $jats;
 
             // Si la referencia tiene DOI, agregar al manager de OpenAlex
             $doi = $jats->getDoi();
-            $institutions = $jats->getinstitutions();
+            $institution = $jats->getInstitution();
             if ($doi) {
-                
                 $this->oam->addDoi($doi);
                 $this->jatsWithDoi[$doi] = $jats;
 
-            } else if ($institutions) {       
-                $this->oam->addInstitutios($institutions);
-                $this->jatsRefListWithInstitutions[$institutions] = $jats;
+            } else if ($institution) {
+                $this->processInstitution($institution, $jats);
             }
-
         }
 
-        //$this->openAlexRequest();
+        $this->openAlexRequest();
         $this->generateXML();
     }
 
@@ -59,22 +71,49 @@ class ReferencesManager {
         foreach ($this->jatsList as $jats) {
             $jats->getJatsXML();
         }
-        //$this->dom->save();
+        //$this->dom->saveXML();
     }
 
     private function openAlexRequest() {
         // Implementación de la solicitud a OpenAlex si es necesario
-         $oar = $this->oam->request();
-         $this->enrichmenteJatsRefElement($oar);
+         $jsonDoiOar = $this->oam->doiRequest();
+         $decodedDoiOar = json_decode((string) $jsonDoiOar, true);
+         $this->enrichmentJatsRefElement($decodedDoiOar);
+
          return null;
      }
+
+    private function enrichmentJatsRefElement($oar){
+        $results = $oar['results'] ?? [];
+        
+        foreach ($this->jatsWithDoi as $doi => $jats) {
+            $found = false;
+            foreach ($results as $index => $result) {
+                if (isset($result['doi']) && stripos($result['doi'], $doi) !== false) {
+                    $found = true;
+                    if ($this->authorValidator->validateFullNameAsAuthor($result, $jats)) {
+                        // Preprocesar autores una sola vez para que los printers solo impriman
+                        $formattedAuthors = $this->authorValidator->buildFormattedAuthors($result, $jats);
+                        $result['__authors_formatted'] = $formattedAuthors;
+                        $jats->setEnrichmentData($result);
+                    }
+                    break;
+                }
+            }
+
+            if (!$found) {
+                $jats->addError('The DOI ' . $doi . ' does not exist in OpenAlex database.');
+            }
+        }
+    }
  
-     private function enrichmenteJatsRefElement(){
-         foreach ($this->jatsWithDoi as $index => $jats) {
-             if ($oar[$index]){
-                 $jats->enrichmente($oar[$index]);
-             } 
-         }
-     }
- 
+    private function processInstitution(String $institution, ?JATSReference $jats = null) {
+        if (!$jats) {
+            return null;
+        }
+        $request = $this->oam->searchInstitution($institution);
+        $openAlexResults = $request['results'] ?? [];
+        $this->authorValidator->validateInstitutionAsAuthor($openAlexResults, $jats, $institution);
+    }
+
 }

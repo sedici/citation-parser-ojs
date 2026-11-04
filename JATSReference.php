@@ -1,17 +1,29 @@
 <?php
+
+/* 
+* Copyright (C) 2025 PREBI-SEDICI, Universidad Nacional de La Plata
+* Licensed under GPLv3: see LICENSE file for details.
+*/
+
 include_once 'Reference.php';
+include_once 'Printer/OpenAlexApi/OpenAlexTypeMapper.php';
+include_once __DIR__ . '/Enricher/OpenAlexEnricherFactory.php';
 class JATSReference {
 
     public $reference;
     public const JATS_REF_ID_PREFIX = 'parser_';
     private $dom;
+    private $reflist;
     private $ref;
     private $element_citation;
     private $mixed_citation;
 
-    private $errors = "";
+    private $enrichmentData = []; //Set an empty array if there is no DOI in OpenAlex and an array with data to enrich the JATS XML if that DOI exists in OpenAlex
 
-    public function __construct(\DOMDocument $dom = null,\DOMElement $reflist = null,Reference $reference,int $id = 0) {
+    private $errors = "";
+    private bool $enrichmentHadErrors = false; 
+
+    public function __construct(?\DOMDocument $dom, ?\DOMElement $reflist, Reference $reference, int $id = 0) {
         $this->reference = $reference;
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->reflist = $reflist;
@@ -23,19 +35,24 @@ class JATSReference {
         $this->mixed_citation = $this->dom->createElement('mixed-citation',$this->reference->getPlainTextReference());
 
         $this->element_citation = $this->dom->createElement('element-citation');
-        $this->element_citation->setAttribute('publication-type',$this->reference->getTitleType());
+        $this->element_citation->setAttribute('publication-type', (string) $this->reference->getTitleType());
 
         $this->ref->appendChild($this->element_citation);
         $this->ref->appendChild($this->mixed_citation);
 
     }
 
-    public function checkErrors(){
-        //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
-        if (trim($this->errors) !== "") {
-            
-            $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
+    //If we have errors, we need to delete element-citation tag. We create a comment in mixed-citation tag with these errors.
+    public function checkErrors(): void{
+        // If we have enrichment data and no errors during enrichment
+        // We suppress previous parsing errors to avoid dirtying the final XML.
+        if (!empty($this->enrichmentData) && $this->enrichmentHadErrors === false) {
+            $this->errors = ""; // no imprimir ni propagar errores si el enriquecimiento salió bien
+            return;
+        }
 
+        if (trim($this->errors) !== "") {
+            $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
             $this->mixed_citation->nodeValue .= " --- " . $textError;
             $this->ref->removeChild($this->element_citation);
         }
@@ -46,6 +63,7 @@ class JATSReference {
         $this->addDate();
         $this->addTitle();
         $this->addURL();
+        $this->enrichment();
         $this->checkErrors();
     }
 
@@ -63,11 +81,10 @@ class JATSReference {
 
         $authorType = $this->reference->getAuthorType();
         if ($authorType === null || trim($authorType) === "" || $authorType === "No match found") {
-            $errorText = "Author. ";
-            $this->addError($errorText);
+            $this->addError("Author. ");
             return;
         }
-        $authorType = $this->reference->getAuthorType();
+
         $authorPrinter = new AuthorPrinter($this->reference->getAuthor(),$this->dom);
         $elements = $authorPrinter->createXMLElements();
         foreach ($elements as $element) {
@@ -80,8 +97,7 @@ class JATSReference {
 
         $dateType = $this->reference->getDateType();
         if ($dateType === null || trim($dateType) === "" || $dateType === "No match found") {
-            $errorText = "Date. ";
-            $this->addError($errorText);
+            $this->addError("Date. ");
             return;
         }
 
@@ -92,7 +108,6 @@ class JATSReference {
         }
            
     }
-
 
     public function addURL() {
         // Return xml as a string
@@ -109,16 +124,14 @@ class JATSReference {
         foreach ($elements as $element) {
             $this->element_citation->appendChild($element);
         }
-           
     }
 
-    public function addTitle(){
+    public function addTitle(){     
         //Return xml as a string
 
         $titleType = $this->reference->getTitleType(); 
         if ($titleType === null || trim($titleType) === "" || $titleType === "No match found") {
-            $errorText = "Title. ";
-            $this->addError($errorText);
+            $this->addError("Title. ");
             return;
         }
 
@@ -128,6 +141,7 @@ class JATSReference {
         foreach ($elements as $element) {
             $this->element_citation->appendChild($element);
         }
+
     }
 
     public function getDoi(): ?string {
@@ -139,10 +153,57 @@ class JATSReference {
         // Retornar el DOI si el tipo de URL es correcto
         return $this->reference->getURL()['doi'];
     }
-    
-    public function getInstitutions(): ?string {
-        return null;
+
+    public function getInstitution(): ?string {
+        return $this->reference->getAuthor()['institution'] ?? null;
+    }
+
+    public function setEnrichmentData(Array $enrichmentData) {
+        // Inject original reference authors so printers can apply the same strategy when building JATS
+        $this->enrichmentData = $enrichmentData;
+    }
+
+    /**
+     * Enrich the JATS reference with data from OpenAlex
+     * If there is enrichment data, it will add or replace elements in the element-citation tag
+     * If there is no enrichment data, it will not modify the element-citation tag
+     * If there are errors, it will remove the element-citation tag and add a comment in the mixed-citation tag
+     * @return void
+     */
+    public function enrichment() {
+        if (empty($this->enrichmentData)) { return; }
+
+        $currentPubType = $this->element_citation->getAttribute('publication-type');
+        $resolvedPubType = OpenAlexTypeMapper::resolveJatsPublicationType(
+            $this->enrichmentData,
+            !empty($currentPubType) ? $currentPubType : OpenAlexTypeMapper::JATS_TYPE_JOURNAL
+        );
+        $this->element_citation->setAttribute('publication-type', $resolvedPubType);
+
+        // Si el tipo resultante es 'book' o 'chapter', Texture no admite <article-title> en element-citation
+        if ($resolvedPubType === OpenAlexTypeMapper::JATS_TYPE_BOOK || $resolvedPubType === OpenAlexTypeMapper::JATS_TYPE_CHAPTER) {
+            $articleTitle = $this->element_citation->getElementsByTagName('article-title')->item(0);
+            if ($articleTitle) {
+                $this->element_citation->removeChild($articleTitle);
+            }
+        }
+
+        $enricher = OpenAlexEnricherFactory::getEnricher($this->enrichmentData);
+        $elements = $enricher->enrich($this->dom, $this->enrichmentData);
+
+        foreach ($elements as $newElement) {
+            $tag = $newElement->tagName;
+            $existing = $this->element_citation->getElementsByTagName($tag)->item(0);
+            if ($existing) {
+                $this->element_citation->replaceChild($newElement, $existing); // Reemplazar el existente por el nuevo
+            } else {
+                $this->element_citation->appendChild($newElement); // Agregar al final
+            }
+        }
+
+        $this->ref->appendChild($this->element_citation);
     }
 
 }
+
 ?>
