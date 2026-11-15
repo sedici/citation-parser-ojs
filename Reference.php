@@ -23,6 +23,7 @@ include_once 'Printer/WebpagePrinter.php';
 class Reference {
     private $plainTextReference;
     private $type;
+    protected string $citationStyle;
 
     public $author;
     public $authorType;
@@ -36,8 +37,9 @@ class Reference {
     public $url;
     public $urlType;
 
-    public function __construct(string $plainTextReference) {
+    public function __construct(string $plainTextReference, string $citationStyle = 'apa') {
         $this->plainTextReference = $plainTextReference;
+        $this->citationStyle = $citationStyle;
         $this->type = [];
         $this->parse();
     }

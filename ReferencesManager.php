@@ -24,11 +24,13 @@ class ReferencesManager {
     private AuthorValidator $authorValidator;
 
     private OpenAlexApiManager $oam;
+    protected string $citationStyle;
 
-    public function __construct(?\DOMDocument $dom = null, ?\DOMElement $back = null, ?array $refs = null) {
+    public function __construct(?\DOMDocument $dom = null, ?\DOMElement $back = null, ?array $refs = null, string $citationStyle = 'apa') {
         $this->dom = $dom ?? new \DOMDocument('1.0', 'UTF-8');
         $this->back = $back;
         $this->refs = $refs;
+        $this->citationStyle = $citationStyle;
 
         $this->reflist = $this->dom->createElement('ref-list');
         $this->back->appendChild($this->reflist);
@@ -47,7 +49,7 @@ class ReferencesManager {
     public function process() {
         // Procesar cada referencia
         foreach ($this->refs as $index => $ref) {
-            $parsedReference = new Reference($ref);
+            $parsedReference = new Reference($ref, $this->citationStyle);
             $jats = new JATSReference($this->dom, $this->reflist, $parsedReference, $index);
             $this->jatsList[] = $jats;
 
