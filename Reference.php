@@ -4,10 +4,8 @@
 * Licensed under GPLv3: see LICENSE file for details.
 */
 
-include_once 'Expression/Analyzers/AuthorAnalyzer/AuthorExpression.php';
-include_once 'Expression/Analyzers/DateAnalyzer/DateExpression.php';
-include_once 'Expression/Analyzers/TitleAnalyzer/TitleExpression.php';
-include_once 'Expression/Analyzers/UrlAnalyzer/URLExpression.php';
+require_once __DIR__ . '/Strategy/ReferenceStrategyInterface.php';
+
 include_once 'Printer/BookPrinter.php';
 include_once 'Printer/JournalPrinter.php';
 include_once 'Printer/ChapterPrinter.php';
@@ -44,40 +42,40 @@ class Reference {
         $this->parse();
     }
 
-    private function parseAuthor() {
-        $authorExpression = $this->author = AuthorExpression::parse($this->plainTextReference);
-        $this->author = $authorExpression['value'];
-        $this->authorType = $authorExpression['expression'];
-    }
-
-    private function parseDate() {
-        $dateExpression = DateExpression::parse($this->plainTextReference);
-        $this->date = $dateExpression['value'];
-        $this->dateType = $dateExpression['expression'];
-
-        if ($dateExpression['expression'] === 'congress') {
-            $this->type[] = $dateExpression['expression'];
-        }
-    }
-
-    private function parseTitle() {
-        $titleExpression = TitleExpression::parse($this->plainTextReference, $this->type);
-        $this->title = $titleExpression['value'];
-        $this->type = $titleExpression['expression'];
-        $this->titleType = $titleExpression['expression'];
-    }
-
-    private function parseURL() {
-        $URLExpression = URLExpression::parse($this->plainTextReference);
-        $this->url = $URLExpression['value'];
-        $this->urlType = $URLExpression['expression'];
-    }
-
     private function parse() {
-        $this->parseAuthor();
-        $this->parseDate(); 
-        $this->parseURL();
-        $this->parseTitle();
+        $strategy = $this->createStrategy();
+        $result = $strategy->parse($this->plainTextReference);
+
+        $this->author = $result['author'];
+        $this->authorType = $result['authorType'];
+        $this->date = $result['date'];
+        $this->dateType = $result['dateType'];
+        $this->url = $result['url'];
+        $this->urlType = $result['urlType'];
+        $this->title = $result['title'];
+        $this->titleType = $result['titleType'];
+        $this->type = $result['type'];
+    }
+
+    private function createStrategy(): ReferenceStrategyInterface {
+        $style = ucfirst(strtolower($this->citationStyle));
+        $className = "{$style}ReferenceStrategy";
+        $strategyFile = __DIR__ . "/Strategy/{$style}/{$className}.php";
+
+        if (file_exists($strategyFile)) {
+            require_once $strategyFile;
+        }
+
+        if (class_exists($className)) {
+            $strategy = new $className();
+            if ($strategy instanceof ReferenceStrategyInterface) {
+                return $strategy;
+            }
+        }
+
+        // Fallback seguro a APA si no se encuentra la estrategia solicitada
+        require_once __DIR__ . '/Strategy/Apa/ApaReferenceStrategy.php';
+        return new ApaReferenceStrategy();
     }
 
     // Getter para author
