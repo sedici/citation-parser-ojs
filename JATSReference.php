@@ -32,7 +32,8 @@ class JATSReference {
         $this->ref->setAttribute('id', self::JATS_REF_ID_PREFIX.$id );
         $this->reflist->appendChild($this->ref);
         
-        $this->mixed_citation = $this->dom->createElement('mixed-citation',$this->reference->getPlainTextReference());
+        $this->mixed_citation = $this->dom->createElement('mixed-citation');
+        $this->mixed_citation->appendChild($this->dom->createTextNode($this->reference->getPlainTextReference()));
 
         $this->element_citation = $this->dom->createElement('element-citation');
         $this->element_citation->setAttribute('publication-type',$this->reference->getTitleType());
@@ -53,8 +54,12 @@ class JATSReference {
 
         if (trim($this->errors) !== "") {
             $textError = 'ERRORS FOUND IN THESE SECTIONS: "' . $this->errors . '"';
-            $this->mixed_citation->nodeValue .= " --- " . $textError;
-            $this->ref->removeChild($this->element_citation);
+            $currentText = $this->mixed_citation->textContent;
+            $this->mixed_citation->textContent = '';
+            $this->mixed_citation->appendChild($this->dom->createTextNode($currentText . " --- " . $textError));
+            if ($this->element_citation->parentNode === $this->ref) {
+                $this->ref->removeChild($this->element_citation);
+            }
         }
     }
 
@@ -136,6 +141,9 @@ class JATSReference {
         }
 
         $printerClassName = ucfirst($titleType).'Printer';
+        if (!class_exists($printerClassName)) {
+            $printerClassName = 'GenericPrinter';
+        }
         $printer = new $printerClassName($this->reference->getTitle(), $this->dom);
         $elements = $printer->createXMLElements();
         foreach ($elements as $element) {

@@ -15,6 +15,16 @@ class OpenAlexAPI {
     public const CHUNK_SIZE = 25;
 
     /**
+     * Interruptor global para habilitar/deshabilitar llamadas de red en pruebas o modo offline.
+     */
+    public static bool $enableNetwork = true;
+
+    /**
+     * Caché en memoria para búsquedas repetidas de instituciones.
+     */
+    private static array $institutionCache = [];
+
+    /**
      * Timeout de conexión cURL en segundos.
      */
     private int $connectTimeout = 5;
@@ -31,6 +41,10 @@ class OpenAlexAPI {
      * @return string|null Respuesta en texto o null en caso de error.
      */
     protected function httpGet(string $url): ?string {
+        if (!self::$enableNetwork) {
+            return null;
+        }
+
         $ch = curl_init();
         curl_setopt_array($ch, [
             CURLOPT_URL => $url,
@@ -71,25 +85,43 @@ class OpenAlexAPI {
      * @return array Datos de la primera institución coincidente o array con error.
      */
     public function searchInstitution(string $query): array {
+        $key = strtolower(trim($query));
+        if (isset(self::$institutionCache[$key])) {
+            return self::$institutionCache[$key];
+        }
+
         $url = $this->institutionsUrl . urlencode($query);
         $response = $this->httpGet($url);
 
         if ($response === null || $response === false) {
-            return ["error" => "No se pudo conectar a la API"];
+            $err = ["error" => "No se pudo conectar a la API"];
+            self::$institutionCache[$key] = $err;
+            return $err;
         }
 
         $data = json_decode($response, true);
 
         if (isset($data['meta']['count']) && $data['meta']['count'] > 0 && isset($data['results'][0])) {
-            return [
+            $inst = [
                 "id" => $data['results'][0]['id'] ?? null,
                 "ror" => $data['results'][0]['ror'] ?? null,
                 "display_name" => $data['results'][0]['display_name'] ?? null,
                 "type" => $data['results'][0]['type'] ?? null
             ];
+            self::$institutionCache[$key] = $inst;
+            return $inst;
         }
 
-        return ["error" => "No se encontraron instituciones con el término de búsqueda proporcionado"];
+        $notFound = ["error" => "No se encontraron instituciones con el término de búsqueda proporcionado"];
+        self::$institutionCache[$key] = $notFound;
+        return $notFound;
+    }
+
+    /**
+     * Alias de searchInstitution por compatibilidad con llamadas en plural.
+     */
+    public function searchInstitutions(string $query): array {
+        return $this->searchInstitution($query);
     }
 
     /**

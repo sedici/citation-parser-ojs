@@ -3,3 +3,4 @@ reports/
 example.php
 Expression/TestExpression.php
 Printer/PrinterManager.php
+tests/**/output/

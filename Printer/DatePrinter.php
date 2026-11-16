@@ -17,23 +17,26 @@ class DatePrinter extends GenericPrinter{
 
     public function getMonth(){ 
         $months = array(
-            'enero' => 1,
-            'febrero' => 2,
-            'marzo' => 3,
-            'abril' => 4,
-            'mayo' => 5,
-            'junio' => 6,
-            'julio' => 7,
-            'agosto' => 8,
-            'septiembre' => 9,
-            'octubre' => 10,
-            'noviembre' => 11,
-            'diciembre' => 12
+            'enero' => 1, 'febrero' => 2, 'marzo' => 3, 'abril' => 4,
+            'mayo' => 5, 'junio' => 6, 'julio' => 7, 'agosto' => 8,
+            'septiembre' => 9, 'octubre' => 10, 'noviembre' => 11, 'diciembre' => 12,
+            'january' => 1, 'february' => 2, 'march' => 3, 'april' => 4,
+            'may' => 5, 'june' => 6, 'july' => 7, 'august' => 8,
+            'september' => 9, 'october' => 10, 'november' => 11, 'december' => 12,
+            'jan' => 1, 'feb' => 2, 'mar' => 3, 'apr' => 4,
+            'jun' => 6, 'jul' => 7, 'aug' => 8, 'sep' => 9, 'oct' => 10, 'nov' => 11, 'dec' => 12,
+            'ene' => 1, 'abr' => 4, 'ago' => 8, 'set' => 9, 'dic' => 12
         );
-        if($month = $this->get('month')){
-            return $months[$month];
+        $month = $this->get('month');
+        if (!$month) {
+            return false;
         }
-        else return false;
+        if (is_numeric($month)) {
+            $num = (int)$month;
+            return ($num >= 1 && $num <= 12) ? $num : false;
+        }
+        $monthLower = strtolower(trim((string)$month, '.'));
+        return $months[$monthLower] ?? false;
     }
 
 

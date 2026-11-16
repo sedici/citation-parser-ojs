@@ -94,8 +94,8 @@ class ThesisPrinter extends TitlePrinter implements EnrichmentInstitutionInterfa
     
             return $institutionWrap;
     
-        } catch (\Exception $e) {
-            // En caso de error en la llamada a la API, captura la excepción y devuelve false
+        } catch (\Throwable $e) {
+            // En caso de error en la llamada a la API, captura el error/excepción y devuelve false
             return false;
         }
     }

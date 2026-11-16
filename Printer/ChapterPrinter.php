@@ -74,20 +74,21 @@ class ChapterPrinter extends TitlePrinter{
             $elements[] = $volumeElement;
         }
 
-        //<person-group-type="editor"> tag creation.
-        $editorsElement = $this->dom->createElement('person-group');
-        $editorsElement->setAttribute('person-group-type', 'editor');
-        $elements[] = $editorsElement;
-
+        //<person-group-type="editor"> tag creation if editors exist
         $editorsArray = $this->getEditorsArray();
+        if (!empty($editorsArray)) {
+            $editorsElement = $this->dom->createElement('person-group');
+            $editorsElement->setAttribute('person-group-type', 'editor');
+            $elements[] = $editorsElement;
 
-        foreach ($editorsArray as $editor){
-            $nameElement = $this->dom->createElement('name');
-            $surname = $this->dom->createElement('surname', $editor['surname']);
-            $given_names = $this->dom->createElement('given-names', $editor['name']);
-            $nameElement->appendChild($surname);
-            $nameElement->appendChild($given_names);
-            $editorsElement->appendChild($nameElement);
+            foreach ($editorsArray as $editor){
+                $nameElement = $this->dom->createElement('name');
+                $surname = $this->dom->createElement('surname', $editor['surname']);
+                $given_names = $this->dom->createElement('given-names', $editor['name']);
+                $nameElement->appendChild($surname);
+                $nameElement->appendChild($given_names);
+                $editorsElement->appendChild($nameElement);
+            }
         }
         
 
